@@ -86,6 +86,14 @@ def apply_decay(agent_wins, decay=0.98):
     return agent_wins
 
 
+def system_entropy(memory):
+    recent = memory.get("recent_structures", [])[-10:]
+    agents = [x["agent"] for x in recent]
+    
+    unique = len(set(agents))
+    return unique / max(len(agents), 1)
+
+
 def build_report(memory):
     return {
         "runs": memory["runs"],
