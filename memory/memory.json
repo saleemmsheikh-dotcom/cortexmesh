@@ -1,0 +1,105 @@
+{
+  "runs": 21,
+  "agent_wins": {
+    "Architect": 20.539199838407484,
+    "Researcher": 3.594145613775093
+  },
+  "authority_actions": {
+    "CONFLICT_RESOLUTION": 11,
+    "ACCEPT": 10
+  },
+  "conflicts_detected": 11,
+  "conflicts_resolved": 11,
+  "agent_usage": {
+    "Researcher": 6.026699999999998,
+    "Architect": 6.626899999999999,
+    "Engineer": 8
+  },
+  "recent_structures": [
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Architect",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Engineer",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Engineer",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Researcher",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    }
+  ],
+  "role_weights": {
+    "Architect": 0.4053374569441547,
+    "Researcher": 0.3075840739944028,
+    "Engineer": 0.2870784690614426
+  }
+}
