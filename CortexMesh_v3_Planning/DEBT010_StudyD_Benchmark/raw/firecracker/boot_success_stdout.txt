@@ -1,0 +1,2 @@
+2026-06-18T22:56:56.481757026 [anonymous-instance:main] Running Firecracker v1.13.1
+2026-06-18T22:58:52.029925816 [anonymous-instance:main] Shutting down VM after intercepting signal 1, code 128.

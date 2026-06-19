@@ -1,0 +1,3 @@
+Firecracker v1.13.1
+
+2026-06-18T22:37:42.476940203 [anonymous-instance:main] Firecracker exiting successfully. exit_code=0
