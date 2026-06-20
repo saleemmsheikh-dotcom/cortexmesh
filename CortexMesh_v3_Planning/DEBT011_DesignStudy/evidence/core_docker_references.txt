@@ -1,0 +1,6 @@
+core/external_runner.py:16:    Executes capabilities in Docker containers with no host access.
+core/external_runner.py:50:                    "docker",
+core/external_runner.py:77:                    ["docker", "kill", container_name],
+core/external_runner.py:202:            ["docker", "image", "inspect", image],
+core/external_runner.py:213:            (context / "Dockerfile").write_text(
+core/external_runner.py:223:                ["docker", "build", "-t", image, str(context)],

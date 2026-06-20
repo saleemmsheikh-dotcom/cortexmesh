@@ -1,0 +1,7 @@
+35:            dict with "status", "output", "audit_trail"
+95:                        "audit_trail": {
+108:                    "audit_trail": {
+120:                    "audit_trail": {
+128:            result["audit_trail"] = {
+141:                "audit_trail": {"isolated": True},
+148:                "audit_trail": {"isolated": True},

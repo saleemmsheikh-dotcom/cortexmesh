@@ -1,0 +1,61 @@
+                    "-e",
+                    "PYTHONDONTWRITEBYTECODE=1",
+                    "-e",
+                    f"CORTEXMESH_REQUEST={request_json}",
+                    image,
+                ],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+
+            killed_by_timer = threading.Event()
+
+            def kill_container():
+                killed_by_timer.set()
+                subprocess.run(
+                    ["docker", "kill", container_name],
+                    capture_output=True,
+                    timeout=10,
+                )
+                proc.kill()
+
+            timer = threading.Timer(cls.TIMEOUT_SECONDS, kill_container)
+            timer.start()
+
+            try:
+                stdout, stderr = proc.communicate(input=request_json)
+                timer.cancel()
+
+                if killed_by_timer.is_set():
+                    return {
+                        "status": "timeout",
+                        "output": None,
+                        "error": "Capability exceeded time limit",
+                        "audit_trail": {
+                            "isolated": True,
+                            "image": image,
+                            "killed": True,
+                        },
+                    }
+            except Exception:
+                timer.cancel()
+                kill_container()
+                return {
+                    "status": "timeout",
+                    "output": None,
+                    "error": "Capability exceeded time limit",
+                    "audit_trail": {
+                        "isolated": True,
+                        "image": image,
+                        "killed": True,
+                    },
+                }
+
+            if proc.returncode != 0:
+                return {
+                    "status": "error",
+                    "output": None,
+                    "error": _sanitize_error(stderr),
+                    "audit_trail": {

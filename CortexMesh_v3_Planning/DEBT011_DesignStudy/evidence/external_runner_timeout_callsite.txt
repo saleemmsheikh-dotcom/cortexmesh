@@ -1,0 +1,31 @@
+        with tempfile.TemporaryDirectory(prefix="cortexmesh-capability-") as directory:
+            context = Path(directory)
+            shutil.copy2(source_path, context / "capability_payload.py")
+            (context / "Dockerfile").write_text(
+                "\n".join([
+                    f"FROM {cls.DEFAULT_IMAGE}",
+                    "WORKDIR /app",
+                    "COPY capability_payload.py /app/capability_payload.py",
+                    'ENV CORTEXMESH_CAPABILITY_MODULE="capability_payload"',
+                    "",
+                ])
+            )
+            proc = subprocess.run(
+                ["docker", "build", "-t", image, str(context)],
+                capture_output=True,
+                text=True,
+                timeout=cls.TIMEOUT_SECONDS,
+            )
+
+            if proc.returncode != 0:
+                raise RuntimeError(
+                    "Failed to build capability image "
+                    f"{image}: {proc.stderr}"
+                )
+
+
+def _sanitize_error(error_str):
+    """Remove host paths from error messages."""
+    if not error_str:
+        return None
+

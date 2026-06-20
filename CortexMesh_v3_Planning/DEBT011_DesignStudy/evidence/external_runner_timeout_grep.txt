@@ -1,0 +1,47 @@
+core/external_runner.py:6:import subprocess
+core/external_runner.py:21:    TIMEOUT_SECONDS = 30
+core/external_runner.py:48:            proc = subprocess.Popen(
+core/external_runner.py:66:                stdin=subprocess.PIPE,
+core/external_runner.py:67:                stdout=subprocess.PIPE,
+core/external_runner.py:68:                stderr=subprocess.PIPE,
+core/external_runner.py:72:            killed_by_timer = threading.Event()
+core/external_runner.py:74:            def kill_container():
+core/external_runner.py:75:                killed_by_timer.set()
+core/external_runner.py:76:                subprocess.run(
+core/external_runner.py:77:                    ["docker", "kill", container_name],
+core/external_runner.py:79:                    timeout=10,
+core/external_runner.py:81:                proc.kill()
+core/external_runner.py:83:            timer = threading.Timer(cls.TIMEOUT_SECONDS, kill_container)
+core/external_runner.py:90:                if killed_by_timer.is_set():
+core/external_runner.py:92:                        "status": "timeout",
+core/external_runner.py:98:                            "killed": True,
+core/external_runner.py:103:                kill_container()
+core/external_runner.py:105:                    "status": "timeout",
+core/external_runner.py:111:                        "killed": True,
+core/external_runner.py:201:        proc = subprocess.run(
+core/external_runner.py:222:            proc = subprocess.run(
+core/external_runner.py:226:                timeout=cls.TIMEOUT_SECONDS,
+core/external_runner.py:6:import subprocess
+core/external_runner.py:21:    TIMEOUT_SECONDS = 30
+core/external_runner.py:48:            proc = subprocess.Popen(
+core/external_runner.py:66:                stdin=subprocess.PIPE,
+core/external_runner.py:67:                stdout=subprocess.PIPE,
+core/external_runner.py:68:                stderr=subprocess.PIPE,
+core/external_runner.py:72:            killed_by_timer = threading.Event()
+core/external_runner.py:74:            def kill_container():
+core/external_runner.py:75:                killed_by_timer.set()
+core/external_runner.py:76:                subprocess.run(
+core/external_runner.py:77:                    ["docker", "kill", container_name],
+core/external_runner.py:79:                    timeout=10,
+core/external_runner.py:81:                proc.kill()
+core/external_runner.py:83:            timer = threading.Timer(cls.TIMEOUT_SECONDS, kill_container)
+core/external_runner.py:90:                if killed_by_timer.is_set():
+core/external_runner.py:92:                        "status": "timeout",
+core/external_runner.py:98:                            "killed": True,
+core/external_runner.py:103:                kill_container()
+core/external_runner.py:105:                    "status": "timeout",
+core/external_runner.py:111:                        "killed": True,
+core/external_runner.py:201:        proc = subprocess.run(
+core/external_runner.py:222:            proc = subprocess.run(
+core/external_runner.py:226:                timeout=cls.TIMEOUT_SECONDS,
+core/contracts.py:22:    "subprocess",
