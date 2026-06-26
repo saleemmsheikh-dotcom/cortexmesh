@@ -97,7 +97,7 @@ H-12
 
 The following findings remain open and are tracked separately in:
 
-POLICY_REVIEW_OPEN_ITEMS.md
+POLICY_REVIEW_OPEN_ITEMS_v1.1.md
 
 * H-01 through H-07
 * G-03

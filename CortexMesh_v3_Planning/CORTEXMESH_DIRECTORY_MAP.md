@@ -321,7 +321,6 @@ CortexMesh_v3_Planning 3/DEBT001_Task_Corpus/tasks/S1_debt_prioritization.md
 CortexMesh_v3_Planning 3/DEBT001_Task_Corpus/tasks/S2_trust_boundary.md
 CortexMesh_v3_Planning 3/DEBT001_Task_Corpus/tasks/S3_governance_review.md
 CortexMesh_v3_Planning/
-CortexMesh_v3_Planning/.DS_Store
 CortexMesh_v3_Planning/00_Governance/
 CortexMesh_v3_Planning/00_Governance/BOARD_CURRENT_STATE.md
 CortexMesh_v3_Planning/00_Governance/BOARD_DECISIONS_REGISTER.md
@@ -332,8 +331,8 @@ CortexMesh_v3_Planning/00_Governance/GOVERNANCE_BASELINE_v1.0.md
 CortexMesh_v3_Planning/01_Policies/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md
-CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_REVIEW_CHANGELOG.md
-CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS.md
+CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_REVIEW_CHANGELOG_v1.1.md
+CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md
 CortexMesh_v3_Planning/01_Policies/PolicyReview/evidence/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/evidence/.gitkeep
 CortexMesh_v3_Planning/02_Onboarding/
@@ -538,8 +537,8 @@ CortexMesh_v3_Planning/03_Debt_Management/DEBT010/StudyD_Benchmark/results/host_
 CortexMesh_v3_Planning/03_Debt_Management/DEBT010/StudyD_Benchmark/scripts/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/
-CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_Design_Study_v1.0.md
-CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_Design_Study_v1.1.md
+CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_DESIGN_STUDY_v1.0.md
+CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_DESIGN_STUDY_v1.1.md
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/analysis/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/drafts/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/evidence/
@@ -552,7 +551,7 @@ CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/evidence/external_
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/evidence/external_runner_timeout_callsite.txt
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/evidence/external_runner_timeout_grep.txt
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/
-CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/DEBT011_Implementation_Plan_v1.0.md
+CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/DEBT011_IMPLEMENTATION_PLAN_v1.0.md
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/drafts/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/drafts/.gitkeep
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/evidence/
@@ -570,7 +569,7 @@ CortexMesh_v3_Planning/CORTEXMESH_DIRECTORY_MAP.md
 CortexMesh_v3_Planning/PolicyReview/
 CortexMesh_v3_Planning/PolicyReview/evidence/
 CortexMesh_v3_Planning/Session4_Onboarding/
-CortexMesh_v3_Planning/~gvfSSBl.tmp
+CortexMesh_v3_Planning/~gvf2LVt.tmp
 DEBT001_Evidence_Package.zip
 __pycache__/
 __pycache__/main.cpython-314.pyc

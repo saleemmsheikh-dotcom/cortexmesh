@@ -1,23 +1,43 @@
-# REVIEWER_PACKET_INDEX
-
-## Status
-
-DRAFT
+# Reviewer Packet Index
 
 ## Purpose
 
-List reviewer packets available for new board members, reviewers, and technical agents.
+Defines which files to provide to reviewers, board members, or fresh agent sessions.
 
-## Reviewer Packets
+## Packet A — Current Board Review
 
-| Packet | Audience | Location |
-|--------|----------|----------|
-| Kimi current packet | Board reviewer | `reviewer_packets/REVIEWER_PACKET_KIMI_CURRENT.md` |
+Use for new Kimi, DeepSeek, or ChatGPT session.
 
-## Minimum Fresh-Session Reading
+Required:
+- 00_Governance/GOVERNANCE_BASELINE_v1.0.md
+- 00_Governance/GOVERNANCE_ADDENDUM_v1.0.md
+- 00_Governance/BOARD_CURRENT_STATE.md
+- 00_Governance/BOARD_HISTORY_SUMMARY.md
+- 05_Program_Management/PROGRAM_ROADMAP.md
 
-1. `00_Governance/GOVERNANCE_BASELINE_v1.0.md`
-2. `00_Governance/BOARD_CURRENT_STATE.md`
-3. `00_Governance/BOARD_HISTORY_SUMMARY.md`
-4. `05_Program_Management/PROGRAM_ROADMAP.md`
-5. Current active debt or policy packet under review
+## Packet B — Policy Review
+
+Required:
+- 01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md
+- 01_Policies/PolicyReview/POLICY_REVIEW_CHANGELOG_v1.1.md
+- 01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md
+
+## Packet C — DEBT-011 Review
+
+Required:
+- 03_Debt_Management/DEBT011/DesignStudy/DEBT011_DESIGN_STUDY_v1.1.md
+- 03_Debt_Management/DEBT011/ImplementationPlan/DEBT011_IMPLEMENTATION_PLAN_v1.0.md
+- 03_Debt_Management/DEBT011/DesignStudy/evidence/
+
+## Packet D — DEBT-010 Review
+
+Required:
+- 03_Debt_Management/DEBT010/StudyD_Benchmark/results/DEBT010_StudyD_Benchmark_Report.md
+- 03_Debt_Management/DEBT010/StudyD_Benchmark/results/
+- 03_Debt_Management/DEBT010/StudyD_Benchmark/raw/
+
+## Packet E — Architecture Review
+
+Required:
+- 04_Architecture/LOCK_REGISTRY_v1.0.md
+- 04_Architecture/GATE_T0_ARCHITECTURAL_INVENTORY.md

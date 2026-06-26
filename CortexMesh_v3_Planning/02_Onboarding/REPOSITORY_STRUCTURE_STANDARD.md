@@ -1,38 +1,41 @@
-# REPOSITORY_STRUCTURE_STANDARD
-
-## Status
-
-DRAFT
+# Repository Structure Standard
 
 ## Purpose
 
-Define the reorganized CortexMesh planning-folder standard.
+Defines folder and naming standards for CortexMesh planning/governance artifacts.
 
-## Folder Standard
+## Folder Structure
 
 | Folder | Purpose |
-|--------|---------|
-| `00_Governance/` | Board state, history, baseline governance, decision records |
-| `01_Policies/` | Policy documents and policy-review packets |
-| `02_Onboarding/` | Fresh-session onboarding and reviewer packets |
-| `03_Debt_Management/` | Debt register, evidence, design studies, implementation plans |
-| `04_Architecture/` | Lock registry and architecture inventory |
-| `05_Program_Management/` | Roadmap and planning indexes |
-| `99_Archive/` | Retired or superseded planning material |
+|---|---|
+| 00_Governance | Board rules, authority, state, decisions |
+| 01_Policies | Policy drafts, changelogs, open findings |
+| 02_Onboarding | Reviewer packets and fresh-session materials |
+| 03_Debt_Management | Debt evidence, design studies, implementation plans |
+| 04_Architecture | Lock registry, architecture inventory, ADRs |
+| 05_Program_Management | Roadmap and planning index |
+| 99_Archive | Superseded or historical materials |
 
-## Naming Standard
+## Naming Convention
 
-Use `CATEGORY_SUBJECT_VERSION.md` for governance-critical documents where practical.
+Use:
 
-Rules:
+CATEGORY_SUBJECT_vX.Y.md
 
-- Uppercase document category
-- DEBT IDs always `DEBT###`
-- Version always `_vX.Y`
-- No spaces in folder or file names
-- No mixed case for governance-critical documents
-- Evidence/raw files may keep descriptive lowercase names
+Examples:
+- GOVERNANCE_BASELINE_v1.0.md
+- GOVERNANCE_ADDENDUM_v1.0.md
+- BOARD_CURRENT_STATE.md
+- POLICY_INTENT_REPOSITORY_v1.1.md
+- DEBT011_DESIGN_STUDY_v1.1.md
+- DEBT011_IMPLEMENTATION_PLAN_v1.0.md
 
-## Source Code Boundary
+## Rules
 
-This structure applies to planning and governance documents only. Source folders such as `core/`, `engine/`, `agents/`, `tests/`, and `governance/` remain outside this reorganization pass.
+1. Governance-critical files use uppercase names.
+2. DEBT IDs always use DEBT###.
+3. Versioned files use _vX.Y.
+4. No spaces in filenames.
+5. Raw evidence may retain lowercase descriptive names.
+6. Superseded files move to 99_Archive unless needed beside current evidence.
+7. Source code folders are not reorganized under this standard.

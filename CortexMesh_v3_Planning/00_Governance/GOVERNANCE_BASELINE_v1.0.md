@@ -82,7 +82,7 @@ Implementation Status:
 
 Design Study:
 
-* DEBT011_Design_Study_v1.1 approved
+* DEBT011_DESIGN_STUDY_v1.1 approved
 
 Implementation Planning:
 
@@ -94,7 +94,7 @@ Implementation:
 
 Required Future Deliverable:
 
-* DEBT011_Implementation_Plan_v1.0.md
+* DEBT011_IMPLEMENTATION_PLAN_v1.0.md
 
 Implementation Plan must include:
 

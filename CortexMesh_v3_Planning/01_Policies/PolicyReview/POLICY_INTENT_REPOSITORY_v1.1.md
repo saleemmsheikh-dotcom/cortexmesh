@@ -20,11 +20,11 @@ Publication of this revision does not imply closure of unresolved policy-review 
 
 Open findings remain tracked in:
 
-`POLICY_REVIEW_OPEN_ITEMS.md`
+`POLICY_REVIEW_OPEN_ITEMS_v1.1.md`
 
 Amendment provenance is recorded in:
 
-`POLICY_REVIEW_CHANGELOG.md`
+`POLICY_REVIEW_CHANGELOG_v1.1.md`
 
 ---
 

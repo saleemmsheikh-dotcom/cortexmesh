@@ -1,31 +1,37 @@
-# REVIEWER_PACKET_KIMI_CURRENT
-
-## Status
-
-DRAFT
+# Reviewer Packet — Kimi Current
 
 ## Purpose
 
-Provide a compact current packet for Kimi or an equivalent board reviewer joining a fresh session.
+Fresh-session packet for Kimi.
 
-## Load First
+## Current Session Context
 
-1. `../../00_Governance/GOVERNANCE_BASELINE_v1.0.md`
-2. `../../00_Governance/BOARD_CURRENT_STATE.md`
-3. `../../00_Governance/BOARD_HISTORY_SUMMARY.md`
-4. `../../05_Program_Management/PROGRAM_ROADMAP.md`
-5. `../../00_Governance/DOCUMENT_AUTHORITY_MATRIX.md`
+CortexMesh governance and policy review are active.
 
-## Active Review Areas
+Recent work:
+- Governance/planning folder restructure completed on branch governance-restructure-v1.
+- Policy v1.1 prepared and committed.
+- Policy v1.1 accepted by ChatGPT as working draft, not ratified.
+- Open policy findings remain tracked.
 
-| Area | Location |
-|------|----------|
-| Policy Review v1.1 | `../../01_Policies/PolicyReview/` |
-| DEBT-011 design study | `../../03_Debt_Management/DEBT011/DesignStudy/` |
-| DEBT-011 implementation planning | `../../03_Debt_Management/DEBT011/ImplementationPlan/` |
+## Required Reading
 
-## Boundary Conditions
+1. 00_Governance/GOVERNANCE_BASELINE_v1.0.md
+2. 00_Governance/GOVERNANCE_ADDENDUM_v1.0.md
+3. 00_Governance/BOARD_CURRENT_STATE.md
+4. 00_Governance/BOARD_HISTORY_SUMMARY.md
+5. 05_Program_Management/PROGRAM_ROADMAP.md
+6. 01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md
+7. 01_Policies/PolicyReview/POLICY_REVIEW_CHANGELOG_v1.1.md
+8. 01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md
 
-- Planning may continue where authorized.
-- Implementation remains unauthorized unless explicitly approved by the board.
-- LOCKED component changes remain prohibited without explicit authorization.
+## Current Board Question
+
+Review the governance restructure and determine whether the new folder structure, authority matrix, and reviewer packets should be accepted as the working organization model.
+
+## Not Authorized
+
+- LOCKED component changes
+- core/external_runner.py changes
+- DEBT-011 implementation
+- DEBT-010 implementation

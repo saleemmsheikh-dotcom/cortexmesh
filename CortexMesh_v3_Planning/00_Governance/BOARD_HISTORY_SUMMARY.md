@@ -25,7 +25,7 @@
 - DEBT-011 design study approved.
 - DEBT-011 implementation planning authorized.
 - DEBT-011 implementation not authorized.
-- Required future deliverable: `DEBT011_Implementation_Plan_v1.0.md`.
+- Required future deliverable: `DEBT011_IMPLEMENTATION_PLAN_v1.0.md`.
 
 ## Session 8 Re-entry Triggers
 
@@ -46,5 +46,5 @@ For DEBT-011 implementation-plan review, technical agents should inspect:
 
 - `core/external_runner.py`
 - `CortexMesh_v3_Planning/DEBT011_DesignStudy/evidence/`
-- `CortexMesh_v3_Planning/DEBT011_DesignStudy/DEBT011_Design_Study_v1.1.md`
-- `CortexMesh_v3_Planning/DEBT011_ImplementationPlan/DEBT011_Implementation_Plan_v1.0.md`
+- `CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_DESIGN_STUDY_v1.1.md`
+- `CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/DEBT011_IMPLEMENTATION_PLAN_v1.0.md`
