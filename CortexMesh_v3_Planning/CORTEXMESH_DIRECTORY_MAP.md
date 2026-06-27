@@ -345,6 +345,7 @@ CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md
 CortexMesh_v3_Planning/01_Policies/PolicyReview/evidence/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/evidence/.gitkeep
 CortexMesh_v3_Planning/02_Onboarding/
+CortexMesh_v3_Planning/02_Onboarding/CURRENT_REVIEW_PACKET.md
 CortexMesh_v3_Planning/02_Onboarding/README.md
 CortexMesh_v3_Planning/02_Onboarding/REPOSITORY_STRUCTURE_STANDARD.md
 CortexMesh_v3_Planning/02_Onboarding/REVIEWER_PACKET_INDEX.md
@@ -590,7 +591,7 @@ CortexMesh_v3_Planning/CORTEXMESH_DIRECTORY_MAP.md
 CortexMesh_v3_Planning/PolicyReview/
 CortexMesh_v3_Planning/PolicyReview/evidence/
 CortexMesh_v3_Planning/Session4_Onboarding/
-CortexMesh_v3_Planning/~gvf5jh7.tmp
+CortexMesh_v3_Planning/~gvf4uiO.tmp
 DEBT001_Evidence_Package.zip
 __pycache__/
 __pycache__/main.cpython-314.pyc
