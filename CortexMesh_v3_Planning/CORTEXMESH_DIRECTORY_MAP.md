@@ -1,6 +1,6 @@
 # CortexMesh Directory Map
 
-Generated: 2026-06-26
+Generated: 2026-06-27
 
 Scope: Complete repository path map excluding only .git internals. Includes files and folders currently visible on the mounted Mac SMB share.
 
@@ -325,9 +325,18 @@ CortexMesh_v3_Planning/00_Governance/
 CortexMesh_v3_Planning/00_Governance/BOARD_CURRENT_STATE.md
 CortexMesh_v3_Planning/00_Governance/BOARD_DECISIONS_REGISTER.md
 CortexMesh_v3_Planning/00_Governance/BOARD_HISTORY_SUMMARY.md
+CortexMesh_v3_Planning/00_Governance/COMMUNICATION_PROTOCOL_v1.0.md
+CortexMesh_v3_Planning/00_Governance/Communications/
+CortexMesh_v3_Planning/00_Governance/Communications/README.md
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/ChatGPT/
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/ChatGPT/COMM-S08_CHATGPT_001.md
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/DeepSeek/
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/Kimi/
 CortexMesh_v3_Planning/00_Governance/DOCUMENT_AUTHORITY_MATRIX.md
 CortexMesh_v3_Planning/00_Governance/GOVERNANCE_ADDENDUM_v1.0.md
 CortexMesh_v3_Planning/00_Governance/GOVERNANCE_BASELINE_v1.0.md
+CortexMesh_v3_Planning/00_Governance/REVIEW_EVIDENCE_STANDARD_v1.0.md
 CortexMesh_v3_Planning/01_Policies/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md
@@ -341,6 +350,8 @@ CortexMesh_v3_Planning/02_Onboarding/REPOSITORY_STRUCTURE_STANDARD.md
 CortexMesh_v3_Planning/02_Onboarding/REVIEWER_PACKET_INDEX.md
 CortexMesh_v3_Planning/02_Onboarding/SESSION4_PRE_READ.md
 CortexMesh_v3_Planning/02_Onboarding/START_HERE_SESSION4.md
+CortexMesh_v3_Planning/02_Onboarding/Templates/
+CortexMesh_v3_Planning/02_Onboarding/Templates/REVIEW_PACKET_MANIFEST_TEMPLATE.md
 CortexMesh_v3_Planning/02_Onboarding/reviewer_packets/
 CortexMesh_v3_Planning/02_Onboarding/reviewer_packets/REVIEWER_PACKET_KIMI_CURRENT.md
 CortexMesh_v3_Planning/03_Debt_Management/
@@ -558,6 +569,16 @@ CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/evidence/
 CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/evidence/.gitkeep
 CortexMesh_v3_Planning/03_Debt_Management/DEBT_REGISTER_v1.3.md
 CortexMesh_v3_Planning/04_Architecture/
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/AI001_ARCHITECTURAL_IDENTITY.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/AI002_ARCHITECTURAL_BOUNDARY_TEST.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/AI003_COMPARATIVE_ARCHITECTURE_INDEX.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/Case_Studies/
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/Case_Studies/CA001_ARENA_AI_COMPARISON_v1.0.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/Case_Studies/CA002_GSTACK_COMPARISON_v1.0.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/Comparative_Matrix/
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/Comparative_Matrix/ARCHITECTURE_COMPARISON_MATRIX.md
+CortexMesh_v3_Planning/04_Architecture/Architectural_Identity/README.md
 CortexMesh_v3_Planning/04_Architecture/GATE_T0_ARCHITECTURAL_INVENTORY.md
 CortexMesh_v3_Planning/04_Architecture/LOCK_REGISTRY_v1.0.md
 CortexMesh_v3_Planning/05_Program_Management/
@@ -569,7 +590,7 @@ CortexMesh_v3_Planning/CORTEXMESH_DIRECTORY_MAP.md
 CortexMesh_v3_Planning/PolicyReview/
 CortexMesh_v3_Planning/PolicyReview/evidence/
 CortexMesh_v3_Planning/Session4_Onboarding/
-CortexMesh_v3_Planning/~gvf2LVt.tmp
+CortexMesh_v3_Planning/~gvf5jh7.tmp
 DEBT001_Evidence_Package.zip
 __pycache__/
 __pycache__/main.cpython-314.pyc
