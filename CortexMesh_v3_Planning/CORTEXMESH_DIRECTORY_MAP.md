@@ -333,10 +333,14 @@ CortexMesh_v3_Planning/00_Governance/Communications/Session_08/ChatGPT/
 CortexMesh_v3_Planning/00_Governance/Communications/Session_08/ChatGPT/COMM-S08_CHATGPT_001.md
 CortexMesh_v3_Planning/00_Governance/Communications/Session_08/DeepSeek/
 CortexMesh_v3_Planning/00_Governance/Communications/Session_08/Kimi/
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/SALEEM/
+CortexMesh_v3_Planning/00_Governance/Communications/Session_08/SALEEM/COMM-S08_SALEEM_001.md
 CortexMesh_v3_Planning/00_Governance/DOCUMENT_AUTHORITY_MATRIX.md
 CortexMesh_v3_Planning/00_Governance/GOVERNANCE_ADDENDUM_v1.0.md
 CortexMesh_v3_Planning/00_Governance/GOVERNANCE_BASELINE_v1.0.md
 CortexMesh_v3_Planning/00_Governance/REVIEW_EVIDENCE_STANDARD_v1.0.md
+CortexMesh_v3_Planning/00_Governance/Repository_Lineage/
+CortexMesh_v3_Planning/00_Governance/Repository_Lineage/REPOSITORY_LINEAGE_INVESTIGATION.md
 CortexMesh_v3_Planning/01_Policies/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/
 CortexMesh_v3_Planning/01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md
@@ -598,7 +602,7 @@ CortexMesh_v3_Planning/CORTEXMESH_DIRECTORY_MAP.md
 CortexMesh_v3_Planning/PolicyReview/
 CortexMesh_v3_Planning/PolicyReview/evidence/
 CortexMesh_v3_Planning/Session4_Onboarding/
-CortexMesh_v3_Planning/~gvfhuSh.tmp
+CortexMesh_v3_Planning/~gvfh85I.tmp
 DEBT001_Evidence_Package.zip
 __pycache__/
 __pycache__/main.cpython-314.pyc
