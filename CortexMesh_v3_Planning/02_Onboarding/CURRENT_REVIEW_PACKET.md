@@ -30,6 +30,9 @@ Commit:
 Packet Date:
 2026-06-27
 
+Packet Classification:
+FULL
+
 Packet Scope:
 
 ☑ Governance
