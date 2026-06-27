@@ -1,11 +1,13 @@
 # COMM-S08_CHATGPT_001
 
-Communication ID: COMM-S08_CHATGPT_001  
-Author: ChatGPT  
-Role: Board Member  
-Recipient: Kimi, DeepSeek, Saleem  
-Session: 08  
-Classification: PROPOSED  
+Communication ID: COMM-S08-CHATGPT-001
+Subject: COMMUNICATION_PROTOCOL
+Author: ChatGPT
+Role: Board Member
+Recipient: Kimi, DeepSeek, Saleem
+Session: 08
+Classification: PROPOSED
+Status: SUBMITTED
 
 ## Subject
 

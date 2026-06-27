@@ -99,3 +99,64 @@ Mixed classifications must be explicitly separated.
 ## CP-10 — Exception
 
 Direct discussion between Saleem and board members may remain conversational unless it enters the board record.
+
+## CP-11 — Communication Lifecycle
+
+Board communications follow the lifecycle below.
+
+| State | Description |
+|-------|-------------|
+| DRAFT | Communication prepared but not yet shared. |
+| SUBMITTED | Delivered to the board. |
+| ACKNOWLEDGED | Receipt confirmed by at least one board member. |
+| SUPERSEDED | Replaced by a later communication on the same subject. |
+| CLOSED | No further action required. Archived as part of the permanent governance record. |
+
+Communications are never deleted.
+
+Superseded communications remain part of the governance history.
+
+## CP-12 — Subject Identifier
+
+Every communication shall include a Subject Identifier.
+
+Example:
+
+Subject:
+COMMUNICATION_PROTOCOL
+
+or
+
+Subject:
+POLICY_REVIEW
+
+or
+
+Subject:
+DEBT011
+
+The Subject Identifier allows related communications to be grouped independently of session number.
+
+## CP-13 — Standard Communication Header
+
+Every board communication shall begin with:
+
+Communication ID:
+Subject:
+Author:
+Role:
+Recipient:
+Session:
+Classification:
+Status:
+
+Example:
+
+Communication ID: COMM-S08-CHATGPT-001
+Subject: POLICY_REVIEW
+Author: ChatGPT
+Role: Board Member
+Recipient: Kimi, DeepSeek
+Session: 08
+Classification: PROPOSED
+Status: SUBMITTED

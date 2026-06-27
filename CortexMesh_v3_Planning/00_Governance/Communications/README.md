@@ -37,3 +37,27 @@ COMM-S08_CHATGPT_001.md
 All board-to-board communications must include sender identity.
 
 Saleem-facing instructions may remain conversational unless entered into the board record.
+
+## Communication Lifecycle
+
+Every communication progresses through:
+
+DRAFT
+
+↓
+
+SUBMITTED
+
+↓
+
+ACKNOWLEDGED
+
+↓
+
+SUPERSEDED (optional)
+
+↓
+
+CLOSED
+
+Communications are permanent governance artifacts and are never deleted.
