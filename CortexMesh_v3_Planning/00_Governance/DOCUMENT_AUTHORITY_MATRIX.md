@@ -22,3 +22,13 @@ Defines which document is authoritative when governance documents conflict.
 ## Rule
 
 If two documents conflict, the higher-priority document controls unless the board records a unanimous exception.
+
+## Policy Override Rule
+
+`BOARD_DECISIONS_REGISTER.md` overrides policy documents only when the board explicitly records that the decision:
+
+- amends policy
+- supersedes policy
+- creates a policy exception
+
+Otherwise the decision is interpreted as an application of existing policy.
