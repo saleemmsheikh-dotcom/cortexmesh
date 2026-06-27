@@ -41,3 +41,8 @@ Required:
 Required:
 - 04_Architecture/LOCK_REGISTRY_v1.0.md
 - 04_Architecture/GATE_T0_ARCHITECTURAL_INVENTORY.md
+
+## Packet F — DEBT-007 Review
+
+Required:
+- 03_Debt_Management/DEBT007/DEBT007_DESIGN_STUDY_v2.0.md
