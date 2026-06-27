@@ -40,6 +40,12 @@ Board members provide instructions to Saleem.
 
 Saleem executes work and reports results.
 
+## CP-03a — Board-to-Board Deliberation
+
+Board members may communicate directly with each other for governance deliberation.
+
+Saleem's coordination role applies to execution workstreams, implementation activities, and message consolidation, not to board deliberation.
+
 ## CP-04 — Direct Instructions to Saleem
 
 Instructions intended for Saleem may remain conversational.
