@@ -24,9 +24,27 @@ Preparation of this document does **not** constitute ratification of any proposa
 
 # Decision Register
 
-| Decision ID  | Session | Title | Decision | Date | Votes | Reference | Status |
-| ------------ | ------- | ----- | -------- | ---- | ----- | --------- | ------ |
-| *(reserved)* |         |       |          |      |       |           |        |
+| Decision ID | Session | Title | Decision | Date | Votes | Reference | Status |
+|-------------|---------|-------|----------|------|-------|-----------|--------|
+| BD-08-001 | 08 | Governance Reorganization | APPROVED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-002 | 08 | Communication Protocol v1.0 | RATIFIED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-003 | 08 | Document Authority Matrix | APPROVED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-004 | 08 | Repository Lineage Investigation | AUTHORIZED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-005 | 08 | Reviewer Packet Improvements | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-006 | 08 | Review Evidence Standard v1.0 | RATIFIED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-08-007 | 08 | Architectural Identity Workstream | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+
+---
+
+**Recording Note**
+
+These decisions were recorded following unanimous board approval confirmed in `COMM-S08_KIMI_007`.
+
+Recording these decisions completes the governance decision process.
+
+These decisions authorize governance only.
+
+No implementation is authorized unless explicitly stated in the decision itself.
 
 ---
 
