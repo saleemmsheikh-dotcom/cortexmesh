@@ -24,6 +24,7 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
+| `CortexMesh_v3_Planning/05_Program_Management/AUDIT_REPORT_2026-06-28.md` | Formal repository-level audit report. |
 
 ## Top-Level Planning Structure
 
@@ -140,11 +141,12 @@ Use this area for architecture mission, inventory, locks, identity, comparative 
 
 ```text
 05_Program_Management/
+├── AUDIT_REPORT_2026-06-28.md
 ├── PROGRAM_ROADMAP.md
 └── V3_PLANNING_INDEX.md
 ```
 
-Use this area for roadmap and planning index documents.
+Use this area for roadmap, planning index, and formal program-level audit reports.
 
 ## Archive
 

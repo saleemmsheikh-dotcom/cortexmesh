@@ -36,6 +36,7 @@ Recommended active planning set:
 
 | Document | Purpose |
 |----------|---------|
+| `AUDIT_REPORT_2026-06-28.md` | Formal repository-level audit and remediation evidence report |
 | `Architecture_Debt_Register_v1.2.md` | Known architecture debt and planning risks |
 | `P0_Audit_Charter_v1.1.md` | Scope, evidence, pass/fail criteria for P0 audits |
 | `P0_Audit_Findings.md` | Evidence collected from audit execution |
@@ -80,4 +81,3 @@ If a claim is not in a document or supported by evidence, classify it as:
 ```text
 UNVERIFIED
 ```
-
