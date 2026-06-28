@@ -1,180 +1,113 @@
-# CortexMesh Reviewer Packet
+# CURRENT REVIEW PACKET
 
-## Classification
+**Current Session:** 09
 
-OBSERVED
+This document is the authoritative reviewer entry point for Session 09.
 
-Current governance review packet.
+It identifies the governance baseline, required reading order, current board status, active investigations, and approved governance artifacts.
 
-This document is the mandatory entry point for all new reviewers.
-
-Estimated review time:
-
-Core packet: 45-60 minutes
-
-Complete repository: as required.
+All previous onboarding packets are superseded by this document.
 
 ---
 
-# Repository Information
+## Packet Metadata
 
-Repository:
-CortexMesh
+Repository: CortexMesh
 
-Branch:
-governance-restructure-v1
+Review Date: 2026-06-28
 
-Commit:
-8c8dc62
-
-Packet Date:
-2026-06-27
-
-Packet Classification:
-FULL
+Packet Classification: FULL
 
 Packet Scope:
 
-☑ Governance
+- Governance
+- Policy
+- Architecture
+- Debt Management
+- Program Management
+- Communication Protocol
 
-☑ Policy
+## Session 09 Status
 
-☑ Architecture
+Status: ACTIVE
 
-☑ Debt Management
+Governance Baseline: RATIFIED
 
-☑ Program Management
+Implementation Authority: NOT GRANTED
 
-☑ Communication Protocol
+Repository Lineage Investigation: ACTIVE
 
-Repository Snapshot:
+Architectural Identity Workstream: ACTIVE
 
-☐ Full Repository
+## Required Reading Order
 
-☑ Governance Review Packet
+1. DOCUMENT_AUTHORITY_MATRIX.md
+2. CURRENT_REVIEW_PACKET.md
+3. BOARD_DECISIONS_REGISTER.md
+4. COMMUNICATION_PROTOCOL_v1.0.md
+5. REVIEW_EVIDENCE_STANDARD_v1.0.md
+6. POLICY_INTENT_REPOSITORY_v1.1.md
+7. POLICY_REVIEW_CHANGELOG_v1.1.md
+8. POLICY_REVIEW_OPEN_ITEMS_v1.1.md
+9. REVIEWER_PACKET_INDEX.md
+10. REPOSITORY_STRUCTURE_STANDARD.md
 
----
+## Active Work
 
-# Review Objectives
+### Governance
 
-The reviewer is requested to:
+Repository Lineage Investigation
 
-1. Review governance consistency.
-2. Review policy consistency.
-3. Review architecture consistency.
-4. Review auditability.
-5. Identify contradictions.
-6. Classify findings using:
+### Architecture
 
-* OBSERVED
-* INFERRED
-* PROPOSED
+Architectural Identity
+
+Comparative Architecture
+
+### Debt
+
+DEBT-007
+
+DEBT-010
+
+DEBT-011
+
+No implementation work is currently authorized.
+
+## Ratified Governance Baseline
+
+The following governance artifacts are considered active for Session 09.
+
+- Communication Protocol v1.0
+- Review Evidence Standard v1.0
+- Document Authority Matrix
+- Board Decisions Register
+- Policy Intent Repository v1.1
+
+These artifacts supersede previous working drafts where applicable.
+
+## Review Classification Rules
+
+All reviewers must classify findings as:
+
+- OBSERVED
+- INFERRED
+- PROPOSED
 
 Board decisions create policy.
 
 They do not create evidence.
 
----
-
-# Reading Order
-
-## 1. Governance
-
-Required
-
-* `00_Governance/GOVERNANCE_BASELINE_v1.0.md`
-* `00_Governance/GOVERNANCE_ADDENDUM_v1.0.md`
-* `00_Governance/DOCUMENT_AUTHORITY_MATRIX.md`
-* `00_Governance/BOARD_CURRENT_STATE.md`
-* `00_Governance/COMMUNICATION_PROTOCOL_v1.0.md`
-* `00_Governance/REVIEW_EVIDENCE_STANDARD_v1.0.md`
-
----
-
-## 2. Onboarding
-
-Required
-
-* `02_Onboarding/REVIEWER_PACKET_INDEX.md`
-* `02_Onboarding/REPOSITORY_STRUCTURE_STANDARD.md`
-
-Reference
-
-* `02_Onboarding/Templates/REVIEW_PACKET_MANIFEST_TEMPLATE.md`
-
----
-
-## 3. Policy
-
-Required
-
-* `01_Policies/PolicyReview/POLICY_INTENT_REPOSITORY_v1.1.md`
-* `01_Policies/PolicyReview/POLICY_REVIEW_CHANGELOG_v1.1.md`
-* `01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md`
-
----
-
-## 4. Debt
-
-Required
-
-Review current HIGH severity debt.
-
-Consult:
-
-* `03_Debt_Management/DEBT_REGISTER_v1.3.md`
-* `00_Governance/BOARD_CURRENT_STATE.md`
-
-Read individual design studies only when referenced.
-
----
-
-## 5. Architecture
-
-Required
-
-* `04_Architecture/Architectural_Identity/AI001_ARCHITECTURAL_IDENTITY.md`
-* `04_Architecture/Architectural_Identity/AI002_ARCHITECTURAL_BOUNDARY_TEST.md`
-* `04_Architecture/Architectural_Identity/AI003_COMPARATIVE_ARCHITECTURE_INDEX.md`
-
-Reference
-
-* `04_Architecture/Architectural_Identity/Case_Studies/CA001_ARENA_AI_COMPARISON_v1.0.md`
-* `04_Architecture/Architectural_Identity/Case_Studies/CA002_GSTACK_COMPARISON_v1.0.md`
-* `04_Architecture/Architectural_Identity/Comparative_Matrix/ARCHITECTURE_COMPARISON_MATRIX.md`
-
----
-
-# Current Review Topics
-
-1. Policy v1.1 review
-2. Governance communication protocol
-3. Authority Matrix
-4. Repository structure
-5. Review evidence standard
-6. Architectural Identity workstream
-
----
-
-# Known Open Items
-
-Refer to:
-
-* `01_Policies/PolicyReview/POLICY_REVIEW_OPEN_ITEMS_v1.1.md`
-* `00_Governance/BOARD_CURRENT_STATE.md`
-
----
-
-# Reviewer Deliverables
+## Reviewer Deliverables
 
 The reviewer should produce:
 
-* observations
-* inferred conclusions
-* proposed actions
+- observations
+- inferred conclusions
+- proposed actions
 
 All governance communications between board members shall be submitted as Markdown artifacts in accordance with `00_Governance/COMMUNICATION_PROTOCOL_v1.0.md`.
 
 ---
 
-End of Reviewer Packet.
+End of Current Review Packet.
