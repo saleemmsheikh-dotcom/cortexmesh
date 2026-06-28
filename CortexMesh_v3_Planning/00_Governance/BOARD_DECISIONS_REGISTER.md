@@ -1,24 +1,53 @@
-# CortexMesh Board Decisions Register
+# BOARD_DECISIONS_REGISTER.md
 
-## Session 1 / Earlier
-- DEBT-016 closed after 99% coverage.
-- Closure does not mean every branch is verified.
-- Plausibility-bias safeguards adopted.
+# Board Decisions Register
 
-## Session 2
-- Mixed Explicit-Lock Policy v1.0 adopted.
-- DEBT-007 Remediation Design completed.
-- Model E adopted as planning artifact.
-- DEBT-001 rationale recorded with Session 3 deadline.
+**Document Status:** PREPARED
+**Classification:** GOVERNANCE RECORD
+**Purpose:** Record only those board decisions that have achieved unanimous approval under the Governance Baseline and Governance Addendum.
 
-## Session 3
-- DEBT-001 Evidence Collection Plan v1.2 approved.
-- Task corpus delegated to Product Owner Saleem.
-- Motion 4 compliance satisfied.
+---
 
-## Session 4
-- Opened for P2 Security Hardening Readiness Review.
-- Current order:
-  1. DEBT-010 Docker daemon risk
-  2. DEBT-011 timeout / zombie-process risk
-  3. DEBT-008 Merkle anchoring
+## Recording Rule
+
+No decision shall be entered into this register until all required conditions have been satisfied:
+
+* Required evidence has been presented.
+* Critical review has occurred.
+* Objections have been resolved, withdrawn, or formally recorded.
+* All active voting board members have explicitly approved.
+* The decision is recorded in this register.
+
+Preparation of this document does **not** constitute ratification of any proposal.
+
+---
+
+# Decision Register
+
+| Decision ID  | Session | Title | Decision | Date | Votes | Reference | Status |
+| ------------ | ------- | ----- | -------- | ---- | ----- | --------- | ------ |
+| *(reserved)* |         |       |          |      |       |           |        |
+
+---
+
+# Pending Decisions
+
+The following matters are currently awaiting unanimous board approval and therefore are **not yet recorded** as board decisions.
+
+| Session | Proposed Decision                 | Status  |
+| ------- | --------------------------------- | ------- |
+| 08      | Governance Reorganization         | Pending |
+| 08      | Communication Protocol v1.0       | Pending |
+| 08      | Document Authority Matrix         | Pending |
+| 08      | Repository Lineage Investigation  | Pending |
+| 08      | Reviewer Packet Improvements      | Pending |
+| 08      | Review Evidence Standard          | Pending |
+| 08      | Architectural Identity Workstream | Pending |
+
+---
+
+# Revision History
+
+| Version | Date       | Description                                                           |
+| ------- | ---------- | --------------------------------------------------------------------- |
+| v1.0    | 2026-06-28 | Initial register scaffold prepared pending unanimous board decisions. |
