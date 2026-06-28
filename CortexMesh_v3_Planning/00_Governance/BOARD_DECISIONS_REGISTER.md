@@ -49,6 +49,16 @@ No implementation is authorized unless explicitly stated in the decision itself.
 ---
 
 
+# Pending Decisions
+
+No pending board decisions are currently recorded.
+
+New proposals shall be entered into this section only after formal submission and before unanimous board approval.
+
+Upon unanimous approval and recording in the Decision Register, entries shall be removed from this section.
+
+---
+
 # Revision History
 
 | Version | Date       | Description                                                           |
