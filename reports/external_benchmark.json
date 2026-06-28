@@ -1,0 +1,330 @@
+{
+  "average_score_advantage": -0.499,
+  "best_domain": "commercial_strategy",
+  "blind_scoring": true,
+  "case_results": [
+    {
+      "domain": "cloud_finops",
+      "id": 1,
+      "scores_by_source": {
+        "cortexmesh": 52.3,
+        "simple_framework": 94.95,
+        "single_model": 61.25
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "cortexmesh",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "cloud_finops",
+      "id": 2,
+      "scores_by_source": {
+        "cortexmesh": 42.05,
+        "simple_framework": 92.45,
+        "single_model": 57.4
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "simple_framework",
+        "Output_C": "single_model"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "cloud_finops",
+      "id": 3,
+      "scores_by_source": {
+        "cortexmesh": 39.35,
+        "simple_framework": 92.45,
+        "single_model": 56.05
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "simple_framework",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "software_delivery",
+      "id": 4,
+      "scores_by_source": {
+        "cortexmesh": 45.3,
+        "simple_framework": 92.45,
+        "single_model": 59.2
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "single_model",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "software_delivery",
+      "id": 5,
+      "scores_by_source": {
+        "cortexmesh": 38.55,
+        "simple_framework": 93.2,
+        "single_model": 57.4
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "simple_framework",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "software_delivery",
+      "id": 6,
+      "scores_by_source": {
+        "cortexmesh": 42.85,
+        "simple_framework": 94.95,
+        "single_model": 58.55
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "simple_framework",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "data_platform",
+      "id": 7,
+      "scores_by_source": {
+        "cortexmesh": 52.3,
+        "simple_framework": 92.45,
+        "single_model": 62.35
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "cortexmesh",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "data_platform",
+      "id": 8,
+      "scores_by_source": {
+        "cortexmesh": 42.05,
+        "simple_framework": 92.45,
+        "single_model": 57.4
+      },
+      "source_by_label": {
+        "Output_A": "simple_framework",
+        "Output_B": "single_model",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "data_platform",
+      "id": 9,
+      "scores_by_source": {
+        "cortexmesh": 39.35,
+        "simple_framework": 88.95,
+        "single_model": 52.55
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "simple_framework",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "cybersecurity",
+      "id": 10,
+      "scores_by_source": {
+        "cortexmesh": 52.3,
+        "simple_framework": 92.45,
+        "single_model": 59.2
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "cortexmesh",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "cybersecurity",
+      "id": 11,
+      "scores_by_source": {
+        "cortexmesh": 42.05,
+        "simple_framework": 88.95,
+        "single_model": 53.9
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "single_model",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "cybersecurity",
+      "id": 12,
+      "scores_by_source": {
+        "cortexmesh": 42.85,
+        "simple_framework": 94.95,
+        "single_model": 58.55
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "simple_framework",
+        "Output_C": "single_model"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "operations",
+      "id": 13,
+      "scores_by_source": {
+        "cortexmesh": 48.8,
+        "simple_framework": 92.45,
+        "single_model": 58.75
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "simple_framework",
+        "Output_C": "single_model"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "operations",
+      "id": 14,
+      "scores_by_source": {
+        "cortexmesh": 38.55,
+        "simple_framework": 95.7,
+        "single_model": 59.9
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "single_model",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "operations",
+      "id": 15,
+      "scores_by_source": {
+        "cortexmesh": 42.85,
+        "simple_framework": 92.45,
+        "single_model": 56.05
+      },
+      "source_by_label": {
+        "Output_A": "cortexmesh",
+        "Output_B": "single_model",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "customer_support",
+      "id": 16,
+      "scores_by_source": {
+        "cortexmesh": 48.8,
+        "simple_framework": 94.95,
+        "single_model": 58.55
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "cortexmesh",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "customer_support",
+      "id": 17,
+      "scores_by_source": {
+        "cortexmesh": 42.05,
+        "simple_framework": 96.45,
+        "single_model": 62.6
+      },
+      "source_by_label": {
+        "Output_A": "simple_framework",
+        "Output_B": "single_model",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "engineering"
+    },
+    {
+      "domain": "customer_support",
+      "id": 18,
+      "scores_by_source": {
+        "cortexmesh": 42.85,
+        "simple_framework": 94.95,
+        "single_model": 58.55
+      },
+      "source_by_label": {
+        "Output_A": "simple_framework",
+        "Output_B": "cortexmesh",
+        "Output_C": "single_model"
+      },
+      "task_type": "systems"
+    },
+    {
+      "domain": "commercial_strategy",
+      "id": 19,
+      "scores_by_source": {
+        "cortexmesh": 52.3,
+        "simple_framework": 94.95,
+        "single_model": 61.25
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "simple_framework",
+        "Output_C": "cortexmesh"
+      },
+      "task_type": "research"
+    },
+    {
+      "domain": "commercial_strategy",
+      "id": 20,
+      "scores_by_source": {
+        "cortexmesh": 42.85,
+        "simple_framework": 94.95,
+        "single_model": 58.55
+      },
+      "source_by_label": {
+        "Output_A": "single_model",
+        "Output_B": "cortexmesh",
+        "Output_C": "simple_framework"
+      },
+      "task_type": "systems"
+    }
+  ],
+  "cases_run": 20,
+  "commercial_hypothesis_status": "not_supported",
+  "controlled_patch": null,
+  "cortexmesh_win_rate": 0.0,
+  "domain_score_advantages": {
+    "cloud_finops": -0.523,
+    "commercial_strategy": -0.499,
+    "customer_support": -0.533,
+    "cybersecurity": -0.503,
+    "data_platform": -0.512,
+    "operations": -0.535,
+    "software_delivery": -0.548
+  },
+  "score_weights": {
+    "actionability": 15,
+    "completeness": 10,
+    "decision_quality": 30,
+    "risk_identification": 25,
+    "traceability": 20
+  },
+  "winner_distribution": {
+    "simple_framework": 20.0
+  }
+}

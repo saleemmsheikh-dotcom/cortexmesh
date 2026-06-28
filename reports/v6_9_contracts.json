@@ -1,0 +1,97 @@
+{
+  "authority_bypass": false,
+  "capability_import_bypass": false,
+  "contract_status": "PASS",
+  "details": {
+    "authority": {
+      "cases": {
+        "direct_final": true,
+        "illegal_version": true,
+        "missing_agent": true,
+        "quarantined": true,
+        "unknown": true
+      },
+      "passed": true
+    },
+    "capability_import_violations": [],
+    "capability_sandbox": {
+      "clear_tamper_log": true,
+      "full_memory_is_readonly": true,
+      "return_final_answer": true,
+      "spawn_v99": true,
+      "write_protected_memory": true
+    },
+    "evolution": {
+      "active": "Engineer",
+      "active_specs": [
+        "Architect",
+        "Researcher",
+        "Engineer"
+      ],
+      "frozen_events": [],
+      "passed": true,
+      "v3_status": "quarantined",
+      "violations": [
+        "Engineer_v3: illegal version"
+      ]
+    },
+    "governance": {
+      "passed": true,
+      "probe": {
+        "clear_tamper_log": true,
+        "full_memory_is_readonly": true,
+        "return_final_answer": true,
+        "spawn_v99": true,
+        "write_protected_memory": true
+      }
+    },
+    "snapshot": {
+      "actions": [
+        {
+          "action": "rollback",
+          "source": "2026-06-05T09:20:34.035824+00:00"
+        }
+      ],
+      "passed": true,
+      "restored": true,
+      "restored_active": "Architect",
+      "valid_after_poisoning": false
+    },
+    "static_boundary_violations": [],
+    "tamper": {
+      "passed": true,
+      "variants": {
+        "action_type": {
+          "detected": true,
+          "frozen": true,
+          "rollback": true
+        },
+        "delete": {
+          "detected": true,
+          "frozen": true,
+          "rollback": true
+        },
+        "edit": {
+          "detected": true,
+          "frozen": true,
+          "rollback": true
+        },
+        "reorder": {
+          "detected": true,
+          "frozen": true,
+          "rollback": true
+        },
+        "timestamp": {
+          "detected": true,
+          "frozen": true,
+          "rollback": true
+        }
+      }
+    }
+  },
+  "evolution_bypass": false,
+  "governance_bypass": false,
+  "memory_bypass": false,
+  "snapshot_poisoning": false,
+  "tamper_bypass": false
+}

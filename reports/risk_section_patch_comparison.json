@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "average_score_advantage": -0.499,
+    "cortexmesh_win_rate": 0.0
+  },
+  "effect": {
+    "score_advantage_delta": 0.146,
+    "win_rate_delta": 0.0
+  },
+  "patch_status": "supported",
+  "patched": {
+    "average_score_advantage": -0.353,
+    "cortexmesh_win_rate": 0.0
+  }
+}

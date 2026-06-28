@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.egg-info/
+.venv/
+venv/
+.env
+memory/memory.json.bak

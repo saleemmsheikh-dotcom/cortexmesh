@@ -27,6 +27,7 @@ Status: OPEN
 Topic: Hash-chain to Merkle tree and external anchoring
 
 ### DEBT-010: Docker Daemon Risk
+Severity: HIGH
 Status: MONITOR
 Topic: Docker daemon compromise and isolation hardening
 
@@ -38,5 +39,5 @@ Topic: kill failures, daemon hangs, zombie process handling
 
 ### DEBT-016: Orchestrator Coverage
 Status: CLOSED
-Result: 99% coverage achieved
-Note: Closure does not prove every branch is defect-free.
+Result: 97% orchestrator coverage achieved (2026-06-28 remediation audit)
+Note: Closure does not prove every branch is defect-free. B+ battery critic divergence remains open.

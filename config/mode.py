@@ -14,6 +14,9 @@ class ModeConfig:
         if ModeConfig.FORCE_MODE == "dev":
             return "dev"
 
+        if ModeConfig.FORCE_MODE == "audit":
+            return "audit"
+
         if ModeConfig.FORCE_MODE == "prod":
             if api_available and budget_ok:
                 return "prod"

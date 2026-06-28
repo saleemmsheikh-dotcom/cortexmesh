@@ -40,10 +40,10 @@ The implementation plan must include:
 
 For a new board or technical-agent session, load:
 
-1. `CortexMesh_v3_Planning/Session4_Onboarding/GOVERNANCE_BASELINE_v1.0.md`
-2. `CortexMesh_v3_Planning/Session4_Onboarding/LOCK_REGISTRY_v1.0.md`
-3. `CortexMesh_v3_Planning/Session4_Onboarding/ARCHITECTURE_DEBT_REGISTER_v1.3.md`
-4. `CortexMesh_v3_Planning/CURRENT_BOARD_STATE.md`
-5. `CortexMesh_v3_Planning/BOARD_HISTORY_SUMMARY.md`
+1. `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_BASELINE_v1.0.md`
+2. `CortexMesh_v3_Planning/04_Architecture/LOCK_REGISTRY_v1.0.md`
+3. `CortexMesh_v3_Planning/03_Debt_Management/DEBT_REGISTER_v1.3.md`
+4. `CortexMesh_v3_Planning/00_Governance/BOARD_CURRENT_STATE.md`
+5. `CortexMesh_v3_Planning/00_Governance/BOARD_HISTORY_SUMMARY.md`
 6. `CortexMesh_v3_Planning/03_Debt_Management/DEBT011/DesignStudy/DEBT011_DESIGN_STUDY_v1.1.md`
 7. `CortexMesh_v3_Planning/03_Debt_Management/DEBT011/ImplementationPlan/DEBT011_IMPLEMENTATION_PLAN_v1.0.md`

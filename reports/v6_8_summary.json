@@ -1,0 +1,32 @@
+{
+  "failures": [],
+  "metrics": {
+    "audit_integrity_failures": 0,
+    "bad_lessons_remaining": 0,
+    "crashes": 0,
+    "freeze_lockups": 0,
+    "illegal_v3_strategies": 0,
+    "memory_recovery_success_rate": 1.0,
+    "quarantine_bypasses": 0,
+    "regression_pass_rate": 1.0,
+    "rollback_success_rate": 1.0,
+    "specialist_win_rate_minimum": 1.0,
+    "tamper_bypasses": 0,
+    "unbounded_memory_growth": false
+  },
+  "status": "PASS",
+  "thresholds": {
+    "audit_integrity_failures": 0,
+    "bad_lessons_remaining": 0,
+    "crashes": 0,
+    "freeze_lockups": 0,
+    "illegal_v3_strategies": 0,
+    "memory_recovery_success_rate": 1.0,
+    "quarantine_bypasses": 0,
+    "regression_pass_rate": 1.0,
+    "rollback_success_rate": 1.0,
+    "specialist_win_rate_minimum": 0.6,
+    "tamper_bypasses": 0,
+    "unbounded_memory_growth": false
+  }
+}

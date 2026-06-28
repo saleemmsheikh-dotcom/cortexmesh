@@ -1,0 +1,606 @@
+{
+  "batteries": {
+    "endurance": {
+      "crashes": [],
+      "duration_seconds": 9.165,
+      "freeze_count": 0,
+      "illegal_v3_strategies": 0,
+      "memory_bytes_final": 82586,
+      "memory_bytes_growth": 45249,
+      "memory_bytes_start": 37337,
+      "name": "endurance",
+      "quarantine_count": 0,
+      "risk_score_final": 0.0,
+      "risk_score_start": 0.0,
+      "role_weights": {
+        "Architect": 0.24255056549359721,
+        "Engineer": 0.434378459353608,
+        "Researcher": 0.3230709751527948
+      },
+      "rollback_count": 0,
+      "runs_completed": 500,
+      "runs_requested": 500,
+      "specialist_win_rates": {
+        "engineering": 1.0,
+        "research": 1.0,
+        "systems": 1.0
+      },
+      "strategy_count": 6,
+      "task_trust": {
+        "engineering": {
+          "Architect": 0.8,
+          "Engineer": 1.2,
+          "Researcher": 0.8
+        },
+        "general": {
+          "Architect": 1.0,
+          "Engineer": 1.0,
+          "Researcher": 1.0
+        },
+        "research": {
+          "Architect": 0.8,
+          "Engineer": 0.8,
+          "Researcher": 1.2
+        },
+        "systems": {
+          "Architect": 1.2,
+          "Engineer": 0.8,
+          "Researcher": 0.8
+        }
+      },
+      "winner_distribution": {
+        "Architect_v2": 89,
+        "Engineer_v2": 191,
+        "Researcher_v2": 220
+      }
+    },
+    "evolution": {
+      "crashes": [],
+      "duration_seconds": 5.557,
+      "illegal_v3_strategies": 0,
+      "knowledge_weights": {
+        "engineering": [
+          {
+            "lesson": "Break into steps; Define implementation path; Reduce complexity",
+            "reliability": 1.0,
+            "weight": 0.5
+          }
+        ],
+        "general": [],
+        "research": [
+          {
+            "lesson": "Compare known approaches; Identify alternatives; Evaluate evidence",
+            "reliability": 1.5,
+            "weight": 0.7302460652350725
+          }
+        ],
+        "systems": [
+          {
+            "lesson": "Model system components; Define constraints; Identify dependencies",
+            "reliability": 1.5,
+            "weight": 1.99
+          }
+        ]
+      },
+      "name": "evolution",
+      "runs_completed": 300,
+      "runs_requested": 300,
+      "specialist_win_rates": {
+        "engineering": 1.0,
+        "research": 1.0,
+        "systems": 1.0
+      },
+      "strategy_count": 6,
+      "strategy_registry": {
+        "Architect": {
+          "active": "Architect_v2",
+          "strategies": {
+            "Architect": {
+              "parent": null,
+              "status": "retired",
+              "traits": [
+                "default"
+              ],
+              "version": 1
+            },
+            "Architect_v2": {
+              "created_from": "repetition",
+              "parent": "Architect",
+              "status": "active",
+              "traits": [
+                "default",
+                "anti_repetition"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "Engineer": {
+          "active": "Engineer_v2",
+          "strategies": {
+            "Engineer": {
+              "parent": null,
+              "status": "retired",
+              "traits": [
+                "default"
+              ],
+              "version": 1
+            },
+            "Engineer_v2": {
+              "created_from": "repetition",
+              "parent": "Engineer",
+              "status": "active",
+              "traits": [
+                "default",
+                "anti_repetition"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "Researcher": {
+          "active": "Researcher_v2",
+          "strategies": {
+            "Researcher": {
+              "parent": null,
+              "status": "retired",
+              "traits": [
+                "default"
+              ],
+              "version": 1
+            },
+            "Researcher_v2": {
+              "created_from": "repetition",
+              "parent": "Researcher",
+              "status": "active",
+              "traits": [
+                "default",
+                "anti_repetition"
+              ],
+              "version": 2
+            }
+          }
+        }
+      },
+      "strategy_scores": {
+        "Architect": [
+          3.6100000000000003,
+          3.4216,
+          4.023199999999999,
+          4.2372000000000005,
+          4.1944,
+          3.9963999999999995,
+          3.8316000000000003,
+          3.724,
+          3.8412,
+          3.6479999999999997
+        ],
+        "Architect_v2": [
+          7.703999999999999,
+          7.703999999999999,
+          7.703999999999999,
+          7.416,
+          7.703999999999999,
+          7.991999999999999,
+          7.991999999999999,
+          7.991999999999999,
+          7.991999999999999,
+          7.703999999999999,
+          7.991999999999999,
+          7.703999999999999,
+          7.416,
+          7.991999999999999,
+          7.703999999999999,
+          7.991999999999999,
+          7.991999999999999,
+          7.703999999999999,
+          7.991999999999999,
+          7.991999999999999
+        ],
+        "Engineer": [
+          8.211,
+          8.28,
+          3.99,
+          3.7976000000000005,
+          3.7571999999999997,
+          3.7168,
+          3.6763999999999997,
+          8.7084,
+          8.856
+        ],
+        "Engineer_v2": [
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.2320000000000015,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.488000000000001,
+          3.488000000000001,
+          3.488000000000001,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.3600000000000008,
+          3.2320000000000015,
+          3.2320000000000015
+        ],
+        "Researcher": [
+          4.430869999999999,
+          4.550999999999999,
+          8.4252,
+          8.586,
+          4.992570000000001,
+          4.620699999999999
+        ],
+        "Researcher_v2": [
+          4.034400000000001,
+          4.034400000000001,
+          4.034400000000001,
+          4.165600000000001,
+          4.165600000000001,
+          3.9032000000000004,
+          3.9032000000000004,
+          3.9032000000000004,
+          3.9032000000000004,
+          4.034400000000001,
+          3.9032000000000004,
+          4.034400000000001,
+          4.034400000000001,
+          3.772000000000001,
+          3.9032000000000004,
+          3.9032000000000004,
+          3.9032000000000004,
+          4.034400000000001,
+          4.034400000000001,
+          4.034400000000001
+        ]
+      },
+      "task_trust": {
+        "engineering": {
+          "Architect": 0.8,
+          "Engineer": 1.2,
+          "Researcher": 0.8
+        },
+        "general": {
+          "Architect": 1.0,
+          "Engineer": 1.0,
+          "Researcher": 1.0
+        },
+        "research": {
+          "Architect": 0.8,
+          "Engineer": 0.8,
+          "Researcher": 1.2
+        },
+        "systems": {
+          "Architect": 1.2,
+          "Engineer": 0.8,
+          "Researcher": 0.8
+        }
+      }
+    },
+    "governance": {
+      "audit_integrity_failures": 0,
+      "duration_seconds": 0.004,
+      "exceptions": [],
+      "final_risk_score": 4.915200000000002,
+      "freeze_lockups": 0,
+      "governance_frozen": false,
+      "memory_recovery_success_rate": 1.0,
+      "name": "governance",
+      "quarantine_bypasses": 0,
+      "rollback_success_rate": 1.0,
+      "tamper_bypasses": 0
+    },
+    "knowledge": {
+      "bad_lessons_archived": 30,
+      "bad_lessons_remaining": 0,
+      "crashes": [],
+      "duration_seconds": 1.724,
+      "knowledge_memory": {
+        "engineering": [
+          {
+            "agent": "Engineer_v2",
+            "lesson": "Break into steps; Define implementation path; Reduce complexity",
+            "reliability": 1.0,
+            "score": 6.9075384615384605,
+            "successes": 4,
+            "uses": 4,
+            "weight": 0.6802436560301545
+          }
+        ],
+        "general": [],
+        "research": [
+          {
+            "agent": "Researcher_v2",
+            "lesson": "Compare known approaches; Identify alternatives; Evaluate evidence",
+            "reliability": 1.5,
+            "score": 9.058399999999999,
+            "successes": 36,
+            "uses": 36,
+            "weight": 1.9555603173834932
+          }
+        ],
+        "systems": [
+          {
+            "agent": "Architect_v2",
+            "lesson": "Model system components; Define constraints; Identify dependencies",
+            "reliability": 1.5,
+            "score": 8.341999999999999,
+            "successes": 36,
+            "uses": 36,
+            "weight": 1.949885054659099
+          }
+        ]
+      },
+      "name": "knowledge",
+      "runs_completed": 100,
+      "runs_requested": 100
+    },
+    "regression": {
+      "crashes": [],
+      "duration_seconds": 0.624,
+      "name": "regression",
+      "regression_pass_rate": 1.0,
+      "results": [
+        {
+          "index": 0,
+          "task": "Compare three approaches to reducing cloud costs",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 1,
+          "task": "Research alternatives for improving database performance",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 2,
+          "task": "Compare three approaches to reducing cloud costs",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 3,
+          "task": "Compare three approaches to reducing cloud costs",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 4,
+          "task": "Research alternatives for improving database performance",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 5,
+          "task": "Compare three approaches to reducing cloud costs",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 6,
+          "task": "Analyze methods for reducing software delivery risk",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 7,
+          "task": "Research alternatives for improving database performance",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 8,
+          "task": "Analyze methods for reducing software delivery risk",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 9,
+          "task": "Analyze methods for reducing software delivery risk",
+          "task_type": "research",
+          "winner": "Researcher_v2",
+          "winner_family": "Researcher"
+        },
+        {
+          "index": 10,
+          "task": "Code an execution plan for automated deployment validation",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 11,
+          "task": "Build a reliable database backup utility",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 12,
+          "task": "Implement a practical cloud cost optimisation script",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 13,
+          "task": "Code an execution plan for automated deployment validation",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 14,
+          "task": "Implement a practical cloud cost optimisation script",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 15,
+          "task": "Code an execution plan for automated deployment validation",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 16,
+          "task": "Code an execution plan for automated deployment validation",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 17,
+          "task": "Code an execution plan for automated deployment validation",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 18,
+          "task": "Build a reliable database backup utility",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 19,
+          "task": "Implement a practical cloud cost optimisation script",
+          "task_type": "engineering",
+          "winner": "Engineer_v2",
+          "winner_family": "Engineer"
+        },
+        {
+          "index": 20,
+          "task": "Design a stable distributed job processing system",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 21,
+          "task": "Design a resilient cloud cost optimisation architecture",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 22,
+          "task": "Design a resilient cloud cost optimisation architecture",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 23,
+          "task": "Design a resilient cloud cost optimisation architecture",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 24,
+          "task": "Design a stable distributed job processing system",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 25,
+          "task": "Design a stable distributed job processing system",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 26,
+          "task": "Create a system architecture for reliable data ingestion",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 27,
+          "task": "Create a system architecture for reliable data ingestion",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 28,
+          "task": "Design a stable distributed job processing system",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        },
+        {
+          "index": 29,
+          "task": "Create a system architecture for reliable data ingestion",
+          "task_type": "systems",
+          "winner": "Architect_v2",
+          "winner_family": "Architect"
+        }
+      ],
+      "runs_completed": 30,
+      "runs_requested": 30,
+      "specialist_win_rates": {
+        "engineering": 1.0,
+        "research": 1.0,
+        "systems": 1.0
+      }
+    }
+  },
+  "created_at": "2026-06-06T07:40:02.109844+00:00",
+  "quick_mode": false,
+  "summary": {
+    "failures": [],
+    "metrics": {
+      "audit_integrity_failures": 0,
+      "bad_lessons_remaining": 0,
+      "crashes": 0,
+      "freeze_lockups": 0,
+      "illegal_v3_strategies": 0,
+      "memory_recovery_success_rate": 1.0,
+      "quarantine_bypasses": 0,
+      "regression_pass_rate": 1.0,
+      "rollback_success_rate": 1.0,
+      "specialist_win_rate_minimum": 1.0,
+      "tamper_bypasses": 0,
+      "unbounded_memory_growth": false
+    },
+    "status": "PASS",
+    "thresholds": {
+      "audit_integrity_failures": 0,
+      "bad_lessons_remaining": 0,
+      "crashes": 0,
+      "freeze_lockups": 0,
+      "illegal_v3_strategies": 0,
+      "memory_recovery_success_rate": 1.0,
+      "quarantine_bypasses": 0,
+      "regression_pass_rate": 1.0,
+      "rollback_success_rate": 1.0,
+      "specialist_win_rate_minimum": 0.6,
+      "tamper_bypasses": 0,
+      "unbounded_memory_growth": false
+    }
+  },
+  "version": "V6.8"
+}

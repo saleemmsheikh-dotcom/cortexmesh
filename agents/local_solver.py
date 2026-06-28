@@ -7,9 +7,13 @@ class LocalSolverAgent(BaseAgent):
         super().__init__(name, role)
 
     def act(self, task, ledger):
+        base_agent = getattr(self, "base_agent", self.name)
+
         if self.role == "architect":
             return {
                 "agent": self.name,
+                "base_agent": base_agent,
+                "confidence": 0.5,
                 "solution": (
                     "SYSTEMS VIEW\n"
                     "- Model system components\n"
@@ -23,6 +27,8 @@ class LocalSolverAgent(BaseAgent):
         if self.role == "researcher":
             return {
                 "agent": self.name,
+                "base_agent": base_agent,
+                "confidence": 0.5,
                 "solution": (
                     "RESEARCH VIEW\n"
                     "- Compare known approaches\n"
@@ -36,6 +42,8 @@ class LocalSolverAgent(BaseAgent):
         if self.role == "engineer":
             return {
                 "agent": self.name,
+                "base_agent": base_agent,
+                "confidence": 0.5,
                 "solution": (
                     "ENGINEERING VIEW\n"
                     "- Break into steps\n"
@@ -48,6 +56,8 @@ class LocalSolverAgent(BaseAgent):
 
         return {
             "agent": self.name,
+            "base_agent": base_agent,
+            "confidence": 0.5,
             "solution": (
                 "GENERAL VIEW\n"
                 "- Define objectives\n"

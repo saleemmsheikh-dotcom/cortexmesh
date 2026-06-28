@@ -1,0 +1,1 @@
+"""Blind external usefulness benchmark."""

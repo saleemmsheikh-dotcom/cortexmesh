@@ -1,0 +1,298 @@
+{
+  "average_weighted_dimension_gaps": {
+    "actionability": 7.264,
+    "completeness": 5.473,
+    "decision_quality": 12.967,
+    "risk_identification": 14.469,
+    "traceability": 8.685
+  },
+  "case_diagnostics": [
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 52.3,
+      "domain": "cloud_finops",
+      "id": 1,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 6.6,
+        "risk_identification": 15.75,
+        "traceability": 6.2
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.05,
+      "domain": "cloud_finops",
+      "id": 2,
+      "weighted_dimension_gaps": {
+        "actionability": 3.45,
+        "completeness": 5.5,
+        "decision_quality": 17.7,
+        "risk_identification": 13.75,
+        "traceability": 10.0
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 39.35,
+      "domain": "cloud_finops",
+      "id": 3,
+      "weighted_dimension_gaps": {
+        "actionability": 8.85,
+        "completeness": 5.5,
+        "decision_quality": 15.0,
+        "risk_identification": 13.75,
+        "traceability": 10.0
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 45.3,
+      "domain": "software_delivery",
+      "id": 4,
+      "weighted_dimension_gaps": {
+        "actionability": 9.375,
+        "completeness": 5.85,
+        "decision_quality": 7.95,
+        "risk_identification": 16.875,
+        "traceability": 7.1
+      }
+    },
+    {
+      "baseline_total": 93.2,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 38.55,
+      "domain": "software_delivery",
+      "id": 5,
+      "weighted_dimension_gaps": {
+        "actionability": 4.725,
+        "completeness": 5.85,
+        "decision_quality": 18.75,
+        "risk_identification": 14.625,
+        "traceability": 10.7
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.85,
+      "domain": "software_delivery",
+      "id": 6,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 14.7,
+        "risk_identification": 13.5,
+        "traceability": 9.8
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 52.3,
+      "domain": "data_platform",
+      "id": 7,
+      "weighted_dimension_gaps": {
+        "actionability": 8.325,
+        "completeness": 5.15,
+        "decision_quality": 5.85,
+        "risk_identification": 15.125,
+        "traceability": 5.7
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.05,
+      "domain": "data_platform",
+      "id": 8,
+      "weighted_dimension_gaps": {
+        "actionability": 3.45,
+        "completeness": 5.5,
+        "decision_quality": 17.7,
+        "risk_identification": 13.75,
+        "traceability": 10.0
+      }
+    },
+    {
+      "baseline_total": 88.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 39.35,
+      "domain": "data_platform",
+      "id": 9,
+      "weighted_dimension_gaps": {
+        "actionability": 8.325,
+        "completeness": 5.15,
+        "decision_quality": 13.95,
+        "risk_identification": 12.875,
+        "traceability": 9.3
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 52.3,
+      "domain": "cybersecurity",
+      "id": 10,
+      "weighted_dimension_gaps": {
+        "actionability": 8.325,
+        "completeness": 5.15,
+        "decision_quality": 5.85,
+        "risk_identification": 15.125,
+        "traceability": 5.7
+      }
+    },
+    {
+      "baseline_total": 88.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.05,
+      "domain": "cybersecurity",
+      "id": 11,
+      "weighted_dimension_gaps": {
+        "actionability": 2.925,
+        "completeness": 5.15,
+        "decision_quality": 16.65,
+        "risk_identification": 12.875,
+        "traceability": 9.3
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.85,
+      "domain": "cybersecurity",
+      "id": 12,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 14.7,
+        "risk_identification": 13.5,
+        "traceability": 9.8
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 48.8,
+      "domain": "operations",
+      "id": 13,
+      "weighted_dimension_gaps": {
+        "actionability": 8.85,
+        "completeness": 5.5,
+        "decision_quality": 6.9,
+        "risk_identification": 16.0,
+        "traceability": 6.4
+      }
+    },
+    {
+      "baseline_total": 95.7,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 38.55,
+      "domain": "operations",
+      "id": 14,
+      "weighted_dimension_gaps": {
+        "actionability": 5.1,
+        "completeness": 6.1,
+        "decision_quality": 19.5,
+        "risk_identification": 15.25,
+        "traceability": 11.2
+      }
+    },
+    {
+      "baseline_total": 92.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.85,
+      "domain": "operations",
+      "id": 15,
+      "weighted_dimension_gaps": {
+        "actionability": 8.325,
+        "completeness": 5.15,
+        "decision_quality": 13.95,
+        "risk_identification": 12.875,
+        "traceability": 9.3
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 48.8,
+      "domain": "customer_support",
+      "id": 16,
+      "weighted_dimension_gaps": {
+        "actionability": 9.225,
+        "completeness": 5.75,
+        "decision_quality": 7.65,
+        "risk_identification": 16.625,
+        "traceability": 6.9
+      }
+    },
+    {
+      "baseline_total": 96.45,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.05,
+      "domain": "customer_support",
+      "id": 17,
+      "weighted_dimension_gaps": {
+        "actionability": 3.825,
+        "completeness": 5.75,
+        "decision_quality": 19.95,
+        "risk_identification": 14.375,
+        "traceability": 10.5
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.85,
+      "domain": "customer_support",
+      "id": 18,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 14.7,
+        "risk_identification": 13.5,
+        "traceability": 9.8
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 52.3,
+      "domain": "commercial_strategy",
+      "id": 19,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 6.6,
+        "risk_identification": 15.75,
+        "traceability": 6.2
+      }
+    },
+    {
+      "baseline_total": 94.95,
+      "best_baseline": "simple_framework",
+      "cortexmesh_total": 42.85,
+      "domain": "commercial_strategy",
+      "id": 20,
+      "weighted_dimension_gaps": {
+        "actionability": 8.7,
+        "completeness": 5.4,
+        "decision_quality": 14.7,
+        "risk_identification": 13.5,
+        "traceability": 9.8
+      }
+    }
+  ],
+  "cases_analyzed": 20,
+  "confidence": "high",
+  "primary_dimension": "risk_identification",
+  "primary_failure_hypothesis": "CortexMesh outputs under-identify risks, failure modes, and safeguards.",
+  "recommended_action": "Add a mandatory final risk section covering failure modes, edge cases, safeguards, and validation checks.",
+  "support_rate": 1.0,
+  "supporting_cases": 20
+}

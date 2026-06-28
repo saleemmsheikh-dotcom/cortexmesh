@@ -1,0 +1,4970 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 2,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 3,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 4,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 5,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 6,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 7,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 8,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 9,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 10,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 11,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 12,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 13,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 14,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 15,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 16,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 17,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 18,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 19,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 20,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 21,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 22,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 23,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 24,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 25,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 26,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 27,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 28,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 29,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 30,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 31,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 32,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 33,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 34,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 35,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 36,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 37,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 38,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 39,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 40,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 41,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 42,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 43,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 44,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 45,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 46,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 47,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 48,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 49,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 50,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 51,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 52,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 53,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 54,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 55,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 56,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 57,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 58,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 59,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 60,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 61,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 62,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 63,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 64,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 65,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 66,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 67,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 68,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 69,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 70,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 71,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 72,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 73,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 74,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 75,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 76,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 77,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 78,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 79,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 80,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 81,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 82,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 83,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 84,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 85,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 86,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 87,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 88,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 89,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 90,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 91,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 92,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 93,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 94,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 95,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 96,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 97,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 98,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 99,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 100,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 101,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 102,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 103,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 104,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 105,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 106,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 107,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 108,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 109,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 110,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 111,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 112,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 113,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 114,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 115,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 116,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 117,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 118,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 119,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 120,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 1,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 121,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 122,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 123,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 124,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 125,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 126,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 127,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 128,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 129,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 130,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 131,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 132,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 133,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 134,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 135,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 136,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 137,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 138,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 139,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 140,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 141,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 142,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 143,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 144,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 145,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 146,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 147,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 148,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 11,
+        "recovered": true
+      }
+    },
+    {
+      "run": 149,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 150,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 151,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 152,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 153,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 11,
+        "recovered": true
+      }
+    },
+    {
+      "run": 154,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 155,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 156,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 157,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 158,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 2,
+        "recovered": true
+      }
+    },
+    {
+      "run": 159,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 6,
+        "recovered": true
+      }
+    },
+    {
+      "run": 160,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 6,
+        "recovered": true
+      }
+    },
+    {
+      "run": 161,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 162,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 163,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 164,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 165,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 166,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 167,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 168,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 169,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 170,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 7,
+        "recovered": true
+      }
+    },
+    {
+      "run": 171,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 7,
+        "recovered": true
+      }
+    },
+    {
+      "run": 172,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 7,
+        "recovered": true
+      }
+    },
+    {
+      "run": 173,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 174,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 175,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 176,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 9,
+        "recovered": true
+      }
+    },
+    {
+      "run": 177,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 178,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 1,
+        "quarantined": 10,
+        "recovered": true
+      }
+    },
+    {
+      "run": 179,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 12,
+        "recovered": true
+      }
+    },
+    {
+      "run": 180,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 16,
+        "recovered": true
+      }
+    },
+    {
+      "run": 181,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 182,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 183,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 2,
+        "recovered": true
+      }
+    },
+    {
+      "run": 184,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 3,
+        "quarantined": 6,
+        "recovered": true
+      }
+    },
+    {
+      "run": 185,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 4,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 186,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 187,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 188,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 189,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 190,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 191,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 192,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 1,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 193,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 1,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 194,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 195,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 3,
+        "quarantined": 6,
+        "recovered": true
+      }
+    },
+    {
+      "run": 196,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 4,
+        "quarantined": 7,
+        "recovered": true
+      }
+    },
+    {
+      "run": 197,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 4,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 198,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 199,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 200,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 201,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 202,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 203,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 204,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 205,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 206,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 207,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 208,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 209,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 210,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 211,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 212,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 213,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 214,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 215,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 216,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 217,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 218,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 219,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 220,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 221,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 222,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 223,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 224,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 225,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 226,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 227,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 228,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 229,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 230,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 231,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 232,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 233,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 234,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 235,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 236,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 237,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 238,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 239,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 240,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 241,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 242,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 243,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 244,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 245,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 246,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 247,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 248,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 249,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 250,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 251,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 252,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 253,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 254,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 255,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 256,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 257,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 258,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 259,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 260,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 261,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 262,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 263,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 264,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 265,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 266,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 267,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 268,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 269,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 270,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 271,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 272,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 273,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 274,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 275,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 276,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 277,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 278,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 279,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 280,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 281,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 282,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 283,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 284,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 285,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 286,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 287,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 288,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 289,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 290,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 291,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 292,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 293,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 294,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 295,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 296,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 297,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 298,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 299,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 300,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 301,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 302,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 303,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 304,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 305,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 306,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 307,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 308,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 309,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 310,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 311,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 312,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 313,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 314,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 315,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 316,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 317,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 318,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 319,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 320,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 321,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 322,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 323,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 324,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 325,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 326,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 327,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 328,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 329,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 330,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 331,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 332,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 333,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 334,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 335,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 336,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 337,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 338,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 339,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 340,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 341,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 342,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 343,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 344,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 345,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 346,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 347,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 348,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 349,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 350,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 351,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 352,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 353,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 354,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 355,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 356,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 357,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 358,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 359,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 360,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 361,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 362,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 363,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 364,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 365,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 366,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 367,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 368,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 369,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 370,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 371,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 372,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 373,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 374,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 375,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 376,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 377,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 378,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 379,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 380,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 381,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 382,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 383,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 384,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 385,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 386,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 387,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 388,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 389,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 390,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 391,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 392,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 393,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 394,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 395,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 396,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 397,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 398,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 399,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 400,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 401,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 402,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 403,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 404,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 405,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 406,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 407,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 408,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 409,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 410,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 411,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 412,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 413,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 414,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 415,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 416,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 417,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 418,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 419,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 420,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 421,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 422,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 423,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 6,
+        "recovered": true
+      }
+    },
+    {
+      "run": 424,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 425,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 426,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 427,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 428,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 429,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 430,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 431,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 432,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 433,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 434,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 435,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 436,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 437,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 438,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 439,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 440,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 441,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 442,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 443,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 444,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 445,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 446,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 447,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 448,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 449,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 450,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 451,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.569999999999999
+      }
+    },
+    {
+      "run": 452,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 453,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 454,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 455,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 1,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 456,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 457,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 458,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 459,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 460,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 461,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 462,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 11.049999999999999
+      }
+    },
+    {
+      "run": 463,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "research",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 464,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 465,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 466,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 467,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 468,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 469,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 470,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 471,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "tamper",
+        "violations": 0,
+        "detected": true,
+        "frozen": true,
+        "rollback": true,
+        "recovered": true
+      }
+    },
+    {
+      "run": 472,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 473,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 474,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 475,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 476,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 4,
+        "recovered": true
+      }
+    },
+    {
+      "run": 477,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "overflow",
+        "violations": 1,
+        "quarantined": 8,
+        "recovered": true
+      }
+    },
+    {
+      "run": 478,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 479,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 480,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 481,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 10.81
+      }
+    },
+    {
+      "run": 482,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 483,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 484,
+      "injection": "clean",
+      "crash": false,
+      "domain": "engineering",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 485,
+      "injection": "governance",
+      "crash": false,
+      "domain": "systems",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 486,
+      "injection": "governance",
+      "crash": false,
+      "domain": "engineering",
+      "governance": {
+        "type": "overflow",
+        "violations": 2,
+        "quarantined": 5,
+        "recovered": true
+      }
+    },
+    {
+      "run": 487,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 488,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 11.049999999999999
+      }
+    },
+    {
+      "run": 489,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 490,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    },
+    {
+      "run": 491,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 492,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "research",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Researcher",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 11.049999999999999
+      }
+    },
+    {
+      "run": 493,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "systems",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 494,
+      "injection": "critic_divergence",
+      "crash": false,
+      "domain": "engineering",
+      "critic": {
+        "score_negative": 5.0,
+        "score_positive": 7.8,
+        "divergence": 2.8,
+        "divergence_sufficient": true
+      }
+    },
+    {
+      "run": 495,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 11.049999999999999
+      }
+    },
+    {
+      "run": 496,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "systems",
+      "authority": {
+        "winner": "Researcher_v2",
+        "winner_base": "Researcher",
+        "specialist": "Architect",
+        "non_specialist": "Researcher",
+        "non_specialist_won": true,
+        "authority_total": 10.33
+      }
+    },
+    {
+      "run": 497,
+      "injection": "clean",
+      "crash": false,
+      "domain": "systems",
+      "winner": "Researcher_v2",
+      "winner_base": "Researcher"
+    },
+    {
+      "run": 498,
+      "injection": "authority_adversarial",
+      "crash": false,
+      "domain": "engineering",
+      "authority": {
+        "winner": "Architect_v2",
+        "winner_base": "Architect",
+        "specialist": "Engineer",
+        "non_specialist": "Architect",
+        "non_specialist_won": true,
+        "authority_total": 11.049999999999999
+      }
+    },
+    {
+      "run": 499,
+      "injection": "governance",
+      "crash": false,
+      "domain": "research",
+      "governance": {
+        "type": "illegal_version",
+        "violations": 2,
+        "quarantined": 1,
+        "recovered": true
+      }
+    },
+    {
+      "run": 500,
+      "injection": "clean",
+      "crash": false,
+      "domain": "research",
+      "winner": "Architect_v2",
+      "winner_base": "Architect"
+    }
+  ],
+  "summary": {
+    "total_runs": 500,
+    "crashes": 0,
+    "specialist_wins": 96,
+    "non_specialist_wins": 248,
+    "critic_divergence_runs": 38,
+    "critic_divergence_sufficient": 38,
+    "governance_injections": 118,
+    "governance_recoveries": 118,
+    "tamper_integrity_failures": 0,
+    "memory_start": 26192,
+    "memory_end": 26163,
+    "runtime_seconds": 3.6217269897460938
+  },
+  "pass": {
+    "overall": true,
+    "checks": {
+      "crashes": true,
+      "specialist_rate": true,
+      "critic_divergence": true,
+      "memory_growth": true,
+      "governance_recovery": true,
+      "tamper_integrity": true,
+      "non_specialist_won": true
+    }
+  }
+}

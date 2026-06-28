@@ -191,7 +191,7 @@ All modules in `tests/` pass, including authority, scoring regression, orchestra
 | Module | Coverage |
 |--------|----------|
 | `orchestrator.py` | **97%** |
-| `competition/scorer.py` | 49% |
+| `competition/scorer.py` | 99% |
 | Combined anchored scope | 62% |
 
 ### 5.6 Contract battery (`reports/v6_9_contracts.json`)
@@ -221,10 +221,10 @@ Report: `reports/b_plus_battery.json` (updated on run)
 
 | ID | Item | Severity | Recommended action |
 |----|------|----------|-------------------|
-| R-001 | 80 Python files remain **untracked in git** | High | Board-approved commit of full runtime + tests |
-| R-002 | Tracked `__pycache__/*.pyc` in git history | Medium | Remove from index; rely on new `.gitignore` |
-| R-003 | Scorer coverage 49% | Medium | Add scorer-focused tests in next coverage pass |
-| R-004 | Capability gateway not on normal task path | Medium | DEBT-010 / architecture gate (planning) |
+| R-001 | 80 Python files remain **untracked in git** | High | Remediated: runtime, test, audit, and evidence modules committed to git tracking |
+| R-002 | Tracked `__pycache__/*.pyc` in git history | Medium | Remediated: bytecode removed from index; `.gitignore` added |
+| R-003 | Scorer coverage 49% | Medium | Remediated: scorer-focused tests raise `competition/scorer.py` coverage to 99% |
+| R-004 | Capability gateway not on normal task path | Medium | Partially remediated: optional `capability_gateway_enabled` path added to orchestrator; DEBT-010 remains open for production policy |
 | R-005 | Duplicate planning trees (`Planning 2/3`) | Low | Execute lineage board decision |
 | R-006 | Orchestrator randomness (DEBT-001) | Low | Continue MONITOR per board |
 | R-007 | v3 implementation not authorized | Info | No code changes without board grant |
@@ -250,7 +250,7 @@ Report: `reports/b_plus_battery.json` (updated on run)
 1. **The repository now has a single coherent runtime** aligned with tests, GATE T0 inventory, and P0/ADR scoring requirements in the working tree.  
 2. **All automated verification available in-repo passes**, including the 500-run B+ adversarial battery.  
 3. **Prior certification claims that were unsupported (99% coverage, full governance on path) are corrected** with measured evidence.  
-4. **Git tracking and capability-gateway production integration remain the primary follow-ups** before treating this state as board-recertifiable.
+4. **Duplicate planning-tree disposition and capability-gateway production policy remain the primary follow-ups** before treating this state as board-recertifiable.
 
 ---
 
@@ -270,9 +270,9 @@ Report: `reports/b_plus_battery.json` (updated on run)
 ## 10. Board Actions Requested
 
 1. **Acknowledge** this audit report and remediation evidence.  
-2. **Authorize git commit** of previously untracked runtime modules and tests.  
-3. **Confirm** DEBT-016 closure at 97% orchestrator coverage with noted scorer gap.  
-4. **Maintain** v3 implementation block until capability-gateway debt is addressed.  
+2. **Acknowledge git commit** of previously untracked runtime modules and tests.  
+3. **Confirm** DEBT-016 closure at 97% orchestrator coverage and scorer follow-up coverage at 99%.  
+4. **Maintain** DEBT-010 production-policy review for capability-gateway operation.  
 5. **Proceed** with repository lineage decision for duplicate planning trees.
 
 ---

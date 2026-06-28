@@ -1,0 +1,228 @@
+{
+  "case_results": [
+    {
+      "authority_score": 9.058,
+      "domain": "cloud_finops",
+      "expected_family": "Researcher",
+      "id": 1,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.335,
+      "domain": "cloud_finops",
+      "expected_family": "Engineer",
+      "id": 2,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 8.63,
+      "domain": "cloud_finops",
+      "expected_family": "Architect",
+      "id": 3,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 8.775,
+      "domain": "software_delivery",
+      "expected_family": "Researcher",
+      "id": 4,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.363,
+      "domain": "software_delivery",
+      "expected_family": "Engineer",
+      "id": 5,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 8.054,
+      "domain": "software_delivery",
+      "expected_family": "Architect",
+      "id": 6,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 9.058,
+      "domain": "data_platform",
+      "expected_family": "Researcher",
+      "id": 7,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.914,
+      "domain": "data_platform",
+      "expected_family": "Engineer",
+      "id": 8,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 7.766,
+      "domain": "data_platform",
+      "expected_family": "Architect",
+      "id": 9,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 8.775,
+      "domain": "cybersecurity",
+      "expected_family": "Researcher",
+      "id": 10,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.94,
+      "domain": "cybersecurity",
+      "expected_family": "Engineer",
+      "id": 11,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 8.054,
+      "domain": "cybersecurity",
+      "expected_family": "Architect",
+      "id": 12,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 9.058,
+      "domain": "operations",
+      "expected_family": "Researcher",
+      "id": 13,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.434,
+      "domain": "operations",
+      "expected_family": "Engineer",
+      "id": 14,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 8.63,
+      "domain": "operations",
+      "expected_family": "Architect",
+      "id": 15,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 8.775,
+      "domain": "customer_support",
+      "expected_family": "Researcher",
+      "id": 16,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 7.72,
+      "domain": "customer_support",
+      "expected_family": "Engineer",
+      "id": 17,
+      "specialist_fit": true,
+      "task_type": "engineering",
+      "winner": "Engineer_v2",
+      "winner_family": "Engineer"
+    },
+    {
+      "authority_score": 8.342,
+      "domain": "customer_support",
+      "expected_family": "Architect",
+      "id": 18,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    },
+    {
+      "authority_score": 8.775,
+      "domain": "commercial_strategy",
+      "expected_family": "Researcher",
+      "id": 19,
+      "specialist_fit": true,
+      "task_type": "research",
+      "winner": "Researcher_v2",
+      "winner_family": "Researcher"
+    },
+    {
+      "authority_score": 8.342,
+      "domain": "commercial_strategy",
+      "expected_family": "Architect",
+      "id": 20,
+      "specialist_fit": true,
+      "task_type": "systems",
+      "winner": "Architect_v2",
+      "winner_family": "Architect"
+    }
+  ],
+  "cases_run": 20,
+  "commercial_hypothesis_supported": true,
+  "crashes": [],
+  "domains": [
+    "cloud_finops",
+    "commercial_strategy",
+    "customer_support",
+    "cybersecurity",
+    "data_platform",
+    "operations",
+    "software_delivery"
+  ],
+  "scores": {
+    "average_authority_score": 8.29,
+    "completion_rate": 1.0,
+    "domain_coverage_rate": 1.0,
+    "specialist_fit_rate": 1.0,
+    "usefulness_score": 9.401
+  },
+  "winner_distribution": {
+    "Architect_v2": 7,
+    "Engineer_v2": 6,
+    "Researcher_v2": 7
+  }
+}
