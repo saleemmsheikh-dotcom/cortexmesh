@@ -21,6 +21,7 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/02_Onboarding/REVIEWER_ENTRY_POINT.md` | Stable reviewer entry point. |
 | `CortexMesh_v3_Planning/02_Onboarding/Session_09/REVIEW_PACKET.md` | Current Session 09 review packet. |
 | `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_CHANGELOG.md` | Governance evolution summary. |
+| `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
 
@@ -54,6 +55,14 @@ CortexMesh_v3_Planning/
 ├── REVIEW_EVIDENCE_STANDARD_v1.0.md
 ├── Communications/
 └── Repository_Lineage/
+    ├── Evidence/
+    ├── REPOSITORY_LINEAGE_INVESTIGATION.md
+    └── Reports/
+        ├── EXECUTIVE_SUMMARY.md
+        ├── FILE_COMPARISON_MATRIX.md
+        ├── MIGRATION_PLAN.md
+        ├── ARCHIVE_PLAN.md
+        └── FINAL_RECOMMENDATION.md
 ```
 
 Use this area for governance baseline documents, board decision records, communications, evidence standards, and repository lineage investigation material.
