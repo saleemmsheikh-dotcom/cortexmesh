@@ -139,7 +139,7 @@ Adopt a verified-termination design for future implementation planning:
 
 PROPOSED:
 
-Accept DEBT-011 Design Study v1.0 as a planning artifact.
+Accept DEBT-011 Design Study v1.1 as a planning artifact.
 
 Authorize future implementation planning for:
 
