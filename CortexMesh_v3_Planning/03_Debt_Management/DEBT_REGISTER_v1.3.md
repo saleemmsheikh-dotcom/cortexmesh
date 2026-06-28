@@ -3,7 +3,7 @@
 ## Open Items
 
 ### DEBT-001: Orchestrator Randomness
-Severity: HIGH
+Severity: MEDIUM
 Status: MONITOR
 Evidence of harm: Not established
 Evidence of benefit: Not established
@@ -27,7 +27,7 @@ Status: OPEN
 Topic: Hash-chain to Merkle tree and external anchoring
 
 ### DEBT-010: Docker Daemon Risk
-Status: OPEN
+Status: MONITOR
 Topic: Docker daemon compromise and isolation hardening
 
 ### DEBT-011: Timeout / Zombie Process Risk
