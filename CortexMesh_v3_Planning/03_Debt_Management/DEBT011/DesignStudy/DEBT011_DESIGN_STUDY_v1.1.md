@@ -1,4 +1,4 @@
-# DEBT-011 Design Study v1.0
+# DEBT-011 Design Study v1.1
 
 ## Status
 
