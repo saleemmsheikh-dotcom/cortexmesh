@@ -1,0 +1,14 @@
+Files CortexMesh_v3_Planning/.DS_Store and 'CortexMesh_v3_Planning 2/.DS_Store' differ
+Only in CortexMesh_v3_Planning: 00_Governance
+Only in CortexMesh_v3_Planning: 01_Policies
+Only in CortexMesh_v3_Planning: 02_Onboarding
+Only in CortexMesh_v3_Planning: 03_Debt_Management
+Only in CortexMesh_v3_Planning: 04_Architecture
+Only in CortexMesh_v3_Planning: 05_Program_Management
+Only in CortexMesh_v3_Planning: 99_Archive
+Only in CortexMesh_v3_Planning: Board
+Only in CortexMesh_v3_Planning: CORTEXMESH_DIRECTORY_MAP.md
+Only in 'CortexMesh_v3_Planning 2': DEBT001_Execution
+Only in 'CortexMesh_v3_Planning 2': DEBT001_Task_Corpus
+Only in CortexMesh_v3_Planning: PolicyReview
+Only in CortexMesh_v3_Planning: Session4_Onboarding
