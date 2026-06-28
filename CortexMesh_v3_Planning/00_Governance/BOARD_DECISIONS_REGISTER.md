@@ -48,21 +48,6 @@ No implementation is authorized unless explicitly stated in the decision itself.
 
 ---
 
-# Pending Decisions
-
-The following matters are currently awaiting unanimous board approval and therefore are **not yet recorded** as board decisions.
-
-| Session | Proposed Decision                 | Status  |
-| ------- | --------------------------------- | ------- |
-| 08      | Governance Reorganization         | Pending |
-| 08      | Communication Protocol v1.0       | Pending |
-| 08      | Document Authority Matrix         | Pending |
-| 08      | Repository Lineage Investigation  | Pending |
-| 08      | Reviewer Packet Improvements      | Pending |
-| 08      | Review Evidence Standard          | Pending |
-| 08      | Architectural Identity Workstream | Pending |
-
----
 
 # Revision History
 
