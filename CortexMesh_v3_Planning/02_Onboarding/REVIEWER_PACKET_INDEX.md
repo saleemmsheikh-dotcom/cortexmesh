@@ -9,6 +9,9 @@ Defines which files to provide to reviewers, board members, or fresh agent sessi
 Use for new Kimi, DeepSeek, or ChatGPT session.
 
 Required:
+- 02_Onboarding/REVIEWER_ENTRY_POINT.md
+- 02_Onboarding/Session_09/REVIEW_PACKET.md
+- 02_Onboarding/SESSION_HISTORY.md
 - 00_Governance/GOVERNANCE_BASELINE_v1.0.md
 - 00_Governance/GOVERNANCE_ADDENDUM_v1.0.md
 - 00_Governance/BOARD_CURRENT_STATE.md

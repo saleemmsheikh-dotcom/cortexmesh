@@ -16,6 +16,33 @@ Defines folder and naming standards for CortexMesh planning/governance artifacts
 | 05_Program_Management | Roadmap and planning index |
 | 99_Archive | Superseded or historical materials |
 
+## Onboarding Structure
+
+The onboarding directory separates stable entry points from historical review packets.
+
+```text
+02_Onboarding/
+├── REVIEWER_ENTRY_POINT.md
+├── REVIEWER_PACKET_INDEX.md
+├── SESSION_HISTORY.md
+├── CURRENT_REVIEW_PACKET.md
+├── Session_XX/
+│   ├── REVIEW_PACKET.md
+│   └── MANIFEST.md
+├── Archive/
+└── Templates/
+    └── REVIEW_PACKET_MANIFEST_TEMPLATE.md
+```
+
+Rules:
+
+1. `REVIEWER_ENTRY_POINT.md` is the permanent reviewer handoff file.
+2. `Session_XX/REVIEW_PACKET.md` is immutable after the session closes.
+3. `Session_XX/MANIFEST.md` records packet status and scope.
+4. `CURRENT_REVIEW_PACKET.md` may exist only as a compatibility pointer.
+5. New sessions create a new `Session_XX/` folder rather than overwriting older packets.
+6. `Archive/` is reserved for legacy onboarding artifacts that do not fit the session-folder model.
+
 ## Naming Convention
 
 Use:

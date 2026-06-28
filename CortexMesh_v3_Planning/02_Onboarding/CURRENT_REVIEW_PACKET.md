@@ -1,113 +1,37 @@
-# CURRENT REVIEW PACKET
+# CURRENT_REVIEW_PACKET.md
 
-**Current Session:** 09
+## Status
 
-This document is the authoritative reviewer entry point for Session 09.
+This document is maintained for backward compatibility.
 
-It identifies the governance baseline, required reading order, current board status, active investigations, and approved governance artifacts.
+The authoritative reviewer entry point is:
 
-All previous onboarding packets are superseded by this document.
+```text
+REVIEWER_ENTRY_POINT.md
+```
 
----
+New references should use that document.
 
-## Packet Metadata
+## Current Review Packet
 
-Repository: CortexMesh
+The current session-specific packet is:
 
-Review Date: 2026-06-28
+```text
+Session_09/REVIEW_PACKET.md
+```
 
-Packet Classification: FULL
+## Compatibility Note
 
-Packet Scope:
+This file is no longer the primary onboarding artifact.
 
-- Governance
-- Policy
-- Architecture
-- Debt Management
-- Program Management
-- Communication Protocol
+Older references to `CURRENT_REVIEW_PACKET.md` should be treated as references to:
 
-## Session 09 Status
+```text
+REVIEWER_ENTRY_POINT.md
+```
 
-Status: ACTIVE
+## Rationale
 
-Governance Baseline: RATIFIED
+Session-specific packets are now stored under immutable `Session_XX/` folders.
 
-Implementation Authority: NOT GRANTED
-
-Repository Lineage Investigation: ACTIVE
-
-Architectural Identity Workstream: ACTIVE
-
-## Required Reading Order
-
-1. DOCUMENT_AUTHORITY_MATRIX.md
-2. CURRENT_REVIEW_PACKET.md
-3. BOARD_DECISIONS_REGISTER.md
-4. COMMUNICATION_PROTOCOL_v1.0.md
-5. REVIEW_EVIDENCE_STANDARD_v1.0.md
-6. POLICY_INTENT_REPOSITORY_v1.1.md
-7. POLICY_REVIEW_CHANGELOG_v1.1.md
-8. POLICY_REVIEW_OPEN_ITEMS_v1.1.md
-9. REVIEWER_PACKET_INDEX.md
-10. REPOSITORY_STRUCTURE_STANDARD.md
-
-## Active Work
-
-### Governance
-
-Repository Lineage Investigation
-
-### Architecture
-
-Architectural Identity
-
-Comparative Architecture
-
-### Debt
-
-DEBT-007
-
-DEBT-010
-
-DEBT-011
-
-No implementation work is currently authorized.
-
-## Ratified Governance Baseline
-
-The following governance artifacts are considered active for Session 09.
-
-- Communication Protocol v1.0
-- Review Evidence Standard v1.0
-- Document Authority Matrix
-- Board Decisions Register
-- Policy Intent Repository v1.1
-
-These artifacts supersede previous working drafts where applicable.
-
-## Review Classification Rules
-
-All reviewers must classify findings as:
-
-- OBSERVED
-- INFERRED
-- PROPOSED
-
-Board decisions create policy.
-
-They do not create evidence.
-
-## Reviewer Deliverables
-
-The reviewer should produce:
-
-- observations
-- inferred conclusions
-- proposed actions
-
-All governance communications between board members shall be submitted as Markdown artifacts in accordance with `00_Governance/COMMUNICATION_PROTOCOL_v1.0.md`.
-
----
-
-End of Current Review Packet.
+The stable reviewer handoff artifact is `REVIEWER_ENTRY_POINT.md`.
