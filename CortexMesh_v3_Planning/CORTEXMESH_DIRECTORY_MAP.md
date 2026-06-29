@@ -105,6 +105,7 @@ Use this area for reviewer entry points and immutable session review packets.
 ```text
 03_Debt_Management/
 ├── DEBT_REGISTER_v1.3.md
+├── Implementation_Reviews/
 ├── DEBT001/
 │   ├── DEBT001_EVIDENCE_PLAN_v1.2.md
 │   ├── Execution/
@@ -118,7 +119,7 @@ Use this area for reviewer entry points and immutable session review packets.
     └── ImplementationPlan/
 ```
 
-Use this area for architecture debt records, evidence plans, task corpora, benchmark evidence, and design studies.
+Use this area for architecture debt records, evidence plans, task corpora, benchmark evidence, implementation reviews, and design studies.
 
 ## Architecture
 
