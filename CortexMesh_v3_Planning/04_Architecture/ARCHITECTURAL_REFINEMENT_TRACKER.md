@@ -15,10 +15,10 @@ Track the architectural refinements required by BD-09-002 prior to completion of
 | C1 | Structured Challenge alignment           | AI006                    | COMPLETE | 1984792 |
 | C2 | Evidence Synthesis terminology           | AI007 / MAC002           | COMPLETE | 26f43b5, 65ef28c |
 | C3 | Evidence format definition               | MAC003                   | OPEN   |        |
-| C4 | Deterministic / Reproducible definitions | AI004 or AI005           | OPEN   |        |
+| C4 | Deterministic / Reproducible definitions | AI004 or AI005           | COMPLETE | e1e721f |
 | C5 | Evidence quality / confidence scoring    | MAC003                   | OPEN   |        |
-| C6 | Authority selection architecture         | New AI document          | OPEN   |        |
-| C7 | Security / Trust model                   | AI005 or new AI document | OPEN   |        |
+| C6 | Authority selection architecture         | New AI document          | COMPLETE | 9d965a3 |
+| C7 | Security / Trust model                   | AI005 or new AI document | COMPLETE | ddfad07 |
 
 ---
 
