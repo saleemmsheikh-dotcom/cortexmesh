@@ -66,19 +66,30 @@ Additional evidence may be produced.
 
 ## RL-06 Evidence Synthesis
 
-The orchestration layer constructs a structured evidence package.
+The orchestration layer organizes published and challenged evidence into a structured evidence package.
 
-Minority findings remain visible.
+Evidence synthesis includes:
 
-No aggregate scoring occurs.
+- convergence
+- divergence
+- minority findings
+- unresolved questions
+- confidence context
+- traceability to source evidence
+
+Evidence synthesis does not produce a final decision.
+
+It prepares the material required for recommendation assembly.
 
 ---
 
-## RL-07 Recommendation
+## RL-07 Recommendation Assembly
 
-Recommendations are derived from the synthesized evidence.
+Recommendations are assembled from the synthesized evidence package.
 
 Every recommendation remains traceable to its supporting evidence.
+
+Recommendation assembly does not transfer authority from governance to the system.
 
 ---
 
