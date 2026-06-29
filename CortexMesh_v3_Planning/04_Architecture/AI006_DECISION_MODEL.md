@@ -70,7 +70,21 @@ No aggregate score is produced.
 
 ---
 
-## Stage 5 - Recommendation
+## Stage 5 - Structured Challenge
+
+Agents may examine areas of disagreement or uncertainty.
+
+The objective is clarification, not persuasion.
+
+Structured challenge may produce additional evidence, revised assumptions, or unresolved dissent.
+
+No voting occurs.
+
+No aggregate score is produced.
+
+---
+
+## Stage 6 - Recommendation
 
 The system produces one or more recommendations supported by evidence.
 
@@ -78,7 +92,7 @@ Recommendations include rationale and uncertainty.
 
 ---
 
-## Stage 6 - Governance Review
+## Stage 7 - Governance Review
 
 Human reviewers evaluate the recommendations.
 
