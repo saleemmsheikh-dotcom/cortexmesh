@@ -75,14 +75,21 @@ Challenges produce additional evidence rather than votes.
 
 ---
 
-## Stage 5 - Recommendation Assembly
+## Stage 5 - Evidence Synthesis and Recommendation Assembly
 
-The orchestration layer assembles:
+The orchestration layer synthesizes the published and challenged evidence into a structured recommendation package.
+
+This includes:
 
 - shared observations
 - unresolved disagreements
 - supporting rationale
 - confidence context
+- traceability to source evidence
+
+Evidence synthesis refers to organizing and relating the evidence.
+
+Recommendation assembly refers to preparing the evidence-backed recommendation package for governance review.
 
 Recommendations remain attributable to their supporting evidence.
 
