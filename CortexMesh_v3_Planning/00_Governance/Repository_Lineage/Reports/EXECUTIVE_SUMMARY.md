@@ -1,49 +1,70 @@
-# Repository Lineage Investigation - Executive Summary
+# REPOSITORY LINEAGE INVESTIGATION
+# EXECUTIVE SUMMARY
+
+## Purpose
+
+Summarize the findings of the Repository Lineage Investigation.
+
+This document provides a board-level overview only.
+
+Detailed evidence is contained within:
+
+- FILE_STATUS.csv
+- FILE_COMPARISON_MATRIX.md
+- MIGRATION_PLAN.md
+- ARCHIVE_PLAN.md
+
+---
 
 ## Scope
 
-This investigation reviews duplicate and parallel CortexMesh planning trees to determine which artifacts belong in the canonical planning structure.
+The investigation examined the three planning directory trees to determine:
 
-This is an investigation artifact only.
+1. Whether the current planning tree is the canonical repository.
+2. Whether unique repository content exists outside the canonical tree.
+3. Whether migration is required.
+4. Whether duplicate planning trees may be archived.
 
-It does not authorize file migration, archival, deletion, or repository cleanup.
+---
 
 ## Evidence Reviewed
 
-- `Evidence/planning_current_inventory.txt`
-- `Evidence/planning2_inventory.txt`
-- `Evidence/planning3_inventory.txt`
-- `Evidence/current_hashes.txt`
-- `Evidence/planning2_hashes.txt`
-- `Evidence/planning3_hashes.txt`
-- `Evidence/diff_current_vs_2.txt`
-- `Evidence/diff_current_vs_3.txt`
-- `Evidence/diff_2_vs_3.txt`
+- Repository inventories
+- Repository hash comparison
+- Directory comparison reports
+- FILE_STATUS.csv
+- FILE_COMPARISON_MATRIX.md
+
+---
 
 ## Key Findings
 
-- Repository lineage evidence has been collected for the current planning tree and duplicate planning trees.
-- Three diff reports exist and should be used as the factual basis for the comparison matrix.
-- The detailed reports currently define the correct investigation sequence: comparison matrix, migration plan, archive plan, final recommendation.
-- No cleanup action should occur until the board reviews the populated reports.
+- 378 repository artifacts reviewed.
+- 245 canonical artifacts retained.
+- 127 archive candidates identified.
+- 6 generated artifacts identified for deletion.
+- No migration candidates identified.
+
+---
 
 ## Risks
 
-- Premature restructuring could destroy useful lineage evidence.
-- Duplicate planning trees may contain unique artifacts not yet categorized.
-- Permission-bit noise from SMB-mounted files can obscure the actual investigation status if Git file-mode tracking is enabled.
-- Final recommendations made before the comparison matrix is populated would be premature.
+No evidence was found that unique governance or planning artifacts remain outside the canonical planning tree.
+
+Repository archival remains contingent upon board approval.
+
+---
 
 ## Recommendations
 
-1. Populate `FILE_COMPARISON_MATRIX.md` from the three diff reports.
-2. Populate `MIGRATION_PLAN.md` only with files that have evidence-supported migration need.
-3. Populate `ARCHIVE_PLAN.md` only after migration dependencies are identified.
-4. Keep `FINAL_RECOMMENDATION.md` evidence-driven and complete it last.
-5. Do not migrate, archive, or delete files during the investigation phase.
+The current planning tree should remain the canonical repository.
 
-## Board Decisions Requested
+No migration activities are required.
 
-- Confirm that repository lineage work remains investigation-only.
-- Confirm the report sequence: evidence, comparison matrix, migration plan, archive plan, executive summary, final recommendation.
-- Confirm that cleanup requires a later board decision after reports are populated.
+Duplicate planning trees may be considered for archival following board approval.
+
+---
+
+## Board Decision Requested
+
+Determine whether the duplicate planning directories should be archived based upon the evidence presented.
