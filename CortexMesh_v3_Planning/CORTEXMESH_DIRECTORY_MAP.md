@@ -126,8 +126,18 @@ Use this area for architecture debt records, evidence plans, task corpora, bench
 ```text
 04_Architecture/
 ├── ARCHITECTURAL_MISSION.md
+├── AI004_CORE_ARCHITECTURAL_PRINCIPLES.md
+├── AI005_SYSTEM_MODEL.md
+├── AI006_DECISION_MODEL.md
+├── AI007_AGENT_INTERACTION_MODEL.md
+├── AI008_ARCHITECTURAL_REVIEW.md
+├── AI009_REFERENCE_ARCHITECTURE.md
 ├── GATE_T0_ARCHITECTURAL_INVENTORY.md
 ├── LOCK_REGISTRY_v1.0.md
+├── Consensus/
+│   ├── README.md
+│   ├── MAC001_CONSENSUS_PRINCIPLES.md
+│   └── MAC002_REASONING_LIFECYCLE.md
 └── Architectural_Identity/
     ├── AI001_ARCHITECTURAL_IDENTITY.md
     ├── AI002_ARCHITECTURAL_BOUNDARY_TEST.md
@@ -136,7 +146,7 @@ Use this area for architecture debt records, evidence plans, task corpora, bench
     └── Comparative_Matrix/
 ```
 
-Use this area for architecture mission, inventory, locks, identity, comparative architecture, and boundary analysis.
+Use this area for architecture mission, system identity, reference architecture, consensus architecture, inventory, locks, comparative architecture, and boundary analysis.
 
 ## Program Management
 
