@@ -105,7 +105,8 @@ The system is:
 - implementation independent
 - evidence driven
 - auditable
-- deterministic where possible
+- deterministic where inputs, policies, and orchestration state are identical
+- reproducible in that equivalent inputs, governance constraints, and evidence should produce equivalent reasoning artifacts, subject to documented model variability
 - human governed
 
 ---
