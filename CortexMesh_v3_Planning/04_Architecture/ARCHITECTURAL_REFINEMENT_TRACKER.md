@@ -12,8 +12,8 @@ Track the architectural refinements required by BD-09-002 prior to completion of
 
 | ID | Requirement                              | Target Document          | Status | Commit |
 | -- | ---------------------------------------- | ------------------------ | ------ | ------ |
-| C1 | Structured Challenge alignment           | AI006                    | OPEN   |        |
-| C2 | Evidence Synthesis terminology           | AI007 / MAC002           | OPEN   |        |
+| C1 | Structured Challenge alignment           | AI006                    | COMPLETE | 1984792 |
+| C2 | Evidence Synthesis terminology           | AI007 / MAC002           | COMPLETE | 26f43b5, 65ef28c |
 | C3 | Evidence format definition               | MAC003                   | OPEN   |        |
 | C4 | Deterministic / Reproducible definitions | AI004 or AI005           | OPEN   |        |
 | C5 | Evidence quality / confidence scoring    | MAC003                   | OPEN   |        |
