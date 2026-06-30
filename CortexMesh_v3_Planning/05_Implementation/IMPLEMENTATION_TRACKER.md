@@ -19,7 +19,7 @@ Production coding remains out of scope until implementation planning is complete
 | ID | Work Package | Objective | Status | Commit |
 | -- | ------------ | --------- | ------ | ------ |
 | IMP001 | Implementation Mapping | Map approved architecture to implementation components and sequencing | COMPLETE | cf66d07 |
-| IMP002 | Component Interface Specification | Define public component interfaces and artifact contracts | OPEN | |
+| IMP002 | Interface & Contract Specification | Define interfaces, contracts, behavioral constraints, and governance rules | COMPLETE | 01c5043 |
 | IMP003 | Module Dependency Architecture | Define dependency boundaries and internal module relationships | OPEN | |
 | IMP004 | Verification & Test Architecture | Define verification strategy, tests, and gates | OPEN | |
 | IMP005 | Implementation Roadmap & Execution Plan | Define implementation phases and execution order | OPEN | |
@@ -32,7 +32,7 @@ Production coding remains out of scope until implementation planning is complete
 IMP001 Implementation Mapping
 |
 v
-IMP002 Component Interface Specification
+IMP002 Interface & Contract Specification
 |
 v
 IMP003 Module Dependency Architecture
