@@ -31,7 +31,7 @@ No item shall be marked COMPLETE until committed and referenced in a Session 09 
 | ID | Requirement                         | Target Document | Status | Commit |
 | -- | ----------------------------------- | --------------- | ------ | ------ |
 | M4 | Consensus convergence architecture  | MAC004          | COMPLETE | c664f5e |
-| M5 | Final decision architecture         | MAC005          | OPEN   |        |
+| M5 | Final decision architecture         | MAC005          | COMPLETE | d3c0b02 |
 
 ---
 
