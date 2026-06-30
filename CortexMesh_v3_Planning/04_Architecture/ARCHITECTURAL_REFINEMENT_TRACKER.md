@@ -26,6 +26,15 @@ No item shall be marked COMPLETE until committed and referenced in a Session 09 
 
 ---
 
+## Multi-Agent Consensus Completion
+
+| ID | Requirement                         | Target Document | Status | Commit |
+| -- | ----------------------------------- | --------------- | ------ | ------ |
+| M4 | Consensus convergence architecture  | MAC004          | COMPLETE | c664f5e |
+| M5 | Final decision architecture         | MAC005          | OPEN   |        |
+
+---
+
 ## Work Order
 
 Rather than starting MAC003 immediately, proceed in the following order:
@@ -46,8 +55,8 @@ v
 MAC003 Evidence Synthesis
 |
 v
-MAC004 Disagreement Protocol
+MAC004 Consensus Convergence
 |
 v
-MAC005 Reference Consensus Architecture
+MAC005 Final Decision Architecture
 ```
