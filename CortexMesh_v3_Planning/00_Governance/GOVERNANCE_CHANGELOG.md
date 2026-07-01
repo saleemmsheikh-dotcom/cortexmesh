@@ -24,6 +24,14 @@ How has the governance model evolved?
 | 09 | Stable reviewer entry point introduced. |
 | 09 | Immutable session review packet structure introduced. |
 
+### Session 09
+
+#### Governance Enhancements
+
+- Added Governance Safeguards baseline following BD-09-003.
+- Added External AI Governance defining implementation, independent review, and Board governance roles.
+- Formalized the retrospective ratification governance procedure following unanimous Board approval of BD-09-003.
+
 ## Maintenance Rule
 
 Update this document only when the governance model changes.
