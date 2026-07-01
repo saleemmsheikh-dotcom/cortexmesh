@@ -1,0 +1,472 @@
+import random
+
+from agents.solver import SolverAgent
+from agents.local_solver import LocalSolverAgent
+from agents.reviewer import ReviewerAgent
+from agents.authority import AuthorityAgent, SPECIALIST_FOR_TASK
+
+from competition.conflict import detect_conflict
+from competition.scorer import score_solution
+
+from ledger.ledger import Ledger
+from cost.budget import Budget
+from memory.memory_store import load_memory
+
+from engine.diversity_guard import detect_similarity
+from engine.mode_manager import get_mode
+from engine.rebalancer import compute_rebalance
+from engine.structure_memory import structure_hash
+from engine.task_classifier import classify_task
+from engine.failure_analysis import determine_failure_reason
+from engine.entropy import compute_entropy
+
+from core.agent_selector import select_unique_agents
+from core.capability_guardrails import execute_capability
+
+from evolution.strategy_registry import (
+    active_strategy_specs,
+    base_agent_name,
+    ensure_strategy_registry,
+    trait_prompt,
+)
+from evolution.evolution_engine import run_evolution, spawn_successors
+
+from governance.enforcement import enforce_governance
+from governance.freeze import update_governance_stability
+from governance.snapshot import create_governance_snapshot
+
+from memory.knowledge_memory import (
+    cleanup_knowledge_memory,
+    record_lesson,
+    update_used_lessons,
+    decay_lessons,
+)
+from memory.negative_knowledge import (
+    record_negative_lesson,
+    update_used_negative_lessons,
+)
+from memory.knowledge_conflict import update_active_conflicts
+from memory.failure_memory import record_failure
+from memory.confidence import log_confidence
+from memory.pruning import prune_memory
+from memory.task_trust import TaskTrustLedger
+from memory.audit import print_audit_report
+
+from evolution.strategy_registry import BASE_AGENTS
+
+
+ROLE_MAP = {
+    "Architect": "architect",
+    "Researcher": "researcher",
+    "Engineer": "engineer",
+}
+
+CRITIC_ROLES = ("logic", "risk", "completeness")
+MIN_PROB = 0.15
+
+
+def build_solvers(mode, memory):
+    ensure_strategy_registry(memory)
+    agent_class = LocalSolverAgent if mode == "dev" else SolverAgent
+    solvers = []
+
+    for spec in active_strategy_specs(memory):
+        role = ROLE_MAP.get(spec["base_agent"], spec["base_agent"].lower())
+        solver = agent_class(spec["name"], role)
+        solver.base_agent = spec["base_agent"]
+        solver.strategy_traits = spec.get("traits", ["default"])
+        solver.strategy_version = spec.get("version", 1)
+        solvers.append(solver)
+
+    return solvers
+
+
+def build_critics():
+    return [ReviewerAgent(role) for role in CRITIC_ROLES]
+
+
+def diversity_boost(agents, memory):
+    total = sum(memory.get("agent_wins", {}).values()) or 1
+    boosted = []
+
+    for agent in agents:
+        wins = memory["agent_wins"].get(agent.name, 0)
+        ratio = wins / total
+        boost = 1.5 if ratio < 0.2 else 1.0
+        boosted.append((agent, boost))
+
+    return boosted
+
+
+def add_noise(weights, epsilon=0.08):
+    return [weight + random.uniform(0, epsilon) for weight in weights]
+
+
+def build_selection_weights(agents, memory):
+    weighted = diversity_boost(agents, memory)
+    weights = {}
+
+    for agent, boost in weighted:
+        role_weight = memory.get("role_weights", {}).get(agent.base_agent, 1.0)
+        noisy = role_weight * boost + random.uniform(0, 0.08)
+        weights[agent.name] = max(MIN_PROB, noisy)
+
+    return weights
+
+
+def weighted_agents(base_agents, weights):
+    return sorted(
+        base_agents,
+        key=lambda agent: weights.get(agent.name, 1.0) * random.random(),
+        reverse=True,
+    )
+
+
+def update_role_weights(memory, final_agent):
+    weights = memory.get("role_weights", {})
+    winner = base_agent_name(final_agent)
+
+    for role in weights:
+        if role == winner:
+            weights[role] *= 1.05
+        else:
+            weights[role] *= 0.98
+
+    total = sum(weights.values()) or 1
+
+    for role in weights:
+        weights[role] /= total
+
+
+def entropy_correction(memory):
+    weights = memory.get("role_weights", {})
+    target = memory.get("entropy_target", 0.5)
+    drift = memory.get("entropy_drift", 0.1)
+    current = compute_entropy(weights)
+
+    if current < target:
+        for role in weights:
+            if weights[role] < max(weights.values()):
+                weights[role] += drift
+    elif current > target:
+        for role in weights:
+            if weights[role] > min(weights.values()):
+                weights[role] -= drift
+
+    total = sum(weights.values()) or 1
+
+    for role in weights:
+        weights[role] = max(0.0, weights[role]) / total
+
+
+def enforce_rotation(agents, memory):
+    usage = memory.get("agent_usage", {})
+
+    for agent in agents:
+        if usage.get(agent.name, 0) > 5:
+            usage[agent.name] *= 0.7
+
+    return agents
+
+
+def record_solution_structure(memory, solution):
+    solution_hash = structure_hash(solution.get("solution", ""))
+
+    memory.setdefault("recent_structures", [])
+    memory["recent_structures"].append({
+        "agent": solution.get("agent"),
+        "hash": solution_hash,
+    })
+    memory["recent_structures"] = memory["recent_structures"][-20:]
+
+    memory.setdefault("agent_usage", {})
+    agent_name = solution.get("agent")
+    memory["agent_usage"][agent_name] = memory["agent_usage"].get(agent_name, 0) + 1
+
+
+def spend_budget(budget):
+    if budget.exceeded():
+        return False
+
+    budget.tick()
+    return True
+
+
+def reviews_for(critiques, index):
+    if index < len(critiques):
+        return critiques[index]["reviews"]
+
+    return []
+
+
+def run_capability_gateway(task, memory, ledger):
+    if not memory.get("capability_gateway_enabled"):
+        return None
+
+    module = memory.get("capability_module", "capabilities.external_echo")
+    request = {
+        "task": task,
+        "input": memory.get("capability_input", {}),
+    }
+    result = execute_capability(
+        module,
+        capability_request=request,
+        memory_context=memory,
+    )
+    ledger.add("CAPABILITY_GATEWAY", result)
+    return result
+
+
+def orchestrate(task, memory=None):
+    task = str(task).strip()
+    if not task:
+        raise ValueError("Task cannot be empty.")
+
+    memory = memory or load_memory()
+    cleanup_knowledge_memory(memory)
+    task_type = classify_task(task)
+
+    ledger = Ledger()
+    ledger.persistent_memory = memory
+    budget = Budget(limit=12)
+    ledger.add("PERSISTED_MEMORY", memory)
+    ledger.add("TASK_TYPE", task_type)
+
+    mode = get_mode(budget)
+    ledger.add("mode", mode)
+
+    violations = enforce_governance(memory)
+    run_capability_gateway(task, memory, ledger)
+    spawn_successors(memory)
+
+    solvers = build_solvers(mode, memory)
+
+    if not solvers:
+        raise RuntimeError("No active solver strategies available.")
+
+    solvers = enforce_rotation(solvers, memory)
+    selection_weights = build_selection_weights(solvers, memory)
+    selected_names = select_unique_agents(
+        selection_weights,
+        k=3,
+        strategy_registry=memory.get("strategy_registry"),
+    )
+    solvers = [solver for solver in solvers if solver.name in selected_names]
+
+    if not solvers:
+        raise RuntimeError("No active solver strategies available.")
+
+    critics = build_critics()
+    solutions = []
+
+    for solver in solvers:
+        weight_adjust = ledger.rebalance.get(solver.role, 0)
+        base_prob = 0.7 + weight_adjust
+
+        if random.random() > base_prob:
+            continue
+
+        if not spend_budget(budget):
+            break
+
+        solution = solver.act(task, ledger)
+        solution.setdefault("agent", solver.name)
+        solution.setdefault("base_agent", getattr(solver, "base_agent", solver.name))
+        solution.setdefault("confidence", 0.5)
+        solutions.append(solution)
+        ledger.add("solution", solution)
+        record_solution_structure(memory, solution)
+
+    if not solutions and solvers:
+        fallback_solver = solvers[0]
+
+        if not spend_budget(budget):
+            raise RuntimeError("Budget exhausted before fallback solver could run.")
+
+        solution = fallback_solver.act(task, ledger)
+        solution.setdefault("agent", fallback_solver.name)
+        solution.setdefault("base_agent", getattr(fallback_solver, "base_agent", fallback_solver.name))
+        solution.setdefault("confidence", 0.5)
+        solutions.append(solution)
+        ledger.add("solution", solution)
+        record_solution_structure(memory, solution)
+        ledger.add("ACTIVATION_FALLBACK", fallback_solver.role)
+
+    conflict_mode = detect_conflict(solutions)
+    ledger.add("CONFLICT_MODE", conflict_mode)
+
+    if detect_similarity(solutions):
+        ledger.add("DIVERSITY_WARNING", "All solutions identical - forcing variation")
+
+    critiques = []
+
+    for solution in solutions:
+        reviews = []
+
+        for critic in critics:
+            if not spend_budget(budget):
+                ledger.add("budget", "Review budget exhausted")
+                break
+
+            critique = critic.review(solution)
+            reviews.append(critique)
+            ledger.add("critique", critique)
+
+        critiques.append({
+            "solution": solution,
+            "reviews": reviews,
+        })
+
+    refinement_required = False
+
+    for critique_group in critiques:
+        for review in critique_group["reviews"]:
+            review_text = review.get("review", "").lower()
+
+            if "missing" in review_text or "unclear" in review_text:
+                refinement_required = True
+
+    if refinement_required:
+        ledger.add("REFINEMENT_TRIGGERED", True)
+        refined_solutions = []
+
+        for solver in solvers:
+            if not spend_budget(budget):
+                break
+
+            refined_task = task + "\n\nCRITIC FEEDBACK:\n" + str(critiques)
+            refined_solution = solver.act(refined_task, ledger)
+            refined_solution.setdefault("agent", solver.name)
+            refined_solution.setdefault(
+                "base_agent",
+                getattr(solver, "base_agent", solver.name),
+            )
+            refined_solution.setdefault("confidence", 0.5)
+            refined_solutions.append(refined_solution)
+            ledger.add("refined_solution", refined_solution)
+            record_solution_structure(memory, refined_solution)
+
+        if refined_solutions:
+            solutions = refined_solutions
+
+    scored = []
+
+    for index, solution in enumerate(solutions):
+        reviews = reviews_for(critiques, index)
+        scored.append(score_solution(solution, reviews, ledger))
+
+    ledger.add("scored", scored)
+
+    authority = AuthorityAgent()
+    final_decision = authority.decide(scored, ledger, task_type=task_type)
+    ledger.add("AUTHORITY", final_decision)
+
+    winner_solution = final_decision["decision"]["solution"]
+    winner_agent = winner_solution.get("agent")
+    winner_base = winner_solution.get("base_agent", winner_agent)
+    winner_score = final_decision["decision"]["scores"].get("authority_total", 0)
+
+    ledger.meta.log_win(winner_agent)
+
+    for scored_item in scored:
+        candidate = scored_item["solution"]
+        candidate_agent = candidate.get("agent")
+
+        if candidate_agent == winner_agent:
+            record_lesson(
+                memory,
+                task_type,
+                candidate_agent,
+                candidate.get("solution", ""),
+                winner_score,
+                winner_agent=winner_agent,
+            )
+            log_confidence(
+                memory,
+                candidate_agent,
+                candidate.get("confidence", 0.5),
+                True,
+            )
+            continue
+
+        record_failure(
+            memory,
+            candidate_agent,
+            determine_failure_reason(scored_item["scores"]),
+        )
+        log_confidence(
+            memory,
+            candidate_agent,
+            candidate.get("confidence", 0.5),
+            False,
+        )
+
+    specialist = SPECIALIST_FOR_TASK.get(task_type)
+
+    if specialist and winner_base != specialist:
+        record_negative_lesson(
+            memory,
+            task_type,
+            f"Non-specialist {winner_base} selected for {task_type} task",
+        )
+
+    update_used_lessons(memory, task_type, True)
+    update_used_negative_lessons(memory, task_type, True)
+    update_active_conflicts(memory, task_type, True)
+    decay_lessons(memory)
+    prune_memory(memory)
+
+    update_role_weights(memory, winner_agent)
+
+    trust_ledger = TaskTrustLedger(memory.setdefault("task_trust", {}))
+    trust_ledger.reward(task_type, winner_base)
+    trust_ledger.penalize(
+        task_type,
+        [agent for agent in BASE_AGENTS],
+        winner_base,
+    )
+    memory["task_trust"] = trust_ledger.task_trust
+
+    evolution_events = run_evolution(memory, scored)
+    memory.setdefault("evolution_events", []).extend(evolution_events)
+    memory["evolution_events"] = memory["evolution_events"][-50:]
+    ledger.add("EVOLUTION", evolution_events)
+
+    entropy_correction(memory)
+
+    rebalance = compute_rebalance(ledger.meta)
+    ledger.rebalance = rebalance
+
+    post_violations = enforce_governance(memory)
+    update_governance_stability(memory, post_violations)
+    create_governance_snapshot(memory)
+
+    if mode == "audit":
+        print_audit_report(memory)
+
+    if final_decision["action"] == "CONFLICT_RESOLUTION":
+        ledger.add("CONFLICT_DETAILS", final_decision["alternatives"])
+        best = {
+            "primary": final_decision["decision"]["solution"],
+            "alternatives": [
+                item["solution"] for item in final_decision["alternatives"]
+            ],
+        }
+    else:
+        best = final_decision["decision"]["solution"]
+
+    ledger.add("FINAL_SCORED", final_decision["decision"])
+    ledger.add("FINAL", best)
+
+    meta_report = ledger.meta.report()
+
+    return {
+        "final": best,
+        "critiques": critiques,
+        "authority": final_decision,
+        "meta": meta_report,
+        "mode": mode,
+        "scored": scored,
+        "conflict_mode": conflict_mode,
+        "conflict_resolved": final_decision["action"] == "CONFLICT_RESOLUTION",
+    }
