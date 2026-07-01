@@ -33,6 +33,7 @@ Preparation of this document does **not** constitute ratification of any proposa
 | BD-08-005 | 08 | Reviewer Packet Improvements | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
 | BD-08-006 | 08 | Review Evidence Standard v1.0 | RATIFIED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
 | BD-08-007 | 08 | Architectural Identity Workstream | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
+| BD-09-003 | 09 | Retrospective Ratification of LOCKED Component Modifications | RATIFIED (Retrospective) | 2026-07-01 | Unanimous | COMM-S09-SALEEM-005 | ACTIVE |
 
 ---
 
@@ -45,6 +46,46 @@ Recording these decisions completes the governance decision process.
 These decisions authorize governance only.
 
 No implementation is authorized unless explicitly stated in the decision itself.
+
+---
+
+# Session 09 Decisions
+
+## BD-09-003 - Retrospective Ratification of LOCKED Component Modifications
+
+**Date:** 2026-07-01
+
+**Status:** RATIFIED (Retrospective)
+
+### Decision
+
+The Board unanimously ratified the previously implemented modifications to the following LOCKED components:
+
+* `agents/authority.py`
+* `memory/memory_store.py`
+* `orchestrator.py`
+
+### Governance Record
+
+Authorization sequence was inverted.
+
+Implementation preceded unanimous Board authorization.
+
+Following independent review of the submitted evidence, the Board unanimously approved retrospective ratification.
+
+This retrospective ratification does **not** establish precedent for future modifications to LOCKED components.
+
+Future modifications to LOCKED components require explicit unanimous Board authorization before implementation begins.
+
+### Conditions
+
+Ratification is subject to RC-1 through RC-6.
+
+### Board Vote
+
+* Kimi - APPROVE
+* DeepSeek - APPROVE
+* ChatGPT - APPROVE
 
 ---
 
@@ -64,3 +105,4 @@ Upon unanimous approval and recording in the Decision Register, entries shall be
 | Version | Date       | Description                                                           |
 | ------- | ---------- | --------------------------------------------------------------------- |
 | v1.0    | 2026-06-28 | Initial register scaffold prepared pending unanimous board decisions. |
+| v1.1    | 2026-07-01 | Recorded BD-09-003 retrospective LOCKED component ratification. |
