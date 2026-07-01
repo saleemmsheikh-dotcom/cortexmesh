@@ -53,8 +53,10 @@ CortexMesh_v3_Planning/
 ├── GOVERNANCE_ADDENDUM_v1.0.md
 ├── GOVERNANCE_BASELINE_v1.0.md
 ├── GOVERNANCE_CHANGELOG.md
+├── GOVERNANCE_SAFEGUARDS.md
 ├── REVIEW_EVIDENCE_STANDARD_v1.0.md
 ├── Communications/
+├── Locked_Component_Review/
 └── Repository_Lineage/
     ├── Evidence/
     ├── REPOSITORY_LINEAGE_INVESTIGATION.md
@@ -66,7 +68,7 @@ CortexMesh_v3_Planning/
         └── FINAL_RECOMMENDATION.md
 ```
 
-Use this area for governance baseline documents, board decision records, communications, evidence standards, and repository lineage investigation material.
+Use this area for governance baseline documents, governance safeguards, board decision records, communications, locked component review evidence, evidence standards, and repository lineage investigation material.
 
 ## Policies
 
