@@ -17,8 +17,20 @@ Communications/
 ├── Session_08/
 │   ├── ChatGPT/
 │   ├── Kimi/
-│   └── DeepSeek/
+│   ├── DeepSeek/
+│   └── SALEEM/
+└── Session_09/
+    └── SALEEM/
 ```
+
+## Session 09 Register
+
+| Communication ID | Subject | Status |
+| ---------------- | ------- | ------ |
+| COMM-S09-SALEEM-001 | SESSION_09_ONBOARDING | SUBMITTED |
+| COMM-S09-SALEEM-003 | REPOSITORY_LINEAGE_INVESTIGATION_COMPLETE | SUBMITTED |
+| COMM-S09-SALEEM-004 | ARCHITECTURAL_FOUNDATION_REVIEW_REQUEST | SUBMITTED |
+| COMM-S09-SALEEM-005 | LOCKED_COMPONENT_REVIEW_EVIDENCE_SUBMITTED | SUBMITTED |
 
 ## Naming Convention
 
