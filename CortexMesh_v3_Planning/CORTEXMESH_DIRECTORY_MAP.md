@@ -128,6 +128,7 @@ Use this area for architecture debt records, evidence plans, task corpora, bench
 
 ```text
 04_Architecture/
+├── ARCHITECTURAL_FUTURES.md
 ├── ARCHITECTURAL_MISSION.md
 ├── AI004_CORE_ARCHITECTURAL_PRINCIPLES.md
 ├── AI005_SYSTEM_MODEL.md
@@ -149,7 +150,7 @@ Use this area for architecture debt records, evidence plans, task corpora, bench
     └── Comparative_Matrix/
 ```
 
-Use this area for architecture mission, system identity, reference architecture, consensus architecture, inventory, locks, comparative architecture, and boundary analysis.
+Use this area for architecture mission, architectural futures, system identity, reference architecture, consensus architecture, inventory, locks, comparative architecture, and boundary analysis.
 
 ## Program Management
 
