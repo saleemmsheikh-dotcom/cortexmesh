@@ -26,7 +26,7 @@ Completed:
 
 Remaining Board conditions have been incorporated into ongoing governance planning:
 
-* RC-4: Post-decision memory update issue tracked for IMP002-IMP003.
+* RC-4: Post-decision memory update issue tracked for IMP002–IMP003.
 * RC-5: `select_unique_agents` review scheduled for the next audit cycle.
 * RC-6: DEBT-001 monitoring continues.
 
