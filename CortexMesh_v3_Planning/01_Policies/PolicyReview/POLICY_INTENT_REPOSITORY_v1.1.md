@@ -16,6 +16,8 @@ Version 1.1 incorporates seven amendments approved unanimously during Session 7.
 
 This revision is limited to approved amendments only.
 
+Session 10 governance review clarifications have been incorporated where they clarify existing policy intent and do not introduce new governance or architecture.
+
 Publication of this revision does not imply closure of unresolved policy-review findings.
 
 Open findings remain tracked in:
@@ -74,6 +76,10 @@ Until a formal governance amendment process is established, policy amendments re
 2. A minimum 30-day review period.
 3. Publication of amendment provenance.
 
+The review period begins only after proposed amendment text, rationale, and provenance have been submitted to the Board for review.
+
+An amendment is not effective until unanimous Board approval has been recorded and the approved amendment has been published.
+
 This placeholder remains in effect until replaced by a formally ratified governance amendment process.
 
 ---
@@ -91,6 +97,10 @@ Permitted statuses:
 
 Any load-bearing artifact marked NOT YET SPECIFIED constitutes a ratification blocker.
 
+The Product Owner is responsible for maintaining the blocker mechanism, including identification, tracking, escalation, and closure evidence.
+
+The Board retains authority to determine whether a blocker is resolved, deferred, or accepted into the governance record.
+
 ---
 
 # Begin Policy Content
@@ -103,17 +113,17 @@ Any load-bearing artifact marked NOT YET SPECIFIED constitutes a ratification bl
 
 **Purpose of this document:** To fix, in unambiguous terms, how CortexMesh determines what a query actually wants before acting, how historical precedent may and may not be used, and where authority sits. Any system operating on CortexMesh should treat this document as binding for these specific mechanisms.
 
-**Known limitations of this version, stated for any new reader:** (1) The product name "CortexMesh" is provisional and currently undergoing trademark clearance — do not treat it as final. (2) This document has not yet been cross-checked against the separate multi-agent governance document referenced in Section 4.2; that document's content has not been reviewed by this document's authors. (3) An adversarial/hostile-read audit, intended to find legal and structural vulnerabilities before wider distribution, has not yet been performed. Readers should treat this as a working draft suitable for review and feedback, not as finalized policy.
+**Known limitations of this version, stated for any new reader:** (1) The product name "CortexMesh" is provisional and currently undergoing trademark clearance — do not treat it as final. (2) This document has not yet been cross-checked against the separate multi-agent governance document referenced in Section 4.2; that document's content has not been reviewed by this document's authors. (3) Hostile-read audit findings have been reviewed for governance clarification, but deployment-specific legal, compliance, and implementation review remain outside this document's scope. Readers should treat this as a working draft suitable for review and feedback, not as finalized policy.
 
 ---
 
 ## Vision [NORMATIVE POSITION]
 
-CortexMesh exists to make multi-agent AI use **accurate, safe, coherent, and anonymous where anonymity blocks bias creep.**
+CortexMesh exists to make multi-agent AI use **accurate, procedurally safeguarded, coherent, and anonymous where anonymity blocks bias creep.**
 
 **Accurate** means decisions draw on relevant historical precedent where it exists, without that precedent silently overriding an agent's independent judgment (Section 6).
 
-**Safe** means structural protection against a specific, documented failure mode: AI systems that validate, agree, and never interrupt a user across a long, unbroken exchange, which research has identified as a precondition for harmful outcomes -- including documented cases of AI-associated delusion and harmful real-world action. CortexMesh introduces a mandatory checkpoint -- confirmed intention, a reviewable draft -- at exactly the point where that unbroken chain would otherwise run uninterrupted (Section 8).
+**Procedurally safeguarded** means structural protection against a specific, documented failure mode: AI systems that validate, agree, and never interrupt a user across a long, unbroken exchange, which research has identified as a precondition for harmful outcomes -- including documented cases of AI-associated delusion and harmful real-world action. CortexMesh introduces a mandatory checkpoint -- confirmed intention, a reviewable draft -- at exactly the point where that unbroken chain would otherwise run uninterrupted (Section 8).
 
 This is stated carefully and deliberately: **CortexMesh does not alter, vet, or guarantee the behavior of any agent it routes to.** It does not make a sycophantic or unreliable agent stop being so. What it does is structural -- it ensures no agent's output reaches a client without at least one deliberate point of human reconsideration. This is a firewall against a known mechanism of harm, not a cure for it, and it should never be represented as the latter.
 
@@ -124,6 +134,8 @@ This is stated carefully and deliberately: **CortexMesh does not alter, vet, or 
 **On agent independence:** CortexMesh does not alter how any agent reasons or what it is capable of. It governs the checkpoint between an agent's output and the client who receives it -- not the agent's own thinking. An agent chosen by a client remains exactly as capable, and exactly as independent in its reasoning, whether or not it operates within CortexMesh. What changes is not the agent's mind, but the conditions under which its output is allowed to become a final decision.
 
 **Regulatory alignment:** This same discipline gives organizations a structural answer to a question regulators are increasingly asking of AI deployment -- not only "is the model good," but "can you demonstrate that your process was responsible." CortexMesh's audit trail, intention-gating, and draft-to-final lifecycle are designed to make that demonstration possible without requiring CortexMesh itself to claim authority, judgment, or content generation it does not have.
+
+**Operational traceability:** Traceability is an intentional design property. CortexMesh records governance, provenance, and per-case lifecycle evidence needed to demonstrate responsible process, while preserving the prohibitions on aggregate metrics, profiling, and cross-case inference stated in Sections 4, 6, and 7.
 
 ---
 
@@ -188,7 +200,7 @@ CortexMesh maintains a repository of past decisions and their outcomes, **archit
 
 ### 4.1 The Processing Layer (Routing) [MECHANISM PROPOSAL]
 
-Once intention is confirmed (Section 3), the query passes to a **processing layer**, whose function is routing only — it delivers the query to whichever agent(s) the client has selected, and receives their replies. It does not generate content, evaluate agent output, or hold opinions about which agent is preferable. The number of agents a single query may route to simultaneously is an engineering parameter, not yet fixed by this policy, and should be set by the architecture/engineering board (see Section 4.3).
+Once intention is confirmed (Section 3), the query passes to a **processing layer**, whose function is routing only — it delivers the query to whichever agent(s) the client has selected, and receives their replies. It does not generate content, evaluate agent output, or hold opinions about which agent is preferable. The number of agents a single query may route to simultaneously is an engineering parameter, not yet fixed by this policy, and should be set by The CortexMesh Board (currently comprising Kimi, DeepSeek and ChatGPT) (see Section 4.3).
 
 Once replies are received from the selected agent(s), control returns to the rest of the CortexMesh mechanism described in this document (repository, annexe, draft-to-final lifecycle, vaults).
 
@@ -198,13 +210,17 @@ When the processing layer routes a query to multiple agents, each agent is assig
 
 **Rationale:** A stable, persistent label is itself a form of identity, even without any stored record or computed metric attached to it. If the same label always referred to the same underlying agent, that label could accumulate an informal reputation through repeated human exposure alone — a board member or client could begin trusting "Agent A" more than another, purely from familiarity, with no data, metric, or rule ever having been written to support that trust. Randomizing the identifier on every query removes the possibility of a persistent label forming in the first place, extending the principle in Section 4.4 (act on content, not identity) from CortexMesh's internal logic to the human-readable labels a board or client actually sees.
 
+**Board member identity handling:** Board member identity is a governance role, not an agent-performance identity. Board members act under the Communication Protocol and External AI Governance, while implementation assistants and independent reviewers possess no governance authority. External AI system identity shall not be used to infer governance authority outside the role recorded for that system.
+
 ### 4.2 Multi-Agent Consensus (External Reference) [DEFERRED]
 
 Where a client has selected more than one agent for a single task, how those agents' outputs are reconciled — competition, consensus, and weighting among agents — is governed by a **separate governance document**, not by this policy. This document does not restate or assume the mechanics of that process. Any system reading this policy should treat multi-agent consensus as out of scope here and refer to that separate document.
 
 ### 4.3 Vault Custody (Architecture Question, Deferred) [DEFERRED]
 
-Where the three vaults physically reside, who hosts them, and who holds administrative access capable of crossing the no-mutual-access boundary described in Section 4.12 (e.g. a database administrator with root access to all three) is an architecture and engineering question, not a policy question. This document states the rule the vaults must enforce (Section 4.12); it does not specify the infrastructure that enforces it. This is deferred to the architecture/engineering board.
+Where the three vaults physically reside, who hosts them, and who holds administrative access capable of crossing the no-mutual-access boundary described in Section 4.12 (e.g. a database administrator with root access to all three) is an architecture and engineering question, not a policy question. This document states the rule the vaults must enforce (Section 4.12); it does not specify the infrastructure that enforces it. This is deferred to The CortexMesh Board (currently comprising Kimi, DeepSeek and ChatGPT).
+
+**Future specialist body:** A specialist architecture/engineering body may be established in the future by recorded Board decision. Until such a decision is recorded, references to architecture or engineering authority in this policy mean The CortexMesh Board.
 
 ### 4.4 Agent Vetting (Explicit Non-Position) [NORMATIVE POSITION]
 
@@ -219,7 +235,11 @@ The repository is a reference library. Its function is to surface relevant histo
 **The repository has no decision-making authority.** It does not vote, score, rank, or compete with the output of the client's chosen agent. It cannot independently produce, approve, or block a decision.
 
 ### 4.7 Activation [MECHANISM PROPOSAL]
-The repository activates only on trigger, once the client's agent has finalized a decision within CortexMesh's lifecycle. It does not run in parallel with the agent's drafting process and does not have visibility into a decision before that decision is reached.
+The repository activates only on trigger, once the CortexMesh governance process determines governance review is complete within CortexMesh's lifecycle.
+
+Repository activation shall not depend upon an agent declaring completion.
+
+It does not run in parallel with the agent's drafting process and does not have visibility into a decision before the governance activation condition is reached.
 
 ### 4.8 Output Form [MECHANISM PROPOSAL]
 When triggered, the repository produces a comparison against relevant historical precedent (situation/circumstance match, intention check per Section 2). This output takes the form of an **annexe** — a historical annotation attached to the delivered decision.
@@ -235,6 +255,8 @@ Incorporation of annexe content therefore happens only through this single draft
 
 **Retention:** Records are retained per the Three-Vault Architecture below, not discarded once superseded. This supports audit requirements and allows recovery if the customer changes their mind after delivery of the final copy.
 
+**Governance communications distinction:** Governance communications are Board-governance records. They are distinct from client interaction records, draft records, annexe records, final-copy records, and outcome records. Governance communications are retained according to governance record rules and are not created, retained, or deleted based on client interaction outcomes.
+
 ### 4.10 Disagreement / Outright Rejection [MECHANISM PROPOSAL]
 
 If the customer rejects the draft outright — not requesting incorporation of annexe content, simply declining the draft — this is treated differently from the draft-to-final path above:
@@ -243,6 +265,8 @@ If the customer rejects the draft outright — not requesting incorporation of a
 - A subsequent attempt is a **new request**, with its own fresh case identifier, carrying no reference to the rejected one.
 
 **Rationale:** This is consistent with Section 7's prohibition on aggregate metrics. A retained log of rejected drafts is exactly as capable of becoming a pattern that gets optimized against — by a future contributor, deliberately or not — as a retained log of accepted ones would be. The same bias-creep risk applies to negative records as to positive ones, so the same rule applies: none are kept.
+
+This deletion rule applies to client interaction records for the rejected request. It does not delete or alter Board communications, governance decisions, governance audit artifacts, or other governance records that exist independently of the client interaction lifecycle.
 
 ### 4.11 Agent Failure Handling [MECHANISM PROPOSAL]
 
@@ -350,8 +374,8 @@ The following are explicitly **not** resolved by this document and should not be
 
 - Broader governance architecture (evidence layer / governance layer / authority layer)
 - Who approves changes to weighting or evaluation criteria at a system level
-- Vault custody and infrastructure (Section 4.3) — deferred to the architecture/engineering board
-- Processing layer capacity — how many agents a single query may route to simultaneously (Section 4.1) — deferred to the architecture/engineering board
+- Vault custody and infrastructure (Section 4.3) — deferred to The CortexMesh Board unless and until a specialist architecture/engineering body is established by recorded Board decision
+- Processing layer capacity — how many agents a single query may route to simultaneously (Section 4.1) — deferred to The CortexMesh Board unless and until a specialist architecture/engineering body is established by recorded Board decision
 - Versioning and amendment process for this document. The open question is not "what should the process be" but "what would actually trigger a need for one" — that has not yet been identified. Once a triggering mechanism is clear, this is expected to be a joint decision among the client, board members, and the AI systems acting as guardian/reviewer of this document.
 
 
@@ -362,6 +386,10 @@ Until a formal governance amendment process is established, policy amendments re
 1. Unanimous board approval.
 2. A minimum 30-day review period.
 3. Publication of amendment provenance.
+
+The review period begins only after proposed amendment text, rationale, and provenance have been submitted to the Board for review.
+
+An amendment is not effective until unanimous Board approval has been recorded and the approved amendment has been published.
 
 This placeholder remains in effect until replaced by a formally ratified governance amendment process.
 
