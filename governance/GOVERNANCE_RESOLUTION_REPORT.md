@@ -27,7 +27,7 @@ Policy implementation and verification remain pending until supporting policy ch
 
 This report covers:
 
-- Blockers
+- Blocker
 - Non-blocking findings
 - Housekeeping items
 - Hostile-read findings
@@ -45,7 +45,7 @@ The findings in scope are those recorded in the Governance Resolution Tracker.
 | G-08 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | G-10 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | G-11 | Housekeeping | RECORDED | PENDING | PENDING | PENDING | Document correction and verification pending. |
-| G-12 | Blockers | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
+| G-12 | Blocker | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
 | G-13 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | G-14 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | G-15 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
@@ -53,7 +53,7 @@ The findings in scope are those recorded in the Governance Resolution Tracker.
 | HA-01 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | HA-02 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | HA-03 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-04 | Blockers | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
+| HA-04 | Blocker | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
 | HA-05 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | HA-06 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
 | HA-07 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
