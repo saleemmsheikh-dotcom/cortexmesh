@@ -19,7 +19,9 @@ This report distinguishes three lifecycle stages:
 
 Board decisions have been recorded.
 
-Policy implementation and verification remain pending until supporting policy changes, Board communications, and commits are available.
+Policy implementation was completed in commit `e28e9cd`.
+
+Board verification remains pending.
 
 ---
 
@@ -40,24 +42,24 @@ The findings in scope are those recorded in the Governance Resolution Tracker.
 
 | Finding | Classification | Board Decision | Resolution Status | Policy Section(s) Updated | Supporting Communication | Notes |
 | ------- | -------------- | -------------- | ----------------- | ------------------------- | ------------------------ | ----- |
-| G-06 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-07 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-08 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-10 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-11 | Housekeeping | RECORDED | PENDING | PENDING | PENDING | Document correction and verification pending. |
-| G-12 | Blocker | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
-| G-13 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-14 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| G-15 | Non-Blocking | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| H-14 | Housekeeping | RECORDED | PENDING | PENDING | PENDING | Document correction and verification pending. |
-| HA-01 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-02 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-03 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-04 | Blocker | RECORDED | PENDING | PENDING | PENDING | Blocker remains pending until policy update and verification are complete. |
-| HA-05 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-06 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-07 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
-| HA-08 | Hostile-Read | RECORDED | PENDING | PENDING | PENDING | Policy update and verification pending. |
+| G-06 | Non-Blocking | RECORDED | IMPLEMENTED | Amendment Process Placeholder | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-07 | Non-Blocking | RECORDED | IMPLEMENTED | External Artifact Governance Status | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-08 | Non-Blocking | RECORDED | IMPLEMENTED | Section 4.1a; External AI Governance reference | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-10 | Non-Blocking | RECORDED | IMPLEMENTED | Vision; Section 8 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-11 | Housekeeping | RECORDED | IMPLEMENTED | Known limitations of this version | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-12 | Blocker | RECORDED | IMPLEMENTED | Sections 4.1, 4.3, 9 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-13 | Non-Blocking | RECORDED | IMPLEMENTED | Section 4.9 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-14 | Non-Blocking | RECORDED | IMPLEMENTED | Sections 4.9, 4.10 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| G-15 | Non-Blocking | RECORDED | IMPLEMENTED | Vision | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| H-14 | Housekeeping | RECORDED | IMPLEMENTED | Sections 4.1, 4.3, 9; Amendment Process Placeholder | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-01 | Hostile-Read | RECORDED | IMPLEMENTED | Known limitations of this version | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-02 | Hostile-Read | RECORDED | IMPLEMENTED | Vision; Section 8 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-03 | Hostile-Read | RECORDED | IMPLEMENTED | Vision | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-04 | Blocker | RECORDED | IMPLEMENTED | Section 4.7 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-05 | Hostile-Read | RECORDED | IMPLEMENTED | Section 4.1a | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-06 | Hostile-Read | RECORDED | IMPLEMENTED | Sections 4.9, 4.10 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-07 | Hostile-Read | RECORDED | IMPLEMENTED | Amendment Process Placeholder; External Artifact Governance Status | PENDING | Policy implemented in `e28e9cd`; verification pending. |
+| HA-08 | Hostile-Read | RECORDED | IMPLEMENTED | Sections 4.1, 4.3, 9 | PENDING | Policy implemented in `e28e9cd`; verification pending. |
 
 ---
 
@@ -65,45 +67,49 @@ The findings in scope are those recorded in the Governance Resolution Tracker.
 
 ### G-12
 
-Resolution Status: PENDING
+Resolution Status: IMPLEMENTED
 
-Policy Section(s) Updated: PENDING
+Policy Section(s) Updated: Sections 4.1, 4.3, 9
 
 Board Decision: RECORDED
 
 Verification: PENDING
 
-Exact resolution shall be recorded after the relevant policy update and verification are available.
+G-12 was implemented by replacing undefined references to an architecture/engineering board with The CortexMesh Board in Sections 4.1 and 4.3, and by updating Section 9 deferred-item wording to defer processing-layer capacity and vault custody to The CortexMesh Board unless a specialist architecture/engineering body is later established by recorded Board decision.
+
+Section 4.3 also records that a specialist architecture/engineering body may be established in the future by recorded Board decision.
 
 ---
 
 ### HA-04
 
-Resolution Status: PENDING
+Resolution Status: IMPLEMENTED
 
-Policy Section(s) Updated: PENDING
+Policy Section(s) Updated: Section 4.7
 
 Board Decision: RECORDED
 
 Verification: PENDING
 
-Exact resolution shall be recorded after the relevant policy update and verification are available.
+HA-04 was implemented by revising repository activation so activation occurs when the CortexMesh governance process determines governance review is complete.
+
+Section 4.7 now states that repository activation shall not depend upon an agent declaring completion.
 
 ---
 
 ## 5. Non-Blocking Resolution Summary
 
-Non-blocking governance findings have recorded Board decisions, but policy implementation and verification remain pending.
+Non-blocking governance findings have recorded Board decisions and policy implementation has been completed in `e28e9cd`.
 
-The following non-blocking findings shall be summarized here after policy implementation occurs:
+Verification remains pending.
 
-- G-06
-- G-07
-- G-08
-- G-10
-- G-13
-- G-14
-- G-15
+- G-06 implemented amendment timing clarification in the Amendment Process Placeholder.
+- G-07 implemented Product Owner ownership of the blocker mechanism in External Artifact Governance Status.
+- G-08 implemented Board member identity handling in Section 4.1a with reference to External AI Governance.
+- G-10 aligned Vision wording with Section 8 safety wording by using "procedurally safeguarded."
+- G-13 clarified the distinction between governance communications and client interaction records in Section 4.9.
+- G-14 clarified that governance communications are retained independently of client interaction outcomes in Sections 4.9 and 4.10.
+- G-15 documented operational traceability as intentional design in the Vision section.
 
 ---
 
@@ -111,11 +117,15 @@ The following non-blocking findings shall be summarized here after policy implem
 
 ### H-14
 
-Resolution Status: PENDING
+Resolution Status: IMPLEMENTED
 
-Document status corrections and audit completion updates shall be recorded here after supporting policy or governance documents are updated.
+Document status corrections and audit completion updates were implemented in `e28e9cd`.
 
-G-11 is also classified as Housekeeping and remains pending policy implementation and verification.
+G-11 updated the outdated hostile-read audit limitation statement.
+
+H-14 updated references affected by Board decisions, including architecture/engineering authority references and amendment process timing.
+
+Verification remains pending.
 
 ---
 
@@ -133,15 +143,23 @@ The hostile-read findings in scope are:
 
 HA-04 is tracked as a blocker.
 
-All non-blocking hostile-read recommendations have recorded Board decisions, but remain PENDING policy implementation and verification.
+All non-blocking hostile-read recommendations have recorded Board decisions and policy implementation has been completed in `e28e9cd`.
 
-This section shall summarize the incorporation of each hostile-read recommendation after the relevant policy changes and verification are available.
+Verification remains pending.
+
+- HA-01 incorporated hostile-read audit status clarification in Known limitations.
+- HA-02 incorporated safety wording alignment in the Vision section.
+- HA-03 incorporated operational traceability as intentional design in the Vision section.
+- HA-05 incorporated Board member identity handling and External AI Governance reference in Section 4.1a.
+- HA-06 incorporated governance communication and client interaction record separation in Sections 4.9 and 4.10.
+- HA-07 incorporated amendment timing and blocker ownership clarifications.
+- HA-08 incorporated authority-reference clarification for Board and future specialist architecture/engineering body handling.
 
 ---
 
 ## 8. Remaining Open Items
 
-The following findings remain open pending policy implementation and verification:
+The following findings remain open pending Board verification:
 
 - G-06
 - G-07
@@ -170,24 +188,24 @@ No finding shall be removed from this section until it has a recorded dispositio
 
 | Finding | Policy Change | Board Communication | Commit |
 | ------- | ------------- | ------------------- | ------ |
-| G-06 | PENDING | PENDING | PENDING |
-| G-07 | PENDING | PENDING | PENDING |
-| G-08 | PENDING | PENDING | PENDING |
-| G-10 | PENDING | PENDING | PENDING |
-| G-11 | PENDING | PENDING | PENDING |
-| G-12 | PENDING | PENDING | PENDING |
-| G-13 | PENDING | PENDING | PENDING |
-| G-14 | PENDING | PENDING | PENDING |
-| G-15 | PENDING | PENDING | PENDING |
-| H-14 | PENDING | PENDING | PENDING |
-| HA-01 | PENDING | PENDING | PENDING |
-| HA-02 | PENDING | PENDING | PENDING |
-| HA-03 | PENDING | PENDING | PENDING |
-| HA-04 | PENDING | PENDING | PENDING |
-| HA-05 | PENDING | PENDING | PENDING |
-| HA-06 | PENDING | PENDING | PENDING |
-| HA-07 | PENDING | PENDING | PENDING |
-| HA-08 | PENDING | PENDING | PENDING |
+| G-06 | Amendment Process Placeholder | PENDING | e28e9cd |
+| G-07 | External Artifact Governance Status | PENDING | e28e9cd |
+| G-08 | Section 4.1a; External AI Governance reference | PENDING | e28e9cd |
+| G-10 | Vision; Section 8 | PENDING | e28e9cd |
+| G-11 | Known limitations of this version | PENDING | e28e9cd |
+| G-12 | Sections 4.1, 4.3, 9 | PENDING | e28e9cd |
+| G-13 | Section 4.9 | PENDING | e28e9cd |
+| G-14 | Sections 4.9, 4.10 | PENDING | e28e9cd |
+| G-15 | Vision | PENDING | e28e9cd |
+| H-14 | Sections 4.1, 4.3, 9; Amendment Process Placeholder | PENDING | e28e9cd |
+| HA-01 | Known limitations of this version | PENDING | e28e9cd |
+| HA-02 | Vision; Section 8 | PENDING | e28e9cd |
+| HA-03 | Vision | PENDING | e28e9cd |
+| HA-04 | Section 4.7 | PENDING | e28e9cd |
+| HA-05 | Section 4.1a | PENDING | e28e9cd |
+| HA-06 | Sections 4.9, 4.10 | PENDING | e28e9cd |
+| HA-07 | Amendment Process Placeholder; External Artifact Governance Status | PENDING | e28e9cd |
+| HA-08 | Sections 4.1, 4.3, 9 | PENDING | e28e9cd |
 
 ---
 
@@ -196,7 +214,7 @@ No finding shall be removed from this section until it has a recorded dispositio
 The Governance Resolution Report is complete when:
 
 - every finding has a recorded disposition;
-- every blocker has been resolved;
+- every blocker has completed Board verification;
 - Board verification has been completed;
 - Governance Resolution Tracker can be closed.
 
