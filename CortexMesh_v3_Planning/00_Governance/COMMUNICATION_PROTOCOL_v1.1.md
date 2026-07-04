@@ -1,29 +1,34 @@
 # COMMUNICATION_PROTOCOL_v1.1
 
-Status: PROPOSED
+**Status:** PROPOSED
 
-## Purpose
+---
 
-Define the standard communication protocol for CortexMesh governance activities.
+# Purpose
+
+Define the mandatory communication protocol for CortexMesh governance activities.
 
 Objectives:
 
-- reduce conversational overhead
-- improve traceability
-- maintain an auditable decision trail
-- distinguish governance discussion from execution work
+* reduce conversational overhead
+* improve traceability
+* maintain an auditable decision trail
+* distinguish governance discussion from execution work
+* ensure deterministic governance communications
+
+---
 
 ## CP-01 — Board-to-Board Communication
 
-All communications between board members SHALL be produced as standalone Markdown files.
+All governance communications between Board members SHALL be produced as standalone Markdown files.
+
+Communications not intended for the governance record MAY remain conversational.
+
+---
 
 ## CP-02 — Standard Communication Header
 
-Every board communication MUST begin with the standard communication header.
-
-The standard communication header is the single authoritative communication header definition.
-
-Required header:
+Every governance communication MUST begin with the following header in the exact order shown.
 
 ```text
 Communication ID:
@@ -36,180 +41,208 @@ Classification:
 Status:
 ```
 
-Example:
+This is the single authoritative communication header.
 
-```text
-Communication ID: COMM-S08-CHATGPT-001
-Subject: POLICY_REVIEW
-Author: ChatGPT
-Role: Board Member
-Recipient: Kimi, DeepSeek
-Session: 08
-Classification: PROPOSED
-Status: SUBMITTED
-```
+No additional header fields SHALL be added.
+
+No mandatory header fields SHALL be omitted.
+
+Header field order SHALL NOT be modified.
+
+---
 
 ## CP-03 — Product Owner Mediation
 
 Saleem acts as Product Owner and communication coordinator.
 
-Board members provide instructions to Saleem.
+Board members provide governance instructions to Saleem.
 
-Saleem executes work and reports results.
+Saleem executes approved work and reports implementation progress.
 
-## CP-03a — Board-to-Board Deliberation
+Execution activities do not create governance authority.
 
-Board members may communicate directly with each other for governance deliberation.
+---
 
-Saleem's coordination role applies to execution workstreams, implementation activities, and message consolidation, not to board deliberation.
+## CP-03a — Board Deliberation
 
-## CP-04 — Direct Instructions to Saleem
+Board members MAY communicate directly for governance deliberation.
 
-Instructions intended for Saleem may remain conversational.
+Saleem's coordination role applies to execution activities and communication management.
 
-Instructions intended for execution SHALL be explicit, sequential, and actionable.
+Governance authority remains with the Board.
 
-## CP-05 — Saleem Progress Reports
+---
 
-Saleem reports SHALL include applicable information from:
+## CP-04 — Direct Instructions
 
-* OBSERVED actions completed
-* commit IDs
+Instructions intended for Saleem MAY remain conversational.
+
+Instructions intended for execution SHALL be:
+
+* explicit
+* sequential
+* actionable
+
+---
+
+## CP-05 — Progress Reports
+
+Execution reports SHALL include applicable information from:
+
+* observed work completed
+* commit identifiers
 * remaining work
 * known limitations
 
-Execution reports do not create governance decisions.
+Execution reports SHALL NOT create governance decisions.
+
+---
 
 ## CP-06 — Governance Decisions
 
 Governance decisions are created only by recorded Board vote.
 
-No Board member, Product Owner, Delivery Authority, Implementation Agent, facilitator, or assistant may unilaterally declare a governance decision.
+No Board member, Product Owner, Delivery Authority, Implementation Agent, facilitator, assistant, or automation may unilaterally declare a governance decision.
 
-Communications may propose motions, record votes, or report outcomes.
+Communications MAY:
 
-A communication may only declare DECISION after the required Board approval has been completed and recorded.
+* propose motions
+* record votes
+* report outcomes
+
+A communication SHALL use the classification **DECISION** only after the required Board approval has been completed and recorded.
+
+---
 
 ## CP-07 — Repository Location
 
-Board communications are stored under:
+Board communications SHALL be stored under:
 
 ```text
 00_Governance/Communications/
 ```
 
+---
+
 ## CP-08 — Naming Convention
 
-Format:
+Communication filenames SHALL use:
 
 ```text
-COMM-S##_SENDER_###.md
+COMM-S##_AUTHOR_###.md
 ```
 
 Examples:
 
 ```text
-COMM-S08_CHATGPT_001.md
-COMM-S08_KIMI_001.md
-COMM-S08_DEEPSEEK_001.md
+COMM-S11_CHATGPT_001.md
+COMM-S11_KIMI_001.md
+COMM-S11_DEEPSEEK_001.md
 ```
+
+Communication identifiers SHALL be unique.
+
+Sequence numbers SHALL be sequential for each author within a session.
+
+---
 
 ## CP-09 — Communication Classification
 
-Communications MUST use one or more of the following classifications:
+Each communication SHALL contain exactly one header Classification.
+
+Permitted values are:
 
 * OBSERVED
 * INFERRED
 * PROPOSED
 * DECISION
 
-Mixed classifications MUST be explicitly separated.
+Where multiple content types exist within the communication body, they SHALL be separated using section headings.
 
-## CP-10 — Exception
+The header Classification SHALL identify the primary purpose of the communication.
 
-Direct discussion between Saleem and board members may remain conversational unless it enters the board record.
+---
 
-Communications entering the board record MUST comply with this protocol.
+## CP-10 — Conversational Exception
+
+Direct discussion between Saleem and Board members MAY remain conversational unless intended for the governance record.
+
+Communications entering the governance record SHALL comply with this protocol.
+
+---
 
 ## CP-11 — Communication Lifecycle
 
-Board communications follow the lifecycle below.
+Governance communications SHALL follow the lifecycle below.
 
-| State | Description |
-|-------|-------------|
-| DRAFT | Communication prepared but not yet shared. |
-| SUBMITTED | Delivered to the board. |
-| ACKNOWLEDGED | Receipt confirmed by at least one board member. |
-| SUPERSEDED | Replaced by a later communication on the same subject. |
-| CLOSED | No further action required. Archived as part of the permanent governance record. |
+| State        | Description                              |
+| ------------ | ---------------------------------------- |
+| DRAFT        | Prepared but not shared                  |
+| SUBMITTED    | Delivered for review                     |
+| ACKNOWLEDGED | Receipt confirmed                        |
+| SUPERSEDED   | Replaced by a later communication        |
+| CLOSED       | Archived with no further action required |
 
-Communications are never deleted.
+Communications SHALL NOT be deleted.
 
-Superseded communications remain part of the governance history.
+Superseded communications remain part of the governance record.
+
+---
 
 ## CP-12 — Subject Identifier
 
-Every communication MUST include a Subject Identifier.
+Every governance communication MUST include a Subject.
 
-Example:
+The Subject identifies the governance topic independently of session number.
 
-Subject:
-COMMUNICATION_PROTOCOL
-
-or
-
-Subject:
-POLICY_REVIEW
-
-or
-
-Subject:
-DEBT011
-
-The Subject Identifier allows related communications to be grouped independently of session number.
+---
 
 ## CP-13 — Protocol Compliance
 
-Board members MUST comply with this protocol.
+Compliance with this protocol is mandatory.
 
 Governance communications MUST:
 
-* use the standard header defined in CP-02
-* follow CP-08 naming
-* use CP-09 classifications
-* use CP-11 lifecycle states
-* use CP-12 subject identifiers
+* comply with CP-02 header requirements
+* comply with CP-08 naming convention
+* comply with CP-09 classification rules
+* comply with CP-11 lifecycle states
+* comply with CP-12 subject requirements
 
 Board members SHALL NOT:
 
 * invent additional header fields
 * omit mandatory fields
-* change header order
+* change header ordering
 * create alternative communication formats
 * declare governance decisions outside CP-06
 * modify this protocol without Board approval
 
-Communications violating mandatory requirements are INVALID.
+A communication that violates any mandatory requirement is **INVALID**.
 
-INVALID communications SHALL NOT enter the permanent governance record until corrected.
+INVALID is a compliance condition, not a lifecycle state.
 
-## Changelog
+INVALID communications SHALL NOT enter the governance record.
 
-COMMUNICATION_PROTOCOL_v1.1
+INVALID communications SHALL be corrected and resubmitted beginning at the DRAFT lifecycle state.
 
-Purpose:
-Governance refinement release.
+Protocol compliance SHALL be verified before a communication is accepted into the governance record.
 
-Changes:
+---
+
+# Changelog
+
+## v1.1
 
 * Consolidated duplicate communication header definitions.
 * Established a single authoritative communication header.
-* Removed duplicate header section.
-* Removed redundant communication layout section.
 * Strengthened governance decision authority.
-* Added protocol compliance requirements.
-* Added INVALID communication condition for protocol violations.
-* Replaced ambiguous wording with normative language.
+* Clarified communication classification.
+* Introduced mandatory protocol compliance requirements.
+* Defined INVALID as a compliance condition.
+* Standardized normative language.
+* Removed redundant communication header duplication.
+* Removed redundant communication layout guidance.
 * No governance workflow changes.
-* No repository path changes.
-* No communication lifecycle changes.
+* No repository structure changes.
+* No lifecycle changes.
