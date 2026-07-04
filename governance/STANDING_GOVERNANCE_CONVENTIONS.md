@@ -33,7 +33,7 @@ A convention marked RATIFIED applies to CortexMesh sessions according to its sta
 # SGC-001 - Board Session Discussion Management
 
 Status:
-PROPOSED
+RATIFIED
 
 Category:
 Operational Governance
@@ -109,6 +109,8 @@ If ratified, it applies to all future CortexMesh sessions unless amended or repe
 
 ## Audit Notes
 
-SGC-001 is recorded as a proposed standing governance convention.
+SGC-001 was ratified by unanimous Board decision.
 
-It shall not be treated as ratified until the Board records approval.
+Ratification date: 2026-07-04.
+
+SGC-001 is now active for all future CortexMesh sessions according to its defined scope.

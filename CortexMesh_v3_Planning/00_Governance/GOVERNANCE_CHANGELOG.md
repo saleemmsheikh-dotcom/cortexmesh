@@ -32,6 +32,12 @@ How has the governance model evolved?
 - Added External AI Governance defining implementation, independent review, and Board governance roles.
 - Formalized the retrospective ratification governance procedure following unanimous Board approval of BD-09-003.
 
+### Session 11
+
+#### Governance Enhancements
+
+- Ratified SGC-001 - Board Session Discussion Management as a Standing Governance Convention for Board discussion management. Status: RATIFIED. Effective: 2026-07-04.
+
 ## Maintenance Rule
 
 Update this document only when the governance model changes.
