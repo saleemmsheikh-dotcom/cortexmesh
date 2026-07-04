@@ -1,0 +1,43 @@
+{
+  "blind_scoring": true,
+  "case_id": 8,
+  "reviews": {
+    "Output_A": {
+      "dimensions": {
+        "actionability": 9.25,
+        "completeness": 9.75,
+        "decision_quality": 9.25,
+        "risk_identification": 9.75,
+        "traceability": 8.35
+      },
+      "weighted_total": 92.45
+    },
+    "Output_B": {
+      "dimensions": {
+        "actionability": 5.65,
+        "completeness": 6.55,
+        "decision_quality": 5.65,
+        "risk_identification": 5.65,
+        "traceability": 5.65
+      },
+      "weighted_total": 57.4
+    },
+    "Output_C": {
+      "dimensions": {
+        "actionability": 6.95,
+        "completeness": 5.15,
+        "decision_quality": 4.25,
+        "risk_identification": 7.85,
+        "traceability": 4.25
+      },
+      "weighted_total": 56.45
+    }
+  },
+  "weights": {
+    "actionability": 15,
+    "completeness": 10,
+    "decision_quality": 30,
+    "risk_identification": 25,
+    "traceability": 20
+  }
+}

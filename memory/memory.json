@@ -1,105 +1,2083 @@
 {
-  "runs": 21,
+  "runs": 1243,
   "agent_wins": {
-    "Architect": 20.539199838407484,
-    "Researcher": 3.594145613775093
+    "Architect": 5.880381423212642e-10,
+    "Researcher": 1.0616913107480701e-10,
+    "Engineer": 6.603390781245781e-11,
+    "Researcher_v2": 20.86298076126407,
+    "Engineer_v2": 7.712107024191194e-11,
+    "Architect_v2": 39.68703081602606
   },
   "authority_actions": {
-    "CONFLICT_RESOLUTION": 11,
-    "ACCEPT": 10
+    "CONFLICT_RESOLUTION": 974,
+    "ACCEPT": 269
   },
-  "conflicts_detected": 11,
-  "conflicts_resolved": 11,
+  "conflicts_detected": 974,
+  "conflicts_resolved": 974,
   "agent_usage": {
-    "Researcher": 6.026699999999998,
-    "Architect": 6.626899999999999,
-    "Engineer": 8
+    "Researcher": 3.931224096314829,
+    "Architect": 4.94018608848733,
+    "Engineer": 6.7008606734399985,
+    "Researcher_v2": 5.179290628849582,
+    "Engineer_v2": 5.144703407311372,
+    "Architect_v2": 5.6359811788165946
   },
   "recent_structures": [
     {
-      "agent": "Architect",
+      "agent": "Architect_v2",
       "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
     },
     {
-      "agent": "Researcher",
+      "agent": "Researcher_v2",
       "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
     },
     {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Researcher",
-      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Architect",
-      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
-    },
-    {
-      "agent": "Engineer",
+      "agent": "Engineer_v2",
       "hash": "e4edf1d835cbcf0466c501dff0db6741"
     },
     {
-      "agent": "Engineer",
-      "hash": "e4edf1d835cbcf0466c501dff0db6741"
-    },
-    {
-      "agent": "Researcher",
+      "agent": "Researcher_v2",
       "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
     },
     {
-      "agent": "Engineer",
+      "agent": "Engineer_v2",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Architect_v2",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher_v2",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer_v2",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Architect_v2",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher_v2",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer_v2",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Architect_v2",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher_v2",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer_v2",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Architect_v2",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher_v2",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer_v2",
+      "hash": "e4edf1d835cbcf0466c501dff0db6741"
+    },
+    {
+      "agent": "Architect_v2",
+      "hash": "7b6f19f6bfba4f8f46fd8d6a4d1dc536"
+    },
+    {
+      "agent": "Researcher_v2",
+      "hash": "c01ef0cc0e4980b5c4e6fe1edccb86b6"
+    },
+    {
+      "agent": "Engineer_v2",
       "hash": "e4edf1d835cbcf0466c501dff0db6741"
     }
   ],
   "role_weights": {
-    "Architect": 0.4053374569441547,
-    "Researcher": 0.3075840739944028,
-    "Engineer": 0.2870784690614426
-  }
+    "Architect": 1.054806787013611,
+    "Researcher": 0.0,
+    "Engineer": 0.0
+  },
+  "strategy_registry": {
+    "Architect": {
+      "active": "Architect_v2",
+      "strategies": {
+        "Architect": {
+          "version": 1,
+          "traits": [
+            "default"
+          ],
+          "status": "retired",
+          "parent": null
+        },
+        "Architect_v2": {
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "status": "active",
+          "parent": "Architect",
+          "created_from": "repetition"
+        }
+      }
+    },
+    "Researcher": {
+      "active": "Researcher_v2",
+      "strategies": {
+        "Researcher": {
+          "version": 1,
+          "traits": [
+            "default"
+          ],
+          "status": "retired",
+          "parent": null
+        },
+        "Researcher_v2": {
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "status": "active",
+          "parent": "Researcher",
+          "created_from": "repetition"
+        }
+      }
+    },
+    "Engineer": {
+      "active": "Engineer_v2",
+      "strategies": {
+        "Engineer": {
+          "version": 1,
+          "traits": [
+            "default"
+          ],
+          "status": "retired",
+          "parent": null
+        },
+        "Engineer_v2": {
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "status": "active",
+          "parent": "Engineer",
+          "created_from": "repetition"
+        }
+      }
+    }
+  },
+  "strategy_scores": {
+    "Architect": [
+      4.450000000000001,
+      4.65,
+      5.290000000000001,
+      4.8500000000000005,
+      4.65,
+      5.226666666666668,
+      5.080000000000001,
+      5.310000000000001,
+      4.720666666666667,
+      5.080000000000001,
+      5.264000000000001,
+      5.540000000000001,
+      5.4940000000000015,
+      4.478666666666667,
+      4.434666666666667,
+      5.4026666666666685,
+      4.654666666666667
+    ],
+    "Researcher": [
+      4.25,
+      4.25,
+      4.0120000000000005,
+      4.05,
+      4.6,
+      4.282666666666667,
+      4.4079999999999995,
+      4.366,
+      4.324666666666666
+    ],
+    "Engineer": [
+      4.65,
+      4.45,
+      4.21,
+      4.6000000000000005,
+      4.25,
+      4.36,
+      4.32,
+      4.606,
+      4.13,
+      4.28,
+      4.09,
+      4.118666666666667,
+      5.674,
+      4.490666666666667
+    ],
+    "Researcher_v2": [
+      3.9199999999999995,
+      5.529999999999999,
+      3.7699999999999996,
+      3.6099999999999994,
+      5.529999999999999,
+      3.6099999999999994,
+      3.6099999999999994,
+      5.529999999999999,
+      3.7699999999999996,
+      3.6099999999999994,
+      5.289999999999999,
+      5.289999999999999,
+      5.289999999999999,
+      3.7599999999999993,
+      3.4499999999999997,
+      3.4499999999999997,
+      5.049999999999999,
+      3.4499999999999997,
+      5.289999999999999,
+      3.6099999999999994
+    ],
+    "Engineer_v2": [
+      3.29,
+      3.29,
+      3.29,
+      3.29,
+      3.29,
+      3.6,
+      3.45,
+      3.29,
+      3.1300000000000003,
+      3.1300000000000003,
+      3.29,
+      3.29,
+      3.29,
+      3.45,
+      3.45,
+      3.29,
+      3.29,
+      3.29,
+      3.1300000000000003,
+      3.29
+    ],
+    "Architect_v2": [
+      5.53,
+      3.7700000000000005,
+      5.53,
+      5.7700000000000005,
+      3.7700000000000005,
+      5.53,
+      5.53,
+      3.7700000000000005,
+      5.7700000000000005,
+      6.010000000000001,
+      3.9300000000000006,
+      3.9300000000000006,
+      3.9300000000000006,
+      5.53,
+      5.7700000000000005,
+      6.010000000000001,
+      4.090000000000001,
+      6.010000000000001,
+      4.090000000000001,
+      5.7700000000000005
+    ]
+  },
+  "task_trust": {
+    "research": {
+      "Researcher": 0.8,
+      "Architect": 1.2,
+      "Engineer": 0.8
+    },
+    "engineering": {
+      "Researcher": 0.8,
+      "Architect": 1.2,
+      "Engineer": 0.8
+    },
+    "systems": {
+      "Researcher": 1.2,
+      "Architect": 0.8,
+      "Engineer": 0.8
+    },
+    "general": {
+      "Researcher": 0.8,
+      "Architect": 1.2,
+      "Engineer": 0.8
+    }
+  },
+  "agent_trust": {},
+  "confidence_history": {
+    "Architect": [
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      }
+    ],
+    "Researcher": [
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      }
+    ],
+    "Engineer": [
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      }
+    ],
+    "Researcher_v2": [
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      }
+    ],
+    "Engineer_v2": [
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      }
+    ],
+    "Architect_v2": [
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      },
+      {
+        "confidence": 0.5,
+        "won": false
+      },
+      {
+        "confidence": 0.5,
+        "won": true
+      }
+    ]
+  },
+  "knowledge_memory": {
+    "research": [],
+    "engineering": [],
+    "systems": [],
+    "general": []
+  },
+  "negative_knowledge": {
+    "research": [
+      {
+        "warning": "Non-specialist Architect selected for research task",
+        "reliability": 1.0,
+        "uses": 0,
+        "successes": 0
+      }
+    ],
+    "engineering": [
+      {
+        "warning": "Non-specialist Architect selected for engineering task",
+        "reliability": 1.0,
+        "uses": 0,
+        "successes": 0
+      }
+    ],
+    "systems": [
+      {
+        "warning": "Non-specialist Engineer selected for systems task",
+        "reliability": 1.0,
+        "uses": 0,
+        "successes": 0
+      },
+      {
+        "warning": "Non-specialist Researcher selected for systems task",
+        "reliability": 1.0,
+        "uses": 0,
+        "successes": 0
+      }
+    ],
+    "general": []
+  },
+  "knowledge_conflicts": [],
+  "failure_memory": {
+    "Architect": {
+      "repetition": 8,
+      "calibration": 0,
+      "task_mismatch": 0,
+      "low_logic": 0,
+      "low_risk": 0,
+      "low_completeness": 0
+    },
+    "Researcher": {
+      "repetition": 9,
+      "calibration": 0,
+      "task_mismatch": 0,
+      "low_logic": 0,
+      "low_risk": 0,
+      "low_completeness": 0
+    },
+    "Engineer": {
+      "repetition": 8,
+      "calibration": 0,
+      "task_mismatch": 0,
+      "low_logic": 4,
+      "low_risk": 0,
+      "low_completeness": 0
+    },
+    "Researcher_v2": {
+      "repetition": 746,
+      "calibration": 0,
+      "task_mismatch": 66,
+      "low_logic": 0,
+      "low_risk": 0,
+      "low_completeness": 0
+    },
+    "Architect_v2": {
+      "repetition": 345,
+      "calibration": 0,
+      "task_mismatch": 53,
+      "low_logic": 0,
+      "low_risk": 0,
+      "low_completeness": 0
+    },
+    "Engineer_v2": {
+      "repetition": 1155,
+      "calibration": 0,
+      "task_mismatch": 0,
+      "low_logic": 48,
+      "low_risk": 0,
+      "low_completeness": 0
+    }
+  },
+  "evolution_events": [
+    {
+      "event": "spawned",
+      "agent": "Researcher_v2",
+      "parent": "Researcher",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "spawned",
+      "agent": "Researcher_v2",
+      "parent": "Researcher",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "promoted",
+      "agent": "Researcher_v2",
+      "retired": "Researcher",
+      "child_avg": 5.242444444444445,
+      "parent_avg": 4.282592592592592
+    },
+    {
+      "event": "promoted",
+      "agent": "Researcher_v2",
+      "retired": "Researcher",
+      "child_avg": 5.242444444444445,
+      "parent_avg": 4.282592592592592
+    },
+    {
+      "event": "spawned",
+      "agent": "Engineer_v2",
+      "parent": "Engineer",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "spawned",
+      "agent": "Engineer_v2",
+      "parent": "Engineer",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "spawned",
+      "agent": "Architect_v2",
+      "parent": "Architect",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "spawned",
+      "agent": "Architect_v2",
+      "parent": "Architect",
+      "trait": "anti_repetition",
+      "reason": "repetition"
+    },
+    {
+      "event": "promoted",
+      "agent": "Architect_v2",
+      "retired": "Architect",
+      "child_avg": 5.740000000000002,
+      "parent_avg": 4.975058823529413
+    },
+    {
+      "event": "promoted",
+      "agent": "Architect_v2",
+      "retired": "Architect",
+      "child_avg": 5.740000000000002,
+      "parent_avg": 4.975058823529413
+    },
+    {
+      "event": "promoted",
+      "agent": "Engineer_v2",
+      "retired": "Engineer",
+      "child_avg": 5.069333333333334,
+      "parent_avg": 4.444952380952381
+    },
+    {
+      "event": "promoted",
+      "agent": "Engineer_v2",
+      "retired": "Engineer",
+      "child_avg": 5.069333333333334,
+      "parent_avg": 4.444952380952381
+    }
+  ],
+  "entropy_target": 0.5,
+  "entropy_drift": 0.1,
+  "governance_frozen": false,
+  "governance_violations": [],
+  "governance_actions": [],
+  "governance_snapshots": [
+    {
+      "timestamp": "2026-06-28T10:39:01.903844+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "3c3a0bc2dc897e087bda484090aabbf0add9ba806ea03b3fae4fef334d3073b9"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.917069+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "e493c444d3eae574d7403f4c48c620b7c53dcab2b9f0bb9a6e9be9338d7f89d2"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.929341+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "de4fc0d532bea9adb2ebc6eac822fbaddf6f7928903abe33b2b2590bc75f3b41"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.941702+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "4a5a6fcc8bd61bd5b88a6cca93acd236ed53a42087b4e0d4b42a3692d730bee0"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.953880+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "3b933f891077fa5c8d27f2bd8d0466d2cb75556d6203b531538ded16f5df9a8f"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.969980+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "7a34310b76ac49a9df9378c26685b23b668cd48ac767f4519e5525f4efe2164d"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.983689+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "ab8fe6df2c72ae8ffec0c56d5768823676cd020c3c9423b8a2fd72a0f827a568"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:01.999209+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "f2890a1378ed9517aa1d6c37450ba7697a1b13863f50e84cd02e6b3a60d82c28"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:02.015112+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "956bdb9dbcb0c86b94d0260d5ecb4347ae9cc93db0cbbd7842aa80268a5f957b"
+    },
+    {
+      "timestamp": "2026-06-28T10:39:02.029918+00:00",
+      "state": {
+        "strategy_registry": {
+          "Architect": {
+            "active": "Architect_v2",
+            "strategies": {
+              "Architect": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Architect_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Architect",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Researcher": {
+            "active": "Researcher_v2",
+            "strategies": {
+              "Researcher": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Researcher_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Researcher",
+                "created_from": "repetition"
+              }
+            }
+          },
+          "Engineer": {
+            "active": "Engineer_v2",
+            "strategies": {
+              "Engineer": {
+                "version": 1,
+                "traits": [
+                  "default"
+                ],
+                "status": "retired",
+                "parent": null
+              },
+              "Engineer_v2": {
+                "version": 2,
+                "traits": [
+                  "default",
+                  "anti_repetition"
+                ],
+                "status": "active",
+                "parent": "Engineer",
+                "created_from": "repetition"
+              }
+            }
+          }
+        },
+        "governance_actions": [],
+        "governance_violations": [],
+        "governance_tamper_log": []
+      },
+      "hash": "76422e03ff84e9da07acd2d532fe6c71ffad0d34ad5867f33aa326dfc05bba27"
+    }
+  ],
+  "governance_tamper_log": [],
+  "governance_tamper_anchor": null,
+  "governance_incidents": 0,
+  "governance_clean_runs": 1221,
+  "governance_risk_score": 0.0,
+  "governance_risk_history": []
 }

@@ -1,0 +1,15 @@
+{
+  "domain": "cybersecurity",
+  "id": 11,
+  "scores_by_source": {
+    "cortexmesh": 56.45,
+    "simple_framework": 88.95,
+    "single_model": 53.9
+  },
+  "source_by_label": {
+    "Output_A": "cortexmesh",
+    "Output_B": "single_model",
+    "Output_C": "simple_framework"
+  },
+  "task_type": "engineering"
+}

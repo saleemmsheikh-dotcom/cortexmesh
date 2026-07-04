@@ -1,0 +1,6 @@
+phase,seed_type,seed
+pilot,fixed,10
+pilot,fixed,42
+pilot,fixed,123
+pilot,fixed,999
+pilot,random,system

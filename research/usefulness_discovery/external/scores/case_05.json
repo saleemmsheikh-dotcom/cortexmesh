@@ -1,0 +1,15 @@
+{
+  "domain": "software_delivery",
+  "id": 5,
+  "scores_by_source": {
+    "cortexmesh": 56.45,
+    "simple_framework": 93.2,
+    "single_model": 57.4
+  },
+  "source_by_label": {
+    "Output_A": "single_model",
+    "Output_B": "simple_framework",
+    "Output_C": "cortexmesh"
+  },
+  "task_type": "engineering"
+}

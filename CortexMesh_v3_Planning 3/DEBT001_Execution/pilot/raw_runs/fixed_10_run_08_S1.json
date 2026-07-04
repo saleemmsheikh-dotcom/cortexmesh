@@ -1,0 +1,404 @@
+{
+  "task_id": "S1",
+  "task_file": "CortexMesh_v3_Planning/DEBT001_Task_Corpus/tasks/S1_debt_prioritization.md",
+  "phase": "pilot",
+  "seed_type": "fixed",
+  "seed": "10",
+  "run": 8,
+  "result": {
+    "final": {
+      "primary": {
+        "agent": "Architect_v2",
+        "base_agent": "Architect",
+        "version": 2,
+        "traits": [
+          "default",
+          "anti_repetition"
+        ],
+        "confidence": 0.72,
+        "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+      },
+      "alternatives": [
+        {
+          "agent": "Architect_v2",
+          "base_agent": "Architect",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.72,
+          "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        {
+          "agent": "Engineer_v2",
+          "base_agent": "Engineer",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.7,
+          "solution": "ENGINEERING VIEW\n- Break into steps\n- Define implementation path\n- Reduce complexity\n- Validate feasibility\n- Iterate solution\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        {
+          "agent": "Researcher_v2",
+          "base_agent": "Researcher",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.68,
+          "solution": "RESEARCH VIEW\n- Compare known approaches\n- Identify alternatives\n- Evaluate evidence\n- Review trade-offs\n- Select best precedent\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        }
+      ]
+    },
+    "critiques": [
+      {
+        "solution": {
+          "agent": "Architect_v2",
+          "base_agent": "Architect",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.72,
+          "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "reviews": [
+          {
+            "critic": "logic",
+            "review": "\nLOGIC REVIEW (variant)\nHash:88\n\nFocus:\n- hidden assumptions\n- logical gaps\n- internal consistency\n",
+            "signal": "refine:logic"
+          },
+          {
+            "critic": "risk",
+            "review": "\nRISK REVIEW (variant)\nHash:88\n\nFocus:\n- failure modes\n- operational risks\n- edge cases\n",
+            "signal": "refine:risk"
+          },
+          {
+            "critic": "completeness",
+            "review": "\nCOMPLETENESS REVIEW (variant)\nHash:88\n\nFocus:\n- missing components\n- blind spots\n- coverage gaps\n",
+            "signal": "refine:completeness"
+          }
+        ]
+      },
+      {
+        "solution": {
+          "agent": "Engineer_v2",
+          "base_agent": "Engineer",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.7,
+          "solution": "ENGINEERING VIEW\n- Break into steps\n- Define implementation path\n- Reduce complexity\n- Validate feasibility\n- Iterate solution\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "reviews": [
+          {
+            "critic": "logic",
+            "review": "\nLOGIC REVIEW (variant)\nHash:75\n\nFocus:\n- hidden assumptions\n- logical gaps\n- internal consistency\n",
+            "signal": "refine:logic"
+          },
+          {
+            "critic": "risk",
+            "review": "\nRISK REVIEW (variant)\nHash:75\n\nFocus:\n- failure modes\n- operational risks\n- edge cases\n",
+            "signal": "refine:risk"
+          },
+          {
+            "critic": "completeness",
+            "review": "\nCOMPLETENESS REVIEW (variant)\nHash:75\n\nFocus:\n- missing components\n- blind spots\n- coverage gaps\n",
+            "signal": "refine:completeness"
+          }
+        ]
+      },
+      {
+        "solution": {
+          "agent": "Researcher_v2",
+          "base_agent": "Researcher",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.68,
+          "solution": "RESEARCH VIEW\n- Compare known approaches\n- Identify alternatives\n- Evaluate evidence\n- Review trade-offs\n- Select best precedent\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "reviews": [
+          {
+            "critic": "logic",
+            "review": "\nLOGIC REVIEW (variant)\nHash:25\n\nFocus:\n- hidden assumptions\n- logical gaps\n- internal consistency\n",
+            "signal": "refine:logic"
+          },
+          {
+            "critic": "risk",
+            "review": "\nRISK REVIEW (variant)\nHash:25\n\nFocus:\n- failure modes\n- operational risks\n- edge cases\n",
+            "signal": "refine:risk"
+          },
+          {
+            "critic": "completeness",
+            "review": "\nCOMPLETENESS REVIEW (variant)\nHash:25\n\nFocus:\n- missing components\n- blind spots\n- coverage gaps\n",
+            "signal": "refine:completeness"
+          }
+        ]
+      }
+    ],
+    "authority": {
+      "agent": "Authority",
+      "decision": {
+        "solution": {
+          "agent": "Architect_v2",
+          "base_agent": "Architect",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.72,
+          "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "scores": {
+          "logic": 5.0,
+          "risk": 5.0,
+          "completeness": 5.0,
+          "weights": {
+            "logic": 0.4,
+            "risk": 0.3,
+            "completeness": 0.3
+          },
+          "weighted_total": 5.0,
+          "total": 5.0,
+          "authority_total": 6.84,
+          "diversity_bonus": 0.75,
+          "repetition_penalty": 1.0,
+          "trust": 1.2,
+          "calibration": 1.2,
+          "specialist_boost": 0
+        }
+      },
+      "action": "CONFLICT_RESOLUTION",
+      "reason": "Divergent reasoning models detected",
+      "alternatives": [
+        {
+          "solution": {
+            "agent": "Architect_v2",
+            "base_agent": "Architect",
+            "version": 2,
+            "traits": [
+              "default",
+              "anti_repetition"
+            ],
+            "confidence": 0.72,
+            "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+          },
+          "scores": {
+            "logic": 5.0,
+            "risk": 5.0,
+            "completeness": 5.0,
+            "weights": {
+              "logic": 0.4,
+              "risk": 0.3,
+              "completeness": 0.3
+            },
+            "weighted_total": 5.0,
+            "total": 5.0,
+            "authority_total": 6.84,
+            "diversity_bonus": 0.75,
+            "repetition_penalty": 1.0,
+            "trust": 1.2,
+            "calibration": 1.2,
+            "specialist_boost": 0
+          }
+        },
+        {
+          "solution": {
+            "agent": "Engineer_v2",
+            "base_agent": "Engineer",
+            "version": 2,
+            "traits": [
+              "default",
+              "anti_repetition"
+            ],
+            "confidence": 0.7,
+            "solution": "ENGINEERING VIEW\n- Break into steps\n- Define implementation path\n- Reduce complexity\n- Validate feasibility\n- Iterate solution\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+          },
+          "scores": {
+            "logic": 5.0,
+            "risk": 5.0,
+            "completeness": 5.0,
+            "weights": {
+              "logic": 0.4,
+              "risk": 0.3,
+              "completeness": 0.3
+            },
+            "weighted_total": 5.0,
+            "total": 5.0,
+            "authority_total": 2.7840000000000007,
+            "diversity_bonus": 0.75,
+            "repetition_penalty": 1.4000000000000001,
+            "trust": 0.8,
+            "calibration": 0.8000000000000002,
+            "specialist_boost": 0
+          }
+        },
+        {
+          "solution": {
+            "agent": "Researcher_v2",
+            "base_agent": "Researcher",
+            "version": 2,
+            "traits": [
+              "default",
+              "anti_repetition"
+            ],
+            "confidence": 0.68,
+            "solution": "RESEARCH VIEW\n- Compare known approaches\n- Identify alternatives\n- Evaluate evidence\n- Review trade-offs\n- Select best precedent\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+          },
+          "scores": {
+            "logic": 5.0,
+            "risk": 5.0,
+            "completeness": 5.0,
+            "weights": {
+              "logic": 0.4,
+              "risk": 0.3,
+              "completeness": 0.3
+            },
+            "weighted_total": 5.0,
+            "total": 5.0,
+            "authority_total": 2.722400000000001,
+            "diversity_bonus": 0.75,
+            "repetition_penalty": 1.6,
+            "trust": 0.8,
+            "calibration": 0.8200000000000002,
+            "specialist_boost": 0
+          }
+        }
+      ],
+      "task_type": "systems",
+      "task_trust": {
+        "research": {
+          "Researcher": 1.2,
+          "Architect": 0.8,
+          "Engineer": 0.8
+        },
+        "engineering": {
+          "Researcher": 0.8,
+          "Architect": 0.8,
+          "Engineer": 1.2
+        },
+        "systems": {
+          "Researcher": 0.8,
+          "Architect": 1.2,
+          "Engineer": 0.8
+        },
+        "general": {
+          "Researcher": 1.2,
+          "Architect": 0.8,
+          "Engineer": 0.8
+        }
+      }
+    },
+    "meta": "Meta Insight:\n- Dominant reasoning style: Architect_v2\n- System bias: leaning toward Architect_v2 outputs\n- Interpretation risk: alternative styles may be underweighted",
+    "mode": "dev",
+    "scored": [
+      {
+        "solution": {
+          "agent": "Architect_v2",
+          "base_agent": "Architect",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.72,
+          "solution": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "scores": {
+          "logic": 5.0,
+          "risk": 5.0,
+          "completeness": 5.0,
+          "weights": {
+            "logic": 0.4,
+            "risk": 0.3,
+            "completeness": 0.3
+          },
+          "weighted_total": 5.0,
+          "total": 5.0,
+          "authority_total": 6.84,
+          "diversity_bonus": 0.75,
+          "repetition_penalty": 1.0,
+          "trust": 1.2,
+          "calibration": 1.2,
+          "specialist_boost": 0
+        }
+      },
+      {
+        "solution": {
+          "agent": "Engineer_v2",
+          "base_agent": "Engineer",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.7,
+          "solution": "ENGINEERING VIEW\n- Break into steps\n- Define implementation path\n- Reduce complexity\n- Validate feasibility\n- Iterate solution\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "scores": {
+          "logic": 5.0,
+          "risk": 5.0,
+          "completeness": 5.0,
+          "weights": {
+            "logic": 0.4,
+            "risk": 0.3,
+            "completeness": 0.3
+          },
+          "weighted_total": 5.0,
+          "total": 5.0,
+          "authority_total": 2.7840000000000007,
+          "diversity_bonus": 0.75,
+          "repetition_penalty": 1.4000000000000001,
+          "trust": 0.8,
+          "calibration": 0.8000000000000002,
+          "specialist_boost": 0
+        }
+      },
+      {
+        "solution": {
+          "agent": "Researcher_v2",
+          "base_agent": "Researcher",
+          "version": 2,
+          "traits": [
+            "default",
+            "anti_repetition"
+          ],
+          "confidence": 0.68,
+          "solution": "RESEARCH VIEW\n- Compare known approaches\n- Identify alternatives\n- Evaluate evidence\n- Review trade-offs\n- Select best precedent\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies"
+        },
+        "scores": {
+          "logic": 5.0,
+          "risk": 5.0,
+          "completeness": 5.0,
+          "weights": {
+            "logic": 0.4,
+            "risk": 0.3,
+            "completeness": 0.3
+          },
+          "weighted_total": 5.0,
+          "total": 5.0,
+          "authority_total": 2.722400000000001,
+          "diversity_bonus": 0.75,
+          "repetition_penalty": 1.6,
+          "trust": 0.8,
+          "calibration": 0.8200000000000002,
+          "specialist_boost": 0
+        }
+      }
+    ],
+    "conflict_mode": true,
+    "conflict_resolved": true
+  },
+  "stdout": "\nDEBUG SELECTED AGENTS\n['Architect_v2', 'Engineer_v2', 'Researcher_v2']\n\nDEBUG GENERATED SOLUTIONS\nArchitect_v2\nEngineer_v2\nResearcher_v2\n\nDEBUG AUTHORITY INPUT\nArchitect_v2 6.84\nEngineer_v2 2.7840000000000007\nResearcher_v2 2.722400000000001\n"
+}

@@ -1,0 +1,40 @@
+digraph G {
+    graph [rankdir=TB, ranksep=0.5, layout=dot, clusterrank="local"];
+    subgraph "cluster_G" {
+
+        graph [style="filled,rounded", fillcolor="#80808018", label=""];
+        "orchestrator" [label="orchestrator", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0", tooltip="orchestrator\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py"];
+        subgraph "cluster_orchestrator" {
+
+            graph [style="filled,rounded", fillcolor="#80808018", label="orchestrator"];
+            "orchestrator__EXPECTED_FAMILY" [label="EXPECTED_FAMILY", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.EXPECTED_FAMILY\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:51\nname in orchestrator"];
+            "orchestrator__SOLVER_ROLES" [label="SOLVER_ROLES", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.SOLVER_ROLES\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:43\nname in orchestrator"];
+            "orchestrator__add_noise" [label="add_noise", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.add_noise\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:96\nfunction in orchestrator"];
+            "orchestrator__build_critics" [label="build_critics", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.build_critics\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:75\nfunction in orchestrator"];
+            "orchestrator__build_selection_weights" [label="build_selection_weights", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.build_selection_weights\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:152\nfunction in orchestrator"];
+            "orchestrator__build_solvers" [label="build_solvers", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.build_solvers\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:59\nfunction in orchestrator"];
+            "orchestrator__diversity_boost" [label="diversity_boost", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.diversity_boost\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:79\nfunction in orchestrator"];
+            "orchestrator__enforce_rotation" [label="enforce_rotation", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.enforce_rotation\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:169\nfunction in orchestrator"];
+            "orchestrator__entropy_correction" [label="entropy_correction", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.entropy_correction\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:129\nfunction in orchestrator"];
+            "orchestrator__orchestrate" [label="orchestrate", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.orchestrate\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:210\nfunction in orchestrator"];
+            "orchestrator__record_solution_structure" [label="record_solution_structure", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.record_solution_structure\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:179\nfunction in orchestrator"];
+            "orchestrator__reviews_for" [label="reviews_for", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.reviews_for\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:203\nfunction in orchestrator"];
+            "orchestrator__spend_budget" [label="spend_budget", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.spend_budget\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:195\nfunction in orchestrator"];
+            "orchestrator__update_role_weights" [label="update_role_weights", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.update_role_weights\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:113\nfunction in orchestrator"];
+            "orchestrator__weighted_agents" [label="weighted_agents", style="filled", fillcolor="#feccccb2", fontcolor="#000000", group="0", tooltip="orchestrator.weighted_agents\n/Users/saleemsheikh/Documents/cortexmesh/orchestrator.py:105\nfunction in orchestrator"];
+        }
+    }
+        "orchestrator__build_selection_weights" -> "orchestrator__diversity_boost" [style="solid",  color="#000000"];
+        "orchestrator__build_solvers" -> "orchestrator__SOLVER_ROLES" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__EXPECTED_FAMILY" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__SOLVER_ROLES" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__build_critics" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__build_selection_weights" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__build_solvers" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__enforce_rotation" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__entropy_correction" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__record_solution_structure" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__reviews_for" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__spend_budget" [style="solid",  color="#000000"];
+        "orchestrator__orchestrate" -> "orchestrator__update_role_weights" [style="solid",  color="#000000"];
+    }

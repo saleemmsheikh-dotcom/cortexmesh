@@ -1,0 +1,15 @@
+{
+  "domain": "customer_support",
+  "id": 17,
+  "scores_by_source": {
+    "cortexmesh": 42.05,
+    "simple_framework": 96.45,
+    "single_model": 62.6
+  },
+  "source_by_label": {
+    "Output_A": "simple_framework",
+    "Output_B": "single_model",
+    "Output_C": "cortexmesh"
+  },
+  "task_type": "engineering"
+}

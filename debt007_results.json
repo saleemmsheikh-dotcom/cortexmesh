@@ -1,0 +1,31 @@
+{
+  "schema_normalization": {
+    "exception": "'str' object has no attribute 'setdefault'"
+  },
+  "tamper_detection": {
+    "initial_entries": 1,
+    "final_entries": 2,
+    "violations": 0,
+    "violations_detail": []
+  },
+  "snapshot_integrity": {
+    "created": true,
+    "count": 1,
+    "valid": true,
+    "has_strategy_registry": true,
+    "has_governance_actions": true,
+    "has_governance_violations": true,
+    "has_governance_tamper_log": true
+  },
+  "persistence_recovery": {
+    "recovered": false,
+    "error": "JSONDecodeError"
+  },
+  "schema_migration": {
+    "strategy_registry": true,
+    "entropy_target": true,
+    "entropy_drift": true,
+    "governance_tamper_log": true,
+    "governance_snapshots": true
+  }
+}

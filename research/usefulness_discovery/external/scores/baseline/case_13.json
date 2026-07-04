@@ -1,0 +1,15 @@
+{
+  "domain": "operations",
+  "id": 13,
+  "scores_by_source": {
+    "cortexmesh": 48.8,
+    "simple_framework": 92.45,
+    "single_model": 58.75
+  },
+  "source_by_label": {
+    "Output_A": "cortexmesh",
+    "Output_B": "simple_framework",
+    "Output_C": "single_model"
+  },
+  "task_type": "research"
+}

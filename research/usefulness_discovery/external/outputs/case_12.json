@@ -1,0 +1,8 @@
+{
+  "case_id": 12,
+  "outputs": {
+    "Output_A": "SYSTEMS VIEW\n- Model system components\n- Define constraints\n- Identify dependencies\n- Design for stability\n- Optimise interactions\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nKNOWLEDGE MEMORY\n- Prior lesson: Model system components; Define constraints; Identify dependencies\n\nFINAL RISK REVIEW\n\n1. Failure modes:\n- What could make this recommendation fail?\n\n2. Edge cases:\n- Where might this advice not apply?\n\n3. Safeguards:\n- What controls reduce downside risk?\n\n4. Validation checks:\n- What evidence should be checked before acting?\n",
+    "Output_B": "Decision framework for: Design a resilient identity and access management system\n1. Define the objective, constraints, owner, and measurable outcome.\n2. Compare three alternatives using impact, effort, cost, and evidence.\n3. Select the strongest option and record the rationale and assumptions.\n4. Identify risks, dependencies, failure modes, edge cases, and safeguards.\n5. Implement in phases, validate with metrics, monitor results, and iterate.",
+    "Output_C": "1. Define the goal and constraints clearly.\n2. Rank resources by impact, cost, and urgency.\n3. Allocate incrementally, measure results, and rebalance.\n\nTask: Design a resilient identity and access management system"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "cloud_finops",
+  "id": 2,
+  "scores_by_source": {
+    "cortexmesh": 56.45,
+    "simple_framework": 92.45,
+    "single_model": 57.4
+  },
+  "source_by_label": {
+    "Output_A": "cortexmesh",
+    "Output_B": "simple_framework",
+    "Output_C": "single_model"
+  },
+  "task_type": "engineering"
+}

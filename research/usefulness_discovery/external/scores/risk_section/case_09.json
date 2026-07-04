@@ -1,0 +1,15 @@
+{
+  "domain": "data_platform",
+  "id": 9,
+  "scores_by_source": {
+    "cortexmesh": 53.75,
+    "simple_framework": 88.95,
+    "single_model": 52.55
+  },
+  "source_by_label": {
+    "Output_A": "single_model",
+    "Output_B": "simple_framework",
+    "Output_C": "cortexmesh"
+  },
+  "task_type": "systems"
+}

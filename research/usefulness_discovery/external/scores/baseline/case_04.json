@@ -1,0 +1,15 @@
+{
+  "domain": "software_delivery",
+  "id": 4,
+  "scores_by_source": {
+    "cortexmesh": 45.3,
+    "simple_framework": 92.45,
+    "single_model": 59.2
+  },
+  "source_by_label": {
+    "Output_A": "cortexmesh",
+    "Output_B": "single_model",
+    "Output_C": "simple_framework"
+  },
+  "task_type": "research"
+}

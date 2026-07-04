@@ -1,0 +1,8 @@
+{
+  "case_id": 17,
+  "outputs": {
+    "Output_A": "Decision framework for: Implement a practical support ticket prioritisation workflow\n1. Define the objective, constraints, owner, and measurable outcome.\n2. Compare three alternatives using impact, effort, cost, and evidence.\n3. Select the strongest option and record the rationale and assumptions.\n4. Identify risks, dependencies, failure modes, edge cases, and safeguards.\n5. Implement in phases, validate with metrics, monitor results, and iterate.",
+    "Output_B": "1. Define the goal and constraints clearly.\n2. Rank resources by impact, cost, and urgency.\n3. Allocate incrementally, measure results, and rebalance.\n\nTask: Implement a practical support ticket prioritisation workflow",
+    "Output_C": "ENGINEERING VIEW\n- Break into steps\n- Define implementation path\n- Reduce complexity\n- Validate feasibility\n- Iterate solution\n\nSELF-CORRECTION\n- Avoid repeating the same structure. Add a different angle or method.\n\nTRAIT ADAPTATION\n- Generate a structurally different solution than prior attempts.\n\nNEGATIVE KNOWLEDGE\n- Avoid: Do not let Researcher_v2 dominate engineering tasks when specialist fit is weak.\n- Avoid: Avoid break into steps when engineering task needs strategic comparison"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "domain": "operations",
+  "id": 15,
+  "task": "Design a stable distributed job processing system",
+  "task_type": "systems"
+}
