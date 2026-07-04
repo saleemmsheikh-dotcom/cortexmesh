@@ -166,3 +166,33 @@ Recipient: Kimi, DeepSeek
 Session: 08
 Classification: PROPOSED
 Status: SUBMITTED
+
+## CP-14 — Standard Board Communication Header
+
+Communication ID: COMM-S##-AUTHOR-###
+
+Subject:
+
+Author:
+Role:
+Recipient:
+Session:
+
+Classification:
+Status:
+
+## CP-15 — Standard Communication Layout
+
+OBSERVED
+
+INFERRED (optional)
+
+PROPOSED (optional)
+
+DECISION (Board communications only)
+
+Actions (optional)
+
+Known Limitations (optional)
+
+References (optional)
