@@ -126,18 +126,26 @@ Board communications SHALL be stored under:
 
 ## CP-08 — Naming Convention
 
-Communication filenames SHALL use:
+Communication IDs SHALL use hyphens.
+
+```text
+COMM-S##-AUTHOR-###
+```
+
+Communication filenames SHALL use underscores.
 
 ```text
 COMM-S##_AUTHOR_###.md
 ```
 
-Examples:
+Example:
 
 ```text
+Communication ID:
+COMM-S11-CHATGPT-001
+
+Filename:
 COMM-S11_CHATGPT_001.md
-COMM-S11_KIMI_001.md
-COMM-S11_DEEPSEEK_001.md
 ```
 
 Communication identifiers SHALL be unique.
@@ -191,7 +199,7 @@ Superseded communications remain part of the governance record.
 
 ## CP-12 — Subject Identifier
 
-Every governance communication MUST include a Subject.
+Every governance communication MUST include a Subject Identifier.
 
 The Subject identifies the governance topic independently of session number.
 
