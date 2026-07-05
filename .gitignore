@@ -10,3 +10,4 @@ htmlcov/
 venv/
 .env
 memory/memory.json.bak
+*.ext4
