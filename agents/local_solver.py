@@ -1,4 +1,5 @@
 from agents.base import BaseAgent
+from agents.local_ai_bridge import generate_local_solution, local_ai_enabled
 
 
 class LocalSolverAgent(BaseAgent):
@@ -8,6 +9,18 @@ class LocalSolverAgent(BaseAgent):
 
     def act(self, task, ledger):
         base_agent = getattr(self, "base_agent", self.name)
+        if local_ai_enabled():
+            local_ai_result = generate_local_solution(self.name, self.role, base_agent, task)
+            return {
+                "agent": self.name,
+                "base_agent": base_agent,
+                "confidence": 0.5,
+                "solution": local_ai_result["solution"],
+                "provenance": {
+                    "local_ai": local_ai_result["provenance"],
+                    "authoritative": False,
+                },
+            }
 
         if self.role == "architect":
             return {
