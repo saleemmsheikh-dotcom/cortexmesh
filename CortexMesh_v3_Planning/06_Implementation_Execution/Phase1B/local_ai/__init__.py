@@ -7,6 +7,17 @@ the required governance and LOCKED-component boundaries are cleared.
 from .config import LocalAIConfig, LocalAIConfigError
 from .ollama import OllamaProvider
 from .provider import LocalAIProvider, LocalAIRequest, LocalAIResponse
+from .registry import (
+    PROVIDER_REGISTRY,
+    ProviderRegistration,
+    auto_select_available_provider,
+    create_provider,
+    get_registration,
+    implemented_provider_names,
+    provider_options,
+    registered_provider_names,
+    select_provider,
+)
 from .verification import VerificationRecord, verify_connection
 
 __all__ = [
@@ -16,6 +27,15 @@ __all__ = [
     "LocalAIRequest",
     "LocalAIResponse",
     "OllamaProvider",
+    "PROVIDER_REGISTRY",
+    "ProviderRegistration",
     "VerificationRecord",
+    "auto_select_available_provider",
+    "create_provider",
+    "get_registration",
+    "implemented_provider_names",
+    "provider_options",
+    "registered_provider_names",
+    "select_provider",
     "verify_connection",
 ]

@@ -14,6 +14,7 @@ ACTIVE
 | P1B-R004 | Local endpoint availability varies by developer environment. | Connection verification may be non-reproducible. | Record endpoint, model, timing, diagnostics, and failure reasons. Observed again in `PHASE1B-VE-005` when `localhost:11434` refused connection. |
 | P1B-R005 | Runtime integration may require LOCKED component changes. | Governance violation if modified without authorization. | Defer integration into LOCKED components until explicit Board authorization. |
 | P1B-R006 | Local AI integration through `engine/model_router.py` may lose provider provenance if reduced to a plain string response. | Evidence and traceability may be weaker than the Phase 1B provider contract requires. | Prefer `agents/local_solver.py` or equivalent non-LOCKED agent glue that preserves provider/model/request metadata as candidate provenance. |
+| P1B-R007 | Auto-selection could be mistaken for provider authority. | Provider availability might be confused with quality, confidence, or governance status. | Record provider choice as provenance only; do not map provider identity into scoring, confidence, authority, rank, or vote weight. |
 
 ## Outstanding Blockers
 
@@ -24,7 +25,8 @@ ACTIVE
 | P1B-B003 | LM Studio compatibility remains design-level only. | CLOSED FOR DESIGN | `LM_STUDIO_COMPATIBILITY_REVIEW.md` finds no provider interface changes are required. Implementation has not started and should proceed only through a non-LOCKED adapter if authorized. |
 | P1B-B004 | Runtime implementation has not yet been performed through the recommended SAFE path. | CLOSED | SAFE local solver integration implemented through `agents/local_solver.py` and `agents/local_ai_bridge.py`; verified by `PHASE1B-VE-004`. |
 | P1B-B005 | Broader runtime testing with Local AI enabled has not yet been performed. | CLOSED | Closed by `PHASE1B-VE-005`. Non-LOCKED dev-mode runtime plumbing was verified with Local AI enabled and `LocalSolverAgent` in execution. Live endpoint availability remains an environment risk under `P1B-R004`. |
+| P1B-B006 | Provider selection is hard-coded to a single provider. | CLOSED | Closed by `PHASE1B-VE-006`. Provider-neutral registry and configuration-driven selection are implemented through the SAFE non-LOCKED path. |
 
 ## Next Milestone
 
-Review `LM_STUDIO_COMPATIBILITY_REVIEW.md` and decide whether to authorize non-LOCKED LM Studio adapter implementation. Repeat live endpoint runtime testing after local Ollama availability is confirmed.
+Review `VERIFICATION_EVIDENCE_006_PROVIDER_NEUTRAL_SELECTION.md` and decide whether to authorize non-LOCKED LM Studio adapter implementation. Repeat live endpoint runtime testing after local Ollama availability is confirmed.

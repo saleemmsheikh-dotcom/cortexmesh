@@ -21,6 +21,7 @@ PHASE1B_PATH = (
 class LocalAISolverConfig:
     enabled: bool
     provider: str
+    provider_options: tuple[str, ...]
     base_url: str
     model: str
     timeout_seconds: float
@@ -33,9 +34,14 @@ def load_local_ai_solver_config() -> LocalAISolverConfig:
 
     return LocalAISolverConfig(
         enabled=os.getenv("CORTEX_LOCAL_AI_ENABLED", "").lower() in {"1", "true", "yes"},
-        provider=os.getenv("CORTEX_LOCAL_AI_PROVIDER", "ollama"),
-        base_url=os.getenv("CORTEX_LOCAL_AI_BASE_URL", "http://localhost:11434"),
-        model=os.getenv("CORTEX_LOCAL_AI_MODEL", "qwen2.5-coder:7b"),
+        provider=os.getenv("CORTEX_LOCAL_AI_PROVIDER", "ollama").strip().lower(),
+        provider_options=tuple(
+            item.strip().lower()
+            for item in os.getenv("CORTEX_LOCAL_AI_PROVIDER_OPTIONS", "ollama").split(",")
+            if item.strip()
+        ),
+        base_url=os.getenv("CORTEX_LOCAL_AI_BASE_URL", ""),
+        model=os.getenv("CORTEX_LOCAL_AI_MODEL", ""),
         timeout_seconds=float(os.getenv("CORTEX_LOCAL_AI_TIMEOUT", "60")),
         temperature=float(os.getenv("CORTEX_LOCAL_AI_TEMPERATURE", "0")),
         max_tokens=int(os.getenv("CORTEX_LOCAL_AI_MAX_TOKENS", "256")),
@@ -54,25 +60,30 @@ def generate_local_solution(agent_name: str, role: str, base_agent: str, task: s
         return None
 
     _ensure_phase1b_import_path()
-    from local_ai import LocalAIConfig, LocalAIRequest, OllamaProvider
-
-    if config.provider != "ollama":
-        raise ValueError(f"unsupported Local AI provider for Phase 1B solver: {config.provider}")
-
-    provider = OllamaProvider()
-    local_config = LocalAIConfig(
-        provider=config.provider,
-        base_url=config.base_url,
-        model=config.model,
-        timeout_seconds=config.timeout_seconds,
-        temperature=config.temperature,
-        max_tokens=config.max_tokens,
-        metadata={"integration_path": "agents.local_solver"},
+    from local_ai import (
+        LocalAIConfig,
+        LocalAIRequest,
+        auto_select_available_provider,
+        get_registration,
+        select_provider,
     )
+
+    if config.provider == "auto":
+        selected_provider, provider, local_config = auto_select_available_provider(
+            list(config.provider_options),
+            lambda provider_name: _local_config(config, provider_name),
+        )
+    else:
+        selected_provider, provider = select_provider(
+            config.provider,
+            list(config.provider_options),
+        )
+        local_config = _local_config(config, selected_provider)
+
     request_id = _request_id(agent_name, role, task)
     request = LocalAIRequest(
         prompt=_task_prompt(role, task),
-        model=config.model,
+        model=local_config.model,
         request_id=request_id,
         objective_ref="PHASE1B-SAFE-LOCAL-SOLVER",
         system_prompt=_system_prompt(agent_name, role, base_agent),
@@ -87,6 +98,9 @@ def generate_local_solution(agent_name: str, role: str, base_agent: str, task: s
         "provenance": {
             "provider": response.provider,
             "model": response.model,
+            "selected_provider": selected_provider,
+            "provider_selection": config.provider,
+            "provider_options": list(config.provider_options),
             "request_id": response.request_id,
             "objective_ref": request.objective_ref,
             "endpoint_ref": response.diagnostics.get("endpoint_ref"),
@@ -98,6 +112,27 @@ def generate_local_solution(agent_name: str, role: str, base_agent: str, task: s
             "integration_path": "agents.local_solver",
         },
     }
+
+
+def _local_config(config: LocalAISolverConfig, provider_name: str):
+    from local_ai import LocalAIConfig, get_registration
+
+    registration = get_registration(provider_name)
+    base_url = config.base_url or registration.default_base_url
+    model = config.model or registration.default_model
+    return LocalAIConfig(
+        provider=provider_name,
+        base_url=base_url,
+        model=model,
+        timeout_seconds=config.timeout_seconds,
+        temperature=config.temperature,
+        max_tokens=config.max_tokens,
+        metadata={
+            "integration_path": "agents.local_solver",
+            "provider_selection": config.provider,
+            "provider_options": list(config.provider_options),
+        },
+    )
 
 
 def _ensure_phase1b_import_path() -> None:

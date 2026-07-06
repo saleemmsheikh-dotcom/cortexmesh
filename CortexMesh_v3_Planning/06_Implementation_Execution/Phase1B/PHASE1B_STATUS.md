@@ -73,12 +73,13 @@ Ratified governance records are historical artifacts and shall not be modified u
 | SAFE local solver integration | PASS | `VERIFICATION_EVIDENCE_004_SAFE_LOCAL_SOLVER.md` |
 | Dev-mode runtime verification | PASS WITH ENVIRONMENT NOTE | `VERIFICATION_EVIDENCE_005_DEV_MODE_RUNTIME.md` |
 | LM Studio compatibility review | PASS FOR DESIGN COMPATIBILITY | `LM_STUDIO_COMPATIBILITY_REVIEW.md` |
+| Provider-neutral selection | PASS | `VERIFICATION_EVIDENCE_006_PROVIDER_NEUTRAL_SELECTION.md` |
 | Reference implementation | CREATED | `local_ai/` |
 
 ## Next Milestone
 
-Review `LM_STUDIO_COMPATIBILITY_REVIEW.md` and decide whether to authorize non-LOCKED LM Studio adapter implementation.
+Review `VERIFICATION_EVIDENCE_006_PROVIDER_NEUTRAL_SELECTION.md` and decide whether to authorize non-LOCKED LM Studio adapter implementation.
 
 `P1B-B005` is closed for broader non-LOCKED dev-mode runtime plumbing. Live endpoint availability remains tracked under `P1B-R004`.
 
-LM Studio implementation has not started. The compatibility review found no provider interface changes are required.
+LM Studio implementation has not started. The compatibility review found no provider interface changes are required, and the provider-neutral registry now includes LM Studio as a placeholder provider.
