@@ -74,12 +74,19 @@ Ratified governance records are historical artifacts and shall not be modified u
 | Dev-mode runtime verification | PASS WITH ENVIRONMENT NOTE | `VERIFICATION_EVIDENCE_005_DEV_MODE_RUNTIME.md` |
 | LM Studio compatibility review | PASS FOR DESIGN COMPATIBILITY | `LM_STUDIO_COMPATIBILITY_REVIEW.md` |
 | Provider-neutral selection | PASS | `VERIFICATION_EVIDENCE_006_PROVIDER_NEUTRAL_SELECTION.md` |
+| Local AI Manager architecture | PROPOSED | `LOCAL_AI_MANAGER_ARCHITECTURE.md` |
+| Local AI Manager skeleton | PASS | `VERIFICATION_EVIDENCE_007_LOCAL_AI_MANAGER_SKELETON.md` |
+| Local AI Manager health and diagnostics hardening | PASS | `VERIFICATION_EVIDENCE_008_HEALTH_DIAGNOSTICS.md` |
 | Reference implementation | CREATED | `local_ai/` |
 
 ## Next Milestone
 
-Review `VERIFICATION_EVIDENCE_006_PROVIDER_NEUTRAL_SELECTION.md` and decide whether to authorize non-LOCKED LM Studio adapter implementation.
+Review `VERIFICATION_EVIDENCE_008_HEALTH_DIAGNOSTICS.md` and decide whether to authorize wiring the manager into the SAFE local solver bridge.
 
 `P1B-B005` is closed for broader non-LOCKED dev-mode runtime plumbing. Live endpoint availability remains tracked under `P1B-R004`.
 
 LM Studio implementation has not started. The compatibility review found no provider interface changes are required, and the provider-neutral registry now includes LM Studio as a placeholder provider.
+
+`LocalAIManager` skeleton has been implemented in the non-LOCKED Local AI subsystem. It is not yet wired into runtime solver execution.
+
+`LocalAIManager` health and diagnostics behavior has been hardened. Diagnostics remain operational evidence only and do not affect confidence, score, authority, rank, or vote weight.

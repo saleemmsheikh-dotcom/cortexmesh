@@ -5,6 +5,13 @@ the required governance and LOCKED-component boundaries are cleared.
 """
 
 from .config import LocalAIConfig, LocalAIConfigError
+from .manager import (
+    LocalAIHealthResult,
+    LocalAIManager,
+    LocalAIManagerResult,
+    LocalAIManagerSettings,
+    LocalAISelection,
+)
 from .ollama import OllamaProvider
 from .provider import LocalAIProvider, LocalAIRequest, LocalAIResponse
 from .registry import (
@@ -23,6 +30,11 @@ from .verification import VerificationRecord, verify_connection
 __all__ = [
     "LocalAIConfig",
     "LocalAIConfigError",
+    "LocalAIHealthResult",
+    "LocalAIManager",
+    "LocalAIManagerResult",
+    "LocalAIManagerSettings",
+    "LocalAISelection",
     "LocalAIProvider",
     "LocalAIRequest",
     "LocalAIResponse",
