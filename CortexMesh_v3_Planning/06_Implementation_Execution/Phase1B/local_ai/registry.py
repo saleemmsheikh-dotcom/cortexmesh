@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Callable
 
+from .capabilities import DEFAULT_PROVIDER_CAPABILITIES
 from .config import LocalAIConfig
 from .provider import LocalAIProvider
 
@@ -22,6 +23,7 @@ class ProviderRegistration:
     default_model: str
     status: str = "available"
     notes: str = ""
+    capabilities: tuple[str, ...] = DEFAULT_PROVIDER_CAPABILITIES
 
     @property
     def implemented(self) -> bool:
@@ -41,6 +43,7 @@ PROVIDER_REGISTRY: dict[str, ProviderRegistration] = {
         default_base_url="http://localhost:11434",
         default_model="qwen2.5-coder:7b",
         notes="Implemented Phase 1B adapter.",
+        capabilities=("text_generation", "health_check"),
     ),
     "lmstudio": ProviderRegistration(
         name="lmstudio",
@@ -49,6 +52,7 @@ PROVIDER_REGISTRY: dict[str, ProviderRegistration] = {
         default_model="local-model",
         status="placeholder",
         notes="Future OpenAI-compatible local adapter placeholder.",
+        capabilities=("chat_completion", "text_generation", "health_check"),
     ),
 }
 

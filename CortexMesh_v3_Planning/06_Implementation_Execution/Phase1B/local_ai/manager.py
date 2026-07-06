@@ -6,6 +6,7 @@ import os
 from dataclasses import dataclass, field
 from typing import Any, Mapping
 
+from .capabilities import CAPABILITY_REGISTRY, Capability, get_capability, normalize_capability_name
 from .config import LocalAIConfig
 from .provider import ConnectionCheck, LocalAIProvider, LocalAIRequest, LocalAIResponse
 from .registry import PROVIDER_REGISTRY, ProviderRegistration, provider_options
@@ -134,14 +135,54 @@ class LocalAIManager:
                 "status": registration.status,
                 "default_base_url": registration.default_base_url,
                 "default_model": registration.default_model,
+                "capabilities": list(registration.capabilities),
                 "notes": registration.notes,
             }
 
         return {
             "providers": providers,
+            "capability_registry": {
+                name: capability.as_dict()
+                for name, capability in CAPABILITY_REGISTRY.items()
+            },
             "configured_provider": self.settings.provider,
             "configured_options": list(self.settings.provider_options),
+            "capabilities_are_provenance_only": True,
+            "ranking_used": False,
         }
+
+    def list_capabilities(
+        self,
+        implemented_only: bool = True,
+    ) -> list[Capability]:
+        """List declared capabilities without ranking providers."""
+
+        names: set[str] = set()
+        for registration in self.registry.values():
+            if implemented_only and not registration.implemented:
+                continue
+            names.update(normalize_capability_name(name) for name in registration.capabilities)
+
+        return [get_capability(name) for name in CAPABILITY_REGISTRY if name in names]
+
+    def supports(
+        self,
+        capability: str | Capability,
+        implemented_only: bool = True,
+    ) -> bool:
+        """Return whether any registered provider declares a capability."""
+
+        normalized = normalize_capability_name(capability)
+        for registration in self.registry.values():
+            if implemented_only and not registration.implemented:
+                continue
+            declared = {
+                normalize_capability_name(name)
+                for name in registration.capabilities
+            }
+            if normalized in declared:
+                return True
+        return False
 
     def build_config(self, provider_name: str) -> LocalAIConfig:
         """Build provider config from settings and registry defaults."""

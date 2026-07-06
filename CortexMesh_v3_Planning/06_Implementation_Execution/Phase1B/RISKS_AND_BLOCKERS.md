@@ -17,6 +17,7 @@ ACTIVE
 | P1B-R007 | Auto-selection could be mistaken for provider authority. | Provider availability might be confused with quality, confidence, or governance status. | Record provider choice as provenance only; do not map provider identity into scoring, confidence, authority, rank, or vote weight. |
 | P1B-R008 | LocalAIManager could accumulate provider-specific logic. | Manager may become a hidden provider adapter or violate provider-neutral design. | Keep provider-specific transport and response parsing inside adapters; manager may coordinate selection, health checks, diagnostics, and provenance only. Initial skeleton verified by `PHASE1B-VE-007`. |
 | P1B-R009 | Health diagnostics could be mistaken for provider quality ranking. | Availability data may be misused as confidence, score, authority, rank, or vote weight. | M4.3 hardening records diagnostics as operational evidence only and explicitly marks `ranking_used: false`. |
+| P1B-R010 | Capability declarations could be mistaken for provider quality or authority. | Capability metadata may be misused as confidence, score, authority, rank, vote weight, or governance status. | Treat capabilities as provenance-only operational metadata. Manager discovery exposes support without ranking providers or affecting scoring/authority paths. |
 
 ## Outstanding Blockers
 
@@ -31,6 +32,7 @@ ACTIVE
 | P1B-B007 | LocalAIManager architecture has not been defined. | CLOSED FOR DESIGN | Closed by `LOCAL_AI_MANAGER_ARCHITECTURE.md`. Implementation has not started and requires separate authorization. |
 | P1B-B008 | LocalAIManager skeleton has not been implemented. | CLOSED | Closed by `PHASE1B-VE-007`. Skeleton is implemented in the non-LOCKED Local AI subsystem and is not yet wired into runtime solver execution. |
 | P1B-B009 | LocalAIManager health and diagnostics behavior has not been hardened. | CLOSED | Closed by `PHASE1B-VE-008`. Structured health diagnostics, clean provider failure, auto-selection fallback, and non-ranking diagnostics are verified. |
+| P1B-B010 | Provider-neutral capability discovery has not been defined or implemented. | CLOSED | Closed by `PHASE1B-VE-009`. Capability discovery is provider-neutral, placeholder support is opt-in, and discovery does not affect scoring, authority, confidence, rank, vote weight, or governance decisions. |
 
 ## Next Milestone
 

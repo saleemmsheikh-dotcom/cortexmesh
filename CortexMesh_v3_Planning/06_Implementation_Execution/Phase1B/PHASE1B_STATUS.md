@@ -77,6 +77,7 @@ Ratified governance records are historical artifacts and shall not be modified u
 | Local AI Manager architecture | PROPOSED | `LOCAL_AI_MANAGER_ARCHITECTURE.md` |
 | Local AI Manager skeleton | PASS | `VERIFICATION_EVIDENCE_007_LOCAL_AI_MANAGER_SKELETON.md` |
 | Local AI Manager health and diagnostics hardening | PASS | `VERIFICATION_EVIDENCE_008_HEALTH_DIAGNOSTICS.md` |
+| Capability discovery framework | PASS | `VERIFICATION_EVIDENCE_009_CAPABILITY_DISCOVERY.md` |
 | Reference implementation | CREATED | `local_ai/` |
 
 ## Next Milestone
@@ -90,3 +91,5 @@ LM Studio implementation has not started. The compatibility review found no prov
 `LocalAIManager` skeleton has been implemented in the non-LOCKED Local AI subsystem. It is not yet wired into runtime solver execution.
 
 `LocalAIManager` health and diagnostics behavior has been hardened. Diagnostics remain operational evidence only and do not affect confidence, score, authority, rank, or vote weight.
+
+Capability discovery has been introduced as a provider-neutral metadata layer. Capability declarations remain provenance-only and do not affect confidence, score, authority, rank, vote weight, or governance decisions.

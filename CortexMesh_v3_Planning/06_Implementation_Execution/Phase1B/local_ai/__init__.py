@@ -4,6 +4,14 @@ This package is intentionally isolated from runtime integration points until
 the required governance and LOCKED-component boundaries are cleared.
 """
 
+from .capabilities import (
+    CAPABILITY_REGISTRY,
+    DEFAULT_PROVIDER_CAPABILITIES,
+    Capability,
+    get_capability,
+    normalize_capability_name,
+    registered_capability_names,
+)
 from .config import LocalAIConfig, LocalAIConfigError
 from .manager import (
     LocalAIHealthResult,
@@ -39,14 +47,20 @@ __all__ = [
     "LocalAIRequest",
     "LocalAIResponse",
     "OllamaProvider",
+    "CAPABILITY_REGISTRY",
+    "DEFAULT_PROVIDER_CAPABILITIES",
+    "Capability",
     "PROVIDER_REGISTRY",
     "ProviderRegistration",
     "VerificationRecord",
     "auto_select_available_provider",
     "create_provider",
+    "get_capability",
     "get_registration",
     "implemented_provider_names",
+    "normalize_capability_name",
     "provider_options",
+    "registered_capability_names",
     "registered_provider_names",
     "select_provider",
     "verify_connection",
