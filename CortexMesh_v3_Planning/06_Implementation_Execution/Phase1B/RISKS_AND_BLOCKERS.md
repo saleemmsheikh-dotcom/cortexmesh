@@ -18,6 +18,7 @@ ACTIVE
 | P1B-R008 | LocalAIManager could accumulate provider-specific logic. | Manager may become a hidden provider adapter or violate provider-neutral design. | Keep provider-specific transport and response parsing inside adapters; manager may coordinate selection, health checks, diagnostics, and provenance only. Initial skeleton verified by `PHASE1B-VE-007`. |
 | P1B-R009 | Health diagnostics could be mistaken for provider quality ranking. | Availability data may be misused as confidence, score, authority, rank, or vote weight. | M4.3 hardening records diagnostics as operational evidence only and explicitly marks `ranking_used: false`. |
 | P1B-R010 | Capability declarations could be mistaken for provider quality or authority. | Capability metadata may be misused as confidence, score, authority, rank, vote weight, or governance status. | Treat capabilities as provenance-only operational metadata. Manager discovery exposes support without ranking providers or affecting scoring/authority paths. |
+| P1B-R011 | Stabilisation refactors could accidentally change provider behavior. | Runtime behavior might drift before integration authorization. | M6 limits changes to review documentation and focused tests unless a low-risk simplification is clearly justified. |
 
 ## Outstanding Blockers
 
@@ -33,6 +34,7 @@ ACTIVE
 | P1B-B008 | LocalAIManager skeleton has not been implemented. | CLOSED | Closed by `PHASE1B-VE-007`. Skeleton is implemented in the non-LOCKED Local AI subsystem and is not yet wired into runtime solver execution. |
 | P1B-B009 | LocalAIManager health and diagnostics behavior has not been hardened. | CLOSED | Closed by `PHASE1B-VE-008`. Structured health diagnostics, clean provider failure, auto-selection fallback, and non-ranking diagnostics are verified. |
 | P1B-B010 | Provider-neutral capability discovery has not been defined or implemented. | CLOSED | Closed by `PHASE1B-VE-009`. Capability discovery is provider-neutral, placeholder support is opt-in, and discovery does not affect scoring, authority, confidence, rank, vote weight, or governance decisions. |
+| P1B-B011 | Local AI subsystem has not been reviewed for stabilisation before runtime integration. | CLOSED | Closed by `PHASE1B-VE-010`. Review completed with no behavior-changing refactor; focused stabilisation tests passed. |
 
 ## Next Milestone
 
