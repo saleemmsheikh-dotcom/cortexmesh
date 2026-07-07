@@ -21,6 +21,7 @@ ACTIVE
 | P1B-R011 | Stabilisation refactors could accidentally change provider behavior. | Runtime behavior might drift before integration authorization. | M6 limits changes to review documentation and focused tests unless a low-risk simplification is clearly justified. |
 | P1B-R012 | SAFE bridge may diverge from LocalAIManager as the subsystem matures. | Future runtime integration could duplicate manager behavior or weaken diagnostics consistency. | M7B review recommends deciding in M8 whether SAFE runtime wiring should converge on `LocalAIManager` as the primary coordination API. |
 | P1B-R013 | Runtime callers may bypass LocalAIManager and call registries or adapters directly. | Provider details could leak into runtime callers and weaken subsystem boundaries. | M8.0 establishes `LocalAIManager` as the sole public runtime entry point. Registries, capabilities, telemetry buffers, and adapters remain internal subsystem details. |
+| P1B-R014 | LM Studio OpenAI-compatible responses may vary by local runtime version. | Adapter normalization could fail for local response variants. | Keep provider-specific parsing isolated in `local_ai/lmstudio.py`; add malformed payload tests and record live endpoint variance in verification evidence. |
 
 ## Outstanding Blockers
 
@@ -39,6 +40,7 @@ ACTIVE
 | P1B-B011 | Local AI subsystem has not been reviewed for stabilisation before runtime integration. | CLOSED | Closed by `PHASE1B-VE-010`. Review completed with no behavior-changing refactor; focused stabilisation tests passed. |
 | P1B-B012 | Local AI subsystem has not received a formal architecture review. | CLOSED | Closed by `PHASE1B-VE-012`. Formal review recommends `READY FOR M8`. |
 | P1B-B013 | LM Studio adapter implementation lacks a pre-implementation design. | CLOSED FOR DESIGN | Closed by `LM_STUDIO_ADAPTER_DESIGN.md`. Design is `READY FOR IMPLEMENTATION`; implementation has not started. |
+| P1B-B014 | LM Studio adapter has not been implemented. | CLOSED | Closed by `PHASE1B-VE-013`. LM Studio is implemented as a second `LocalAIProvider`; full regression passed. |
 
 ## Next Milestone
 

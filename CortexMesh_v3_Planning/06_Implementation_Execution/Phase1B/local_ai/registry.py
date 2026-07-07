@@ -36,6 +36,12 @@ def _ollama_factory() -> LocalAIProvider:
     return OllamaProvider()
 
 
+def _lmstudio_factory() -> LocalAIProvider:
+    from .lmstudio import LMStudioProvider
+
+    return LMStudioProvider()
+
+
 PROVIDER_REGISTRY: dict[str, ProviderRegistration] = {
     "ollama": ProviderRegistration(
         name="ollama",
@@ -47,11 +53,10 @@ PROVIDER_REGISTRY: dict[str, ProviderRegistration] = {
     ),
     "lmstudio": ProviderRegistration(
         name="lmstudio",
-        factory=None,
+        factory=_lmstudio_factory,
         default_base_url="http://localhost:1234",
         default_model="local-model",
-        status="placeholder",
-        notes="Future OpenAI-compatible local adapter placeholder.",
+        notes="Implemented Phase 1B OpenAI-compatible local adapter.",
         capabilities=("chat_completion", "text_generation", "health_check"),
     ),
 }

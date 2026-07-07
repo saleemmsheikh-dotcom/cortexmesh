@@ -20,6 +20,7 @@ from .manager import (
     LocalAIManagerSettings,
     LocalAISelection,
 )
+from .lmstudio import LMStudioProvider
 from .ollama import OllamaProvider
 from .provider import LocalAIProvider, LocalAIRequest, LocalAIResponse
 from .registry import (
@@ -61,6 +62,7 @@ __all__ = [
     "LocalAIProvider",
     "LocalAIRequest",
     "LocalAIResponse",
+    "LMStudioProvider",
     "OllamaProvider",
     "CAPABILITY_REGISTRY",
     "DEFAULT_PROVIDER_CAPABILITIES",

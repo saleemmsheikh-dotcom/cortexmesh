@@ -79,7 +79,7 @@ class TestPhase1BCapabilities(unittest.TestCase):
         self.assertIn("text_generation", PROVIDER_REGISTRY["ollama"].capabilities)
         self.assertIn("health_check", PROVIDER_REGISTRY["ollama"].capabilities)
         self.assertIn("chat_completion", PROVIDER_REGISTRY["lmstudio"].capabilities)
-        self.assertFalse(PROVIDER_REGISTRY["lmstudio"].implemented)
+        self.assertTrue(PROVIDER_REGISTRY["lmstudio"].implemented)
 
     def test_manager_lists_implemented_capabilities(self):
         manager = LocalAIManager(

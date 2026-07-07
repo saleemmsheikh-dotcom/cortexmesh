@@ -50,7 +50,7 @@ class TestPhase1BProviderSelection(unittest.TestCase):
         os.environ.clear()
         os.environ.update(self._env)
 
-    def test_registry_exposes_ollama_and_placeholder_lmstudio(self):
+    def test_registry_exposes_implemented_ollama_and_lmstudio(self):
         from local_ai import (
             get_registration,
             implemented_provider_names,
@@ -58,9 +58,10 @@ class TestPhase1BProviderSelection(unittest.TestCase):
         )
 
         self.assertIn("ollama", implemented_provider_names())
+        self.assertIn("lmstudio", implemented_provider_names())
         self.assertIn("ollama", registered_provider_names())
         self.assertIn("lmstudio", registered_provider_names())
-        self.assertFalse(get_registration("lmstudio").implemented)
+        self.assertTrue(get_registration("lmstudio").implemented)
 
     def test_explicit_provider_selection_is_configuration_driven(self):
         os.environ["CORTEX_LOCAL_AI_ENABLED"] = "1"
