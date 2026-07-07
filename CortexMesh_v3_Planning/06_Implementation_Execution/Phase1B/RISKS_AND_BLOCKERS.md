@@ -19,6 +19,8 @@ ACTIVE
 | P1B-R009 | Health diagnostics could be mistaken for provider quality ranking. | Availability data may be misused as confidence, score, authority, rank, or vote weight. | M4.3 hardening records diagnostics as operational evidence only and explicitly marks `ranking_used: false`. |
 | P1B-R010 | Capability declarations could be mistaken for provider quality or authority. | Capability metadata may be misused as confidence, score, authority, rank, vote weight, or governance status. | Treat capabilities as provenance-only operational metadata. Manager discovery exposes support without ranking providers or affecting scoring/authority paths. |
 | P1B-R011 | Stabilisation refactors could accidentally change provider behavior. | Runtime behavior might drift before integration authorization. | M6 limits changes to review documentation and focused tests unless a low-risk simplification is clearly justified. |
+| P1B-R012 | SAFE bridge may diverge from LocalAIManager as the subsystem matures. | Future runtime integration could duplicate manager behavior or weaken diagnostics consistency. | M7B review recommends deciding in M8 whether SAFE runtime wiring should converge on `LocalAIManager` as the primary coordination API. |
+| P1B-R013 | Runtime callers may bypass LocalAIManager and call registries or adapters directly. | Provider details could leak into runtime callers and weaken subsystem boundaries. | M8.0 establishes `LocalAIManager` as the sole public runtime entry point. Registries, capabilities, telemetry buffers, and adapters remain internal subsystem details. |
 
 ## Outstanding Blockers
 
@@ -35,6 +37,8 @@ ACTIVE
 | P1B-B009 | LocalAIManager health and diagnostics behavior has not been hardened. | CLOSED | Closed by `PHASE1B-VE-008`. Structured health diagnostics, clean provider failure, auto-selection fallback, and non-ranking diagnostics are verified. |
 | P1B-B010 | Provider-neutral capability discovery has not been defined or implemented. | CLOSED | Closed by `PHASE1B-VE-009`. Capability discovery is provider-neutral, placeholder support is opt-in, and discovery does not affect scoring, authority, confidence, rank, vote weight, or governance decisions. |
 | P1B-B011 | Local AI subsystem has not been reviewed for stabilisation before runtime integration. | CLOSED | Closed by `PHASE1B-VE-010`. Review completed with no behavior-changing refactor; focused stabilisation tests passed. |
+| P1B-B012 | Local AI subsystem has not received a formal architecture review. | CLOSED | Closed by `PHASE1B-VE-012`. Formal review recommends `READY FOR M8`. |
+| P1B-B013 | LM Studio adapter implementation lacks a pre-implementation design. | CLOSED FOR DESIGN | Closed by `LM_STUDIO_ADAPTER_DESIGN.md`. Design is `READY FOR IMPLEMENTATION`; implementation has not started. |
 
 ## Next Milestone
 

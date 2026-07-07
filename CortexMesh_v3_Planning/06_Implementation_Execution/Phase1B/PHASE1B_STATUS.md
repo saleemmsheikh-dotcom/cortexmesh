@@ -79,6 +79,9 @@ Ratified governance records are historical artifacts and shall not be modified u
 | Local AI Manager health and diagnostics hardening | PASS | `VERIFICATION_EVIDENCE_008_HEALTH_DIAGNOSTICS.md` |
 | Capability discovery framework | PASS | `VERIFICATION_EVIDENCE_009_CAPABILITY_DISCOVERY.md` |
 | Local AI subsystem stabilisation | PASS | `VERIFICATION_EVIDENCE_010_SUBSYSTEM_STABILISATION.md` |
+| Local AI observability framework | PASS | `VERIFICATION_EVIDENCE_011_OBSERVABILITY.md` |
+| Local AI architecture review | PASS | `VERIFICATION_EVIDENCE_012_ARCHITECTURE_REVIEW.md` |
+| LM Studio adapter design | READY FOR IMPLEMENTATION | `LM_STUDIO_ADAPTER_DESIGN.md` |
 | Reference implementation | CREATED | `local_ai/` |
 
 ## Next Milestone
@@ -96,3 +99,9 @@ LM Studio implementation has not started. The compatibility review found no prov
 Capability discovery has been introduced as a provider-neutral metadata layer. Capability declarations remain provenance-only and do not affect confidence, score, authority, rank, vote weight, or governance decisions.
 
 Local AI subsystem stabilisation review is complete. No behavior-changing refactor was introduced; focused tests were added for configuration, request validation, response normalization, and non-authoritative diagnostics.
+
+Local AI observability primitives have been added. Telemetry remains informational only and does not affect provider ranking, authority, confidence, scoring, vote weight, or governance decisions.
+
+Local AI architecture review is complete. The formal engineering review recommends `READY FOR M8`.
+
+LM Studio adapter design is complete. The design confirms LM Studio can be implemented through the existing Local AI architecture without changing public contracts. `LocalAIManager` is established as the sole public runtime entry point into the Local AI subsystem.
