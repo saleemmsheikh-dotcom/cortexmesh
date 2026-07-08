@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from typing import Any, Mapping
 
 from .capabilities import CAPABILITY_REGISTRY, Capability, get_capability, normalize_capability_name
@@ -257,7 +257,11 @@ class LocalAIManager:
         """Generate through the selected provider and return provenance."""
 
         selection = self.select_provider()
-        response = selection.provider.generate(request, selection.config)
+        effective_request = request
+        if not request.model.strip():
+            effective_request = replace(request, model=selection.config.model)
+
+        response = selection.provider.generate(effective_request, selection.config)
         provenance = {
             "provider": response.provider,
             "model": response.model,

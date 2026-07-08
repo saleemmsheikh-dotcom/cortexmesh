@@ -53,37 +53,19 @@ def local_ai_enabled() -> bool:
 
 
 def generate_local_solution(agent_name: str, role: str, base_agent: str, task: str):
-    """Generate a solver response through the Phase 1B provider abstraction."""
+    """Generate a solver response through the Local AI manager boundary."""
 
     config = load_local_ai_solver_config()
     if not config.enabled:
         return None
 
     _ensure_phase1b_import_path()
-    from local_ai import (
-        LocalAIConfig,
-        LocalAIRequest,
-        auto_select_available_provider,
-        get_registration,
-        select_provider,
-    )
-
-    if config.provider == "auto":
-        selected_provider, provider, local_config = auto_select_available_provider(
-            list(config.provider_options),
-            lambda provider_name: _local_config(config, provider_name),
-        )
-    else:
-        selected_provider, provider = select_provider(
-            config.provider,
-            list(config.provider_options),
-        )
-        local_config = _local_config(config, selected_provider)
+    from local_ai import LocalAIManager, LocalAIRequest
 
     request_id = _request_id(agent_name, role, task)
     request = LocalAIRequest(
         prompt=_task_prompt(role, task),
-        model=local_config.model,
+        model=config.model,
         request_id=request_id,
         objective_ref="PHASE1B-SAFE-LOCAL-SOLVER",
         system_prompt=_system_prompt(agent_name, role, base_agent),
@@ -92,38 +74,30 @@ def generate_local_solution(agent_name: str, role: str, base_agent: str, task: s
         timeout_seconds=config.timeout_seconds,
         metadata={"agent": agent_name, "role": role, "base_agent": base_agent},
     )
-    response = provider.generate(request, local_config)
+    manager = LocalAIManager(_manager_settings(config))
+    result = manager.generate(request)
+    provenance = {
+        **dict(result.provenance),
+        "objective_ref": request.objective_ref,
+        "authoritative": False,
+        "confidence_source": "static_local_solver_default",
+        "integration_path": "agents.local_solver",
+    }
     return {
-        "solution": response.content,
-        "provenance": {
-            "provider": response.provider,
-            "model": response.model,
-            "selected_provider": selected_provider,
-            "provider_selection": config.provider,
-            "provider_options": list(config.provider_options),
-            "request_id": response.request_id,
-            "objective_ref": request.objective_ref,
-            "endpoint_ref": response.diagnostics.get("endpoint_ref"),
-            "status": response.status,
-            "latency_ms": response.latency_ms,
-            "finish_reason": response.finish_reason,
-            "authoritative": False,
-            "confidence_source": "static_local_solver_default",
-            "integration_path": "agents.local_solver",
-        },
+        "solution": result.response.content,
+        "provenance": provenance,
     }
 
 
-def _local_config(config: LocalAISolverConfig, provider_name: str):
-    from local_ai import LocalAIConfig, get_registration
+def _manager_settings(config: LocalAISolverConfig):
+    from local_ai import LocalAIManagerSettings
 
-    registration = get_registration(provider_name)
-    base_url = config.base_url or registration.default_base_url
-    model = config.model or registration.default_model
-    return LocalAIConfig(
-        provider=provider_name,
-        base_url=base_url,
-        model=model,
+    return LocalAIManagerSettings(
+        enabled=config.enabled,
+        provider=config.provider,
+        provider_options=config.provider_options,
+        base_url=config.base_url,
+        model=config.model,
         timeout_seconds=config.timeout_seconds,
         temperature=config.temperature,
         max_tokens=config.max_tokens,

@@ -1,44 +1,51 @@
-import os
 import unittest
+from dataclasses import dataclass
+import os
 from unittest.mock import patch
 
 from agents import local_ai_bridge
 
 
-class FakeProvider:
-    def name(self):
-        return "fake"
+@dataclass
+class CapturingManager:
+    settings: object
 
-    def validate_config(self, config):
-        return None
+    def generate(self, request):
+        from local_ai import LocalAIManagerResult, LocalAIResponse
 
-    def check_connection(self, config):
-        return type(
-            "Connection",
-            (),
-            {
-                "ok": True,
-                "status": "connected",
-                "error": None,
-                "diagnostics": {},
+        selected_provider = (
+            self.settings.provider_options[0]
+            if self.settings.provider == "auto"
+            else self.settings.provider
+        )
+        model = request.model or self.settings.model or "manager-default-model"
+        response = LocalAIResponse(
+            request_id=request.request_id,
+            provider=selected_provider,
+            model=model,
+            content="fake response",
+            status="complete",
+            latency_ms=0,
+            finish_reason="test",
+            diagnostics={"endpoint_ref": "test://provider"},
+        )
+        return LocalAIManagerResult(
+            response=response,
+            provenance={
+                "provider": response.provider,
+                "model": response.model,
+                "selected_provider": selected_provider,
+                "provider_selection": self.settings.provider,
+                "provider_options": list(self.settings.provider_options),
+                "request_id": response.request_id,
+                "endpoint_ref": response.diagnostics["endpoint_ref"],
+                "status": response.status,
+                "latency_ms": response.latency_ms,
+                "finish_reason": response.finish_reason,
+                "authoritative": False,
             },
-        )()
-
-    def generate(self, request, config):
-        return type(
-            "Response",
-            (),
-            {
-                "content": "fake response",
-                "provider": config.provider,
-                "model": config.model,
-                "request_id": request.request_id,
-                "status": "complete",
-                "latency_ms": 0,
-                "finish_reason": "test",
-                "diagnostics": {"endpoint_ref": "test://provider"},
-            },
-        )()
+            diagnostics={"manager": "LocalAIManager"},
+        )
 
 
 class TestPhase1BProviderSelection(unittest.TestCase):
@@ -68,7 +75,7 @@ class TestPhase1BProviderSelection(unittest.TestCase):
         os.environ["CORTEX_LOCAL_AI_PROVIDER"] = "ollama"
         os.environ["CORTEX_LOCAL_AI_MODEL"] = "unit-test-model"
 
-        with patch("local_ai.registry.create_provider", return_value=FakeProvider()):
+        with patch("local_ai.LocalAIManager", CapturingManager):
             result = local_ai_bridge.generate_local_solution(
                 "Architect_test",
                 "architect",
@@ -90,17 +97,7 @@ class TestPhase1BProviderSelection(unittest.TestCase):
         os.environ["CORTEX_LOCAL_AI_PROVIDER_OPTIONS"] = "ollama"
         os.environ["CORTEX_LOCAL_AI_MODEL"] = "unit-test-model"
 
-        with patch(
-            "local_ai.auto_select_available_provider",
-            return_value=(
-                "ollama",
-                FakeProvider(),
-                local_ai_bridge._local_config(
-                    local_ai_bridge.load_local_ai_solver_config(),
-                    "ollama",
-                ),
-            ),
-        ):
+        with patch("local_ai.LocalAIManager", CapturingManager):
             result = local_ai_bridge.generate_local_solution(
                 "Architect_test",
                 "architect",
