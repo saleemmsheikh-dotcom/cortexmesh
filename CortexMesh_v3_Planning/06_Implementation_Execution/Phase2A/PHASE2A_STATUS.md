@@ -40,6 +40,13 @@ Consolidate the Local AI subsystem while preserving the SAFE integration archite
 | SAFE bridge convergence design | READY FOR IMPLEMENTATION | `SAFE_BRIDGE_CONVERGENCE_DESIGN.md` |
 | SAFE bridge design evidence | PASS | `VERIFICATION_EVIDENCE_002_SAFE_BRIDGE_DESIGN.md` |
 | SAFE bridge convergence implementation | PASS | `VERIFICATION_EVIDENCE_003_SAFE_BRIDGE_CONVERGENCE.md` |
+| Shared provider contract | PASS | `PROVIDER_CONTRACT.md` |
+| Provider contract evidence | PASS | `VERIFICATION_EVIDENCE_004_PROVIDER_CONTRACT.md` |
+| Provider Development Kit | PASS | `PROVIDER_DEVELOPMENT_KIT.md` |
+| Provider implementation guide | CREATED | `PROVIDER_IMPLEMENTATION_GUIDE.md` |
+| Provider certification checklist | CREATED | `PROVIDER_CERTIFICATION_CHECKLIST.md` |
+| Provider template | CREATED | `PROVIDER_TEMPLATE.md` |
+| PDK evidence | PASS | `VERIFICATION_EVIDENCE_005_PROVIDER_DEVELOPMENT_KIT.md` |
 
 ## Initial Workstreams
 
@@ -74,4 +81,4 @@ PASS
 
 ## Current Recommendation
 
-Proceed to Phase 2A M3 planning for shared provider adapter utilities and adapter contract tests.
+Proceed to shared provider adapter utility assessment.

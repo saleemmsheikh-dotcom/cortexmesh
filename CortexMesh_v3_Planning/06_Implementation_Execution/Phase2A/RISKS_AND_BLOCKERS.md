@@ -15,14 +15,16 @@ ACTIVE
 | P2A-R005 | Telemetry could leak decision-affecting semantics. | Confidence, score, authority, rank, or vote-weight leakage. | Continue filtering and testing telemetry diagnostics. |
 | P2A-R006 | Phase 2A may drift into runtime integration. | LOCKED components could be implicated. | Keep Phase 2A limited to SAFE path consolidation and non-LOCKED files. |
 | P2A-R007 | Bridge convergence could change fallback/error behavior. | Local AI disabled or provider failure behavior may change. | M1 design requires disabled path to return `None` and enabled provider failures to propagate compatibly. |
+| P2A-R008 | New provider developers may bypass provider-neutral contract requirements. | Future providers could weaken interchangeability. | M4 PDK requires shared contract tests and certification checklist before acceptance. |
 
 ## Blockers
 
 | ID | Blocker | Status | Required Resolution |
 | -- | ------- | ------ | ------------------- |
 | P2A-B001 | SAFE bridge still uses direct registry helpers instead of `LocalAIManager`. | CLOSED | M2 convergence implemented; bridge now uses `LocalAIManager` as the Local AI subsystem entry point. |
-| P2A-B002 | Shared provider adapter contract tests do not yet exist. | OPEN | Create reusable tests for local provider adapters. |
+| P2A-B002 | Shared provider adapter contract tests do not yet exist. | CLOSED | M3 shared contract suite verifies Ollama and LM Studio through identical provider-neutral requirements. |
 | P2A-B003 | Adapter utility extraction has not been assessed. | OPEN | Review duplication and decide whether extraction is beneficial. |
+| P2A-B004 | Provider implementation process is not standardized. | CLOSED | M4 PDK standardizes provider implementation, testing, and certification. |
 
 ## M2 Risk Review
 
@@ -30,4 +32,4 @@ P2A-R001 and P2A-R007 remain monitored, but M2 verification confirms the solver 
 
 ## Current Recommendation
 
-Proceed to Phase 2A M3 planning for shared adapter utilities and adapter contract tests.
+Proceed to shared provider adapter utility assessment.
