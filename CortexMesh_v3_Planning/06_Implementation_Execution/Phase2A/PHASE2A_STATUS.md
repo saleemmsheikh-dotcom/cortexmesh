@@ -47,6 +47,8 @@ Consolidate the Local AI subsystem while preserving the SAFE integration archite
 | Provider certification checklist | CREATED | `PROVIDER_CERTIFICATION_CHECKLIST.md` |
 | Provider template | CREATED | `PROVIDER_TEMPLATE.md` |
 | PDK evidence | PASS | `VERIFICATION_EVIDENCE_005_PROVIDER_DEVELOPMENT_KIT.md` |
+| Reference provider guide | CREATED | `REFERENCE_PROVIDER_GUIDE.md` |
+| Reference provider certification | PASS | `VERIFICATION_EVIDENCE_006_REFERENCE_PROVIDER.md` |
 
 ## Initial Workstreams
 
@@ -81,4 +83,6 @@ PASS
 
 ## Current Recommendation
 
-Proceed to shared provider adapter utility assessment.
+M5 is complete. The PDK and shared contract suite are proven by a deterministic
+reference implementation. Proceed to shared provider adapter utility
+assessment.
