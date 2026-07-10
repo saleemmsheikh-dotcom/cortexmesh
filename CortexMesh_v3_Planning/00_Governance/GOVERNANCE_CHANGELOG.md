@@ -23,6 +23,7 @@ How has the governance model evolved?
 | 08 | Board Decisions Register established. |
 | 09 | Stable reviewer entry point introduced. |
 | 09 | Immutable session review packet structure introduced. |
+| 12 | GG-02 Board Voting and Ratification Rules v1.0 ratified and placed in force as active constitutional authority. |
 
 ### Session 09
 
@@ -37,6 +38,25 @@ How has the governance model evolved?
 #### Governance Enhancements
 
 - Ratified SGC-001 - Board Session Discussion Management as a Standing Governance Convention for Board discussion management. Status: RATIFIED. Effective: 2026-07-04.
+- Session 11 Interim Unanimous Consent Rule is SUPERSEDED by GG-02 Board Voting and Ratification Rules v1.0, effective 2026-07-06.
+
+### Session 12
+
+#### Governance Enhancements
+
+- Ratified GG-02 Board Voting and Ratification Rules v1.0 as the active constitutional authority for Board quorum, voting thresholds, abstentions, ratification, and effective dates.
+- Status: RATIFIED / IN FORCE.
+- Board Approval: UNANIMOUS.
+- Product Owner: ENDORSED.
+- Ratification Date: 2026-07-06.
+- Effective Date: 2026-07-06.
+- Preserved GG-02 v0.1 as a superseded historical draft to maintain governance lineage.
+
+### Phase Completion State
+
+- Session 12: CLOSED.
+- Phase 1B: COMPLETED.
+- Phase 2A: COMPLETED.
 
 ## Maintenance Rule
 

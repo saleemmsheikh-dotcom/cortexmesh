@@ -11,7 +11,8 @@
 CortexMesh v2 Certification = ACTIVE
 CortexMesh v2 Baseline = ARCHIVED + FROZEN
 v3 Planning = AUTHORIZED
-v3 Development = NOT AUTHORIZED
+Phase 1B Local AI Integration = COMPLETED
+Phase 2A Local AI Platform Consolidation = COMPLETED
 ```
 
 ---
@@ -42,6 +43,8 @@ Recommended active planning set:
 | `P0_Audit_Findings.md` | Evidence collected from audit execution |
 | `P1_Design_Study_Orchestrator_Determinism_v1.2.md` | Planning study for reproducibility and determinism |
 | `Governance_Addendum_v1.0.md` | Voting, consensus, Delivery Authority, Product Owner role |
+| `06_Implementation_Execution/Phase1B/PHASE1B_STATUS.md` | Completed Phase 1B status and evidence record |
+| `06_Implementation_Execution/Phase2A/PHASE2A_STATUS.md` | Completed Phase 2A status and evidence record |
 
 ---
 
@@ -54,7 +57,8 @@ Recommended active planning set:
 | L2 orchestrator determinism | Optional, subject to future evidence |
 | L3 outcome determinism | Not evaluated |
 | DEBT-001 orchestrator randomness | High severity, monitor/investigate |
-| v3 code changes | Not authorized |
+| Phase 1B Local AI Integration | Completed under GG-02 v1.0 |
+| Phase 2A Local AI Platform Consolidation | Completed under existing non-LOCKED implementation authorization |
 
 ---
 

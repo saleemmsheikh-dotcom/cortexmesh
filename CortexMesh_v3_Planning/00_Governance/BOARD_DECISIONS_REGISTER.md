@@ -34,6 +34,7 @@ Preparation of this document does **not** constitute ratification of any proposa
 | BD-08-006 | 08 | Review Evidence Standard v1.0 | RATIFIED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
 | BD-08-007 | 08 | Architectural Identity Workstream | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
 | BD-09-003 | 09 | Retrospective Ratification of LOCKED Component Modifications | RATIFIED (Retrospective) | 2026-07-01 | Unanimous | COMM-S09-SALEEM-005 | ACTIVE |
+| BD-12-001 | 12 | GG-02 Board Voting and Ratification Rules v1.0 | RATIFIED / IN FORCE | 2026-07-06 | Unanimous | GG-02_Board_Voting_and_Ratification_Rules_v1.0.md | ACTIVE |
 
 ---
 
@@ -89,6 +90,36 @@ Ratification is subject to RC-1 through RC-6.
 
 ---
 
+# Session 12 Decisions
+
+## BD-12-001 - GG-02 Board Voting and Ratification Rules v1.0
+
+**Date:** 2026-07-06
+
+**Status:** RATIFIED / IN FORCE
+
+### Decision
+
+The Board unanimously ratified `GG-02_Board_Voting_and_Ratification_Rules_v1.0.md` as the active constitutional authority for Board quorum, voting thresholds, abstentions, ratification, and effective dates.
+
+GG-02 v1.0 is in force from 2026-07-06.
+
+### Governance Record
+
+GG-02 v1.0 supersedes the Session 11 Interim Unanimous Consent Rule.
+
+GG-02 v0.1 is preserved as a superseded historical draft and must not be overwritten.
+
+### Product Owner
+
+Product Owner: ENDORSED
+
+### Board Approval
+
+Board Approval: UNANIMOUS
+
+---
+
 
 # Pending Decisions
 
@@ -106,3 +137,4 @@ Upon unanimous approval and recording in the Decision Register, entries shall be
 | ------- | ---------- | --------------------------------------------------------------------- |
 | v1.0    | 2026-06-28 | Initial register scaffold prepared pending unanimous board decisions. |
 | v1.1    | 2026-07-01 | Recorded BD-09-003 retrospective LOCKED component ratification. |
+| v1.2    | 2026-07-06 | Recorded BD-12-001 GG-02 Board Voting and Ratification Rules v1.0 ratification. |

@@ -21,9 +21,12 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/02_Onboarding/REVIEWER_ENTRY_POINT.md` | Stable reviewer entry point. |
 | `CortexMesh_v3_Planning/02_Onboarding/Session_09/REVIEW_PACKET.md` | Current Session 09 review packet. |
 | `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_CHANGELOG.md` | Governance evolution summary. |
+| `CortexMesh_v3_Planning/00_Governance/GG-02_Board_Voting_and_Ratification_Rules_v1.0.md` | Active Board voting and ratification authority. |
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
+| `CortexMesh_v3_Planning/06_Implementation_Execution/Phase1B/PHASE1B_STATUS.md` | Completed Phase 1B status and evidence record. |
+| `CortexMesh_v3_Planning/06_Implementation_Execution/Phase2A/PHASE2A_STATUS.md` | Completed Phase 2A status and evidence record. |
 | `CortexMesh_v3_Planning/05_Program_Management/AUDIT_REPORT_2026-06-28.md` | Formal repository-level audit report. |
 
 ## Top-Level Planning Structure
@@ -36,6 +39,7 @@ CortexMesh_v3_Planning/
 ├── 03_Debt_Management/
 ├── 04_Architecture/
 ├── 05_Program_Management/
+├── 06_Implementation_Execution/
 ├── 99_Archive/
 ├── CORTEXMESH_DIRECTORY_MAP.md
 └── Board/
@@ -51,6 +55,8 @@ CortexMesh_v3_Planning/
 ├── COMMUNICATION_PROTOCOL_v1.0.md
 ├── DOCUMENT_AUTHORITY_MATRIX.md
 ├── EXTERNAL_AI_GOVERNANCE.md
+├── GG-02_Board_Voting_and_Ratification_Rules_v0.1.md
+├── GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 ├── GOVERNANCE_ADDENDUM_v1.0.md
 ├── GOVERNANCE_BASELINE_v1.0.md
 ├── GOVERNANCE_CHANGELOG.md
@@ -69,7 +75,7 @@ CortexMesh_v3_Planning/
         └── FINAL_RECOMMENDATION.md
 ```
 
-Use this area for governance baseline documents, external AI governance, governance safeguards, board decision records, communications, locked component review evidence, evidence standards, and repository lineage investigation material.
+Use this area for governance baseline documents, voting and ratification authority, external AI governance, governance safeguards, board decision records, communications, locked component review evidence, evidence standards, and repository lineage investigation material.
 
 ## Policies
 
@@ -162,6 +168,23 @@ Use this area for architecture mission, architectural futures, system identity, 
 ```
 
 Use this area for roadmap, planning index, and formal program-level audit reports.
+
+## Implementation Execution
+
+```text
+06_Implementation_Execution/
+├── IMPLEMENTATION_EXECUTION_TRACKER.md
+├── Phase0/
+├── Phase1B/
+│   └── PHASE1B_STATUS.md
+├── Phase2A/
+│   └── PHASE2A_STATUS.md
+├── Session_11/
+└── Session_12/
+    └── SESSION_12_SUMMARY.md
+```
+
+Use this area for implementation execution status, active phase working areas, authorization records, verification evidence, risks, blockers, and session closeout material.
 
 ## Archive
 
