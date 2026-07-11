@@ -46,16 +46,28 @@ Shift engineering focus from Local AI infrastructure to intelligent orchestratio
 | Intent-driven orchestration architecture | READY FOR IMPLEMENTATION | `INTENT_DRIVEN_ORCHESTRATION.md` |
 | Capability routing architecture | READY FOR IMPLEMENTATION | `CAPABILITY_ROUTING_ARCHITECTURE.md` |
 | Intent architecture evidence | PASS | `VERIFICATION_EVIDENCE_002_INTENT_ARCHITECTURE.md` |
+| Capability resolver design | READY FOR AGENT PLANNER DESIGN | `CAPABILITY_RESOLVER_DESIGN.md` |
+| Capability resolver reference implementation | PASS | `orchestration/capability_resolver.py` |
+| Capability resolver evidence | PASS | `VERIFICATION_EVIDENCE_003_CAPABILITY_RESOLVER.md` |
+| Agent planner design | READY FOR EXECUTION PLAN DESIGN | `AGENT_PLANNER_DESIGN.md` |
+| Agent planner reference implementation | PASS | `orchestration/agent_planner.py` |
+| Agent planner evidence | PASS | `VERIFICATION_EVIDENCE_004_AGENT_PLANNER.md` |
+| Execution plan design | READY FOR EVIDENCE COLLECTION DESIGN | `EXECUTION_PLAN_DESIGN.md` |
+| Execution planner reference implementation | PASS | `orchestration/execution_plan.py` |
+| Execution plan evidence | PASS | `VERIFICATION_EVIDENCE_005_EXECUTION_PLAN.md` |
+| Evidence collection design | READY FOR CONSENSUS DESIGN | `EVIDENCE_COLLECTION_DESIGN.md` |
+| Evidence collection reference implementation | PASS | `orchestration/evidence.py` |
+| Evidence collection evidence | PASS | `VERIFICATION_EVIDENCE_006_EVIDENCE_COLLECTION.md` |
 
 ## Initial Workstreams
 
 | Milestone | Workstream | Status |
 | --------- | ---------- | ------ |
 | M1 | Capability-driven routing | ARCHITECTURE COMPLETE |
-| M2 | Multi-agent collaboration | NOT STARTED |
-| M3 | Evidence-aware reasoning | NOT STARTED |
-| M4 | Consensus layer | NOT STARTED |
-| M5 | Adaptive orchestration | NOT STARTED |
+| M2 | Capability resolver reference implementation | COMPLETE |
+| M3 | Agent planner reference implementation | COMPLETE |
+| M4 | Execution planner reference implementation | COMPLETE |
+| M5 | Evidence collection | COMPLETE |
 
 ## Constraints
 
@@ -70,6 +82,14 @@ Shift engineering focus from Local AI infrastructure to intelligent orchestratio
 
 ## Current Recommendation
 
-Phase 2C M1 intent-driven orchestration architecture is complete and ready for implementation planning.
+Phase 2C M1 intent-driven orchestration architecture is complete.
+
+Phase 2C M2 capability resolver reference implementation is complete and ready for agent planner design.
+
+Phase 2C M3 agent planner reference implementation is complete and ready for execution plan design.
+
+Phase 2C M4 execution planner reference implementation is complete and ready for evidence collection design.
+
+Phase 2C M5 evidence collection reference implementation is complete and ready for consensus design.
 
 Future implementation must begin with a LOCKED boundary review before modifying orchestration runtime behavior.
