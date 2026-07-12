@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "scenarios": [
+    {"id":"s01-architecture","category":"architecture design","purpose":"Validate architecture planning and synthesis","cases":["c01","c02"]},
+    {"id":"s02-planning","category":"implementation planning","purpose":"Validate implementation capability and plan formation","cases":["c03","c04"]},
+    {"id":"s03-refactoring","category":"refactoring","purpose":"Validate code refactoring requirements and evidence","cases":["c05","c06"]},
+    {"id":"s04-governance","category":"governance","purpose":"Validate descriptive governance review without authority","cases":["c07","c08"]},
+    {"id":"s05-provider","category":"provider integration","purpose":"Validate provider-neutral planning and identity rejection","cases":["c09","c10"]},
+    {"id":"s06-evidence","category":"evidence collection","purpose":"Validate complete and missing evidence characteristics","cases":["c11","c12"]},
+    {"id":"s07-consensus","category":"consensus","purpose":"Validate exact and compatible alignment","cases":["c13","c14"]},
+    {"id":"s08-synthesis","category":"synthesis","purpose":"Validate section completeness and minority visibility","cases":["c15","c16"]},
+    {"id":"s09-risk","category":"risk assessment","purpose":"Validate risk findings and limitations","cases":["c17","c18"]},
+    {"id":"s10-insufficient","category":"insufficient evidence","purpose":"Validate bounded insufficient-evidence behavior","cases":["c19","c20"]},
+    {"id":"s11-conflict","category":"conflicting evidence","purpose":"Validate material divergence precedence","cases":["c21","c22"]},
+    {"id":"s12-edge","category":"edge cases","purpose":"Validate empty and malformed simulation boundaries","cases":["c23","c24"]}
+  ]
+}

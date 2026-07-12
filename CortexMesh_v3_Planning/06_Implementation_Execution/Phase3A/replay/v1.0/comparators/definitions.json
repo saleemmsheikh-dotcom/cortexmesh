@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "comparators": [
+    {"id": "compatible", "kind": "compatible", "certified": true, "rule": "Only reviewed semantic aliases may differ; preservation fields cannot be excluded."},
+    {"id": "exact", "kind": "exact", "certified": true, "rule": "All canonical included fields must match."},
+    {"id": "regression", "kind": "regression", "certified": true, "rule": "Compare identified component baselines against this immutable corpus."},
+    {"id": "future-runtime", "kind": "future runtime", "certified": false, "rule": "Reserved and unavailable."}
+  ]
+}

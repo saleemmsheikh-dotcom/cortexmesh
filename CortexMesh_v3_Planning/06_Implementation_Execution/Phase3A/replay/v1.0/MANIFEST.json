@@ -1,0 +1,20 @@
+{
+  "dataset_id": "cortexmesh-reference-replay",
+  "release_label": "v1.0",
+  "corpus_version": "1.0.0",
+  "schema_version": "1.0",
+  "status": "CERTIFIED",
+  "scenario_count": 12,
+  "case_count": 24,
+  "comparator_coverage": ["compatible", "exact", "regression"],
+  "runtime_replay": "NOT CERTIFIED",
+  "hash_algorithm": "sha256",
+  "hash_canonicalization": "sha256 of newline-joined sorted path:hash entries",
+  "files": [
+    {"path": "SCHEMA_VERSION", "sha256": "5717e7c840171019a4eeab5b79a7f894a4986eaff93d04ec5b12c9a189f594bf"},
+    {"path": "cases/cases.json", "sha256": "9c9f8be6f69d79dd2935c82f614bf000eeaa98d1e06ca5e24d8935354b68b395"},
+    {"path": "comparators/definitions.json", "sha256": "8487fdecedde9c3b03548dd64955e5b11a2b2bd0283746a9e6582379bb344645"},
+    {"path": "scenarios/scenarios.json", "sha256": "ce50f32cab0a70b34d5d4e1178fe0d16f0bf8a4c1632887f53fa40c3d4753e0e"}
+  ],
+  "content_hash": "91c9b565bdfbf13d655dbe95dc3aa1c6db3666edc90e4bbe9cea6a5237de04d8"
+}
