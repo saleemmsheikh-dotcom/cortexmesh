@@ -2,7 +2,7 @@
 
 ## Status
 
-OPEN
+CLOSED - DEFERRED RISKS RETAINED
 
 ## Purpose
 
@@ -39,12 +39,16 @@ Track risks, blockers, constraints, and deferred decisions for Phase 2C intellig
 | P2C-R025 | Reference orchestration may be mistaken for runtime integration. | Runtime or LOCKED changes could proceed without assessment. | Mark engine results simulated/advisory and require a separate runtime integration assessment. | MITIGATED IN REFERENCE IMPLEMENTATION |
 | P2C-R026 | Simulated outputs may be mistaken for invoked-agent results. | Evidence origin could be misrepresented. | Attach explicit simulation provenance and report missing simulations rather than invoking agents. | MITIGATED IN REFERENCE IMPLEMENTATION |
 | P2C-R027 | A future injected component may introduce provider selection or runtime behavior. | Reference boundaries and provider neutrality could be breached. | Constrain injection contracts and assess all runtime adapters separately before integration. | OPEN |
+| P2C-R028 | Live integration would create dual advisory and authority decision paths. | Conflicting outputs could make runtime behavior ambiguous. | Retain the isolated reference path; require a separately authorized shadow-mode design before reconsideration. | AVOIDED |
+| P2C-R029 | Legacy live outputs do not satisfy the Phase 2C evidence schema. | An adapter may fabricate or omit claims, assumptions, limitations, diagnostics, or traceability. | Require a versioned mapping and replay evidence before any integration design. | OPEN |
+| P2C-R030 | Phase 2C integration may create a second adaptive feedback loop beside trust, confidence, entropy, and evolution. | Feedback instability and semantic boundary violations may occur. | Defer adaptive orchestration pending a separate feedback-boundary assessment. | DEFERRED |
+| P2C-R031 | Runtime integration may contaminate persistent memory or governance snapshots. | Disabling code may not fully roll back state. | Any future trial must be read-only, default-off, shadow-mode, and store artifacts outside runtime memory. | AVOIDED |
 
 ## Blockers
 
 | ID | Blocker | Impact | Disposition |
 | -- | ------- | ------ | ----------- |
-| None | No active blockers at commencement. | None | N/A |
+| None | No active blockers at Phase 2C closeout. | None | N/A |
 
 ## Deferred Items
 
@@ -61,6 +65,8 @@ Track risks, blockers, constraints, and deferred decisions for Phase 2C intellig
 | P2C-D009 | Evidence synthesis reference implementation | Phase 2C next milestone | M8 architecture is complete; implementation must validate references and preserve every required output section and boundary. |
 | P2C-D010 | Adaptive orchestration design | Phase 2C next milestone | M9 synthesis is complete; adaptation must remain non-authoritative and must not become provider ranking or runtime integration without review. |
 | P2C-D011 | Runtime integration assessment | Phase 2C next milestone | M10 proves reference composition only; any runtime connection requires impact, LOCKED-boundary, governance, and rollback assessment. |
+| P2C-D012 | Adaptive orchestration | Future assessment only | M11 found no justified live integration boundary; adaptation risks duplicating existing governed feedback systems. |
+| P2C-D013 | Live evidence adapter | Future evidence-gated design | A versioned schema mapping, replay corpus, benchmarks, shadow contract, and rollback plan are required before reconsideration. |
 
 ## Governance Constraints
 
@@ -92,3 +98,9 @@ M8 evidence synthesis architecture is complete and ready for an isolated referen
 M9 evidence synthesis reference implementation is complete and ready for adaptive orchestration design.
 
 M10 reference orchestration engine is complete and ready for runtime integration assessment.
+
+M11 concludes that the safe isolated path is sufficient. No runtime integration, adaptive implementation, or Board proposal is recommended.
+
+All engineering milestones are complete. Remaining open and deferred risks are retained for future evidence-gated work and do not block Product Owner acceptance.
+
+Product Owner acceptance was recorded on 2026-07-12. Phase 2C is closed. Deferred risks remain evidence-gated and create no current implementation authorization.
