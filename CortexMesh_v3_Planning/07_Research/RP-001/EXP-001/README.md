@@ -21,6 +21,7 @@ This experiment observes. It does not improve, optimize, outperform, prove, adap
 - `EXP-001_PROTOCOL.md` freezes the execution procedure and contains the authorization gate.
 - `EXP-001_PROTOCOL_REVIEW.md` records the Product Owner protocol review without authorizing execution.
 - `EXP-001_AUTHORIZATION.md` records the passed authorization gates and state transition.
+- `EXP-001_DEVIATION_001.md` records the pre-collection freezing of the executable command and harness.
 - `EXP-001_EXECUTION_LOG.md` will record commands, environment, timing, deviations, and run states.
 - `EXP-001_RESULTS.md` will record independent metrics and per-case observations.
 - `EXP-001_DISCUSSION.md` will interpret evidence without expanding claims.
