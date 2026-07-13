@@ -25,8 +25,10 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
+| `CortexMesh_v3_Planning/FOUNDATION_BASELINE_v1.0.md` | Active Foundation 1.0 architectural baseline record. |
 | `CortexMesh_v3_Planning/06_Implementation_Execution/Phase1B/PHASE1B_STATUS.md` | Completed Phase 1B status and evidence record. |
 | `CortexMesh_v3_Planning/06_Implementation_Execution/Phase2A/PHASE2A_STATUS.md` | Completed Phase 2A status and evidence record. |
+| `CortexMesh_v3_Planning/07_Research/CORTEXMESH_RESEARCH_PROGRAM.md` | Research framework, validity, publication, and governance standards. |
 | `CortexMesh_v3_Planning/05_Program_Management/AUDIT_REPORT_2026-06-28.md` | Formal repository-level audit report. |
 
 ## Top-Level Planning Structure
@@ -40,6 +42,7 @@ CortexMesh_v3_Planning/
 ├── 04_Architecture/
 ├── 05_Program_Management/
 ├── 06_Implementation_Execution/
+├── 07_Research/
 ├── 99_Archive/
 ├── CORTEXMESH_DIRECTORY_MAP.md
 └── Board/
@@ -185,6 +188,22 @@ Use this area for roadmap, planning index, and formal program-level audit report
 ```
 
 Use this area for implementation execution status, active phase working areas, authorization records, verification evidence, risks, blockers, and session closeout material.
+
+## Research
+
+```text
+07_Research/
+├── README.md
+├── CORTEXMESH_RESEARCH_PROGRAM.md
+└── RP-001/
+    ├── README.md
+    ├── RP-001_CHARTER.md
+    ├── RP-001_RESEARCH_METHOD.md
+    ├── RP-001_PREREGISTRATION.md
+    └── RP-001_SUCCESS_CRITERIA.md
+```
+
+Use this area for registered research questions, hypotheses, experimental controls, metrics, validity standards, reproducibility requirements, publication records, and research-specific ethics and governance boundaries. Research artifacts do not authorize implementation or runtime integration.
 
 ## Archive
 
