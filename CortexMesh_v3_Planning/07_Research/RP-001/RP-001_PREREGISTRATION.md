@@ -7,45 +7,45 @@
 | Registered | 2026-07-13 |
 | Research program | RP-001 |
 | Experiment | EXP-001 |
-| Experiment title | Single-Path Versus Evidence-Based Orchestration |
-| Preregistration version | 1.0 |
+| Experiment title | Baseline Characterization of the Phase 2C Reference Orchestration Engine |
+| Preregistration version | 1.1 |
 | Status | PREREGISTERED - EXECUTION NOT AUTHORIZED |
-| Data collected before registration | None |
-| Supersedes | None |
-| Amendment rule | This registered version is immutable after data collection begins; changes require a preserved deviation record or a new preregistration before further collection |
+| Data collected | None |
+| Supersedes | Version 1.0, before data collection |
+| Reason for revision | Replace the proposed comparative-effectiveness experiment with conservative baseline characterization |
+| Amendment rule | After authorization and collection begin, this version is immutable; deviations require a separate dated record and material redesign requires a new preregistration |
 
-## Research Question
+Version 1.0 remains preserved in repository history at commit `42453be`. No EXP-001 data were collected under version 1.0, and no result was inspected before this revision.
 
-Under controlled, replayable conditions, does evidence-based multi-agent orchestration produce measurable improvements in solution completeness, evidence coverage, traceability, diagnostic usefulness, and divergence preservation compared with a controlled single-path baseline, without reducing determinism or causing authority leakage?
+## Objective
 
-## Registered Hypotheses
+Establish the first fully reproducible research characterization of the sealed Phase 2C Reference Orchestration Engine using Certified Replay Corpus v1.1 and the permanently adopted Phase 3A validation framework.
 
-### H1 - Primary
+EXP-001 observes the existing baseline. It does not attempt to improve, optimize, outperform, adapt, or prove the engine.
 
-On the registered eligible cases, the evidence-based orchestration condition will improve at least one primary evidence-quality metric by its registered material threshold while every protected engineering gate remains satisfied.
+## Registered Experimental Questions
 
-### H2 - Minority and Divergence Preservation
+1. Is the reference engine completely deterministic under repeated replay?
+2. Are all replay outcomes reproducible across executions?
+3. Are all evidence artifacts fully traceable?
+4. Are consensus classifications stable?
+5. Are synthesis outputs stable?
+6. Does latency remain observationally stable in the declared environment?
 
-The experimental condition will preserve at least as much relevant minority evidence and unresolved material divergence as the control and will improve preservation where the control omits such evidence.
+## Registered Expectations and Anomaly Conditions
 
-### H3 - Traceability and Diagnostics
+EXP-001 is descriptive. It does not register an improvement hypothesis.
 
-The experimental condition will improve evidence-to-claim traceability or diagnostic actionability without increasing false provenance links or prohibited decision semantics.
+| Question | Registered expectation | Anomaly condition |
+| --- | --- | --- |
+| Determinism | Canonical outputs are identical for every repeated execution of each case. | Any canonical output difference for an identical case and environment. |
+| Replay reproducibility | Every eligible case completes with the same replay result on every execution. | Any outcome, status, or validation difference. |
+| Evidence traceability | Every required evidence identifier and trace/correlation relationship remains present and resolvable. | Any missing, altered, duplicate, or unresolved required reference. |
+| Consensus stability | Every case retains its certified consensus category and registered divergence/minority representation. | Any category or preservation difference. |
+| Synthesis stability | Canonical synthesis sections, referenced evidence, diagnostics, and unresolved questions remain identical. | Any canonical synthesis difference. |
+| Latency stability | Latency distributions can be described reproducibly enough to form an observational reference. | Measurement failure, unexplained environment discontinuity, or insufficient metadata. Latency variance alone is not a correctness failure. |
 
-### H4 - Reproducibility
-
-Any supported primary finding will reproduce under the declared environment and one separately declared reproduction context before confirmatory publication.
-
-### H0 - Null
-
-The experimental condition will produce no material improvement over the control on any registered primary evidence-quality metric.
-
-### Adverse Hypotheses
-
-- HA1: the experimental condition reduces determinism, reproducibility, or pipeline stability;
-- HA2: it erases or obscures minority evidence or unresolved divergence;
-- HA3: provider/model identity or confidence, score, rank, vote, majority, authority, or governance semantics affect output decisions;
-- HA4: added orchestration creates diagnostic noise or complexity that prevents a material engineering benefit.
+An anomaly is a finding, not an automatic engine defect. It must be classified as engine, corpus, harness, environment, measurement, or unresolved before interpretation.
 
 ## Registered Baselines
 
@@ -53,184 +53,134 @@ The experimental condition will produce no material improvement over the control
 | --- | --- |
 | Foundation baseline | `FOUNDATION_BASELINE_v1.0.md`, version 1.0 |
 | Reference engine | `phase2c-complete`, commit `a72d11f` |
-| Replay corpus | Certified Replay Corpus v1.1 / manifest version 1.1.0, schema 1.1, content hash `20e4b446097db5b3dcaa6fbf214218038c9c297d2e60bbbc57b9d24bc1e59788` |
+| Replay corpus | Certified Replay Corpus v1.1 / manifest version 1.1.0 / schema 1.1 / content hash `20e4b446097db5b3dcaa6fbf214218038c9c297d2e60bbbc57b9d24bc1e59788` |
 | Validation framework | `phase3a-complete`, commit `6c41364` |
 | Research charter | RP-001 Charter v1.0 |
-| Research method | RP-001 Research Method as committed with this registration |
-| Success criteria | RP-001 Success Criteria as committed with this registration |
+| Preregistration | RP-001 Preregistration v1.1 |
 
-The Phase 2C engine remains sealed. A research corpus release may extend Replay Corpus v1.1 through a separately versioned, immutable derivative; it may not edit v1.1. If an executable adapter is required, it must be separately reviewed, versioned as research infrastructure, and must not change sealed engine behavior.
+The engine, corpus, and validation framework are fixed research objects. EXP-001 may not modify them.
 
-## Experimental Conditions
+## Experimental Design
 
-### Control Comparator: SPB-1
+### Unit of Analysis
 
-`SPB-1` is the single-path baseline. For each paired case, one registered candidate output is converted into the same descriptive evidence and response section vocabulary used for evaluation, but no cross-candidate agreement, divergence, minority, or synthesis operation is performed.
+The replay case is the unit of analysis. Repeated executions are repeated observations of the same case and are not independent samples.
 
-### Experimental Comparator: EBO-1
+### Execution Set
 
-`EBO-1` is evidence-based orchestration. For the paired case, two or more independently prepared candidate outputs are represented as step-keyed evidence, evaluated for non-voting alignment/divergence, and synthesized through the isolated Phase 2C reference approach.
+The experiment shall execute every valid case in Certified Replay Corpus v1.1 in deterministic manifest order for ten complete repetitions in one declared environment.
 
-### Equivalence Controls
+The first repetition establishes the experiment-local reference observation. Repetitions 2-10 are compared with repetition 1 and with the certified v1.1 expectations. No warm-up execution may be discarded. If a warm-up is operationally necessary, it must be separately logged and excluded by protocol before authorization.
 
-Comparable conditions must use the same:
+### Comparator Definitions
 
-- original and normalized task intent;
-- source material and allowed contextual facts;
-- case-level constraints and output schema;
-- aggregate declared input/output resource budget;
-- evaluation rubric and case expectations;
-- corpus, component, policy, and environment versions.
+- **Certified expectation comparator:** compares each observed case outcome with its immutable Replay Corpus v1.1 expectation using that case's certified comparator selection.
+- **Exact repetition comparator:** compares canonicalized artifacts from repetitions 2-10 with repetition 1, excluding only fields explicitly registered as observational environment metadata.
+- **Traceability comparator:** verifies evidence, provenance, trace, correlation, minority, divergence, and synthesis references against certified case expectations.
+- **Latency observation comparator:** reports distributions by repetition and case without a release gate or performance ranking.
 
-Candidate-output generation is not authorized by this preregistration. A later execution protocol must freeze how independence and resource equivalence are achieved before any candidate data are collected.
+No single-path, alternative planner, provider, model, adaptive, or runtime condition is part of EXP-001.
 
 ## Inclusion Criteria
 
-A case is included only when it:
+A replay case is included when it:
 
-- belongs to the preregistered immutable research corpus;
-- has a unique identifier, content hash, declared stratum, and complete metadata;
-- provides executable step-keyed evidence expectations;
-- defines control and experimental inputs without using observed outcomes;
-- defines statement-level evidence, synthesis, and diagnostic expectations;
-- declares expected agreement/divergence and minority-evidence behavior where applicable;
-- passes schema, manifest, provenance, and comparator validation;
-- uses no unauthorized personal, secret, production, proprietary, or provider-bound data.
+- is listed in the Certified Replay Corpus v1.1 manifest;
+- passes corpus hash, schema, manifest, and certification validation;
+- has complete executable inputs and registered expectations;
+- is supported by the sealed reference-engine adapter used by the certified baseline;
+- contains no unauthorized personal, secret, production, proprietary, or provider-bound data.
 
 ## Exclusion Criteria
 
-A case is excluded from confirmatory analysis only when, before outcome inspection where practicable:
+A case may be excluded only when:
 
-- its hash, schema, manifest, or registered baseline cannot be verified;
-- required paired inputs or metadata are missing or corrupted;
-- the two conditions are not information- or resource-equivalent;
-- corpus leakage or candidate dependence is demonstrated;
-- the environment or harness fails before a valid pipeline observation exists;
-- authorization, privacy, security, ethics, provider, or cost boundaries are violated.
+- corpus integrity cannot be verified before execution;
+- required executable data are missing or corrupted;
+- the declared environment or harness cannot produce a valid observation;
+- an authorization, privacy, security, ethics, or boundary violation is detected.
 
-Excluded cases, reasons, timing, and any observed data remain reported. Semantic difficulty, unfavorable outcomes, null results, malformed inputs intentionally included as negative controls, and valid pipeline failures are not exclusion grounds.
-
-## Registered Case Strata
-
-The confirmatory corpus must include cases covering:
-
-- complementary evidence;
-- exact agreement;
-- compatible agreement;
-- partial agreement;
-- material divergence;
-- minority evidence;
-- insufficient evidence;
-- malformed inputs;
-- prohibited authority/governance semantics;
-- architecture, implementation, risk, and diagnostic tasks.
-
-The count per stratum and total sample-size justification must be frozen in a separately approved execution protocol before data collection. Until those values are registered, EXP-001 may not execute and no confirmatory statistical claim may be made.
+Every exclusion and its timing must be recorded. A malformed negative-control input, insufficient-evidence result, divergence, failure produced by valid execution, unexpected outcome, or unfavorable observation is not an exclusion ground.
 
 ## Registered Metrics
 
-### Primary Evidence-Quality Metrics
+| Metric | Measurement | Required reporting |
+| --- | --- | --- |
+| Determinism | Cases with identical canonical artifacts across all repetitions / eligible cases | Count, denominator, percentage, per-case differences |
+| Replay reproducibility | Cases with identical replay status and outcome across all repetitions / eligible cases | Count, denominator, percentage |
+| Pipeline stability | Successful valid pipeline executions / planned executions | Count by case and repetition, failure taxonomy |
+| Evidence completeness | Required evidence characteristics present / required characteristics | Count and percentage per case and aggregate |
+| Evidence traceability | Required identifiers and relationships resolvable / required references | Count and percentage per case and aggregate |
+| Consensus stability | Cases with invariant certified classification and preserved divergence/minority state / applicable cases | Count, denominator, percentage |
+| Minority preservation | Applicable cases preserving all registered minority evidence on every repetition / applicable cases | Count, denominator, percentage |
+| Synthesis stability | Cases with identical canonical synthesis artifacts across repetitions / eligible cases | Count, denominator, percentage, section-level differences |
+| Diagnostic completeness | Required diagnostics present / required diagnostics | Count and percentage per case and aggregate |
+| Latency | Per-execution elapsed time | Count, minimum, median, p95, maximum, mean, standard deviation, coefficient of variation; descriptive only |
 
-- evidence completeness;
-- evidence-to-claim traceability;
-- minority evidence preservation;
-- unresolved divergence preservation;
-- synthesis completeness;
-- diagnostic completeness and actionability.
+No overall or composite score is permitted. One metric may not compensate for another.
 
-### Protected Engineering Metrics
+## Registered Analysis
 
-- determinism;
-- replay reproducibility;
-- pipeline stability;
-- provenance preservation;
-- prohibited-semantic rejection;
-- GG-02 compliance;
-- LOCKED-boundary preservation;
-- absence of runtime authority leakage.
+1. Verify commit, tag, corpus, manifest, schema, content hash, environment, and authorization before collection.
+2. Record the complete planned and observed execution flow.
+3. Compare each case with its certified expectation for every repetition.
+4. Compare canonical artifacts from repetitions 2-10 with repetition 1.
+5. Report each registered metric independently, with counts and denominators.
+6. Produce per-case and per-repetition difference tables for every anomaly.
+7. Classify anomalies without changing the engine, corpus, expectations, or registered method.
+8. Report latency distributions descriptively overall and by repetition; inspect run-order patterns without an optimization claim.
+9. Preserve all results, including null, negative, failed, and unexpected observations.
 
-### Secondary Descriptive Metrics
+EXP-001 makes no inferential population claim. No significance test, multiple-comparison correction, improvement effect, or causal claim is planned. Exact binomial intervals may be reported descriptively for bounded proportions, but the certified corpus is treated as the complete registered study set rather than a random sample of all possible tasks.
 
-- planning and pipeline latency;
-- output size;
-- diagnostic volume;
-- unresolved-question count;
-- case failures and exclusions.
+## Outcome Definitions
 
-No composite or overall score is permitted. Latency is observational and cannot compensate for another metric.
+### BASELINE CHARACTERIZED
 
-## Materiality and Success Thresholds
+All planned executions and registered measurements are complete, artifacts are auditable, and every observation or anomaly is reported and classified. This status does not require the engine to match prior expectations.
 
-Protected engineering metrics must not regress. Determinism, replay reproducibility, evidence completeness, traceability, minority preservation, prohibited-semantic rejection, GG-02 compliance, LOCKED preservation, and absence of authority leakage require 100% on applicable registered cases unless the execution protocol explicitly identifies a metric as not measurable before data collection and explains why.
+### BASELINE CHARACTERIZED WITH ANOMALIES
 
-Confirmatory effect thresholds for judgment-dependent primary metrics are not invented in this registration. They must be derived from a separately labeled, non-confirmatory pilot or an external engineering requirement, then frozen in a new preregistration before confirmatory collection. Data used to set a threshold cannot also serve as confirmatory evidence.
-
-Therefore, the current registration authorizes protocol completion only. EXP-001 is not ready to collect confirmatory data.
-
-## Registered Statistical Methods
-
-- The case is the unit of analysis; deterministic reruns are stability observations, not independent samples.
-- Report counts, denominators, rates, and paired case-level differences for every registered metric.
-- For paired binary outcomes, use an exact two-sided McNemar test only if the frozen sample size supplies sufficient discordant pairs; otherwise report exact paired counts and uncertainty without a significance claim.
-- For paired ordinal or continuous rubric outcomes, report median paired difference and a distribution-free paired confidence interval; use a two-sided paired permutation test if exchangeability is justified and frozen before collection.
-- Report effect sizes and 95% uncertainty intervals for all confirmatory comparisons.
-- Define one primary comparison family in the execution protocol and control its family-wise error rate at 0.05 using Holm adjustment when more than one inferential primary metric is tested.
-- Treat secondary and stratum analyses as descriptive unless separately powered and registered.
-- Report reviewer agreement for human-coded fields using raw agreement and an appropriate chance-corrected coefficient selected before annotation; adjudication results remain separate.
-- Analyze missingness, exclusions, invalid runs, and protocol deviations explicitly; do not impute primary outcomes unless a method is registered before collection.
-- Do not interpret statistical significance as engineering materiality.
-
-## Planned Analyses
-
-1. Validate baseline, corpus, manifest, environment, and authorization integrity.
-2. Produce a complete case-flow table: registered, included, excluded, invalid, and analyzed.
-3. Verify protected metrics before testing benefit hypotheses.
-4. Compare paired primary metrics overall using the registered method.
-5. Report paired differences by registered case stratum descriptively.
-6. Analyze minority, material-divergence, insufficient-evidence, malformed, and prohibited-semantic cases explicitly.
-7. Classify failures as system, corpus, harness, rubric, authorization, or environment issues.
-8. Reproduce any supported primary finding in the separately declared context.
-9. Publish all results, including null, negative, adverse, invalid, and inconclusive findings.
-
-No unregistered subgroup or alternative metric may be presented as confirmatory. Exploratory analyses must be labeled and cannot change the registered outcome.
-
-## Outcome Rules
-
-### SUPPORTED FOR SEPARATE DESIGN REVIEW
-
-All research-integrity and protected engineering gates pass; at least one registered primary metric exceeds its preregistered material threshold with the registered uncertainty analysis; the effect is not attributable to corpus, harness, rubric, budget, or environment differences; and the primary finding reproduces.
-
-This outcome permits only a separate design or integration-assessment proposal.
-
-### NOT SUPPORTED
-
-A valid study finds no registered materially beneficial primary effect, supports an adverse hypothesis, or records a protected-gate regression. The result is published and preserved.
+The study is complete and reproducible, but one or more observations differ from the certified expectation or across repetitions. Anomalies remain visible and are attributed where evidence permits.
 
 ### INCONCLUSIVE
 
-The study is valid but sample coverage, effect precision, threshold registration, reproduction, or engineering materiality is insufficient to support or reject further design work.
+The study remains valid but missing executions, unresolved environment variance, inadequate metadata, or measurement limitations prevent one or more experimental questions from being answered.
 
-### INVALID STUDY
+### INVALID EXPERIMENT
 
-Authorization, integrity, equivalence, auditability, ethics, or reproducibility gates fail. Observations remain diagnostic evidence but cannot support an effectiveness claim.
+Authorization, baseline integrity, protocol adherence, auditability, ethics, or reproducibility-package requirements fail. Observations remain retained but cannot establish the RP-001 baseline.
 
-## Reproducibility and Publication Requirements
+There is no `SUPPORTED` or `NOT SUPPORTED` effectiveness outcome in EXP-001 because no improvement claim is tested.
 
-Execution must produce the complete reproducibility package defined in `RP-001_RESEARCH_METHOD.md`, including immutable inputs, hashes, exact commands, raw and derived outputs, environment metadata, failures, exclusions, reviewer records, and replication status.
+## Reproducibility Requirements
 
-The publication must distinguish preregistered and exploratory analysis; disclose every deviation; preserve null, negative, adverse, minority, and failed evidence; and include this statement:
+The experiment must preserve:
 
-**RP-001 findings are advisory research evidence and confer no implementation, runtime, certification, governance, or LOCKED-component authority.**
+- this preregistration and the authorized protocol;
+- exact code, tag, corpus, schema, manifest, and content hashes;
+- operating system, architecture, interpreter, dependency, configuration, and environment metadata;
+- exact commands and execution order;
+- raw inputs, outputs, diagnostics, timings, failures, and exit states;
+- canonicalization rules and comparator versions;
+- per-case and aggregate measurements;
+- anomaly classifications and review records;
+- a content-hashed reproducibility manifest.
 
 ## Ethics and Governance Freeze
 
-- No human-subject, personal-data, secret, production, proprietary, or provider-bound research is authorized.
-- No Local AI or external provider invocation is authorized.
-- No live agent invocation, runtime integration, adaptive behavior, or provider selection is authorized.
-- No Phase 2C engine, Local AI, provider, governance, or LOCKED modification is authorized.
-- Provider/model identity remains descriptive provenance only.
-- GG-02 remains authoritative for governed decisions.
+- No Board update is required for this documentation and isolated research preparation.
+- No human subjects, personal data, secrets, production data, or proprietary provider data are authorized.
+- No Local AI, external provider, live agent, or runtime invocation is authorized.
+- No provider selection, adaptation, optimization, or alternative planner is authorized.
+- No engine, corpus, validation framework, runtime, governance, or LOCKED modification is authorized.
+- No authority, scoring, voting, ranking, confidence, or governance semantics may be introduced.
+- GG-02 remains authoritative for any later governed decision.
 
-## Immutability Declaration
+## Authorization Boundary
 
-This preregistration records the design state before data collection. Once EXP-001 data collection begins, this file must not be edited. Deviations must be appended through a separately dated deviation record, and material design changes require a new preserved preregistration before additional collection.
+This preregistration does not authorize data collection. EXP-001 may begin only after `EXP-001_PROTOCOL.md` is reviewed against this preregistration and its status is explicitly changed to:
+
+**EXP-001 AUTHORIZED FOR EXECUTION**
+
+The authorization record must identify the approver and date. That record is the immutable start point for data collection.

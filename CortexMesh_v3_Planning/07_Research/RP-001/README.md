@@ -23,7 +23,7 @@ RP-001 defines the question, hypotheses, method, and success criteria for a futu
 
 | Experiment | Title | Status |
 | --- | --- | --- |
-| RP-001/EXP-001 | Single-Path Versus Evidence-Based Orchestration | PREREGISTERED - EXECUTION NOT AUTHORIZED |
+| RP-001/EXP-001 | Baseline Characterization of the Phase 2C Reference Orchestration Engine | PROTOCOL APPROVED - EXECUTION NOT AUTHORIZED |
 
 Future experiment identifiers are reserved only when their own charter or preregistration is published. Example research directions do not constitute approved experiments.
 

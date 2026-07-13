@@ -200,7 +200,16 @@ Use this area for implementation execution status, active phase working areas, a
     ├── RP-001_CHARTER.md
     ├── RP-001_RESEARCH_METHOD.md
     ├── RP-001_PREREGISTRATION.md
-    └── RP-001_SUCCESS_CRITERIA.md
+    ├── RP-001_SUCCESS_CRITERIA.md
+    └── EXP-001/
+        ├── README.md
+        ├── EXP-001_PROTOCOL.md
+        ├── EXP-001_PROTOCOL_REVIEW.md
+        ├── EXP-001_EXECUTION_LOG.md
+        ├── EXP-001_RESULTS.md
+        ├── EXP-001_DISCUSSION.md
+        ├── EXP-001_LIMITATIONS.md
+        └── EXP-001_REPRODUCIBILITY_PACKAGE.md
 ```
 
 Use this area for registered research questions, hypotheses, experimental controls, metrics, validity standards, reproducibility requirements, publication records, and research-specific ethics and governance boundaries. Research artifacts do not authorize implementation or runtime integration.
