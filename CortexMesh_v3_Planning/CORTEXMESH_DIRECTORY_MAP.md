@@ -212,8 +212,19 @@ Use this area for implementation execution status, active phase working areas, a
         ├── EXP-001_DISCUSSION.md
         ├── EXP-001_LIMITATIONS.md
         ├── EXP-001_REPRODUCIBILITY_PACKAGE.md
-        └── harness/
-            └── exp001_runner.py
+        ├── harness/
+        │   ├── exp001_runner.py
+        │   └── exp001_analyze.py
+        ├── raw/
+        │   ├── RUN_MANIFEST.json
+        │   ├── PACKAGE_MANIFEST.json
+        │   ├── observations.jsonl
+        │   └── exp001_runner.py
+        └── analysis/
+            ├── ANALYSIS_MANIFEST.json
+            ├── metrics.json
+            ├── case_results.json
+            └── differences.json
 ```
 
 Use this area for registered research questions, hypotheses, experimental controls, metrics, validity standards, reproducibility requirements, publication records, and research-specific ethics and governance boundaries. Research artifacts do not authorize implementation or runtime integration.

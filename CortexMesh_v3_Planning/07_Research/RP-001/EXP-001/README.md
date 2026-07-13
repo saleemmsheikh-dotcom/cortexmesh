@@ -6,7 +6,7 @@
 | --- | --- |
 | Research program | RP-001 |
 | Experiment | EXP-001 |
-| Status | AUTHORIZED FOR EXECUTION - DATA COLLECTION NOT STARTED |
+| Status | BASELINE CHARACTERIZED WITH ANOMALIES - RESULTS READY FOR REVIEW |
 | Preregistration | RP-001 Preregistration v1.1 |
 | Research object | Sealed Phase 2C Reference Orchestration Engine |
 
@@ -30,6 +30,6 @@ This experiment observes. It does not improve, optimize, outperform, prove, adap
 
 ## Current Boundary
 
-No data have been collected. No runtime, provider, Local AI, live agent, adaptive behavior, engine change, or LOCKED modification is authorized.
+Data collection and registered analysis are complete. All 240 planned observations are preserved. No runtime, provider, Local AI, live agent, adaptive behavior, engine change, or LOCKED modification occurred.
 
-The protocol review and three authorization gates are complete. The next permitted action is data collection using the exact authorized protocol. No design change is permitted as part of execution.
+The experiment found complete stability on registered determinism, reproducibility, pipeline, evidence, traceability, consensus, minority/divergence, synthesis-stability, and diagnostic measurements. Four cases produced stable statement-level expectation differences and remain visible as anomalies.

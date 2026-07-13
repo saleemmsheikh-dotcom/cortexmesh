@@ -2,16 +2,17 @@
 
 ## Status
 
-SPECIFICATION COMPLETE - PACKAGE NOT YET PRODUCED
+PACKAGE PRODUCED - INDEPENDENT REPRODUCTION PENDING
 
 ## Package Identity
 
 | Field | Value |
 | --- | --- |
 | Experiment | RP-001/EXP-001 |
-| Package version | PENDING |
-| Manifest hash | PENDING |
-| Collection status | NOT STARTED |
+| Package version | 1.0 |
+| Raw package manifest hash | `8ad3780feffd63c46d6a09183105bab0cda81912407632e89c00faf98c0c4651` |
+| Analysis manifest hash | `60e2f9c1ac66d414d611f7a81f3640b39a0fa714c74dc63a03b1f8916de7b646` |
+| Collection status | COMPLETE - 240/240 |
 | Reproduction status | NOT ATTEMPTED |
 
 ## Required Contents
@@ -77,4 +78,18 @@ After the original package is complete, a reproducer shall:
 5. record raw differences and classify environment variance separately;
 6. publish `REPRODUCED`, `REPRODUCED WITH DECLARED VARIANCE`, `NOT REPRODUCED`, or `INVALID REPRODUCTION` with evidence.
 
-No reproduction has been attempted because EXP-001 is not authorized or executed.
+## Produced Artifact Index
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Raw observations | `6551e6d6fd0ca6f661221a9be793802ddba1c301de0c44f07c5b1842ad6b962e` |
+| Raw run manifest | `b54cae14f689c7764678d63c984c1654ef2499b1a4527966e711cc2d5f162ab3` |
+| Raw package manifest | `8ad3780feffd63c46d6a09183105bab0cda81912407632e89c00faf98c0c4651` |
+| Frozen collection harness | `885248766376d4d80c4f14c34077c4fe043879e2243e3b2fa3981a802290ec23` |
+| Analysis metrics | `30ff1aabb777e4d7c7eda53363c7715f35cab3bf439b03fc63e8a37c631460a6` |
+| Per-case results | `c29fdebfffd83cf40ff7ddb9073b4cf6ab1d84a23d85b2eee5df149e90f685d4` |
+| Difference records | `10dd87be746433bcc64bc3bdd12ae7cf15a58f85f72b75a484ed3016d4cf552e` |
+| Analysis manifest | `60e2f9c1ac66d414d611f7a81f3640b39a0fa714c74dc63a03b1f8916de7b646` |
+| Analysis harness | `0c60efcbc4107ff1bfe40fb1ea108b88030f751005313ca43180fa44350d9d11` |
+
+Raw artifacts are frozen. Analysis artifacts bind to the raw observations hash. No independent reproduction has yet been attempted.

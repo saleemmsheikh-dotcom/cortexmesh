@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "RUN_MANIFEST.json",
+      "sha256": "b54cae14f689c7764678d63c984c1654ef2499b1a4527966e711cc2d5f162ab3",
+      "size": 2413
+    },
+    {
+      "path": "exp001_runner.py",
+      "sha256": "885248766376d4d80c4f14c34077c4fe043879e2243e3b2fa3981a802290ec23",
+      "size": 11522
+    },
+    {
+      "path": "observations.jsonl",
+      "sha256": "6551e6d6fd0ca6f661221a9be793802ddba1c301de0c44f07c5b1842ad6b962e",
+      "size": 3317650
+    }
+  ]
+}
