@@ -118,7 +118,10 @@ Extension Validation:
 EXTENSION MODEL VALIDATED
 
 Deferred Item:
-P2A-B003 deferred to Phase 2B; blocking status: No.
+P2A-B003 was originally deferred to Phase 2B; blocking status: No.
+
+Lifecycle Disposition:
+Phase 2B was never opened. P2A-B003 is now assigned to Future Research / Future Engineering Assessment as DEFERRED, NON-BLOCKING, with NO CURRENT IMPLEMENTATION REQUIRED. See `P2A_B003_LIFECYCLE_DISPOSITION.md`.
 
 Next Phase:
 READY TO OPEN UNDER SEPARATE AUTHORIZATION
