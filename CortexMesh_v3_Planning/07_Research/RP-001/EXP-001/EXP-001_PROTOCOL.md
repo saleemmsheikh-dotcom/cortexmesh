@@ -6,8 +6,8 @@
 | --- | --- |
 | Protocol version | 1.0 |
 | Preregistration | RP-001 Preregistration v1.1 |
-| Status | PROTOCOL APPROVED - EXECUTION NOT AUTHORIZED |
-| Authorization | PENDING |
+| Status | AUTHORIZED FOR EXECUTION |
+| Authorization | GRANTED 2026-07-13 |
 | Data collection | NOT STARTED |
 
 Protocol review is recorded in `EXP-001_PROTOCOL_REVIEW.md`. Approval confirms that the protocol is suitable for the separate authorization check; it does not authorize data collection.
@@ -100,20 +100,19 @@ An ordinary case failure or unexpected output is retained and does not itself st
 
 Current status:
 
-**EXECUTION NOT AUTHORIZED**
+**EXP-001 AUTHORIZED FOR EXECUTION**
 
-The following fields must be completed only after protocol review:
+Authorization fields:
 
 | Field | Value |
 | --- | --- |
-| Decision | PENDING |
-| Authorized by | PENDING |
-| Authorization date | PENDING |
-| Authorized protocol hash | PENDING |
-| Collection start permitted | NO |
+| Decision | AUTHORIZED |
+| Authorized by | Product Owner |
+| Authorization date | 2026-07-13 |
+| Approved protocol source | Commit `e7ddcb1` |
+| Authorized protocol SHA-256 | `51d649de94b12eacb22c99b8efc343af42b6f250a5fe41b35337882a80194ff2` |
+| Replay certification gate | PASS - v1.1.0 CERTIFIED, content hash verified |
+| Engine identity gate | PASS - `phase2c-complete^{}` resolves to `a72d11fe57f9026ab307efeaf962b97095527039` |
+| Collection start permitted | YES, under this exact protocol only |
 
-When approved, the exact authorization statement is:
-
-**EXP-001 AUTHORIZED FOR EXECUTION**
-
-Recording that statement and protocol hash creates the immutable start point. Subsequent changes require a deviation record or new protocol/preregistration as applicable.
+This statement and the approved protocol hash create the immutable authorization point. The authorization changes experiment state only. Subsequent design changes require a deviation record or new protocol/preregistration as applicable and may require renewed authorization.

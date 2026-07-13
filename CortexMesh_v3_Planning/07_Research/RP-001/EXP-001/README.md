@@ -6,7 +6,7 @@
 | --- | --- |
 | Research program | RP-001 |
 | Experiment | EXP-001 |
-| Status | PROTOCOL APPROVED - EXECUTION NOT AUTHORIZED |
+| Status | AUTHORIZED FOR EXECUTION - DATA COLLECTION NOT STARTED |
 | Preregistration | RP-001 Preregistration v1.1 |
 | Research object | Sealed Phase 2C Reference Orchestration Engine |
 
@@ -20,6 +20,7 @@ This experiment observes. It does not improve, optimize, outperform, prove, adap
 
 - `EXP-001_PROTOCOL.md` freezes the execution procedure and contains the authorization gate.
 - `EXP-001_PROTOCOL_REVIEW.md` records the Product Owner protocol review without authorizing execution.
+- `EXP-001_AUTHORIZATION.md` records the passed authorization gates and state transition.
 - `EXP-001_EXECUTION_LOG.md` will record commands, environment, timing, deviations, and run states.
 - `EXP-001_RESULTS.md` will record independent metrics and per-case observations.
 - `EXP-001_DISCUSSION.md` will interpret evidence without expanding claims.
@@ -30,4 +31,4 @@ This experiment observes. It does not improve, optimize, outperform, prove, adap
 
 No data have been collected. No runtime, provider, Local AI, live agent, adaptive behavior, engine change, or LOCKED modification is authorized.
 
-The protocol review is complete. The next permitted action is the separate three-gate authorization check defined in `EXP-001_PROTOCOL.md`.
+The protocol review and three authorization gates are complete. The next permitted action is data collection using the exact authorized protocol. No design change is permitted as part of execution.

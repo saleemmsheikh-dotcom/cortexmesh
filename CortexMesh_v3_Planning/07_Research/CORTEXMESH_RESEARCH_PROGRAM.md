@@ -31,6 +31,12 @@ Produce reproducible evidence about CortexMesh capabilities, limitations, and fu
 
 An experiment preregistration becomes immutable when its status is `PREREGISTERED`. Any post-registration change must be recorded as a dated deviation or a new preregistration before additional data collection. It must never overwrite the registered design.
 
+## Execution Authorization Principle
+
+**Execution authorization is a governance event within the research methodology, not a data event. It changes experiment state but shall not alter the experiment design, hypotheses, metrics, comparators, or expected outcomes.**
+
+Authorization must be separately attributable, dated, evidence-backed, and committed before collection begins. It neither records an observation nor grants runtime, implementation, provider, governance, or LOCKED-component authority.
+
 ## Required Program Artifacts
 
 Every research program shall define:

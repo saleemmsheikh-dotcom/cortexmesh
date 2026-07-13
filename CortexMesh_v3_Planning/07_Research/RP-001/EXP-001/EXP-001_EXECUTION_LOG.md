@@ -2,15 +2,17 @@
 
 ## Status
 
-NOT STARTED - EXECUTION NOT AUTHORIZED
+AUTHORIZED - DATA COLLECTION NOT STARTED
 
 ## Authorization
 
 | Field | Value |
 | --- | --- |
 | Protocol version | 1.0 |
-| Authorization decision | PENDING |
-| Authorization date | PENDING |
+| Authorization decision | AUTHORIZED |
+| Authorized by | Product Owner |
+| Authorization date | 2026-07-13 |
+| Authorized protocol SHA-256 | `51d649de94b12eacb22c99b8efc343af42b6f250a5fe41b35337882a80194ff2` |
 | Collection start | NOT STARTED |
 | Collection end | NOT STARTED |
 

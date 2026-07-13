@@ -205,6 +205,7 @@ Use this area for implementation execution status, active phase working areas, a
         ├── README.md
         ├── EXP-001_PROTOCOL.md
         ├── EXP-001_PROTOCOL_REVIEW.md
+        ├── EXP-001_AUTHORIZATION.md
         ├── EXP-001_EXECUTION_LOG.md
         ├── EXP-001_RESULTS.md
         ├── EXP-001_DISCUSSION.md
