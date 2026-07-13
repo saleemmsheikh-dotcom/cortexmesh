@@ -43,11 +43,15 @@ Foundation Baseline
 
 Every experiment must have an immutable preregistration before data collection. A changed design requires a new preregistration version or experiment identifier; the original record remains preserved.
 
+Independent reproductions use the parent experiment identifier plus `-RNN`, for example `EXP-001-R1`. A reproduction is an appendix to the registered experiment, not a new experiment number, and must preserve both original and reproduction evidence.
+
+Permanent cross-program observations use `OBS-NNN` identifiers and are recorded in `RESEARCH_OBSERVATIONS.md`. Observations describe evidence; they do not create implementation or governance authority.
+
 ## Program Register
 
 | Program | Title | Status | Scope |
 | --- | --- | --- | --- |
-| RP-001 | Evidence-Based Orchestration Effectiveness | CHARTERED - EXECUTION NOT AUTHORIZED | Controlled offline study of measurable orchestration value |
+| RP-001 | Evidence-Based Orchestration Effectiveness | ACTIVE - EXP-001 CHARACTERIZED AND REPRODUCED | Controlled offline study of measurable orchestration value |
 
 ## Foundation Relationship
 

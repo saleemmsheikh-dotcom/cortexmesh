@@ -6,7 +6,7 @@
 | --- | --- |
 | Research program | RP-001 |
 | Experiment | EXP-001 |
-| Status | BASELINE CHARACTERIZED WITH ANOMALIES - RESULTS READY FOR REVIEW |
+| Status | BASELINE CHARACTERIZED WITH ANOMALIES - REPRODUCED |
 | Preregistration | RP-001 Preregistration v1.1 |
 | Research object | Sealed Phase 2C Reference Orchestration Engine |
 
@@ -33,3 +33,5 @@ This experiment observes. It does not improve, optimize, outperform, prove, adap
 Data collection and registered analysis are complete. All 240 planned observations are preserved. No runtime, provider, Local AI, live agent, adaptive behavior, engine change, or LOCKED modification occurred.
 
 The experiment found complete stability on registered determinism, reproducibility, pipeline, evidence, traceability, consensus, minority/divergence, synthesis-stability, and diagnostic measurements. Four cases produced stable statement-level expectation differences and remain visible as anomalies.
+
+Independent reproduction EXP-001-R1 repeated all 240 executions and matched every canonical output and status. This confirms reproducibility in the declared environment; it does not indicate learning.

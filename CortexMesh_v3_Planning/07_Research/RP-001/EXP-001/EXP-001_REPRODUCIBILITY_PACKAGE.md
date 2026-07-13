@@ -2,7 +2,7 @@
 
 ## Status
 
-PACKAGE PRODUCED - INDEPENDENT REPRODUCTION PENDING
+PACKAGE PRODUCED - REPRODUCED
 
 ## Package Identity
 
@@ -13,7 +13,7 @@ PACKAGE PRODUCED - INDEPENDENT REPRODUCTION PENDING
 | Raw package manifest hash | `8ad3780feffd63c46d6a09183105bab0cda81912407632e89c00faf98c0c4651` |
 | Analysis manifest hash | `60e2f9c1ac66d414d611f7a81f3640b39a0fa714c74dc63a03b1f8916de7b646` |
 | Collection status | COMPLETE - 240/240 |
-| Reproduction status | NOT ATTEMPTED |
+| Reproduction status | REPRODUCED - EXP-001-R1, 240/240 canonical matches |
 
 ## Required Contents
 
@@ -92,4 +92,4 @@ After the original package is complete, a reproducer shall:
 | Analysis manifest | `60e2f9c1ac66d414d611f7a81f3640b39a0fa714c74dc63a03b1f8916de7b646` |
 | Analysis harness | `0c60efcbc4107ff1bfe40fb1ea108b88030f751005313ca43180fa44350d9d11` |
 
-Raw artifacts are frozen. Analysis artifacts bind to the raw observations hash. No independent reproduction has yet been attempted.
+Raw artifacts are frozen. Analysis artifacts bind to the raw observations hash. Independent reproduction EXP-001-R1 recorded 240/240 canonical output matches and no status differences. Its evidence is preserved under `reproduction/`.

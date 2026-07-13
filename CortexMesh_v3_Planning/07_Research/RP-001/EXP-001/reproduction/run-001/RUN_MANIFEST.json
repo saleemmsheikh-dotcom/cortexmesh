@@ -1,0 +1,57 @@
+{
+  "cases": 24,
+  "corpus_content_hash": "20e4b446097db5b3dcaa6fbf214218038c9c297d2e60bbbc57b9d24bc1e59788",
+  "corpus_version": "1.1.0",
+  "ended_unix_ns": 1783943489440230000,
+  "engine_commit": "a72d11fe57f9026ab307efeaf962b97095527039",
+  "environment": {
+    "configuration": {
+      "case_order": "manifest",
+      "network_required": false,
+      "provider_invocation": false,
+      "random_seed": null,
+      "repetitions": 10,
+      "runtime_invocation": false
+    },
+    "configuration_sha256": "299927eb372b86f2d82070749b957ef2faccce4ac41859f927d5632018f16f21",
+    "dependency_manifest": {
+      "modules": {
+        "__init__.py": "56642412fedc2116daa60c5a2230b7ab5334b76955b8f99201a311a090c5ec61",
+        "agent_planner.py": "61feba3f1b6cb95392e9203a7d46291d376163a9d60ecb2ee28377f8078f0f09",
+        "capability_resolver.py": "e24fb1db2e089c9ab10e2551f384fbb918113e13cdb72c07bce6f02af1ecbc2a",
+        "consensus.py": "b47e869978a3ceb8521be84bc7da39f4ad4df14f8db19b54e02fd242dcb12c7d",
+        "engine.py": "082ce96bf47ad66a0984f7bb38eb7fcd63c0541028bd1dcb3e6f9938a3068665",
+        "evidence.py": "fa30dbfe188ad452f8d10d978bdcf8ae39ef5a173c73d820c0a2366ace663436",
+        "execution_plan.py": "0357a49113fecdc5731d2fe21de510c0379ac162f0f0a278d8bba28af1495d0b",
+        "synthesis.py": "1235572b0b6f50c93b8e89bbec2a8e65b72ad213d428f8955420d0639a3cbf5b"
+      },
+      "python": "3.14.5",
+      "stdlib_only": true
+    },
+    "dependency_manifest_sha256": "a22f5d7fd48e5383fce899fc84638e6727411d6d740e33a04c5871043bfda3e6",
+    "implementation": "CPython",
+    "locale": "C/C.UTF-8/C/C/C/C",
+    "machine": "x86_64",
+    "network_required": false,
+    "os": "Darwin",
+    "os_release": "24.6.0",
+    "processor": "Intel Core i5, 1.4 GHz, 4 cores",
+    "provider_invocation": false,
+    "python": "3.14.5",
+    "random_seed": "not applicable",
+    "runtime_invocation": false,
+    "timezone": [
+      "AEST",
+      "AEDT"
+    ]
+  },
+  "experiment": "RP-001/EXP-001",
+  "harness_sha256": "885248766376d4d80c4f14c34077c4fe043879e2243e3b2fa3981a802290ec23",
+  "observations_sha256": "936439d85d5a3c36a8616449597e2957144e81c6d9337c315a6dfe94f8cc870d",
+  "planned_executions": 240,
+  "recorded_executions": 240,
+  "repetitions": 10,
+  "started_unix_ns": 1783943489142472000,
+  "status": "collection complete; analysis not performed",
+  "validation_commit": "6c41364c56883043c20d237d37b8fcd83ec02547"
+}

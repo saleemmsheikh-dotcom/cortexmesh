@@ -1,0 +1,21 @@
+{
+  "base_observations_sha256": "6551e6d6fd0ca6f661221a9be793802ddba1c301de0c44f07c5b1842ad6b962e",
+  "behavioral_reproduction_percent": 100.0,
+  "canonical_differences": 0,
+  "canonical_matches": 240,
+  "experiment": "RP-001/EXP-001",
+  "latency_ms": {
+    "maximum": 4.705332,
+    "mean": 0.7975754083333333,
+    "median": 0.764332,
+    "minimum": 0.010727,
+    "p95_nearest_rank": 1.406319,
+    "population_standard_deviation": 0.48083105602912474
+  },
+  "package_integrity": "PASS",
+  "recorded_executions": 240,
+  "reproduction": "EXP-001-R1",
+  "reproduction_observations_sha256": "936439d85d5a3c36a8616449597e2957144e81c6d9337c315a6dfe94f8cc870d",
+  "status": "REPRODUCED",
+  "status_differences": 0
+}
