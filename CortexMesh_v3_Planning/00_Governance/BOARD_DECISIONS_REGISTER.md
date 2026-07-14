@@ -131,6 +131,18 @@ Upon unanimous approval and recording in the Decision Register, entries shall be
 
 ---
 
+# Non-Decision Review Sessions
+
+These sessions are listed for lifecycle discoverability only. They are not decisions and do not belong in the Decision Register table.
+
+| Session | Status | Type | Vote Required | Purpose | Reference |
+| --- | --- | --- | --- | --- | --- |
+| 13 | OPEN | Research Review | No | Foundation 1.0 Review | `Board_Sessions/Session_13/` |
+
+Session 13 requests independent criticism and recommendations. It proposes no motion, governance change, authority modification, runtime integration, or LOCKED modification.
+
+---
+
 # Revision History
 
 | Version | Date       | Description                                                           |
@@ -138,3 +150,4 @@ Upon unanimous approval and recording in the Decision Register, entries shall be
 | v1.0    | 2026-06-28 | Initial register scaffold prepared pending unanimous board decisions. |
 | v1.1    | 2026-07-01 | Recorded BD-09-003 retrospective LOCKED component ratification. |
 | v1.2    | 2026-07-06 | Recorded BD-12-001 GG-02 Board Voting and Ratification Rules v1.0 ratification. |
+| v1.3    | 2026-07-14 | Added non-decision Session 13 research review entry without creating a decision or pending motion. |

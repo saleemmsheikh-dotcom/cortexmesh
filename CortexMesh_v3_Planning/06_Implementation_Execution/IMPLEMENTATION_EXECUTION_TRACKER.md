@@ -25,6 +25,15 @@ GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 Current Engineering Milestone:
 None - Phase 3A closed
 
+Research Governance Review:
+Session 13 - OPEN
+
+Review Type:
+Foundation 1.0 and RP-001 critical research review
+
+Vote Required:
+NO
+
 Phase 1B Status:
 CLOSED
 
@@ -58,6 +67,39 @@ Phase 2A is closed following Product Owner acceptance.
 Phase 2C is closed following Product Owner acceptance on 2026-07-12.
 
 Phase 3A is closed following Product Owner acceptance on 2026-07-12. Its validation and certification methodology is permanently adopted.
+
+Board Session 13 is open as a non-decision research review. It requests criticism and recommendations only and proposes no vote, governance change, runtime integration, or implementation authorization.
+
+---
+
+# Research Governance
+
+Session:
+13
+
+Status:
+OPEN
+
+Title:
+Foundation 1.0 and Research Readiness Review
+
+Type:
+RESEARCH REVIEW - NON-DECISION
+
+Purpose:
+Independent critical review of Foundation 1.0, RP-001, EXP-001, EXP-001-R1, and OBS-000.
+
+Vote Required:
+NO
+
+Motion:
+NONE
+
+Governance Changes Proposed:
+NONE
+
+Session Record:
+`../00_Governance/Board_Sessions/Session_13/`
 
 ---
 
