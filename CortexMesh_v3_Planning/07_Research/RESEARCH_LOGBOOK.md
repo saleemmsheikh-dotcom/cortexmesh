@@ -166,6 +166,24 @@ Entries are append-only. Corrections create dated follow-up entries rather than 
 
 ---
 
+## Entry 009 - EXP-001-R2 Reproduced on Ubuntu
+
+**Date:** 2026-07-17
+
+**Program:** RP-001
+
+**Experiment or milestone:** EXP-001-R2 - Repository-Portable Reproduction
+
+**Observation:** The authorized Ubuntu run recorded 240/240 executions, 240/240 canonical matches with EXP-001 and EXP-001-R1, and the published 220/260 statement-expectation result. All other registered non-latency metrics reproduced exactly. Raw and analysis manifests verified, full regression passed 226/226, and published EXP-001 evidence remained byte-for-byte unchanged.
+
+**Interpretation:** Repository-relative, isolated EXP-001 execution was reproduced under the declared Ubuntu environment. The earlier output-isolation gap did not alter the published scientific conclusions, and OBS-INF-001 is closed.
+
+**Open questions:** What additional operating systems or independently administered environments, if any, would materially strengthen external reproducibility claims?
+
+**Related observations and evidence:** OBS-INF-001; `RP-001/EXP-001/reproduction/EXP-001-R2/`; infrastructure commit `09b4455`; authorization commit `4dcba31`.
+
+---
+
 ## Current Research Pause
 
 No RP-002 is scheduled.

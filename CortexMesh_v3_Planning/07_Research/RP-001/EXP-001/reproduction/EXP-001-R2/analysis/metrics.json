@@ -1,0 +1,83 @@
+{
+  "counts": {
+    "cases": 24,
+    "observed": 240,
+    "planned": 240,
+    "repetitions": 10
+  },
+  "difference_count": 4,
+  "experiment": "RP-001/EXP-001",
+  "latency_ns": {
+    "coefficient_of_variation": 0.5035031032253295,
+    "count": 240,
+    "maximum": 3077545,
+    "mean": 529635.8958333334,
+    "median": 544225.0,
+    "minimum": 8302,
+    "p95_nearest_rank": 872810,
+    "population_standard_deviation": 266673.31713161076
+  },
+  "metrics": {
+    "consensus_certified_match": {
+      "passed": 24,
+      "percent": 100.0,
+      "total": 24
+    },
+    "determinism": {
+      "passed": 24,
+      "percent": 100.0,
+      "total": 24
+    },
+    "diagnostic_completeness_by_case": {
+      "passed": 24,
+      "percent": 100.0,
+      "total": 24
+    },
+    "diagnostic_expectations": {
+      "passed": 100,
+      "percent": 100.0,
+      "total": 100
+    },
+    "evidence_completeness": {
+      "passed": 450,
+      "percent": 100.0,
+      "total": 450
+    },
+    "evidence_traceability": {
+      "passed": 450,
+      "percent": 100.0,
+      "total": 450
+    },
+    "material_divergence_preservation": {
+      "passed": 4,
+      "percent": 100.0,
+      "total": 4
+    },
+    "minority_preservation": {
+      "passed": 3,
+      "percent": 100.0,
+      "total": 3
+    },
+    "pipeline_stability": {
+      "passed": 240,
+      "percent": 100.0,
+      "total": 240
+    },
+    "replay_reproducibility": {
+      "passed": 24,
+      "percent": 100.0,
+      "total": 24
+    },
+    "synthesis_stability": {
+      "passed": 24,
+      "percent": 100.0,
+      "total": 24
+    },
+    "synthesis_statement_expectations": {
+      "passed": 220,
+      "percent": 84.61538461538461,
+      "total": 260
+    }
+  },
+  "raw_observations_sha256": "24e1e95253c0c77e182bf62aed2e05552852229bcb4c0f401b7f3ea305f70677"
+}

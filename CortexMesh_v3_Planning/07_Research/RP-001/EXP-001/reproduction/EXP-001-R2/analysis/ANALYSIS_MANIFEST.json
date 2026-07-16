@@ -1,0 +1,21 @@
+{
+  "analyzer_sha256": "9dc1be39171887cc04b9d6e40ded9cb961e9185270eb2476f27e456dd0479bf8",
+  "files": [
+    {
+      "path": "case_results.json",
+      "sha256": "c29fdebfffd83cf40ff7ddb9073b4cf6ab1d84a23d85b2eee5df149e90f685d4",
+      "size": 11166
+    },
+    {
+      "path": "differences.json",
+      "sha256": "10dd87be746433bcc64bc3bdd12ae7cf15a58f85f72b75a484ed3016d4cf552e",
+      "size": 307
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "935a9e077207cb7fbcaccef1ac60005d32aece50795b47eb98232ac33d3b54eb",
+      "size": 1800
+    }
+  ],
+  "raw_observations_sha256": "24e1e95253c0c77e182bf62aed2e05552852229bcb4c0f401b7f3ea305f70677"
+}

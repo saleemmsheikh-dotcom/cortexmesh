@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "c02",
+    "kind": "synthesis_statement_difference"
+  },
+  {
+    "case_id": "c05",
+    "kind": "synthesis_statement_difference"
+  },
+  {
+    "case_id": "c09",
+    "kind": "synthesis_statement_difference"
+  },
+  {
+    "case_id": "c17",
+    "kind": "synthesis_statement_difference"
+  }
+]

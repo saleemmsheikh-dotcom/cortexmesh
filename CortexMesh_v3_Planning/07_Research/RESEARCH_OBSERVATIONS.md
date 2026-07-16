@@ -44,19 +44,23 @@ Boundary: OBS-000 does not authorize learning, adaptation, runtime integration, 
 
 | Field | Value |
 | --- | --- |
-| Status | OPEN |
+| Status | CLOSED |
 | Date opened | 2026-07-17 |
+| Date closed | 2026-07-17 |
 | Research program | RP-001 |
 | Reproduction | EXP-001-R2 |
 | Category | Research infrastructure / lifecycle traceability |
 
 An external Ubuntu verification reached the immutable-output gate and correctly refused to overwrite published EXP-001 evidence. The event exposed that the harness and analyzer lacked an explicit isolated destination for a second reproduction package.
 
-An output-isolation mechanism has been designed and implemented for review. No EXP-001-R2 collection or analysis is authorized, no R2 result exists, and repository portability has not yet been validated.
+The separately authorized EXP-001-R2 reproduction completed on Ubuntu using the isolated output mechanism. It recorded 240/240 executions, 240/240 canonical matches with both EXP-001 and EXP-001-R1, and the published 220/260 statement-expectation result. All other registered non-latency metrics reproduced exactly. Latency remains descriptive.
+
+Raw and analysis manifests verified, the published EXP-001 artifacts remained byte-for-byte unchanged, and the post-execution regression passed 226/226. Repository-relative execution under the declared Ubuntu environment is therefore validated for this experiment.
 
 Primary evidence:
 
 - `RP-001/EXP-001/EXP-001-R2_OUTPUT_ISOLATION_DESIGN.md`;
-- `RP-001/EXP-001/EXP-001-R2_EXECUTION_AUTHORIZATION.md`.
+- `RP-001/EXP-001/EXP-001-R2_EXECUTION_AUTHORIZATION.md`;
+- `RP-001/EXP-001/reproduction/EXP-001-R2/`.
 
-Closure requires separately authorized execution in the controlled Ubuntu environment, preservation and review of the isolated evidence package, and evidence sufficient to disposition the portability observation. Infrastructure verification alone does not close OBS-INF-001.
+OBS-INF-001 is closed because the authorized Ubuntu execution, isolated evidence package, manifest verification, canonical comparisons, and regression evidence satisfy its closure criteria. Closure does not generalize portability beyond the declared Ubuntu environment or authorize runtime, provider, Local AI, engine, governance, or LOCKED changes.

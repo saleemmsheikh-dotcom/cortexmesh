@@ -1,0 +1,458 @@
+[
+  {
+    "canonical_output_stable": true,
+    "case_id": "c01",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "exact agreement",
+    "observed_consensus": [
+      "exact agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c02",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "compatible agreement",
+    "observed_consensus": [
+      "compatible agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": false,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c03",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c04",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "partial agreement",
+    "observed_consensus": [
+      "partial agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c05",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": false,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c06",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "compatible agreement",
+    "observed_consensus": [
+      "compatible agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c07",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "exact agreement",
+    "observed_consensus": [
+      "exact agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c08",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "material divergence",
+    "observed_consensus": [
+      "material divergence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c09",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": false,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c10",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "rejected",
+    "observed_consensus": [
+      "rejected"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "rejected"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c11",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c12",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c13",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "exact agreement",
+    "observed_consensus": [
+      "exact agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c14",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "compatible agreement",
+    "observed_consensus": [
+      "compatible agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c15",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "partial agreement",
+    "observed_consensus": [
+      "partial agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c16",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "exact agreement",
+    "observed_consensus": [
+      "exact agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c17",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "compatible agreement",
+    "observed_consensus": [
+      "compatible agreement"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": false,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c18",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "material divergence",
+    "observed_consensus": [
+      "material divergence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c19",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c20",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "insufficient evidence",
+    "observed_consensus": [
+      "insufficient evidence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c21",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "material divergence",
+    "observed_consensus": [
+      "material divergence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c22",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "material divergence",
+    "observed_consensus": [
+      "material divergence"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "completed"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c23",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "rejected",
+    "observed_consensus": [
+      "rejected"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "rejected"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  },
+  {
+    "canonical_output_stable": true,
+    "case_id": "c24",
+    "consensus_matches_certified": true,
+    "diagnostics_match": true,
+    "evidence_complete": true,
+    "expected_consensus": "rejected",
+    "observed_consensus": [
+      "rejected"
+    ],
+    "repetitions": 10,
+    "status_stable": true,
+    "statuses": [
+      "rejected"
+    ],
+    "synthesis_stable": true,
+    "synthesis_statements_match": true,
+    "traceable": true
+  }
+]
