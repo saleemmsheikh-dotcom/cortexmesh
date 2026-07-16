@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import math
@@ -7,10 +8,47 @@ from pathlib import Path
 import statistics
 
 
-ROOT = Path("/Users/saleemsheikh/Documents/cortexmesh")
+ROOT = Path(__file__).resolve().parents[5]
 EXP = ROOT / "CortexMesh_v3_Planning/07_Research/RP-001/EXP-001"
 RAW = EXP / "raw"
 ANALYSIS = EXP / "analysis"
+REPRODUCTION = EXP / "reproduction"
+
+
+def directory_has_files(path: Path) -> bool:
+    return path.exists() and any(path.iterdir())
+
+
+def reproduction_path(value: str, expected_name: str) -> Path:
+    candidate = Path(value)
+    if candidate.is_absolute():
+        raise ValueError("reproduction paths must be repository-relative")
+    resolved = (EXP / candidate).resolve()
+    reproduction = REPRODUCTION.resolve()
+    if reproduction not in resolved.parents or resolved.name != expected_name:
+        raise ValueError(f"reproduction {expected_name} must be inside EXP-001/reproduction")
+    if resolved in {RAW.resolve(), ANALYSIS.resolve()}:
+        raise ValueError("published EXP-001 outputs may not be selected")
+    return resolved
+
+
+def selected_paths(input_root: str | None, output_root: str | None) -> tuple[Path, Path]:
+    if input_root is None and output_root is None:
+        return RAW, ANALYSIS
+    if input_root is None or output_root is None:
+        raise ValueError("reproduction analysis requires both --input-root and --output-root")
+    raw = reproduction_path(input_root, "raw")
+    analysis = reproduction_path(output_root, "analysis")
+    if raw.parent != analysis.parent:
+        raise ValueError("reproduction input and output must belong to the same package")
+    return raw, analysis
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Analyze EXP-001 evidence")
+    parser.add_argument("--input-root", help="repository-relative reproduction raw directory")
+    parser.add_argument("--output-root", help="repository-relative reproduction analysis directory")
+    return parser.parse_args(argv)
 
 
 def canonical(value) -> str:
@@ -74,15 +112,17 @@ def traceable(record: dict) -> bool:
     return bool(record.get("record_id") and record.get("step_id") and record.get("trace_id") and record.get("correlation_id"))
 
 
-def main() -> None:
-    if ANALYSIS.exists() and any(ANALYSIS.iterdir()):
+def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv)
+    raw, analysis = selected_paths(args.input_root, args.output_root)
+    if analysis.exists() and any(analysis.iterdir()):
         raise RuntimeError("analysis output directory is not empty")
-    ANALYSIS.mkdir(parents=True, exist_ok=True)
-    package = json.loads((RAW / "PACKAGE_MANIFEST.json").read_text())
+    analysis.mkdir(parents=True, exist_ok=True)
+    package = json.loads((raw / "PACKAGE_MANIFEST.json").read_text())
     for entry in package["files"]:
-        if sha256(RAW / entry["path"]) != entry["sha256"]:
+        if sha256(raw / entry["path"]) != entry["sha256"]:
             raise RuntimeError("raw package integrity failure: " + entry["path"])
-    observations = [json.loads(line) for line in (RAW / "observations.jsonl").read_text().splitlines()]
+    observations = [json.loads(line) for line in (raw / "observations.jsonl").read_text().splitlines()]
     if len(observations) != 240:
         raise RuntimeError("observation completeness failure")
 
@@ -226,7 +266,7 @@ def main() -> None:
 
     metrics = {
         "experiment": "RP-001/EXP-001",
-        "raw_observations_sha256": sha256(RAW / "observations.jsonl"),
+        "raw_observations_sha256": sha256(raw / "observations.jsonl"),
         "counts": {"cases": 24, "repetitions": 10, "planned": 240, "observed": len(observations)},
         "metrics": {
             "determinism": {"passed": stable_cases, "total": 24, "percent": stable_cases / 24 * 100},
@@ -254,18 +294,18 @@ def main() -> None:
         },
         "difference_count": len(differences),
     }
-    (ANALYSIS / "metrics.json").write_text(json.dumps(metrics, indent=2, sort_keys=True) + "\n")
-    (ANALYSIS / "case_results.json").write_text(json.dumps(case_results, indent=2, sort_keys=True) + "\n")
-    (ANALYSIS / "differences.json").write_text(json.dumps(differences, indent=2, sort_keys=True) + "\n")
+    (analysis / "metrics.json").write_text(json.dumps(metrics, indent=2, sort_keys=True) + "\n")
+    (analysis / "case_results.json").write_text(json.dumps(case_results, indent=2, sort_keys=True) + "\n")
+    (analysis / "differences.json").write_text(json.dumps(differences, indent=2, sort_keys=True) + "\n")
     manifest = {
         "analyzer_sha256": sha256(Path(__file__)),
-        "raw_observations_sha256": sha256(RAW / "observations.jsonl"),
+        "raw_observations_sha256": sha256(raw / "observations.jsonl"),
         "files": [
-            {"path": name, "sha256": sha256(ANALYSIS / name), "size": (ANALYSIS / name).stat().st_size}
+            {"path": name, "sha256": sha256(analysis / name), "size": (analysis / name).stat().st_size}
             for name in ("case_results.json", "differences.json", "metrics.json")
         ],
     }
-    (ANALYSIS / "ANALYSIS_MANIFEST.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+    (analysis / "ANALYSIS_MANIFEST.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     print(json.dumps(metrics, indent=2, sort_keys=True))
 
 

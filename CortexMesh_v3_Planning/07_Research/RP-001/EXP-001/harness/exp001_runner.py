@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import dataclasses
+import argparse
 import hashlib
 import importlib.util
 import json
@@ -14,14 +15,53 @@ import sys
 import time
 
 
-ROOT = Path("/Users/saleemsheikh/Documents/cortexmesh")
+ROOT = Path(__file__).resolve().parents[5]
+EXP = ROOT / "CortexMesh_v3_Planning/07_Research/RP-001/EXP-001"
 ORCH = ROOT / "CortexMesh_v3_Planning/06_Implementation_Execution/Phase2C/orchestration"
 CORPUS = ROOT / "CortexMesh_v3_Planning/06_Implementation_Execution/Phase3A/replay/v1.1"
-OUTPUT = ROOT / "CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/raw"
+OUTPUT = EXP / "raw"
+REPRODUCTION = EXP / "reproduction"
 EXPECTED_ENGINE = "a72d11fe57f9026ab307efeaf962b97095527039"
 EXPECTED_VALIDATION = "6c41364c56883043c20d237d37b8fcd83ec02547"
 EXPECTED_CORPUS_HASH = "20e4b446097db5b3dcaa6fbf214218038c9c297d2e60bbbc57b9d24bc1e59788"
 REPETITIONS = 10
+
+
+def directory_has_files(path: Path) -> bool:
+    return path.exists() and any(path.iterdir())
+
+
+def reproduction_package(value: str) -> Path:
+    candidate = Path(value)
+    if candidate.is_absolute():
+        raise ValueError("reproduction output root must be repository-relative")
+    resolved = (EXP / candidate).resolve()
+    reproduction = REPRODUCTION.resolve()
+    if resolved == reproduction or reproduction not in resolved.parents:
+        raise ValueError("reproduction output root must be inside EXP-001/reproduction")
+    if resolved in {(EXP / "raw").resolve(), (EXP / "analysis").resolve()}:
+        raise ValueError("published EXP-001 outputs may not be selected")
+    return resolved
+
+
+def selected_output(value: str | None) -> tuple[Path, Path | None]:
+    if value is None:
+        return OUTPUT, None
+    package = reproduction_package(value)
+    raw = package / "raw"
+    analysis = package / "analysis"
+    if directory_has_files(raw) or directory_has_files(analysis):
+        raise RuntimeError("reproduction output package is not empty")
+    return raw, package
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Collect EXP-001 evidence")
+    parser.add_argument(
+        "--output-root",
+        help="repository-relative package root inside EXP-001/reproduction",
+    )
+    return parser.parse_args(argv)
 
 
 def load(name: str, filename: str):
@@ -180,10 +220,16 @@ def environment() -> dict:
     }
 
 
-def main() -> None:
-    if OUTPUT.exists() and any(OUTPUT.iterdir()):
+def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv)
+    output, package = selected_output(args.output_root)
+    if output.exists() and any(output.iterdir()):
         raise RuntimeError("raw output directory is not empty")
-    OUTPUT.mkdir(parents=True, exist_ok=True)
+    if package is not None:
+        for name in ("raw", "analysis", "logs", "environment", "hashes"):
+            (package / name).mkdir(parents=True, exist_ok=True)
+    else:
+        output.mkdir(parents=True, exist_ok=True)
     manifest = verify_corpus()
     cases_doc = json.loads((CORPUS / "cases/cases.json").read_text())
     cases = cases_doc["cases"]
@@ -244,10 +290,10 @@ def main() -> None:
 
     ended = time.time_ns()
     lines = [canonical(item) for item in observations]
-    observations_path = OUTPUT / "observations.jsonl"
+    observations_path = output / "observations.jsonl"
     observations_path.write_text("\n".join(lines) + "\n")
     raw_hash = sha256(observations_path)
-    harness_path = OUTPUT / "exp001_runner.py"
+    harness_path = output / "exp001_runner.py"
     harness_path.write_bytes(Path(__file__).read_bytes())
     run_manifest = {
         "experiment": "RP-001/EXP-001",
@@ -266,14 +312,14 @@ def main() -> None:
         "observations_sha256": raw_hash,
         "environment": environment(),
     }
-    manifest_path = OUTPUT / "RUN_MANIFEST.json"
+    manifest_path = output / "RUN_MANIFEST.json"
     manifest_path.write_text(json.dumps(run_manifest, indent=2, sort_keys=True) + "\n")
     package_entries = [
         {"path": "RUN_MANIFEST.json", "sha256": sha256(manifest_path), "size": manifest_path.stat().st_size},
         {"path": "exp001_runner.py", "sha256": sha256(harness_path), "size": harness_path.stat().st_size},
         {"path": "observations.jsonl", "sha256": raw_hash, "size": observations_path.stat().st_size},
     ]
-    package_path = OUTPUT / "PACKAGE_MANIFEST.json"
+    package_path = output / "PACKAGE_MANIFEST.json"
     package_path.write_text(json.dumps({"files": package_entries}, indent=2, sort_keys=True) + "\n")
     print(canonical({
         "recorded": len(observations),

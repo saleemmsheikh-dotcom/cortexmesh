@@ -130,6 +130,42 @@ Entries are append-only. Corrections create dated follow-up entries rather than 
 
 ---
 
+## Entry 007 - Immutable-Output Gate Preserved
+
+**Date:** 2026-07-17
+
+**Program:** RP-001
+
+**Experiment or milestone:** EXP-001-R2 external reproduction preparation
+
+**Observation:** Ubuntu verification reached the EXP-001 immutable-output gate, which refused to overwrite the published `raw/` evidence. No R2 evidence was created and OBS-INF-001 remains open.
+
+**Interpretation:** The stop preserved evidence integrity and exposed a missing isolated-output mechanism rather than an experimental result or engine defect.
+
+**Open questions:** Will a separately authorized Ubuntu reproduction complete reproducibly after using a clean isolated package?
+
+**Related observations and evidence:** OBS-INF-001; `RP-001/EXP-001/EXP-001-R2_OUTPUT_ISOLATION_DESIGN.md`.
+
+---
+
+## Entry 008 - EXP-001-R2 Output Isolation Designed
+
+**Date:** 2026-07-17
+
+**Program:** RP-001
+
+**Experiment or milestone:** EXP-001-R2 Output Isolation Design
+
+**Observation:** The collection and analysis tools gained repository-relative, explicit reproduction destinations with traversal protection, published-output exclusion, and non-empty-target refusal. Default immutable paths and scientific logic remain unchanged.
+
+**Interpretation:** Infrastructure can be reviewed for R2 authorization without treating verification as data collection.
+
+**Open questions:** Does independent review support a separate EXP-001-R2 execution authorization?
+
+**Related observations and evidence:** OBS-INF-001; `RP-001/EXP-001/EXP-001-R2_EXECUTION_AUTHORIZATION.md`.
+
+---
+
 ## Current Research Pause
 
 No RP-002 is scheduled.
