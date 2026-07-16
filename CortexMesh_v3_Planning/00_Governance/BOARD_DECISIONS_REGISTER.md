@@ -137,9 +137,9 @@ These sessions are listed for lifecycle discoverability only. They are not decis
 
 | Session | Status | Type | Vote Required | Purpose | Reference |
 | --- | --- | --- | --- | --- | --- |
-| 13 | OPEN | Research Review | No | Foundation 1.0 Review | `Board_Sessions/Session_13/` |
+| 13 | CLOSED | Independent Critical Research Review | No | Foundation 1.0 and RP-001 Review | `Board_Sessions/Session_13/` |
 
-Session 13 requests independent criticism and recommendations. It proposes no motion, governance change, authority modification, runtime integration, or LOCKED modification.
+Session 13 closed with Foundation 1.0 accepted and RP-001 accepted as the research baseline. No vote, motion, governance change, runtime authorization, implementation authorization, or LOCKED modification resulted. RP-002 remains deferred pending future evidence.
 
 ---
 
@@ -151,3 +151,4 @@ Session 13 requests independent criticism and recommendations. It proposes no mo
 | v1.1    | 2026-07-01 | Recorded BD-09-003 retrospective LOCKED component ratification. |
 | v1.2    | 2026-07-06 | Recorded BD-12-001 GG-02 Board Voting and Ratification Rules v1.0 ratification. |
 | v1.3    | 2026-07-14 | Added non-decision Session 13 research review entry without creating a decision or pending motion. |
+| v1.4    | 2026-07-14 | Closed non-decision Session 13 and recorded its review dispositions without creating a Board decision. |

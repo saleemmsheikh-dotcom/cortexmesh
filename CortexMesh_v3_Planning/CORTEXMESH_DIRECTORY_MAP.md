@@ -22,7 +22,7 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/02_Onboarding/Session_09/REVIEW_PACKET.md` | Current Session 09 review packet. |
 | `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_CHANGELOG.md` | Governance evolution summary. |
 | `CortexMesh_v3_Planning/00_Governance/GG-02_Board_Voting_and_Ratification_Rules_v1.0.md` | Active Board voting and ratification authority. |
-| `CortexMesh_v3_Planning/00_Governance/Board_Sessions/Session_13/README.md` | Open non-decision Foundation 1.0 and RP-001 critical review. |
+| `CortexMesh_v3_Planning/00_Governance/Board_Sessions/Session_13/SESSION_13_SUMMARY.md` | Closed non-decision Foundation 1.0 and RP-001 critical review. |
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
