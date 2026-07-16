@@ -47,6 +47,8 @@ Independent reproductions use the parent experiment identifier plus `-RNN`, for 
 
 Permanent cross-program observations use `OBS-NNN` identifiers and are recorded in `RESEARCH_OBSERVATIONS.md`. Observations describe evidence; they do not create implementation or governance authority.
 
+`RESEARCH_LOGBOOK.md` records the chronological development of research knowledge. It is append-only institutional memory, not an implementation tracker or decision authority.
+
 ## Program Register
 
 | Program | Title | Status | Scope |

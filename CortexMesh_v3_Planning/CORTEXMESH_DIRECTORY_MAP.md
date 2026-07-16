@@ -30,6 +30,7 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/06_Implementation_Execution/Phase1B/PHASE1B_STATUS.md` | Completed Phase 1B status and evidence record. |
 | `CortexMesh_v3_Planning/06_Implementation_Execution/Phase2A/PHASE2A_STATUS.md` | Completed Phase 2A status and evidence record. |
 | `CortexMesh_v3_Planning/07_Research/CORTEXMESH_RESEARCH_PROGRAM.md` | Research framework, validity, publication, and governance standards. |
+| `CortexMesh_v3_Planning/07_Research/RESEARCH_LOGBOOK.md` | Append-only laboratory record of research observations, interpretations, and open questions. |
 | `CortexMesh_v3_Planning/05_Program_Management/AUDIT_REPORT_2026-06-28.md` | Formal repository-level audit report. |
 
 ## Top-Level Planning Structure
@@ -200,6 +201,7 @@ Use this area for implementation execution status, active phase working areas, a
 ├── README.md
 ├── CORTEXMESH_RESEARCH_PROGRAM.md
 ├── RESEARCH_OBSERVATIONS.md
+├── RESEARCH_LOGBOOK.md
 └── RP-001/
     ├── README.md
     ├── RP-001_CHARTER.md
