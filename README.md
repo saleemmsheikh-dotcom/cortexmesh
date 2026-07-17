@@ -4,7 +4,7 @@
 
 [![Regression: 226/226 passing](https://img.shields.io/badge/regression-226%2F226%20passing-brightgreen)](CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/reproduction/EXP-001-R2/REPRODUCTION_REPORT.md)
 ![Python 3](https://img.shields.io/badge/python-3-blue)
-![License not yet selected](https://img.shields.io/badge/license-not%20yet%20selected-lightgrey)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 **CortexMesh is an engineering and research platform for governed AI orchestration. It prioritizes deterministic behaviour, reproducible evidence, and architectural discipline over rapid feature expansion.**
 
@@ -153,6 +153,9 @@ CLI execution may require locally configured runtime or provider dependencies. I
 - **Implementation:** [Implementation execution and sealed phases](CortexMesh_v3_Planning/06_Implementation_Execution/)
 - **Research:** [Research program](CortexMesh_v3_Planning/07_Research/README.md)
 - **Reproducibility:** [Current reproducibility status](CortexMesh_v3_Planning/07_Research/REPRODUCIBILITY_STATUS.md)
+- **Contributing:** [Contribution guide](CONTRIBUTING.md)
+- **Community:** [Code of Conduct](CODE_OF_CONDUCT.md)
+- **Security:** [Security policy](SECURITY.md)
 
 ## Current Limitations
 
@@ -166,4 +169,4 @@ CLI execution may require locally configured runtime or provider dependencies. I
 
 ## License
 
-No public license has been selected. Until an explicit license file is published, all rights remain reserved and no permission to use, copy, modify, or distribute the repository should be inferred.
+CortexMesh is licensed under the [Apache License 2.0](LICENSE). Contributions are accepted under the same license unless explicitly stated otherwise.

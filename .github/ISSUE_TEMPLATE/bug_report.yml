@@ -1,0 +1,84 @@
+name: Bug report
+description: Report reproducible incorrect behaviour in CortexMesh
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a defect. Do not include vulnerabilities, credentials, personal data, or exploit details here; follow SECURITY.md instead.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: This report contains no sensitive security information.
+          required: true
+        - label: I can describe how to reproduce the behaviour.
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the observed problem concisely.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest deterministic sequence that reproduces the problem.
+      placeholder: |
+        1. Check out commit ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or version
+      placeholder: Full commit SHA or published tag
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Python version, configuration, and relevant dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Diagnostics and evidence
+      description: Include sanitized logs, trace identifiers, failed tests, and relevant artifacts.
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Suspected boundary
+      options:
+        - Runtime
+        - Reference orchestration
+        - Local AI or provider
+        - Validation or replay
+        - Research infrastructure
+        - Governance or documentation
+        - Unknown
+    validations:
+      required: true
