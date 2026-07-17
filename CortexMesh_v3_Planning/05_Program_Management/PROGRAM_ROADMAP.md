@@ -70,12 +70,13 @@ Use these statuses consistently unless the board approves a new status:
 | F1.1-A Repository Identity | COMPLETE |
 | F1.1-B Legal and Community | DEFERRED — INTERIM CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
-| F1.1-D CI/CD and Automation | IN REVIEW — DESIGN COMPLETE; IMPLEMENTATION NOT AUTHORIZED |
+| F1.1-D CI/CD and Automation | IN REVIEW — IMPLEMENTATION VALIDATED; PRODUCT OWNER ACCEPTANCE PENDING |
 | F1.1-E Packaging and Environment | NOT STARTED |
 
 Foundation 1.1 remains IN PROGRESS because F1.1-B is paused and F1.1-D/E are
-not complete. F1.1-C closed at merge commit `1004f7f` after 226/226 regression
-passed and protected surfaces remained unchanged.
+not complete. F1.1-C closed at merge commit `1004f7f`. F1.1-D implementation
+is validated on pull request #2 with 250/250 regression passing and protected
+surfaces unchanged; Product Owner acceptance and merge remain pending.
 
 ## Roadmap Relationships
 
@@ -93,4 +94,5 @@ passed and protected surfaces remained unchanged.
 - Status changes should be evidence-backed and reflected in the relevant board or planning artifact.
 - Foundation 1.1 status is maintained in
   `../06_Implementation_Execution/Foundation_1_1/FOUNDATION_1_1_STATUS.md`.
-- F1.1-D and F1.1-E remain unauthorized until separately designed and accepted.
+- F1.1-D merge remains unauthorized pending Product Owner implementation
+  acceptance. F1.1-E remains unauthorized.

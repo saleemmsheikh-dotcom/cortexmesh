@@ -23,7 +23,7 @@ Governance Authority:
 GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 
 Current Engineering Milestone:
-Foundation 1.1-D design complete; Product Owner review pending
+Foundation 1.1-D implementation validated; Product Owner acceptance pending
 
 Research Governance Review:
 Session 13 - CLOSED
@@ -136,7 +136,7 @@ Tracker:
 | F1.1-A Repository Identity | COMPLETE |
 | F1.1-B Legal and Community | PAUSED — INTERIM PROPRIETARY CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
-| F1.1-D CI/CD and Automation | DESIGN IN REVIEW — IMPLEMENTATION NOT AUTHORIZED |
+| F1.1-D CI/CD and Automation | IMPLEMENTATION IN REVIEW — CI PASS; PRODUCT OWNER ACCEPTANCE PENDING |
 | F1.1-E Packaging and Environment | PENDING |
 
 F1.1-C Planning Baseline:
@@ -154,8 +154,24 @@ F1.1-C Regression:
 F1.1-C Protected Surfaces:
 UNCHANGED
 
+F1.1-D Design Baseline:
+`dce9479`
+
+F1.1-D Manifest:
+`76d664b`
+
+F1.1-D Implementation:
+`d748b18`, `2683c98`, `b373c14`
+
+F1.1-D Pull Request:
+`#2`
+
+F1.1-D Verification:
+250/250 PASS; required and observational GitHub workflows PASS; protected
+surfaces unchanged
+
 Next Workstream:
-F1.1-D PRODUCT OWNER DESIGN REVIEW — IMPLEMENTATION NOT AUTHORIZED
+F1.1-D PRODUCT OWNER IMPLEMENTATION ACCEPTANCE — MERGE NOT AUTHORIZED
 
 ---
 
