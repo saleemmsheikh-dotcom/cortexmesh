@@ -70,7 +70,7 @@ Use these statuses consistently unless the board approves a new status:
 | F1.1-A Repository Identity | COMPLETE |
 | F1.1-B Legal and Community | DEFERRED — INTERIM CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
-| F1.1-D CI/CD and Automation | NOT STARTED — READY FOR SEPARATE DESIGN AUTHORIZATION |
+| F1.1-D CI/CD and Automation | IN REVIEW — DESIGN COMPLETE; IMPLEMENTATION NOT AUTHORIZED |
 | F1.1-E Packaging and Environment | NOT STARTED |
 
 Foundation 1.1 remains IN PROGRESS because F1.1-B is paused and F1.1-D/E are

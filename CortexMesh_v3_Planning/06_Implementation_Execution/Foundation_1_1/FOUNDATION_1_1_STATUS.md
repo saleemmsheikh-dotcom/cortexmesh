@@ -7,7 +7,7 @@
 | Program | Foundation 1.1 Repository Quality |
 | Status | IN PROGRESS |
 | Current date | 2026-07-17 |
-| Current workstream | F1.1-D — READY TO BEGIN UNDER SEPARATE AUTHORIZATION |
+| Current workstream | F1.1-D — DESIGN COMPLETE; PRODUCT OWNER REVIEW PENDING |
 | Runtime impact to date | NONE |
 | LOCKED impact to date | NONE |
 | Governance authority change | NONE |
@@ -19,7 +19,7 @@
 | F1.1-A Repository Identity | COMPLETE | Repository identity improved at `fd66abb`. |
 | F1.1-B Legal and Community | PAUSED | Interim proprietary correction is effective on `main`; formal proprietary licence and qualified legal review remain outstanding. See `F1.1-B_LICENSING_CORRECTION.md`. |
 | F1.1-C Repository Hygiene | COMPLETE | Planning baseline `86aa016`; actions C001–C019; merge commit `1004f7f`; regression 226/226 PASS; protected surfaces unchanged. |
-| F1.1-D CI/CD and Automation | READY TO BEGIN | Requires a separately reviewed scope and authorization. |
+| F1.1-D CI/CD and Automation | DESIGN IN REVIEW | Design, execution plan, and acceptance criteria complete; implementation remains unauthorized. |
 | F1.1-E Packaging and Environment | PENDING | No work authorized. |
 
 ## F1.1-C completion record
@@ -42,8 +42,8 @@
 
 ## F1.1-D readiness boundary
 
-F1.1-D may automate existing quality checks but is not yet authorized. Its
-guiding principle is:
+F1.1-D may automate existing quality checks, but implementation is not yet
+authorized. Its guiding principle is:
 
 > **Automate verification, not behaviour.**
 
@@ -69,4 +69,4 @@ request #1 provide the authoritative F1.1-C trace.
 
 ## Recommendation
 
-**READY FOR F1.1-D DESIGN UNDER SEPARATE AUTHORIZATION**
+**F1.1-D DESIGN READY FOR PRODUCT OWNER REVIEW**

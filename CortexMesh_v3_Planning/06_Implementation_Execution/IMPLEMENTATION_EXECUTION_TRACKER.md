@@ -23,7 +23,7 @@ Governance Authority:
 GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 
 Current Engineering Milestone:
-Foundation 1.1-D ready to begin under separate authorization
+Foundation 1.1-D design complete; Product Owner review pending
 
 Research Governance Review:
 Session 13 - CLOSED
@@ -136,7 +136,7 @@ Tracker:
 | F1.1-A Repository Identity | COMPLETE |
 | F1.1-B Legal and Community | PAUSED — INTERIM PROPRIETARY CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
-| F1.1-D CI/CD and Automation | READY TO BEGIN UNDER SEPARATE AUTHORIZATION |
+| F1.1-D CI/CD and Automation | DESIGN IN REVIEW — IMPLEMENTATION NOT AUTHORIZED |
 | F1.1-E Packaging and Environment | PENDING |
 
 F1.1-C Planning Baseline:
@@ -155,7 +155,7 @@ F1.1-C Protected Surfaces:
 UNCHANGED
 
 Next Workstream:
-F1.1-D DESIGN — NOT YET AUTHORIZED
+F1.1-D PRODUCT OWNER DESIGN REVIEW — IMPLEMENTATION NOT AUTHORIZED
 
 ---
 
