@@ -13,6 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CHECKER_PATH = ROOT / ".github" / "ci" / "check_protected_paths.py"
 POLICY_PATH = ROOT / ".github" / "ci" / "protected-paths.txt"
 GATES_PATH = ROOT / ".github" / "workflows" / "quality-gates.yml"
+OBSERVATIONS_PATH = (
+    ROOT / ".github" / "workflows" / "quality-observations.yml"
+)
 
 
 def load_checker():
@@ -199,6 +202,123 @@ class RequiredWorkflowTests(unittest.TestCase):
             "deploy",
             "release",
             "publish",
+        )
+        lowered = self.workflow.lower()
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text.lower(), lowered)
+
+
+class ObservationalWorkflowTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.workflow = OBSERVATIONS_PATH.read_text(encoding="utf-8")
+
+    def test_workflow_has_expected_top_level_structure_and_triggers(self):
+        required = (
+            "name: Quality Observations",
+            "\non:\n",
+            "\npermissions:\n",
+            "\nconcurrency:\n",
+            "\njobs:\n",
+            "  pull_request:\n",
+            "  push:\n",
+            "  workflow_dispatch:\n",
+        )
+        for text in required:
+            with self.subTest(text=text):
+                self.assertIn(text, self.workflow)
+        self.assertNotIn("\t", self.workflow)
+
+    def test_permissions_are_read_only_and_no_secrets_are_used(self):
+        self.assertRegex(
+            self.workflow, r"(?ms)^permissions:\n  contents: read\n"
+        )
+        for text in ("contents: write", "id-token: write", "secrets."):
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow)
+
+    def test_action_references_are_approved_full_shas(self):
+        uses = re.findall(r"(?m)^\s*uses:\s*(\S+)", self.workflow)
+        approved = {
+            "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5",
+            "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        }
+        self.assertTrue(uses)
+        for reference in uses:
+            with self.subTest(reference=reference):
+                self.assertIn(reference, approved)
+                self.assertRegex(reference, r"@[0-9a-f]{40}$")
+
+    def test_jobs_python_and_artifact_retention_are_stable(self):
+        for job in ("coverage", "dependency-audit"):
+            with self.subTest(job=job):
+                self.assertRegex(self.workflow, rf"(?m)^  {job}:$")
+                self.assertRegex(self.workflow, rf"(?m)^    name: {job}$")
+        self.assertIn('python-version: "3.14"', self.workflow)
+        self.assertEqual(2, self.workflow.count("retention-days: 14"))
+
+    def test_coverage_is_existing_scoped_command_and_descriptive(self):
+        self.assertIn(
+            "python tools/audit/audit_coverage.py", self.workflow
+        )
+        self.assertIn("descriptive-coverage", self.workflow)
+        prohibited = ("--fail-under", "coverage threshold", "coveralls")
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow.lower())
+
+    def test_dependency_audit_is_pinned_observational_and_non_mutating(self):
+        required = (
+            "pip-audit==2.10.1",
+            "pip-audit exit code",
+            "descriptive-dependency-audit",
+            "no security certification or automatic mutation",
+        )
+        for text in required:
+            with self.subTest(text=text):
+                self.assertIn(text, self.workflow)
+        prohibited = (
+            "pip install --upgrade -r requirements.txt",
+            "dependabot",
+            "git commit",
+            "git push",
+            "gh issue",
+        )
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow)
+
+    def test_artifact_paths_are_allowlisted(self):
+        paths = re.findall(r"(?m)^\s+path:\s*(\S+)\s*$", self.workflow)
+        self.assertEqual(
+            [
+                "ci-artifacts/coverage",
+                "ci-artifacts/dependency-audit",
+            ],
+            paths,
+        )
+        prohibited = (
+            "EXP-001/raw",
+            "EXP-001/analysis",
+            "memory/memory.json",
+            ".env",
+            "*.bundle",
+        )
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow)
+
+    def test_observational_workflow_has_no_write_or_release_behavior(self):
+        prohibited = (
+            "continue-on-error",
+            "python main.py",
+            "docker ",
+            "deploy",
+            "release",
+            "publish",
+            "create-pull-request",
         )
         lowered = self.workflow.lower()
         for text in prohibited:
