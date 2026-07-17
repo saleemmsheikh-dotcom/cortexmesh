@@ -7,7 +7,7 @@
 | Program | Foundation 1.1 Repository Quality |
 | Status | IN PROGRESS |
 | Current date | 2026-07-17 |
-| Current workstream | F1.1-D — DESIGN COMPLETE; PRODUCT OWNER REVIEW PENDING |
+| Current workstream | F1.1-D — IMPLEMENTATION VALIDATED; PRODUCT OWNER ACCEPTANCE PENDING |
 | Runtime impact to date | NONE |
 | LOCKED impact to date | NONE |
 | Governance authority change | NONE |
@@ -19,7 +19,7 @@
 | F1.1-A Repository Identity | COMPLETE | Repository identity improved at `fd66abb`. |
 | F1.1-B Legal and Community | PAUSED | Interim proprietary correction is effective on `main`; formal proprietary licence and qualified legal review remain outstanding. See `F1.1-B_LICENSING_CORRECTION.md`. |
 | F1.1-C Repository Hygiene | COMPLETE | Planning baseline `86aa016`; actions C001–C019; merge commit `1004f7f`; regression 226/226 PASS; protected surfaces unchanged. |
-| F1.1-D CI/CD and Automation | DESIGN IN REVIEW | Design, execution plan, and acceptance criteria complete; implementation remains unauthorized. |
+| F1.1-D CI/CD and Automation | IMPLEMENTATION IN REVIEW | IM001–IM010 implemented and validated on pull request #2; 250/250 regression PASS; protected surfaces unchanged; Product Owner acceptance and merge pending. |
 | F1.1-E Packaging and Environment | PENDING | No work authorized. |
 
 ## F1.1-C completion record
@@ -40,23 +40,30 @@
 | Unlisted cleanup | NONE |
 | Runtime, Local AI, provider, governance, research, validation, and LOCKED changes | NONE |
 
-## F1.1-D readiness boundary
+## F1.1-D implementation record
 
-F1.1-D may automate existing quality checks, but implementation is not yet
-authorized. Its guiding principle is:
+| Field | Value |
+| --- | --- |
+| Product Owner design acceptance | ACCEPTED |
+| Product Owner implementation authorization | AUTHORIZED |
+| Design baseline | `dce9479` |
+| Manifest commit | `76d664b` |
+| Implementation commits | `d748b18`, `2683c98`, `b373c14` |
+| Execution scope | IM001–IM010 |
+| Pull request | `#2` |
+| Required workflow run | `29563768705` — PASS |
+| Observational workflow run | `29563768758` — PASS |
+| Regression | 250/250 PASS |
+| Protected surfaces | UNCHANGED |
+| Deferred GitHub settings | SET001–SET006 UNCHANGED |
+| Product Owner implementation acceptance | PENDING |
+| Merge state | NOT MERGED |
+
+F1.1-D automates existing quality checks under the guiding principle:
 
 > **Automate verification, not behaviour.**
 
-A future design should assess:
-
-- GitHub Actions regression execution;
-- supported Python-version policy and any justified matrix;
-- formatting and linting compatibility with the current codebase;
-- coverage reporting;
-- basic dependency and security scanning; and
-- branch-protection recommendations.
-
-No CI/CD implementation may change runtime behavior, governance authority,
+No CI/CD implementation changes runtime behavior, governance authority,
 research evidence, validation baselines, provider behavior, or LOCKED
 components.
 
@@ -69,4 +76,4 @@ request #1 provide the authoritative F1.1-C trace.
 
 ## Recommendation
 
-**F1.1-D DESIGN READY FOR PRODUCT OWNER REVIEW**
+**F1.1-D READY FOR PRODUCT OWNER IMPLEMENTATION ACCEPTANCE**

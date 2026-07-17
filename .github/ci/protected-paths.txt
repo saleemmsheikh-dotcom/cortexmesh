@@ -1,0 +1,43 @@
+# CortexMesh CI protected-path policy
+# Syntax: exact:<path>, prefix:<directory>, or glob:<pattern>
+
+# LOCKED implementation and active runtime surfaces
+exact:core/contracts.py
+exact:core/external_runner.py
+exact:competition/scorer.py
+exact:agents/authority.py
+exact:orchestrator.py
+exact:governance/snapshot.py
+exact:main.py
+prefix:agents
+prefix:capabilities
+prefix:competition
+prefix:config
+prefix:core
+prefix:cost
+prefix:engine
+prefix:evolution
+prefix:governance
+prefix:ledger
+prefix:memory
+
+# Governance authority and architectural lock registry
+prefix:CortexMesh_v3_Planning/00_Governance
+exact:CortexMesh_v3_Planning/04_Architecture/LOCK_REGISTRY_v1.0.md
+exact:CortexMesh_v3_Planning/FOUNDATION_BASELINE_v1.0.md
+
+# Sealed implementation and certified validation
+prefix:CortexMesh_v3_Planning/06_Implementation_Execution/Phase1B
+prefix:CortexMesh_v3_Planning/06_Implementation_Execution/Phase2C
+prefix:CortexMesh_v3_Planning/06_Implementation_Execution/Phase3A/replay/v1.0
+prefix:CortexMesh_v3_Planning/06_Implementation_Execution/Phase3A/replay/v1.1
+exact:CortexMesh_v3_Planning/06_Implementation_Execution/Phase3A/VERIFICATION_EVIDENCE_005_REPLAY_CORPUS_V1.md
+
+# Published RP-001 evidence and permanent research records
+prefix:CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/raw
+prefix:CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/analysis
+glob:CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/reproduction/**/raw/**
+glob:CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/reproduction/**/analysis/**
+exact:CortexMesh_v3_Planning/07_Research/RESEARCH_OBSERVATIONS.md
+exact:CortexMesh_v3_Planning/07_Research/RESEARCH_LOGBOOK.md
+exact:CortexMesh_v3_Planning/07_Research/REPRODUCIBILITY_STATUS.md

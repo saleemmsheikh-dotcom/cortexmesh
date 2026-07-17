@@ -1,0 +1,132 @@
+name: Quality Observations
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-observations-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  coverage:
+    name: coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython 3.14
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install declared dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Record coverage environment
+        run: |
+          mkdir -p ci-artifacts/coverage
+          {
+            python --version
+            python -m pip --version
+            shasum -a 256 requirements.txt
+            python -m pip freeze
+          } > ci-artifacts/coverage/environment.txt
+      - name: Run descriptive scoped coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/audit/audit_coverage.py \
+            2>&1 | tee ci-artifacts/coverage/coverage.txt
+          python -m coverage xml \
+            -o ci-artifacts/coverage/coverage.xml
+          python -m coverage html \
+            -d ci-artifacts/coverage/html
+      - name: Upload descriptive coverage artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: descriptive-coverage
+          path: ci-artifacts/coverage
+          if-no-files-found: error
+          retention-days: 14
+
+  dependency-audit:
+    name: dependency-audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython 3.14
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install declared dependencies and pinned audit tool
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install pip-audit==2.10.1
+      - name: Record dependency environment
+        run: |
+          mkdir -p ci-artifacts/dependency-audit
+          {
+            python --version
+            python -m pip --version
+            shasum -a 256 requirements.txt
+            python -m pip freeze
+          } > ci-artifacts/dependency-audit/environment.txt
+      - name: Run descriptive dependency audit
+        id: audit
+        shell: bash
+        run: |
+          set +e
+          python -m pip_audit \
+            --requirement requirements.txt \
+            --format json \
+            --output ci-artifacts/dependency-audit/report.json
+          audit_exit=$?
+          set -e
+
+          python -c 'import json; json.load(open("ci-artifacts/dependency-audit/report.json", encoding="utf-8"))'
+          {
+            printf 'pip-audit version: '
+            python -m pip_audit --version
+            printf 'pip-audit exit code: %s\n' "${audit_exit}"
+            printf 'Policy: descriptive; no security certification or automatic mutation.\n'
+          } > ci-artifacts/dependency-audit/summary.txt
+
+          if [[ "${audit_exit}" -gt 1 ]]; then
+            printf 'pip-audit infrastructure/tool failure: %s\n' "${audit_exit}" >&2
+            exit "${audit_exit}"
+          fi
+          if [[ "${audit_exit}" -eq 1 ]]; then
+            printf 'Dependency findings recorded as descriptive observations.\n'
+          fi
+      - name: Upload sanitized dependency audit artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: descriptive-dependency-audit
+          path: ci-artifacts/dependency-audit
+          if-no-files-found: error
+          retention-days: 14
