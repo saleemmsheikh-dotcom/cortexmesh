@@ -17,7 +17,7 @@ Historical evidence and sealed baselines may remain immutable even when later wo
 
 ## Reporting a Vulnerability
 
-Do not open a public issue containing exploit details, credentials, personal data, private infrastructure information, or instructions that would enable abuse.
+Do not open a GitHub issue containing exploit details, credentials, personal data, private infrastructure information, or instructions that would enable abuse.
 
 GitHub private vulnerability reporting is not currently enabled for this repository. Contact the repository owner privately through the [GitHub profile](https://github.com/saleemmsheikh-dotcom) to request a secure reporting channel. In the initial contact, provide only:
 
@@ -50,4 +50,4 @@ A valid report does not itself authorize runtime, governance, provider, research
 
 Coordinate disclosure with the maintainer. Allow reasonable time for assessment and remediation, while recognizing that no fixed embargo period is promised. Credit will be offered when requested and appropriate, subject to privacy, safety, and evidence requirements.
 
-For non-sensitive defects, use the public bug-report template instead.
+Authorized repository users may use the bug-report issue form for non-sensitive defects. This security policy does not invite general contribution or grant repository access, use, modification, or distribution rights.
