@@ -23,7 +23,7 @@ Governance Authority:
 GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 
 Current Engineering Milestone:
-None - Phase 3A closed
+Foundation 1.1-D ready to begin under separate authorization
 
 Research Governance Review:
 Session 13 - CLOSED
@@ -45,6 +45,12 @@ CLOSED
 
 Phase 3A Status:
 CLOSED
+
+Foundation 1.1 Status:
+IN PROGRESS
+
+Foundation 1.1-C Status:
+COMPLETE
 
 ---
 
@@ -69,6 +75,11 @@ Phase 2C is closed following Product Owner acceptance on 2026-07-12.
 Phase 3A is closed following Product Owner acceptance on 2026-07-12. Its validation and certification methodology is permanently adopted.
 
 Board Session 13 closed on 2026-07-14 as a non-decision research review. Foundation review and research readiness review are complete. No vote, governance change, runtime integration, or implementation action was authorized.
+
+Foundation 1.1-C Repository Hygiene closed following Product Owner acceptance
+on 2026-07-17. The approved C001-C019 scope merged at `1004f7f` with 226/226
+regression passing and no runtime, Local AI, provider, governance, research,
+validation, or LOCKED changes.
 
 ---
 
@@ -109,6 +120,42 @@ DEFERRED PENDING FUTURE EVIDENCE
 
 Session Record:
 `../00_Governance/Board_Sessions/Session_13/`
+
+---
+
+# Foundation 1.1 Repository Quality
+
+Status:
+IN PROGRESS
+
+Tracker:
+`Foundation_1_1/FOUNDATION_1_1_STATUS.md`
+
+| Workstream | Status |
+| --- | --- |
+| F1.1-A Repository Identity | COMPLETE |
+| F1.1-B Legal and Community | PAUSED — INTERIM PROPRIETARY CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
+| F1.1-C Repository Hygiene | COMPLETE |
+| F1.1-D CI/CD and Automation | READY TO BEGIN UNDER SEPARATE AUTHORIZATION |
+| F1.1-E Packaging and Environment | PENDING |
+
+F1.1-C Planning Baseline:
+`86aa016`
+
+F1.1-C Merge:
+`1004f7f`
+
+F1.1-C Execution Scope:
+C001-C019
+
+F1.1-C Regression:
+226/226 PASS
+
+F1.1-C Protected Surfaces:
+UNCHANGED
+
+Next Workstream:
+F1.1-D DESIGN — NOT YET AUTHORIZED
 
 ---
 

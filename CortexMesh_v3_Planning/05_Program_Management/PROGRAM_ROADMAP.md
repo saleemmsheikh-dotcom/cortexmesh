@@ -63,6 +63,20 @@ Use these statuses consistently unless the board approves a new status:
 | DEBT-011 Board Review | NOT STARTED |
 | DEBT-011 Implementation | NOT STARTED |
 
+## Foundation 1.1 Repository Quality Stream
+
+| Workstream | Status |
+| --- | --- |
+| F1.1-A Repository Identity | COMPLETE |
+| F1.1-B Legal and Community | DEFERRED — INTERIM CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
+| F1.1-C Repository Hygiene | COMPLETE |
+| F1.1-D CI/CD and Automation | NOT STARTED — READY FOR SEPARATE DESIGN AUTHORIZATION |
+| F1.1-E Packaging and Environment | NOT STARTED |
+
+Foundation 1.1 remains IN PROGRESS because F1.1-B is paused and F1.1-D/E are
+not complete. F1.1-C closed at merge commit `1004f7f` after 226/226 regression
+passed and protected surfaces remained unchanged.
+
 ## Roadmap Relationships
 
 | Document | Role |
@@ -77,3 +91,6 @@ Use these statuses consistently unless the board approves a new status:
 - LOCKED component changes still require explicit board authorization.
 - DEBT-011 implementation remains unauthorized until the board approves an implementation plan.
 - Status changes should be evidence-backed and reflected in the relevant board or planning artifact.
+- Foundation 1.1 status is maintained in
+  `../06_Implementation_Execution/Foundation_1_1/FOUNDATION_1_1_STATUS.md`.
+- F1.1-D and F1.1-E remain unauthorized until separately designed and accepted.
