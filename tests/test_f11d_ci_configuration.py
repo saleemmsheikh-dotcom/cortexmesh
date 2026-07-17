@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -11,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKER_PATH = ROOT / ".github" / "ci" / "check_protected_paths.py"
 POLICY_PATH = ROOT / ".github" / "ci" / "protected-paths.txt"
+GATES_PATH = ROOT / ".github" / "workflows" / "quality-gates.yml"
 
 
 def load_checker():
@@ -112,6 +114,96 @@ class ProtectedPathPolicyTests(unittest.TestCase):
         for entry in mandatory:
             with self.subTest(entry=entry):
                 self.assertIn(entry, policy)
+
+
+class RequiredWorkflowTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.workflow = GATES_PATH.read_text(encoding="utf-8")
+
+    def test_workflow_has_expected_top_level_structure(self):
+        required = (
+            "name: Quality Gates",
+            "\non:\n",
+            "\npermissions:\n",
+            "\nconcurrency:\n",
+            "\njobs:\n",
+        )
+        for text in required:
+            with self.subTest(text=text):
+                self.assertIn(text, self.workflow)
+        self.assertNotIn("\t", self.workflow)
+
+    def test_required_triggers_are_present(self):
+        self.assertRegex(self.workflow, r"(?m)^  pull_request:$")
+        self.assertRegex(self.workflow, r"(?m)^  push:$")
+        self.assertRegex(self.workflow, r"(?m)^  workflow_dispatch:$")
+        self.assertGreaterEqual(
+            len(re.findall(r"(?m)^      - main$", self.workflow)), 2
+        )
+
+    def test_permissions_are_read_only_and_no_secrets_are_used(self):
+        self.assertRegex(
+            self.workflow, r"(?ms)^permissions:\n  contents: read\n"
+        )
+        prohibited = ("contents: write", "id-token: write", "secrets.", "password:")
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow)
+
+    def test_action_references_are_approved_full_shas(self):
+        uses = re.findall(r"(?m)^\s*uses:\s*(\S+)", self.workflow)
+        self.assertTrue(uses)
+        approved = {
+            "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5",
+            "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+        }
+        for reference in uses:
+            with self.subTest(reference=reference):
+                self.assertIn(reference, approved)
+                self.assertRegex(reference, r"@[0-9a-f]{40}$")
+
+    def test_required_jobs_and_python_version_are_stable(self):
+        for job in ("scope", "whitespace", "compile", "regression"):
+            with self.subTest(job=job):
+                self.assertRegex(self.workflow, rf"(?m)^  {job}:$")
+                self.assertRegex(self.workflow, rf"(?m)^    name: {job}$")
+        self.assertIn('python-version: "3.14"', self.workflow)
+
+    def test_canonical_regression_command_is_present(self):
+        self.assertIn(
+            "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover tests",
+            self.workflow,
+        )
+
+    def test_required_failures_are_not_masked(self):
+        prohibited = (
+            "continue-on-error",
+            "retry",
+            "nick-fields/retry",
+            "|| true",
+        )
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text, self.workflow)
+
+    def test_prohibited_execution_commands_are_absent(self):
+        prohibited = (
+            "python main.py",
+            "LocalAI",
+            "ollama",
+            "lmstudio",
+            "exp001_runner.py",
+            "exp001_analyze.py",
+            "docker ",
+            "deploy",
+            "release",
+            "publish",
+        )
+        lowered = self.workflow.lower()
+        for text in prohibited:
+            with self.subTest(text=text):
+                self.assertNotIn(text.lower(), lowered)
 
 
 if __name__ == "__main__":

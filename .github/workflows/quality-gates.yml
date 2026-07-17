@@ -1,0 +1,146 @@
+name: Quality Gates
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-gates-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  scope:
+    name: scope
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Determine comparison range
+        id: range
+        shell: bash
+        run: |
+          set -euo pipefail
+          head_sha="${GITHUB_SHA}"
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+            base_sha="${{ github.event.pull_request.base.sha }}"
+            head_sha="${{ github.event.pull_request.head.sha }}"
+          elif [[ "${GITHUB_EVENT_NAME}" == "push" ]] \
+            && [[ -n "${{ github.event.before }}" ]] \
+            && [[ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
+            base_sha="${{ github.event.before }}"
+          elif git rev-parse --verify "${head_sha}^" >/dev/null 2>&1; then
+            base_sha="$(git rev-parse "${head_sha}^")"
+          else
+            base_sha="$(git rev-list --max-parents=0 "${head_sha}" | tail -n 1)"
+          fi
+          printf 'base=%s\nhead=%s\n' "${base_sha}" "${head_sha}" >> "${GITHUB_OUTPUT}"
+      - name: Detect protected path changes
+        run: |
+          python .github/ci/check_protected_paths.py \
+            --base "${{ steps.range.outputs.base }}" \
+            --head "${{ steps.range.outputs.head }}"
+
+  whitespace:
+    name: whitespace
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Determine comparison range
+        id: range
+        shell: bash
+        run: |
+          set -euo pipefail
+          head_sha="${GITHUB_SHA}"
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+            base_sha="${{ github.event.pull_request.base.sha }}"
+            head_sha="${{ github.event.pull_request.head.sha }}"
+          elif [[ "${GITHUB_EVENT_NAME}" == "push" ]] \
+            && [[ -n "${{ github.event.before }}" ]] \
+            && [[ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]]; then
+            base_sha="${{ github.event.before }}"
+          elif git rev-parse --verify "${head_sha}^" >/dev/null 2>&1; then
+            base_sha="$(git rev-parse "${head_sha}^")"
+          else
+            base_sha="$(git rev-list --max-parents=0 "${head_sha}" | tail -n 1)"
+          fi
+          printf 'base=%s\nhead=%s\n' "${base_sha}" "${head_sha}" >> "${GITHUB_OUTPUT}"
+      - name: Check changed-line whitespace
+        run: |
+          git diff --check \
+            "${{ steps.range.outputs.base }}" \
+            "${{ steps.range.outputs.head }}" \
+            --
+
+  compile:
+    name: compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython 3.14
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Compile active Python scope
+        env:
+          PYTHONPYCACHEPREFIX: /tmp/cortexmesh-ci-pyc
+        run: |
+          python -m compileall -q \
+            agents capabilities competition config core cost engine evolution \
+            governance ledger memory tests tools/audit \
+            CortexMesh_v3_Planning/06_Implementation_Execution/Phase1B/local_ai \
+            CortexMesh_v3_Planning/06_Implementation_Execution/Phase2A \
+            CortexMesh_v3_Planning/06_Implementation_Execution/Phase2C/orchestration \
+            CortexMesh_v3_Planning/06_Implementation_Execution/Phase3A/replay \
+            CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/harness \
+            main.py orchestrator.py
+
+  regression:
+    name: regression
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython 3.14
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install declared dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Record environment
+        run: |
+          python --version
+          python -m pip --version
+          shasum -a 256 requirements.txt
+          python -m pip freeze
+      - name: Run canonical regression
+        run: PYTHONDONTWRITEBYTECODE=1 python -m unittest discover tests
