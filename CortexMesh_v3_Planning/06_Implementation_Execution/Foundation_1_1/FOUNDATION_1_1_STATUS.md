@@ -7,7 +7,7 @@
 | Program | Foundation 1.1 Repository Quality |
 | Status | IN PROGRESS |
 | Current date | 2026-07-18 |
-| Current workstream | F1.1-E — IMPLEMENTATION REVIEW |
+| Current workstream | F1.1-E — CLOSEOUT REVIEW |
 | Runtime impact to date | NONE |
 | LOCKED impact to date | NONE |
 | Governance authority change | NONE |
@@ -20,7 +20,7 @@
 | F1.1-B Legal and Community | PAUSED | Interim proprietary correction is effective on `main`; formal proprietary licence and qualified legal review remain outstanding. See `F1.1-B_LICENSING_CORRECTION.md`. |
 | F1.1-C Repository Hygiene | COMPLETE | Planning baseline `86aa016`; actions C001–C019; merge commit `1004f7f`; regression 226/226 PASS; protected surfaces unchanged. |
 | F1.1-D CI/CD and Automation | COMPLETE | Product Owner accepted; pull request #2 merged at `ac14b74`; local and `main` CI regression 250/250 PASS; protected surfaces unchanged. |
-| F1.1-E Packaging and Environment | IN REVIEW | CP1–CP3 complete; W1–W3 published at `6735bf6`; Ubuntu dependency profiles validated; PR creation and CP4 blocked by GitHub access; acceptance and merge pending. |
+| F1.1-E Packaging and Environment | IN REVIEW | Implementation accepted; PR #3 merged at `6af9030`; CP1–CP5 PASS; closeout acceptance pending. |
 
 ## F1.1-C completion record
 
@@ -81,18 +81,22 @@ components.
 | Manifest v1.1 correction | `8089f42` — COMMITTED |
 | W2 | `62e03bf` — COMMITTED AND UBUNTU-VALIDATED |
 | W3 | `6735bf6` — COMPLETE AND PUBLISHED |
-| CP1–CP3 | COMPLETE |
+| W4 | `34cb3fe` — COMPLETE AND ACCEPTED |
+| CP1–CP5 | COMPLETE |
 | Regression | 279/279 unittest and 279/279 pytest PASS; 172 pytest subtests PASS |
 | Ubuntu CP2 | CPython 3.14.4; both profiles and `pip check` PASS |
 | Protected and excluded surfaces | UNCHANGED |
 | Planning-document hashes | EXACT |
-| Pull request | BLOCKED BY GITHUB ACCESS |
-| CP4 | BLOCKED — first PR workflows unavailable |
-| Product Owner implementation acceptance | PENDING |
-| Merge | NOT AUTHORIZED |
+| Pull request | `#3` — MERGED |
+| CP4 | Quality Gates `29638121930`; Quality Observations `29638121912` — PASS |
+| Product Owner implementation acceptance | ACCEPTED |
+| Merge | `6af9030` — NORMAL MERGE; HISTORY PRESERVED |
+| CP5 | Local clean profile and post-merge workflows PASS |
+| Feature branch | DELETED LOCALLY AND REMOTELY |
+| Closeout acceptance | PENDING |
 
-The implementation is ready for Product Owner review. F1.1-E is not complete,
-and no PR, CI run, merge, tag, release, or closeout is claimed.
+The implementation and integration are complete. F1.1-E remains in closeout
+review; no tag, release, or final closeout is claimed.
 
 ## Changelog disposition
 
@@ -103,6 +107,6 @@ request #1 provide the authoritative F1.1-C trace.
 
 ## Recommendation
 
-**F1.1-E READY FOR PRODUCT OWNER IMPLEMENTATION REVIEW**
+**F1.1-E READY FOR PRODUCT OWNER CLOSEOUT ACCEPTANCE**
 
-PR creation and CP4 remain blocked by GitHub access. Merge is not authorized.
+Tag and release remain unauthorized.

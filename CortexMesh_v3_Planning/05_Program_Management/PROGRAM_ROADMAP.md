@@ -71,18 +71,17 @@ Use these statuses consistently unless the board approves a new status:
 | F1.1-B Legal and Community | DEFERRED — INTERIM CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
 | F1.1-D CI/CD and Automation | COMPLETE |
-| F1.1-E Packaging and Environment | IN REVIEW — PR ACCESS BLOCKED |
+| F1.1-E Packaging and Environment | IN REVIEW — MERGED; CLOSEOUT PENDING |
 
 Foundation 1.1 remains IN PROGRESS because F1.1-B is paused and F1.1-E is not
 complete. F1.1-C closed at merge commit `1004f7f`. F1.1-D closed following
 Product Owner acceptance and pull request #2 merge at `ac14b74`; local and
 `main` CI regression passed 250/250 and protected surfaces remained unchanged.
-F1.1-E CP1–CP3 are complete on
-`foundation-1.1e-environment-contract` at `6735bf6`. The default and optional
-OpenAI profiles passed direct Ubuntu/CPython 3.14.4 validation, and the expanded
-local regression passed 279/279 under both unittest and pytest. Pull-request
-creation is blocked by GitHub access, so CP4, implementation acceptance, merge,
-and closeout remain pending.
+F1.1-E implementation was accepted at `34cb3fe` and merged through pull request
+#3 at `6af9030`. CP1–CP5 passed, including direct Ubuntu/CPython 3.14.4 profile
+validation, 279/279 local regression, first-attempt PR workflows, and
+first-attempt post-merge workflows. Product Owner closeout acceptance remains
+pending; no tag or release is authorized.
 
 ## Roadmap Relationships
 
@@ -100,6 +99,5 @@ and closeout remain pending.
 - Status changes should be evidence-backed and reflected in the relevant board or planning artifact.
 - Foundation 1.1 status is maintained in
   `../06_Implementation_Execution/Foundation_1_1/FOUNDATION_1_1_STATUS.md`.
-- F1.1-E implementation is authorized and ready for Product Owner review.
-  Merge remains unauthorized, and CP4 is blocked until pull-request access is
-  restored.
+- F1.1-E implementation and integration are complete. Closeout remains pending
+  Product Owner acceptance; no tag or release is authorized.
