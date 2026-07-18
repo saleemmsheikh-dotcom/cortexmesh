@@ -1,0 +1,28 @@
+# Exact versions observed in the verified CPython 3.14 / Ubuntu CI profile.
+# Source run: https://github.com/saleemmsheikh-dotcom/cortexmesh/actions/runs/29565319116
+# Source head: dace93dc68c1f8b793456da6f19a66bda4e2a87d
+# Source environment: CPython 3.14.6, pip 26.1.2, GitHub ubuntu-latest
+# Source requirements SHA-256: 5dc411c7029179a275a6048c61047224c28bca4349fc8710472ef71d4d06d53b
+# This is a verified-profile constraints record, not a universal or hash lock.
+annotated-types==0.7.0
+anyio==4.14.2
+certifi==2026.6.17
+coverage==7.15.2
+distro==1.9.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.18
+iniconfig==2.3.0
+jiter==0.16.0
+openai==2.46.0
+packaging==26.2
+pluggy==1.6.0
+pydantic==2.13.4
+pydantic-core==2.46.4
+pygments==2.20.0
+pytest==9.1.1
+sniffio==1.3.1
+tqdm==4.68.4
+typing-extensions==4.16.0
+typing-inspection==0.4.2

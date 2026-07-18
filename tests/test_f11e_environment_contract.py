@@ -137,7 +137,84 @@ class DocumentationContractTests(unittest.TestCase):
     "W2 dependency profiles not yet present",
 )
 class DependencyContractTests(unittest.TestCase):
-    pass
+    EXPECTED_DEFAULT = ("pytest>=7.0.0", "coverage>=7.0.0")
+    EXPECTED_OPENAI = ("-r requirements.txt", "openai>=1.0.0")
+    EXPECTED_CONSTRAINTS = (
+        "annotated-types==0.7.0",
+        "anyio==4.14.2",
+        "certifi==2026.6.17",
+        "coverage==7.15.2",
+        "distro==1.9.0",
+        "h11==0.16.0",
+        "httpcore==1.0.9",
+        "httpx==0.28.1",
+        "idna==3.18",
+        "iniconfig==2.3.0",
+        "jiter==0.16.0",
+        "openai==2.46.0",
+        "packaging==26.2",
+        "pluggy==1.6.0",
+        "pydantic==2.13.4",
+        "pydantic-core==2.46.4",
+        "pygments==2.20.0",
+        "pytest==9.1.1",
+        "sniffio==1.3.1",
+        "tqdm==4.68.4",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.2",
+    )
+
+    @staticmethod
+    def declarations(path: Path) -> tuple[str, ...]:
+        return tuple(
+            line.strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        )
+
+    def test_default_declarations_are_exact(self):
+        self.assertEqual(self.declarations(REQUIREMENTS), self.EXPECTED_DEFAULT)
+
+    def test_openai_declarations_are_exact(self):
+        self.assertEqual(self.declarations(OPENAI_REQUIREMENTS), self.EXPECTED_OPENAI)
+
+    def test_constraints_are_exact(self):
+        self.assertEqual(self.declarations(CONSTRAINTS), self.EXPECTED_CONSTRAINTS)
+
+    def test_constraints_are_sorted_and_unique(self):
+        declarations = self.declarations(CONSTRAINTS)
+        names = tuple(line.split("==", 1)[0].lower() for line in declarations)
+        self.assertEqual(names, tuple(sorted(set(names))))
+
+    def test_constraints_provenance_is_present(self):
+        content = CONSTRAINTS.read_text(encoding="utf-8")
+        for value in (
+            "CPython 3.14.6",
+            "pip 26.1.2",
+            "ubuntu-latest",
+            "29565319116",
+            "dace93dc68c1f8b793456da6f19a66bda4e2a87d",
+        ):
+            self.assertIn(value, content)
+
+    def test_constraints_reject_prohibited_sources(self):
+        declarations = self.declarations(CONSTRAINTS)
+        prohibited = ("-e ", "--editable", "://", "--index", " @ ", "file:")
+        for declaration in declarations:
+            for marker in prohibited:
+                self.assertNotIn(marker, declaration)
+        self.assertTrue(all("==" in line for line in declarations))
+
+    def test_default_profile_does_not_declare_openai(self):
+        self.assertNotIn("openai", REQUIREMENTS.read_text(encoding="utf-8").lower())
+
+    def test_external_services_are_not_pip_dependencies(self):
+        combined = (
+            REQUIREMENTS.read_text(encoding="utf-8")
+            + OPENAI_REQUIREMENTS.read_text(encoding="utf-8")
+        ).lower()
+        for service in ("ollama", "lmstudio", "docker"):
+            self.assertNotIn(service, combined)
 
 
 @unittest.skipUnless(CONSTRAINTS.exists(), "W3 CI constraints not yet present")
