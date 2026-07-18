@@ -1,0 +1,3 @@
+# Optional OpenAI profile: default verification tools plus the OpenAI SDK.
+-r requirements.txt
+openai>=1.0.0

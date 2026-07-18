@@ -1,3 +1,4 @@
-openai>=1.0.0
+# Default verification/development profile.
+# The application fallback and sealed reference paths use the standard library.
 pytest>=7.0.0
 coverage>=7.0.0

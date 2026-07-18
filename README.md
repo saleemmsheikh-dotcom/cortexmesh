@@ -2,8 +2,8 @@
 
 ## Governed Multi-Agent AI Orchestration Platform
 
-[![Regression: 226/226 passing](https://img.shields.io/badge/regression-226%2F226%20passing-brightgreen)](CortexMesh_v3_Planning/07_Research/RP-001/EXP-001/reproduction/EXP-001-R2/REPRODUCTION_REPORT.md)
-![Python 3](https://img.shields.io/badge/python-3-blue)
+[![Regression: 250/250 passing](https://img.shields.io/badge/regression-250%2F250%20passing-brightgreen)](CortexMesh_v3_Planning/06_Implementation_Execution/Foundation_1_1/F1.1-D_VERIFICATION_EVIDENCE.md)
+![Verified: CPython 3.14 on Ubuntu CI](https://img.shields.io/badge/verified-CPython%203.14%20%7C%20Ubuntu%20CI-blue)
 [![License: Proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](LICENSE)
 
 **CortexMesh is an engineering and research platform for governed AI orchestration. It prioritizes deterministic behaviour, reproducible evidence, and architectural discipline over rapid feature expansion.**
@@ -116,6 +116,16 @@ Research findings are advisory evidence. They do not authorize runtime integrati
 
 ## Getting Started
 
+The verified environment is **CPython 3.14 on Ubuntu CI**. Recorded macOS and
+Ubuntu executions outside that profile are observations, not continuing
+compatibility certification. Other environments may be attempted, but other
+Python versions, Windows, alternative Python implementations, and other
+platforms are not currently certified.
+
+Run setup and verification commands from the repository root. The authoritative
+dependency profiles, environment variables, optional integrations, and
+limitations are defined in [ENVIRONMENT.md](ENVIRONMENT.md).
+
 Clone the repository and enter the project:
 
 ```bash
@@ -128,24 +138,35 @@ Create an isolated environment and install the declared development dependencies
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install -r requirements.txt
+python -m pip install \
+  -c constraints/cpython314-ubuntu.txt \
+  -r requirements.txt
 ```
 
-Run the complete regression suite:
+Verify the repository before running any stateful or external execution path:
 
 ```bash
-PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover tests
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover tests
 ```
 
 Then read the [Foundation 1.0 baseline](CortexMesh_v3_Planning/FOUNDATION_BASELINE_v1.0.md) before proposing architectural, runtime, provider, governance, or research changes.
 
-The repository also contains a CLI entry point:
+**Stateful CLI warning:** the repository CLI loads and persists
+`memory/memory.json`; execution can also create or replace
+`memory/memory.json.bak`. Inspect `git status --short` before and after a task
+and review any state diff before deciding how it should be retained.
+
+After verification and review of that state boundary, the CLI entry point is:
 
 ```bash
 python3 main.py "Design a simple optimisation strategy for resource allocation"
 ```
 
-CLI execution may require locally configured runtime or provider dependencies. It is separate from the isolated Phase 2C reference-engine evidence.
+CLI execution may use optional OpenAI or Local AI configuration. Those paths
+are separate from the standard-library fallback and from the isolated Phase 2C
+reference-engine evidence. Docker is not required for the SAFE Local AI bridge;
+the separate Docker capability path is not provisioned for fresh-clone
+execution by this repository. See [ENVIRONMENT.md](ENVIRONMENT.md).
 
 ## Documentation
 

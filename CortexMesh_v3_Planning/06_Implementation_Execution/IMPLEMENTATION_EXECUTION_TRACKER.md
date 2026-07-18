@@ -23,7 +23,7 @@ Governance Authority:
 GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 
 Current Engineering Milestone:
-Foundation 1.1-D complete; F1.1-E pending
+Foundation 1.1-E implementation review; PR access blocked
 
 Research Governance Review:
 Session 13 - CLOSED
@@ -137,7 +137,7 @@ Tracker:
 | F1.1-B Legal and Community | PAUSED — INTERIM PROPRIETARY CORRECTION EFFECTIVE; FORMAL LEGAL REVIEW OUTSTANDING |
 | F1.1-C Repository Hygiene | COMPLETE |
 | F1.1-D CI/CD and Automation | COMPLETE |
-| F1.1-E Packaging and Environment | PENDING |
+| F1.1-E Packaging and Environment | IN REVIEW — CP1–CP3 COMPLETE; PR/CP4 BLOCKED BY ACCESS |
 
 F1.1-C Planning Baseline:
 `86aa016`
@@ -176,8 +176,38 @@ ACCEPTED
 F1.1-D Merge:
 `ac14b74`
 
-Next Workstream:
-F1.1-E PACKAGING AND ENVIRONMENT — PENDING; NOT AUTHORIZED
+F1.1-E Planning Baseline:
+`f31726d`
+
+F1.1-E Branch:
+`foundation-1.1e-environment-contract`
+
+F1.1-E Atomic Commits:
+`665e90d`, `8089f42`, `62e03bf`, `6735bf6`
+
+F1.1-E Checkpoints:
+CP1 COMPLETE; CP2 COMPLETE; CP3 COMPLETE; CP4 BLOCKED BY GITHUB ACCESS; CP5 NOT
+STARTED
+
+F1.1-E Ubuntu Validation:
+CPython 3.14.4; default and OpenAI profiles installed independently; both
+`pip check` runs PASS; default profile excluded OpenAI
+
+F1.1-E Regression:
+279/279 unittest PASS; 279/279 pytest PASS; 172 pytest subtests PASS
+
+F1.1-E Protected Surfaces:
+UNCHANGED
+
+F1.1-E Product Owner Implementation Acceptance:
+PENDING
+
+F1.1-E Merge:
+NOT AUTHORIZED
+
+Current Recommendation:
+F1.1-E READY FOR PRODUCT OWNER IMPLEMENTATION REVIEW; PR CREATION REMAINS
+BLOCKED BY GITHUB ACCESS
 
 ---
 
