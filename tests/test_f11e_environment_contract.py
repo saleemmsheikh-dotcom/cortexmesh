@@ -219,7 +219,88 @@ class DependencyContractTests(unittest.TestCase):
 
 @unittest.skipUnless(CONSTRAINTS.exists(), "W3 CI constraints not yet present")
 class WorkflowContractTests(unittest.TestCase):
-    pass
+    @classmethod
+    def setUpClass(cls):
+        cls.gates = GATES.read_text(encoding="utf-8")
+        cls.observations = OBSERVATIONS.read_text(encoding="utf-8")
+        cls.combined = cls.gates + cls.observations
+
+    def test_default_installs_use_constraints(self):
+        unconstrained = "python -m pip install -r requirements.txt"
+        constrained = (
+            "python -m pip install \\\n"
+            "            -c constraints/cpython314-ubuntu.txt \\\n"
+            "            -r requirements.txt"
+        )
+        self.assertNotIn(unconstrained, self.combined)
+        self.assertEqual(self.combined.count(constrained), 3)
+
+    def test_cache_inputs_cover_all_dependency_profiles(self):
+        for path in (
+            "requirements.txt",
+            "requirements-openai.txt",
+            "constraints/cpython314-ubuntu.txt",
+        ):
+            self.assertGreaterEqual(self.combined.count(path), 3)
+
+    def test_workflows_record_all_dependency_input_hashes(self):
+        for path in (
+            "requirements.txt",
+            "requirements-openai.txt",
+            "constraints/cpython314-ubuntu.txt",
+        ):
+            self.assertGreaterEqual(
+                self.combined.count(f"shasum -a 256 {path}"),
+                3,
+            )
+
+    def test_python_and_action_pins_remain_exact(self):
+        self.assertEqual(self.combined.count('python-version: "3.14"'), 4)
+        self.assertEqual(
+            self.combined.count(
+                "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5"
+            ),
+            6,
+        )
+        self.assertEqual(
+            self.combined.count(
+                "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1"
+            ),
+            4,
+        )
+        self.assertEqual(
+            self.combined.count(
+                "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02"
+            ),
+            2,
+        )
+        self.assertIn("python -m pip install pip-audit==2.10.1", self.observations)
+
+    def test_workflow_jobs_and_permissions_remain_exact(self):
+        for job in (
+            "  scope:",
+            "  whitespace:",
+            "  compile:",
+            "  regression:",
+        ):
+            self.assertIn(job, self.gates)
+        for job in ("  coverage:", "  dependency-audit:"):
+            self.assertIn(job, self.observations)
+        self.assertEqual(self.combined.count("permissions:\n  contents: read"), 2)
+
+    def test_canonical_regression_and_observations_remain(self):
+        self.assertIn(
+            "run: PYTHONDONTWRITEBYTECODE=1 python -m unittest discover tests",
+            self.gates,
+        )
+        self.assertIn("python tools/audit/audit_coverage.py", self.observations)
+        self.assertIn("--requirement requirements.txt", self.observations)
+        self.assertIn("Policy: descriptive", self.observations)
+
+    def test_no_openai_install_or_provider_execution_in_ci(self):
+        self.assertNotIn("-r requirements-openai.txt", self.combined)
+        self.assertNotIn("OPENAI_API_KEY", self.combined)
+        self.assertNotIn("import openai", self.combined)
 
 
 if __name__ == "__main__":
