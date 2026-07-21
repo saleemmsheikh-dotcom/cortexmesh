@@ -35,6 +35,7 @@ Preparation of this document does **not** constitute ratification of any proposa
 | BD-08-007 | 08 | Architectural Identity Workstream | ACCEPTED | 2026-06-28 | Unanimous | COMM-S08_KIMI_007 | ACTIVE |
 | BD-09-003 | 09 | Retrospective Ratification of LOCKED Component Modifications | RATIFIED (Retrospective) | 2026-07-01 | Unanimous | COMM-S09-SALEEM-005 | ACTIVE |
 | BD-12-001 | 12 | GG-02 Board Voting and Ratification Rules v1.0 | RATIFIED / IN FORCE | 2026-07-06 | Unanimous | GG-02_Board_Voting_and_Ratification_Rules_v1.0.md | ACTIVE |
+| BD-12-002 | 12 | TD-008 Communication Protocol Status Reconciliation | RECONCILED / TD-008 CLOSED | 2026-07-21 | Unanimous | Board_Decisions/BD-12-002_TD008_Communication_Protocol_Reconciliation.md | ACTIVE |
 
 ---
 
@@ -120,6 +121,41 @@ Board Approval: UNANIMOUS
 
 ---
 
+## BD-12-002 - TD-008 Communication Protocol Status Reconciliation
+
+**Date:** 2026-07-21
+
+**Status:** RATIFIED
+
+### Decision
+
+The Board unanimously determined that Communication Protocol v1.1 has been the
+operative protocol since 2026-07-04 and authorized reconciliation of repository
+metadata with the existing historical governance record.
+
+Session 12 did not ratify Communication Protocol v1.1 anew. This decision
+documents and reconciles the historical ratification, preserves Communication
+Protocol v1.0 as authoritative before 2026-07-04, and closes TD-008.
+
+Historical ratification date: **2026-07-04**. This entry retrospectively
+documents that existing event; it is not a new ratification.
+
+**BD-12-002 reconciliation actions completed.**
+
+### Product Owner
+
+Product Owner: CONFIRMED
+
+### Board Approval
+
+Board Approval: UNANIMOUS
+
+### Reference
+
+`Board_Decisions/BD-12-002_TD008_Communication_Protocol_Reconciliation.md`
+
+---
+
 
 # Pending Decisions
 
@@ -152,3 +188,4 @@ Session 13 closed with Foundation 1.0 accepted and RP-001 accepted as the resear
 | v1.2    | 2026-07-06 | Recorded BD-12-001 GG-02 Board Voting and Ratification Rules v1.0 ratification. |
 | v1.3    | 2026-07-14 | Added non-decision Session 13 research review entry without creating a decision or pending motion. |
 | v1.4    | 2026-07-14 | Closed non-decision Session 13 and recorded its review dispositions without creating a Board decision. |
+| v1.5    | 2026-07-21 | Recorded BD-12-002 TD-008 Communication Protocol Status Reconciliation. |

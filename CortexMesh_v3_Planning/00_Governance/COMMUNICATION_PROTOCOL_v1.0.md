@@ -1,6 +1,8 @@
 # COMMUNICATION_PROTOCOL_v1.0
 
-Status: PROPOSED
+Status: SUPERSEDED
+
+Effective: 2026-07-04
 
 ## Purpose
 

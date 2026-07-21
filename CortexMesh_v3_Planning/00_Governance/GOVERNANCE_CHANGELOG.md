@@ -45,6 +45,7 @@ How has the governance model evolved?
 #### Governance Enhancements
 
 - Ratified GG-02 Board Voting and Ratification Rules v1.0 as the active constitutional authority for Board quorum, voting thresholds, abstentions, ratification, and effective dates.
+- Reconciled Communication Protocol repository metadata with the historical governance record under BD-12-002. Communication Protocol v1.1 has been operative since its existing 2026-07-04 ratification; this reconciliation was not a new ratification.
 - Status: RATIFIED / IN FORCE.
 - Board Approval: UNANIMOUS.
 - Product Owner: ENDORSED.

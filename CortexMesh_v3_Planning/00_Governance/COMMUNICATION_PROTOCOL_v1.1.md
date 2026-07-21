@@ -1,6 +1,10 @@
 # COMMUNICATION_PROTOCOL_v1.1
 
-**Status:** PROPOSED
+**Status:** RATIFIED
+
+**Ratified:** 2026-07-04
+
+**Authority:** Unanimous Board approval + Product Owner endorsement
 
 ---
 

@@ -23,7 +23,9 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_CHANGELOG.md` | Governance evolution summary. |
 | `CortexMesh_v3_Planning/00_Governance/GG-02_Board_Voting_and_Ratification_Rules_v1.0.md` | Active Board voting and ratification authority. |
 | `CortexMesh_v3_Planning/00_Governance/Board_Sessions/Session_13/SESSION_13_SUMMARY.md` | Closed non-decision Foundation 1.0 and RP-001 critical review. |
+| `CortexMesh_v3_Planning/00_Governance/Communications/WAR_ROOM_EXECUTIVE_BRIEFING_001.md` | Draft executive cover sheet for Board review of current programme state and proposed Programme Alpha deliberation. |
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
+| `CortexMesh_v3_Planning/03_Debt_Management/TECHNICAL_DEBT_REGISTER.md` | Active consolidated governance register for acknowledged technical debt and evidence-based closure controls. |
 | `CortexMesh_v3_Planning/04_Architecture/ARCHITECTURAL_MISSION.md` | Architectural mission statement. |
 | `CortexMesh_v3_Planning/05_Program_Management/V3_PLANNING_INDEX.md` | v3 planning index. |
 | `CortexMesh_v3_Planning/FOUNDATION_BASELINE_v1.0.md` | Active Foundation 1.0 architectural baseline record. |
@@ -121,6 +123,7 @@ Use this area for reviewer entry points and immutable session review packets.
 ```text
 03_Debt_Management/
 ├── DEBT_REGISTER_v1.3.md
+├── TECHNICAL_DEBT_REGISTER.md
 ├── Implementation_Reviews/
 ├── DEBT001/
 │   ├── DEBT001_EVIDENCE_PLAN_v1.2.md
