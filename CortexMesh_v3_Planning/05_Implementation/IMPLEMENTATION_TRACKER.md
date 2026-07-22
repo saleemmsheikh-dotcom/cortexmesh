@@ -72,3 +72,29 @@ Phase 2A execution records are maintained under:
 ```text
 CortexMesh_v3_Planning/06_Implementation_Execution/Phase2A/
 ```
+
+---
+
+# Session 12 Item Status
+
+Item 2:
+**CLOSED**
+
+Closure Basis:
+
+- evidence audit completed
+- constitutional concern resolved
+- Board convergence achieved
+- future operating model adopted
+
+Item 3:
+**COMMENCED**
+
+Operating Mode:
+Expert Panel
+
+Lead:
+ChatGPT (Engineering Lead)
+
+Authority:
+Advisory

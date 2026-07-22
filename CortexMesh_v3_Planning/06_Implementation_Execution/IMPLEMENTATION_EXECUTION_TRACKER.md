@@ -76,6 +76,11 @@ Phase 3A is closed following Product Owner acceptance on 2026-07-12. Its validat
 
 Board Session 13 closed on 2026-07-14 as a non-decision research review. Foundation review and research readiness review are complete. No vote, governance change, runtime integration, or implementation action was authorized.
 
+Session 12 Item 2 is closed. Its closure basis is the completed evidence audit,
+resolution of the constitutional concern, Board convergence, and adoption of the
+future operating model. Session 12 Item 3 has commenced in Expert Panel mode,
+led by ChatGPT (Engineering Lead) with advisory authority.
+
 Foundation 1.1-C Repository Hygiene closed following Product Owner acceptance
 on 2026-07-17. The approved C001-C019 scope merged at `1004f7f` with 226/226
 regression passing and no runtime, Local AI, provider, governance, research,

@@ -64,3 +64,28 @@ LOCKED component changes remain subject to the existing governance framework and
 ---
 
 End of Summary.
+
+---
+
+## Item Status Update — 2026-07-22
+
+### Item 2
+
+Status: **CLOSED**
+
+Closure Basis:
+
+- evidence audit completed
+- constitutional concern resolved
+- Board convergence achieved
+- future operating model adopted
+
+### Item 3
+
+Status: **COMMENCED**
+
+Operating Mode: **Expert Panel**
+
+Lead: **ChatGPT (Engineering Lead)**
+
+Authority: **Advisory**
