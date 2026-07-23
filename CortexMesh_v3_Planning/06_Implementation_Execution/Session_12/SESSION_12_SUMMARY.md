@@ -82,10 +82,31 @@ Closure Basis:
 
 ### Item 3
 
-Status: **COMMENCED**
+Status: **CLOSED**
 
 Operating Mode: **Expert Panel**
 
 Lead: **ChatGPT (Engineering Lead)**
 
 Authority: **Advisory**
+
+Decision: **BD-12-003 — RATIFIED / ACTIVE**
+
+Closure Date: **2026-07-23**
+
+Architecture Study: **ACTIVE**
+
+Product Owner commencement authorization: **CONFIRMED**
+
+### Session Closeout
+
+Status: **CLOSED**
+
+Close Date: **2026-07-23**
+
+References:
+
+- [Final Joint Expert Panel Position](../../00_Governance/Communications/Session_12/KIMI/KIMI_STAGE_6___Final_Approval_Status.md)
+- [BD-12-003 Register Entry](../../00_Governance/BOARD_DECISIONS_REGISTER.md#bd-12-003---programme-alpha-architecture-study-authorization)
+- [Session 12 Closure](../../00_Governance/Communications/Session_12/KIMI/KIMI_SESSION_12_FORMAL_CLOSURE.md)
+- [Product Owner Authorization and Architecture Study Commencement](../../00_Governance/Communications/Session_12/CHATGPT/COMM-S12-CHATGPT-014.md)

@@ -156,6 +156,41 @@ Board Approval: UNANIMOUS
 
 ---
 
+## BD-12-003 - Programme Alpha Architecture Study Authorization
+
+**Date:** 2026-07-23
+
+**Status:** RATIFIED / ACTIVE
+
+**Vote:** Unanimous (3/3)
+
+### Decision
+
+The Board unanimously authorized Programme Alpha as a bounded Architecture
+Study operating under advisory authority only.
+
+The decision grants no implementation authority and no governance amendment
+authority. Any implementation proposal arising from the Architecture Study must
+return for unanimous Board approval under GG-02.
+
+### Product Owner
+
+Product Owner commencement authorization: CONFIRMED
+
+### Board Approval
+
+Board Approval: UNANIMOUS (3/3)
+
+### References
+
+- [Architecture Study Authorization Record](Architecture_Study/GA-001_Architecture_Study_Authorization.md)
+- [Final Joint Expert Panel Position](Communications/Session_12/KIMI/KIMI_STAGE_6___Final_Approval_Status.md)
+- [ChatGPT Board Vote](Communications/Session_12/CHATGPT/COMM-S12-CHATGPT-013.md)
+- [DeepSeek Final Board Vote and Ratification Record](Communications/Session_12/DEEPSEEK/COMM-S12-DEEPSEEK-029.md)
+- [Architecture Study Commencement Acknowledgement](Communications/Session_12/CHATGPT/COMM-S12-CHATGPT-014.md)
+
+---
+
 
 # Pending Decisions
 

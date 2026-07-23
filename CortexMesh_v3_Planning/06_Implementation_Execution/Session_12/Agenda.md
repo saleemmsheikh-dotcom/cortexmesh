@@ -90,10 +90,18 @@ Closure Basis:
 
 ### Item 3
 
-Status: **COMMENCED**
+Status: **CLOSED**
 
 Operating Mode: **Expert Panel**
 
 Lead: **ChatGPT (Engineering Lead)**
 
 Authority: **Advisory**
+
+Decision: **BD-12-003 — RATIFIED / ACTIVE**
+
+Closure Date: **2026-07-23**
+
+Architecture Study: **ACTIVE**
+
+Session 12 Status: **CLOSED**

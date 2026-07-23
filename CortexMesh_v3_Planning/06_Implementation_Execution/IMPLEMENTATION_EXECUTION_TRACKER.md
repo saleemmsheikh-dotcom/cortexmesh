@@ -8,10 +8,13 @@ Status:
 CLOSED
 
 Completion Date:
-2026-07-06
+2026-07-23
 
 Result:
 SUCCESS
+
+Session 12 Milestone:
+COMPLETE
 
 Product Owner:
 ENDORSED
@@ -23,7 +26,19 @@ Governance Authority:
 GG-02_Board_Voting_and_Ratification_Rules_v1.0.md
 
 Current Engineering Milestone:
-Foundation 1.1-E complete; Foundation 1.1-B paused
+Programme Alpha Architecture Study active under BD-12-003
+
+Architecture Study:
+ACTIVE
+
+Previous Architecture Study Status:
+AUTHORIZED
+
+Current Architecture Study Status:
+ACTIVE
+
+Architecture Study Authority:
+ADVISORY ONLY
 
 Research Governance Review:
 Session 13 - CLOSED
@@ -78,8 +93,10 @@ Board Session 13 closed on 2026-07-14 as a non-decision research review. Foundat
 
 Session 12 Item 2 is closed. Its closure basis is the completed evidence audit,
 resolution of the constitutional concern, Board convergence, and adoption of the
-future operating model. Session 12 Item 3 has commenced in Expert Panel mode,
-led by ChatGPT (Engineering Lead) with advisory authority.
+future operating model. Session 12 Item 3 is closed following unanimous
+ratification of BD-12-003. The Product Owner authorized commencement of the
+Programme Alpha Architecture Study, which is active under advisory authority
+only.
 
 Foundation 1.1-C Repository Hygiene closed following Product Owner acceptance
 on 2026-07-17. The approved C001-C019 scope merged at `1004f7f` with 226/226

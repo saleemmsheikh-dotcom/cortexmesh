@@ -88,7 +88,7 @@ Closure Basis:
 - future operating model adopted
 
 Item 3:
-**COMMENCED**
+**CLOSED**
 
 Operating Mode:
 Expert Panel
@@ -98,3 +98,12 @@ ChatGPT (Engineering Lead)
 
 Authority:
 Advisory
+
+Decision:
+BD-12-003 — RATIFIED / ACTIVE
+
+Architecture Study:
+ACTIVE
+
+Session 12:
+CLOSED

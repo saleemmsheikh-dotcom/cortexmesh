@@ -24,6 +24,7 @@ How has the governance model evolved?
 | 09 | Stable reviewer entry point introduced. |
 | 09 | Immutable session review packet structure introduced. |
 | 12 | GG-02 Board Voting and Ratification Rules v1.0 ratified and placed in force as active constitutional authority. |
+| 12 | BD-12-003 ratified; Programme Alpha Architecture Study authorized under advisory authority and activated by the Product Owner; Session 12 formally closed. |
 
 ### Session 09
 
@@ -46,6 +47,9 @@ How has the governance model evolved?
 
 - Ratified GG-02 Board Voting and Ratification Rules v1.0 as the active constitutional authority for Board quorum, voting thresholds, abstentions, ratification, and effective dates.
 - Reconciled Communication Protocol repository metadata with the historical governance record under BD-12-002. Communication Protocol v1.1 has been operative since its existing 2026-07-04 ratification; this reconciliation was not a new ratification.
+- Ratified BD-12-003 by unanimous vote (3/3), authorizing Programme Alpha as a bounded Architecture Study with advisory authority only.
+- Product Owner authorized commencement of the Architecture Study, which is ACTIVE from 2026-07-23.
+- Formally closed Session 12 on 2026-07-23.
 - Status: RATIFIED / IN FORCE.
 - Board Approval: UNANIMOUS.
 - Product Owner: ENDORSED.
@@ -55,7 +59,8 @@ How has the governance model evolved?
 
 ### Phase Completion State
 
-- Session 12: CLOSED.
+- Session 12: CLOSED (2026-07-23).
+- Programme Alpha Architecture Study: ACTIVE.
 - Phase 1B: COMPLETED.
 - Phase 2A: COMPLETED.
 
