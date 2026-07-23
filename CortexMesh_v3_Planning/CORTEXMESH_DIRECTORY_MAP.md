@@ -22,6 +22,9 @@ Which directories are authoritative?
 | `CortexMesh_v3_Planning/02_Onboarding/Session_09/REVIEW_PACKET.md` | Current Session 09 review packet. |
 | `CortexMesh_v3_Planning/00_Governance/GOVERNANCE_CHANGELOG.md` | Governance evolution summary. |
 | `CortexMesh_v3_Planning/00_Governance/GG-02_Board_Voting_and_Ratification_Rules_v1.0.md` | Active Board voting and ratification authority. |
+| `CortexMesh_v3_Planning/00_Governance/BOARD_DECISIONS_REGISTER.md` | Authoritative register of Board decisions, including BD-12-003. |
+| `CortexMesh_v3_Planning/00_Governance/Architecture_Study/GA-001_Architecture_Study_Authorization.md` | Active Programme Alpha Architecture Study authorization record under BD-12-003. |
+| `CortexMesh_v3_Planning/00_Governance/Communications/Session_12/` | Archived Session 12 evidence, votes, closure records, and Architecture Study commencement authorization. |
 | `CortexMesh_v3_Planning/00_Governance/Board_Sessions/Session_13/SESSION_13_SUMMARY.md` | Closed non-decision Foundation 1.0 and RP-001 critical review. |
 | `CortexMesh_v3_Planning/00_Governance/Communications/WAR_ROOM_EXECUTIVE_BRIEFING_001.md` | Draft executive cover sheet for Board review of current programme state and proposed Programme Alpha deliberation. |
 | `CortexMesh_v3_Planning/00_Governance/Repository_Lineage/Reports/EXECUTIVE_SUMMARY.md` | Repository lineage investigation briefing. |
@@ -56,6 +59,8 @@ CortexMesh_v3_Planning/
 
 ```text
 00_Governance/
+├── Architecture_Study/
+│   └── GA-001_Architecture_Study_Authorization.md
 ├── BOARD_CURRENT_STATE.md
 ├── BOARD_DECISIONS_REGISTER.md
 ├── BOARD_HISTORY_SUMMARY.md
@@ -71,7 +76,16 @@ CortexMesh_v3_Planning/
 ├── REVIEW_EVIDENCE_STANDARD_v1.0.md
 ├── Board_Sessions/
 │   └── Session_13/
+├── Board_Decisions/
+│   └── BD-12-002_TD008_Communication_Protocol_Reconciliation.md
 ├── Communications/
+│   └── Session_12/
+│       ├── BOARD/
+│       ├── CHATGPT/
+│       ├── CODEX/
+│       ├── DEEPSEEK/
+│       ├── KIMI/
+│       └── SALEEM/
 ├── Locked_Component_Review/
 └── Repository_Lineage/
     ├── Evidence/
@@ -192,6 +206,7 @@ Use this area for roadmap, planning index, and formal program-level audit report
 │   └── PHASE2A_STATUS.md
 ├── Session_11/
 └── Session_12/
+    ├── Agenda.md
     └── SESSION_12_SUMMARY.md
 ```
 
